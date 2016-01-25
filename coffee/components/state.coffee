@@ -1,8 +1,8 @@
-React     = require('react')
-InlineSVG = require('svg-inline-react')
-fills     = require('../states').fills
-label     = require('../states').label
-states    = require('../states').states
+React       = require('react')
+fills       = require('../states').fills
+label       = require('../states').label
+primaryType = require('../states').primaryType
+states      = require('../states').states
 
 module.exports = React.createClass
   displayName: 'State'
@@ -30,7 +30,7 @@ module.exports = React.createClass
             <h4>{state.regDate}</h4>
           </div>
           <div className='center'>
-            <h2 style={color: fills[state.fillKey]}>Caucus Date</h2>
+            <h2 style={color: fills[state.fillKey]}>{primaryType(state.fillKey)} Date</h2>
             <h4>{state.date}</h4>
           </div>
         </div>

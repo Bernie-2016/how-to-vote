@@ -22,6 +22,13 @@ label = (key) ->
     when keys.CLOSED_CAUCUS  then 'Closed Caucus'
     when keys.UNAVAILABLE    then 'Coming Soon'
 
+primaryType = (key) ->
+  switch key
+    when keys.OPEN_PRIMARY   then 'Primary'
+    when keys.CLOSED_PRIMARY then 'Primary'
+    when keys.OPEN_CAUCUS    then 'Caucus'
+    when keys.CLOSED_CAUCUS  then 'Caucus'
+
 states =
   AL:
     name:    'Alabama'
@@ -185,7 +192,8 @@ for key, state of states
   
 
 module.exports =
-  keys:   keys
-  fills:  fills
-  label:  label
-  states: states
+  keys:        keys
+  fills:       fills
+  label:       label
+  primaryType: primaryType
+  states:      states
