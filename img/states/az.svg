@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40.68829mm"
+   height="45.504776mm"
+   viewBox="0 0 144.1711 161.2374"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="az.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="1108.1207"
+     inkscape:cy="715.48866"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="3832"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(1234.5493,-1086.6135)">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill-opacity:1"
+       d="m -1196.819,1106.3726 c -3.0904,-0.074 -3.7855,5.4983 -7.9185,3.649 -0.9184,-3.5621 -4.4557,-3.5001 -6.938,-5.2377 -4.6419,0.9185 -2.9415,5.6845 -3.3263,9.1969 -0.6454,6.2554 -0.5213,12.6721 -1.1046,18.8903 -2.7181,2.8918 -3.0284,7.1738 -0.2979,10.165 2.8795,3.2518 0.7199,9.3334 5.0763,11.282 1.2163,4.4557 -3.5869,5.9947 -6.7146,7.5586 -4.0834,3.0532 -4.0709,8.5142 -4.8156,12.9948 -1.5515,3.0284 -5.97,2.9663 -6.1065,6.1685 0.5834,2.7057 7.6703,0.4716 4.2447,5.6348 -0.8067,3.4131 -3.8972,4.2819 -6.9752,4.6915 -4.4681,1.7997 -3.3387,5.8334 0.9557,6.7519 18.2324,9.7305 35.3975,21.2608 53.3817,31.4258 7.1862,3.9592 13.9877,8.9487 21.4346,12.2625 14.5338,3.5125 29.4772,4.282 44.2841,6.0444 7.087,-48.8764 14.1739,-97.7403 21.2609,-146.6167 -34.2309,-4.8777 -68.4741,-9.743 -102.7049,-14.6207 -1.2412,6.5905 -2.4823,13.1934 -3.7235,19.7839 z"
+       id="state_az"
+       class="state-svg" />
+  </g>
+</svg>

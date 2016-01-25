@@ -1,0 +1,97 @@
+$orange: #EA504E;
+$blue: #147FD7;
+
+div#htv-app {
+  div.state-top {
+    background-color: #EEF3F7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+    div {
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    svg.state-svg {
+      max-height: 350px;
+      max-width: 350px;
+    }
+  }
+
+  div.state-dates {
+    display: flex;
+    align-items: center;
+    border-left: solid 1px #EEF3F7;
+    border-right: solid 1px #EEF3F7;
+    padding-top: 50px;
+
+    div {
+      box-sizing: border-box;
+      width: 50%;
+
+      h4 {
+        font-family: jubilat;
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  div.state-info {
+    padding: 50px;
+    padding-top: 0px;
+    border-left: solid 1px #EEF3F7;
+    border-right: solid 1px #EEF3F7;
+
+    p {
+      font-size: 20px;
+    }
+
+    a {
+      color: #147FD7;
+      text-decoration: none;
+    }
+
+    a.big {
+      display: inline-block;
+      background-color: $blue;
+      padding: 15px;
+      margin-right: 15px;
+      box-sizing: border-box;
+      color: white;
+      font-family: freight-sans-pro;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: lighten($blue, 10%);
+      }
+    }
+  }
+
+  div.state-final {
+    background-color: #EEF3F7;
+    text-align: center;
+    padding: 50px;
+
+    blockquote {
+      font-family: jubilat;
+      color: $blue;
+      font-size: 30px;
+
+      cite {
+        display: block;
+        text-align: right;
+        font-family: freight-sans-pro;
+        text-transform: uppercase;
+        font-style: normal;
+        color: $orange;
+        padding-top: 15px;
+      }
+    }
+  }
+}

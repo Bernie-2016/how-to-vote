@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="38.873981mm"
+   height="60.035549mm"
+   viewBox="0 0 137.74245 212.72439"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="nv.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-98.057421"
+     inkscape:cy="-22.156048"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="3832"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(28.371157,-297.48179)">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill-opacity:1"
+       d="m -28.371157,380.5145 c 28.49672986,42.95609 56.99346,85.92459 85.49018,128.88068 4.5426,3.28904 3.95926,-4.30678 4.05855,-7.08695 0.45923,-6.73943 0.44682,-13.95049 1.34044,-20.40445 2.54435,-2.51953 5.28729,-2.4823 7.54617,-0.48405 3.25181,-0.19858 4.79083,7.32277 7.48412,1.57626 3.40074,-1.01774 3.30145,-4.51778 3.88479,-7.95575 C 90.741693,424.31457 100.05029,373.57649 109.3713,322.85083 71.243273,314.39862 33.115253,305.934 -5.0127771,297.48179 -12.794767,325.15936 -20.576757,352.83693 -28.358747,380.52692 Z"
+       id="state_nv"
+       class="state-svg" />
+  </g>
+</svg>

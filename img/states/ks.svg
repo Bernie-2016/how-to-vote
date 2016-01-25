@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="44.432915mm"
+   height="23.585482mm"
+   viewBox="0 0 157.43946 83.570606"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ks.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="78.719733"
+     inkscape:cy="41.785302"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="3832"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(205.14833,-490.57694)">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill-opacity:1"
+       d="m -205.14833,569.55114 c 31.10314,1.4521 62.19386,3.3635 93.32182,4.1578 21.372553,0.087 42.745093,0.7819 64.117643,0.2234 -0.31029,-15.7501 0.28546,-31.5499 -0.58334,-47.2629 -0.7571,-3.5124 -0.21099,-7.7819 -1.71278,-10.8476 -3.77309,-2.5195 -7.47171,-6.4415 -8.29086,-10.8848 -0.5337,-3.1153 5.33693,-5.6969 1.60108,-8.2412 -3.74827,0.6702 -5.02665,-4.1455 -8.89903,-3.016 -44.941923,-1.0178 -89.896253,-1.6508 -134.825763,-3.1029 -1.57626,26.3247 -3.15251,52.6494 -4.72877,78.9742 z"
+       id="state_ks"
+       class="state-svg" />
+  </g>
+</svg>

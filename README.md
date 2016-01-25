@@ -13,6 +13,7 @@ Information about how to vote for Bernie Sanders in each state.
 
 1. Clone the repository (`git clone git@github.com:Bernie-2016/how-to-vote.git`)
 2. Install dependencies: `npm install`
+3. Run `gulp svgpack` to generate the SVG JSON locally.
 3. Run development server: `gulp serve` and open [http://localhost:9010](http://localhost:9010)
 
 ## Contributing

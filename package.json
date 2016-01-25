@@ -1,13 +1,22 @@
 {
   "name": "how-to-vote",
-  "description": "Information about how to vote for Bernie Sanders in each state.",
   "version": "1.0.0",
-  "private": true,
-  "engines": {
-    "node": ">=0.10.28"
+  "description": "Information about how to vote for Bernie Sanders in each state.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bernie-2016/how-to-vote.git"
   },
+  "author": "Zach Schneider <zachschneider@berniesanders.com>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Bernie-2016/how-to-vote/issues"
+  },
+  "homepage": "https://github.com/Bernie-2016/how-to-vote#readme",
   "devDependencies": {
+    "cjsx-loader": "^2.1.0",
+    "coffee-loader": "^0.7.2",
     "coffee-script": "^1.10.0",
+    "datamaps": "^0.4.2",
     "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-coffee": "^2.3.1",
@@ -19,6 +28,14 @@
     "gulp-minify-css": "^0.4.4",
     "gulp-minify-html": "^1.0.5",
     "gulp-sass": "^2.1.1",
-    "gulp-uglify": "^0.2.1"
+    "gulp-uglify": "^0.2.1",
+    "history": "^1.17.0",
+    "jquery": "^2.2.0",
+    "json-loader": "^0.5.4",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.3",
+    "svgpack": "^0.2.2",
+    "webpack-stream": "^3.1.0"
   }
 }

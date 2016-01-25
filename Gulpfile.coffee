@@ -2,15 +2,19 @@ gulp           = require('gulp')
 del            = require('del')
 sass           = require('gulp-sass')
 minifycss      = require('gulp-minify-css')
-coffee         = require('gulp-coffee')
+webpack        = require('webpack-stream')
 uglify         = require('gulp-uglify')
 concat         = require('gulp-concat')
 copy           = require('gulp-copy')
 minifyHTML     = require('gulp-minify-html')
+svgpack        = require('svgpack')
 connect        = require('gulp-connect')
 
 gulp.task 'clean', ->
   del(['dist/**/*'])
+
+gulp.task 'svgpack', ['clean'], ->
+  svgpack('img/states/*.svg', dist: 'data')
 
 gulp.task 'scss', ['clean'], ->
   gulp.src('scss/**/*.scss')
@@ -25,15 +29,43 @@ gulp.task 'scssProd', ['clean'], ->
     .pipe(minifycss())
     .pipe(gulp.dest('dist'))
 
-gulp.task 'coffee', ['clean'], ->
-  gulp.src('coffee/**/*.coffee')
-    .pipe(coffee())
+gulp.task 'webpack', ['clean'], ->
+  gulp.src('coffee/router.coffee')
+    .pipe(webpack(
+      module:
+        loaders: [
+          {
+            test: /\.coffee$/
+            loaders: ['coffee', 'cjsx']
+          }
+          {
+            test: /\.json$/
+            loaders: ['json']
+          }
+        ]
+      resolve:
+        extensions: ['', '.js', '.json', '.coffee']
+    ))
     .pipe(concat('production.min.js'))
     .pipe(gulp.dest('dist'))
 
-gulp.task 'coffeeProd', ['clean'], ->
-  gulp.src('coffee/**/*.coffee')
-    .pipe(coffee())
+gulp.task 'webpackProd', ['clean'], ->
+  gulp.src('coffee/router.coffee')
+    .pipe(webpack(
+      module:
+        loaders: [
+          {
+            test: /\.coffee$/
+            loaders: ['coffee', 'cjsx']
+          }
+          {
+            test: /\.json$/
+            loaders: ['json']
+          }
+        ]
+      resolve:
+        extensions: ['', '.js', '.json', '.coffee']
+    ))
     .pipe(uglify())
     .pipe(concat('production.min.js'))
     .pipe(gulp.dest('dist'))
@@ -42,6 +74,7 @@ gulp.task 'copy', ['clean'], ->
   gulp.src([
     'index.html'
     'fonts/*'
+    'img/**/*'
   ]).pipe(copy('dist'))
 
 gulp.task 'minifyHTML', ['scssProd', 'coffeeProd'], ->
@@ -73,7 +106,7 @@ gulp.task 'connect', ->
 gulp.task 'default', [
   'clean'
   'scss'
-  'coffee'
+  'webpack'
   'copy'
 ]
 
@@ -86,6 +119,6 @@ gulp.task 'serve', [
 gulp.task 'build', [
   'clean'
   'scssProd'
-  'coffeeProd'
+  'webpackProd'
   'minifyHTML'
 ]
