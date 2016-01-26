@@ -1,0 +1,34 @@
+$orange: #EA504E;
+$blue: #147FD7;
+
+div#htv-app {
+  div#map-wrapper {
+    width: 100%;
+
+    div#map-container {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  select#state-select {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  div#htv-app {
+    select#state-select {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $blue;
+      color: white;
+      border: none;
+      outline: 0;
+      font-family: freight-sans-pro;
+      font-size: 40px;
+      width: 90%;
+    }
+  }
+}

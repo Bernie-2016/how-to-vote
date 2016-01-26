@@ -9,10 +9,14 @@ states  = require('states').states
 module.exports = React.createClass
   displayName: 'Map'
 
+  onChange: (e) ->
+    @props.history.pushState(null, "/#{e.target.value}")
+
   componentDidMount: ->
     map = new Datamap
       element: document.getElementById('map-container')
       scope: 'usa'
+      responsive: true
       fills: fills  
       data:  states
       done:  (datamap) =>
@@ -30,11 +34,20 @@ module.exports = React.createClass
             '</div>'
           ].join('')
 
+    $(window).on 'resize', ->
+      map.resize()
+
   render: ->
     <div>
       <p className='center'>
         Select your state to find out how to support Bernie in the primary or caucus.
       </p>
+
+      <select id='state-select' onChange={@onChange}>
+        {for code, state of states when state.fillKey isnt keys.UNAVAILABLE
+          <option key={code} value={code}>{state.name}</option>
+        }
+      </select>
 
       <div id='map-wrapper'>
         <div id='map-container'>

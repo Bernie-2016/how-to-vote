@@ -95,3 +95,26 @@ div#htv-app {
     }
   }
 }
+
+@media (max-width: 600px) {
+  div#htv-app {
+    div.state-dates {
+      display: block;
+
+      div {
+        width: 100%;
+      }
+    }
+
+    div.state-info {
+      a.big {
+        width: 300px;
+        margin-right: 0px;
+
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
