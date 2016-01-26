@@ -19,7 +19,7 @@ gulp.task 'clean', ->
 gulp.task 'svgpack', ['clean'], ->
   svgpack('img/states/*.svg', dist: 'data')
 
-gulp.task 'scss', ['clean'], ->
+gulp.task 'scss', ->
   gulp.src('scss/**/*.scss')
     .pipe(sass())
     .pipe(concat('production.min.css'))
@@ -32,7 +32,7 @@ gulp.task 'scssProd', ['clean'], ->
     .pipe(minifycss())
     .pipe(gulp.dest('dist'))
 
-gulp.task 'webpack', ['clean'], ->
+gulp.task 'webpack', ->
   gulp.src('coffee/router.coffee')
     .pipe(webpack(require('./webpack.config')))
     .pipe(concat('production.min.js'))
@@ -68,8 +68,8 @@ gulp.task 'watch', ->
   gulp.watch ['dist/production.min.js', 'dist/production.min.css'], (event) ->
     gulp.src(event.path).pipe connect.reload()
 
-  gulp.watch 'scss/**/*.scss', ['default']
-  gulp.watch 'coffee/**/*.coffee', ['default']
+  gulp.watch 'scss/**/*.scss', ['scss']
+  gulp.watch 'coffee/**/*.coffee', ['webpack']
 
 gulp.task 'connect', ->
   connect.server
