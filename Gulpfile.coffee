@@ -68,7 +68,7 @@ gulp.task 'watch', ->
   gulp.watch ['dist/production.min.js', 'dist/production.min.css'], (event) ->
     gulp.src(event.path).pipe connect.reload()
 
-  gulp.watch 'scss/**/*.scss', ['scss']
+  gulp.watch 'scss/**/*.scss', ['scss', 'webpack']
   gulp.watch 'coffee/**/*.coffee', ['webpack']
 
 gulp.task 'connect', ->
