@@ -4,7 +4,6 @@ del        = require('del')
 sass       = require('gulp-sass')
 minifycss  = require('gulp-minify-css')
 webpack    = require('webpack-stream')
-entities   = require('gulp-html-entities')
 uglify     = require('gulp-uglify')
 concat     = require('gulp-concat')
 copy       = require('gulp-copy')
@@ -36,14 +35,12 @@ gulp.task 'scssProd', ['clean'], ->
 gulp.task 'webpack', ['clean'], ->
   gulp.src('coffee/router.coffee')
     .pipe(webpack(require('./webpack.config')))
-    .pipe(entities('encode'))
     .pipe(concat('production.min.js'))
     .pipe(gulp.dest('dist'))
 
 gulp.task 'webpackProd', ['clean'], ->
   gulp.src('coffee/router.coffee')
     .pipe(webpack(require('./webpack.config')))
-    .pipe(entities('encode'))
     .pipe(uglify())
     .pipe(concat('production.min.js'))
     .pipe(gulp.dest('dist'))
