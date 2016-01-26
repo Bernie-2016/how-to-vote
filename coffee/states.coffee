@@ -186,9 +186,9 @@ states =
     fillKey: keys.UNAVAILABLE
 
 for key, state of states
-  state.svg = require("../data/data/#{key.toLowerCase()}")
+  state.svg = require("data/#{key.toLowerCase()}")
   try
-    state.component = require("./components/states/#{key.toLowerCase()}")
+    state.component = require("components/states/#{key.toLowerCase()}")
   
 
 module.exports =

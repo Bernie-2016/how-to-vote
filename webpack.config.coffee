@@ -1,3 +1,5 @@
+path = require('path')
+
 module.exports =
   module:
     loaders: [
@@ -11,4 +13,5 @@ module.exports =
       }
     ]
   resolve:
+    root: [path.resolve('./coffee'), path.resolve('./data')]
     extensions: ['', '.js', '.json', '.coffee']

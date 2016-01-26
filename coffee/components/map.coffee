@@ -1,10 +1,10 @@
 React   = require('react')
 $       = require('jquery')
 Datamap = require('datamaps/dist/datamaps.usa.min')
-keys    = require('../states').keys
-fills   = require('../states').fills
-label   = require('../states').label
-states  = require('../states').states
+keys    = require('states').keys
+fills   = require('states').fills
+label   = require('states').label
+states  = require('states').states
 
 module.exports = React.createClass
   displayName: 'Map'

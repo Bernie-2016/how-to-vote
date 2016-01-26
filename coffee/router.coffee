@@ -5,9 +5,9 @@ Route = require('react-router').Route
 createBrowserHistory = require('history/lib/createBrowserHistory')
 
 # Require route components.
-App = require('./components/app')
-Map = require('./components/map')
-State = require('./components/state')
+App = require('components/app')
+Map = require('components/map')
+State = require('components/state')
 
 # Define up and render routes.
 router = (

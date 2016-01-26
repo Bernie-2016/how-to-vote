@@ -1,4 +1,5 @@
 React = require('react')
+entity = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'Footer'
@@ -134,7 +135,7 @@ module.exports = React.createClass
           <img src='/img/billionaires.png' alt='(not the billionaires)' className='billionaires' />
           <p className='copy'>
             <span className='copyright'>
-              &copy; Bernie 2016
+              {entity('copy')} Bernie 2016
             </span>
             |
             <a href='https://berniesanders.com/privacy-policy'>Privacy Policy</a>

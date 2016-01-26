@@ -1,15 +1,15 @@
 React       = require('react')
-fills       = require('../states').fills
-label       = require('../states').label
-primaryType = require('../states').primaryType
-states      = require('../states').states
+entity      = require('utils/entity')
+fills       = require('states').fills
+label       = require('states').label
+primaryType = require('states').primaryType
+states      = require('states').states
 
 module.exports = React.createClass
   displayName: 'State'
 
   render: ->
     state = states[this.props.params.state.toUpperCase()]
-    console.log(state)
 
     return (
       <div>
@@ -41,7 +41,7 @@ module.exports = React.createClass
           <blockquote>
             When people vote, Democrats win
             <cite>
-              &mdash; Sen. Bernie Sanders
+              {entity('mdash')} Sen. Bernie Sanders
             </cite>
           </blockquote>
         </div>

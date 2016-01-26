@@ -56,6 +56,7 @@ gulp.task 'copyProd', ['clean'], ->
   gulp.src([
     'fonts/*'
     'img/*.png'
+    'img/favicon.ico'
   ]).pipe(copy('dist'))
 
 gulp.task 'minifyHTML', ['scssProd', 'webpackProd'], ->
