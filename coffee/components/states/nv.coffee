@@ -5,7 +5,7 @@ module.exports = React.createClass
 
   render: ->
     <div className='state-info'>
-      <p>Nevada has closed caucuses — Nevadans must register as a Democrat to vote for Bernie! However Nevadans may register/update registration to Democrat on the day of the caucus.</p>
+      <p>Nevada has closed caucuses &mdash; Nevadans must register as a Democrat to vote for Bernie! However Nevadans may register/update registration to Democrat on the day of the caucus.</p>
       <p className='center'>
         <a className='big' href={'https://nvsos.gov/sosvoterservices/Registration/step1.aspx'}>Register as a Democrat</a>
         <a className='big' href={'https://nvsos.gov/votersearch/'}>Check your registration status</a>
