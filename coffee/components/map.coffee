@@ -1,6 +1,6 @@
 React   = require('react')
 $       = require('jquery')
-Datamap = require('datamaps/dist/datamaps.usa.min')
+Datamap = require('datamaps/dist/datamaps.usa')
 keys    = require('states').keys
 fills   = require('states').fills
 label   = require('states').label

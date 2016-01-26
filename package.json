@@ -17,11 +17,12 @@
     "start": "npm run dev"
   },
   "homepage": "https://github.com/Bernie-2016/how-to-vote#readme",
-  "devDependencies": {
+  "dependencies": {
     "cjsx-loader": "^2.1.0",
     "coffee-loader": "^0.7.2",
     "coffee-script": "^1.10.0",
     "css-loader": "^0.23.1",
+    "d3": "^3.5.4",
     "datamaps": "^0.4.2",
     "file-loader": "^0.8.5",
     "gulp": "^3.9.0",

@@ -40,5 +40,7 @@ module.exports =
     ]
 
   resolve:
-    root: [path.resolve('./coffee'), path.resolve('./data'), path.resolve('./')]
+    alias:
+      d3: 'd3/d3.min.js'
+    root: [path.resolve('./coffee'), path.resolve('./data'), path.resolve('./'), path.resolve('./node_modules')]
     extensions: ['', '.js', '.json', '.coffee', '.scss']
