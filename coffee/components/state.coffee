@@ -26,16 +26,16 @@ module.exports = React.createClass
         </div>
         <div className='state-dates'>
           <div className='center'>
-            <h2 style={color: fills[state.fillKey]}>Registration Date</h2>
+            <h2 style={color: fills[state.fillKey]}>Registration Deadline</h2>
             <h4>{state.regDate}</h4>
           </div>
           <div className='center'>
-            <h2 style={color: fills[state.fillKey]}>{primaryType(state.fillKey)} Date</h2>
+            <h2 style={color: fills[state.fillKey]}>{primaryType(state.fillKey, state.label)} Date</h2>
             <h4>{state.date}</h4>
           </div>
         </div>
         {if state.component
-          <state.component />
+          <state.component state={state} />
         }
         <div className='state-final'>
           <blockquote>

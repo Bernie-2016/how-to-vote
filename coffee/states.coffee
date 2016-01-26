@@ -22,12 +22,13 @@ label = (key) ->
     when keys.CLOSED_CAUCUS  then 'Closed Caucus'
     when keys.UNAVAILABLE    then 'Coming Soon'
 
-primaryType = (key) ->
+primaryType = (key, label) ->
   switch key
     when keys.OPEN_PRIMARY   then 'Primary'
     when keys.CLOSED_PRIMARY then 'Primary'
     when keys.OPEN_CAUCUS    then 'Caucus'
     when keys.CLOSED_CAUCUS  then 'Caucus'
+    when keys.OTHER          then if label.indexOf('Primary') isnt -1 then 'Primary' else 'Caucus'
 
 states =
   AL:
@@ -76,6 +77,11 @@ states =
     name:    'Iowa'
     fillKey: keys.OTHER
     label:   'Semi-open Caucus'
+    regDate: 'Monday, February 1'
+    date:    'Monday, February 1'
+    office:
+      url:   'http://sos.iowa.gov/elections/voterinformation/index.html'
+      phone: '(515) 281-5204'
   KS:
     name:    'Kansas'
     fillKey: keys.UNAVAILABLE
@@ -117,10 +123,18 @@ states =
     fillKey: keys.CLOSED_CAUCUS
     regDate: 'Saturday, February 20'
     date:    'Saturday, February 20'
+    office:
+      url:   'http://www.nvsos.gov/index.aspx?page=3'
+      phone: '(775) 684-5705'
   NH:
     name:    'New Hampshire'
     fillKey: keys.OTHER
     label:   'Semi-open Primary'
+    regDate: 'Saturday, January 30'
+    date:    'Tuesday, February 9'
+    office:
+      url:   'http://sos.nh.gov/Elections.aspx'
+      phone: '(603) 271-3242'
   NJ:
     name:    'New Jersey'
     fillKey: keys.UNAVAILABLE
@@ -154,6 +168,11 @@ states =
   SC:
     name:    'South Carolina'
     fillKey: keys.OPEN_PRIMARY
+    regDate: 'Wednesday, January 27'
+    date:    'Saturday, February 27'
+    office:
+      url:   'http://www.scvotes.org/'
+      phone: '(803) 734-9060'
   SD:
     name:    'South Dakota'
     fillKey: keys.UNAVAILABLE
