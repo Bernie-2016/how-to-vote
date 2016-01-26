@@ -1,0 +1,54 @@
+$orange: #EA504E;
+$blue: #147FD7;
+
+div.menu {
+  width: 80%;
+  height: 75px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    float: left;
+    height: 75px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+
+    a {
+      margin: 25px;
+      margin-left: 15px;
+      margin-right: 15px;
+      font-family: freight-sans-pro;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: #364350;
+      font-weight: 500;
+
+      &:hover {
+        color: #147FD7;
+        text-decoration: none;
+      }
+
+      &.contribute {
+        text-align: center;
+        background-color: $orange;
+        color: white;
+        border-radius: 3px;
+        padding: 10px;
+        margin: 15px;
+        margin-left: 5px;
+        margin-right: 0px;
+        font-weight: 600;
+
+        &:hover {
+          background-color: lighten($orange, 10%);
+        }
+      }
+    }
+  }
+}
