@@ -9,8 +9,8 @@ keys =
 fills = {}
 fills[keys.OPEN_PRIMARY]   = '#147FD7'
 fills[keys.OPEN_CAUCUS]    = '#EA504E'
-fills[keys.CLOSED_PRIMARY] = '#004CA4'
-fills[keys.CLOSED_CAUCUS]  = '#B71D1B'
+fills[keys.CLOSED_PRIMARY] = '#001971'
+fills[keys.CLOSED_CAUCUS]  = '#840000'
 fills[keys.OTHER]          = '#20C361'
 fills['defaultFill']       = '#999999'
 
