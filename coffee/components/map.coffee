@@ -10,6 +10,7 @@ module.exports = React.createClass
   displayName: 'Map'
 
   onChange: (e) ->
+    return if e.target.value is 'none'
     @props.history.pushState(null, "/#{e.target.value}")
 
   componentDidMount: ->
@@ -44,6 +45,7 @@ module.exports = React.createClass
       </p>
 
       <select id='state-select' onChange={@onChange}>
+        <option key='select' value='none'>Select State...</option>
         {for code, state of states when state.fillKey isnt keys.UNAVAILABLE
           <option key={code} value={code}>{state.name}</option>
         }
