@@ -1,5 +1,5 @@
 path = require('path')
-CopyWebpackPlugin = require('copy-webpack-plugin');
+HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports =
   entry: './coffee/router'
@@ -24,26 +24,19 @@ module.exports =
         loaders: ['style', 'css', 'resolve-url', 'sass']
       }
       {
-        test: /\.(ttf|otf)$/
+        test: /\.(ttf|otf|png|ico)$/
         loaders: ['file-loader']
       }
     ]
 
    plugins: [
-      new CopyWebpackPlugin([
-        {
-          from: 'index.html'
-          to: 'index.html'
-        }
-        {
-          from: 'img/*.png'
-          to: 'dist/img'
-        }
-        {
-          from: 'img/*.ico'
-          to: 'dist/img'
-        }
-      ])
+      new HtmlWebpackPlugin(
+        template: 'index.html'
+        title: 'Bernie Sanders'
+        favicon: './img/favicon.ico'
+        minify:
+          collapseWhitespace: true
+      )
     ]
 
   resolve:

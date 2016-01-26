@@ -132,7 +132,7 @@ module.exports = React.createClass
           <p className='site-title'>
             Paid for by Bernie 2016
           </p>
-          <img src='/img/billionaires.png' alt='(not the billionaires)' className='billionaires' />
+          <img src={require('img/billionaires.png')} alt='(not the billionaires)' className='billionaires' />
           <p className='copy'>
             <span className='copyright'>
               {entity('copy')} Bernie 2016
