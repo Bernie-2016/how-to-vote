@@ -6,7 +6,7 @@ module.exports = React.createClass
   render: ->
     ###
     <div className='menu'>
-      <img src='/img/logo.png' alt='Bernie 2016' />
+      <img src={require('img/logo.png')} alt='Bernie 2016' />
       <nav>
         <a href='https://berniesanders.com/about/'>Meet Bernie</a>
         <a href='https://berniesanders.com/issues/'>Issues</a>
