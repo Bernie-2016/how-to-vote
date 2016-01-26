@@ -34,41 +34,13 @@ gulp.task 'scssProd', ['clean'], ->
 
 gulp.task 'webpack', ['clean'], ->
   gulp.src('coffee/router.coffee')
-    .pipe(webpack(
-      module:
-        loaders: [
-          {
-            test: /\.coffee$/
-            loaders: ['coffee', 'cjsx']
-          }
-          {
-            test: /\.json$/
-            loaders: ['json']
-          }
-        ]
-      resolve:
-        extensions: ['', '.js', '.json', '.coffee']
-    ))
+    .pipe(webpack(require('./webpack.config')))
     .pipe(concat('production.min.js'))
     .pipe(gulp.dest('dist'))
 
 gulp.task 'webpackProd', ['clean'], ->
   gulp.src('coffee/router.coffee')
-    .pipe(webpack(
-      module:
-        loaders: [
-          {
-            test: /\.coffee$/
-            loaders: ['coffee', 'cjsx']
-          }
-          {
-            test: /\.json$/
-            loaders: ['json']
-          }
-        ]
-      resolve:
-        extensions: ['', '.js', '.json', '.coffee']
-    ))
+    .pipe(webpack(require('./webpack.config')))
     .pipe(uglify())
     .pipe(concat('production.min.js'))
     .pipe(gulp.dest('dist'))
