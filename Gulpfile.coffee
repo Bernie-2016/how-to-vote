@@ -65,10 +65,7 @@ gulp.task 'minifyHTML', ['scssProd', 'webpackProd'], ->
     .pipe(gulp.dest('dist'))
 
 gulp.task 'watch', ->
-  gulp.watch [
-    'scss/**/*.scss'
-    'coffee/**/*.coffee'
-  ], (event) ->
+  gulp.watch ['dist/production.min.js', 'dist/production.min.css'], (event) ->
     gulp.src(event.path).pipe connect.reload()
 
   gulp.watch 'scss/**/*.scss', ['default']
