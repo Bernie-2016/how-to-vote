@@ -1,0 +1,182 @@
+$orange: #EA504E;
+$blue: #147FD7;
+
+div.ready-form {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $blue;
+  border-radius: 5px;
+
+  h1 {
+    color: white;
+    font-family: jubilat;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+
+  hr {
+    height: 2px;
+    width: 70%;
+    border: none;
+    background-color: #8ABFEB;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  form {
+    padding: 15px;
+    padding-top: 25px;
+    text-align: center;
+
+    input {
+      height: 45px;
+      padding-left: 25px;
+      font-family: freight-sans-pro;
+      font-weight: 300;
+      border-radius: 3px;
+      font-size: 20px;
+      outline: 0;
+      margin-right: 25px;
+      margin-bottom: 25px;
+      border: none;
+
+      &[type=email] {
+        width: 35%;
+      }
+
+      &[type=text] {
+        width: 15%;
+      }
+
+      &[type=submit] {
+        padding-left: 0px;
+        width: 20%;
+        text-align: center;
+        background-color: $orange;
+        color: white;
+        border-radius: 3px;
+        font-family: freight-sans-pro;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: darken($orange, 10%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+div.footer-offset {
+  text-align: center;
+  width: 80%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  footer {
+    font-family: 'Freight Sans Book';
+    font-size: 16px;
+    color: #364350;
+
+    nav {
+      display: flex;
+      justify-content: center;
+
+      div.navgroup {
+        width: 12%;
+        margin-left: 4%;
+
+        h3 {
+          color: $orange;
+          font-size: 20px;
+          text-transform: uppercase;
+          text-align: left;
+          margin-bottom: 15px;
+          font-weight: 500;
+          letter-spacing: 2px;
+        }
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            text-align: left;
+            margin-bottom: 15px;
+
+            a {
+              font-family: freight-sans-pro;
+              font-size: 18px;
+              text-decoration: none;
+              color: #364350;
+
+              &:hover {
+                color: #147FD7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  p.address {
+    text-align: center;
+    font-family: freight-sans-pro;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: #364350;
+  }
+
+  p.site-title {
+    font-family: freight-sans-pro;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid #364350;
+    max-width: 300px;
+    padding: 15px;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+
+  img.billionaires {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.copy {
+    font-family: freight-sans-pro;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #364350;
+    letter-spacing: 2px;
+
+    span {
+      margin-right: 3px;
+    }
+
+    a {
+      margin-left: 3px;
+      font-family: freight-sans-pro;
+      text-decoration: none;
+      color: #364350;
+
+      &:hover {
+        color: #147FD7;
+      }
+    }
+  }
+}

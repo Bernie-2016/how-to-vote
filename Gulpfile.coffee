@@ -1,14 +1,17 @@
-gulp           = require('gulp')
-del            = require('del')
-sass           = require('gulp-sass')
-minifycss      = require('gulp-minify-css')
-webpack        = require('webpack-stream')
-uglify         = require('gulp-uglify')
-concat         = require('gulp-concat')
-copy           = require('gulp-copy')
-minifyHTML     = require('gulp-minify-html')
-svgpack        = require('svgpack')
-connect        = require('gulp-connect')
+fs         = require('fs')
+gulp       = require('gulp')
+del        = require('del')
+sass       = require('gulp-sass')
+minifycss  = require('gulp-minify-css')
+webpack    = require('webpack-stream')
+uglify     = require('gulp-uglify')
+concat     = require('gulp-concat')
+copy       = require('gulp-copy')
+minifyHTML = require('gulp-minify-html')
+awsConfig  = JSON.parse(fs.readFileSync('aws_credentials.json'))
+s3         = require('gulp-s3-upload')(awsConfig)
+svgpack    = require('svgpack')
+connect    = require('gulp-connect')
 
 gulp.task 'clean', ->
   del(['dist/**/*'])
@@ -77,9 +80,14 @@ gulp.task 'copy', ['clean'], ->
     'img/**/*'
   ]).pipe(copy('dist'))
 
-gulp.task 'minifyHTML', ['scssProd', 'coffeeProd'], ->
+gulp.task 'copyProd', ['clean'], ->
+  gulp.src([
+    'fonts/*'
+    'img/*.png'
+  ]).pipe(copy('dist'))
+
+gulp.task 'minifyHTML', ['scssProd', 'webpackProd'], ->
   gulp.src('index.html')
-    .pipe(inline())
     .pipe(minifyHTML())
     .pipe(gulp.dest('dist'))
 
@@ -103,6 +111,10 @@ gulp.task 'connect', ->
     connect:
       redirect: false
 
+gulp.task 's3', ['build'], ->
+  gulp.src('dist/**/*')
+    .pipe(s3(Bucket: 'vote.berniesanders.com', ACL: 'public-read'))
+
 gulp.task 'default', [
   'clean'
   'scss'
@@ -120,5 +132,11 @@ gulp.task 'build', [
   'clean'
   'scssProd'
   'webpackProd'
+  'copyProd'
   'minifyHTML'
+]
+
+gulp.task 'deploy', [
+  'build'
+  's3'
 ]
