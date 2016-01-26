@@ -2,6 +2,8 @@ React  = require('react')
 Menu   = require('components/menu')
 Footer = require('components/footer')
 
+require('scss/app')
+
 module.exports = React.createClass
   displayName: 'App'
 

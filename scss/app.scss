@@ -1,45 +1,6 @@
-$orange: #EA504E;
-$blue: #147FD7;
-
-div#htv-app {
-  max-width: 1000px;
-  padding-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: freight-sans-pro;
-
-  ::selection {
-    background: $blue;
-    color: white;
-    text-shadow: none!important;
-  }
-
-  .center {
-    text-align: center;
-  }
-
-  h1 {
-    color: $blue;
-    font-family: jubilat;
-    font-size: 40px;
-    font-weight: 400;
-  }
-
-  h2 {
-    color: $orange;
-    text-transform: uppercase;
-    font-family: freight-sans-pro;
-    font-size: 32px;
-  }
-
-  h3 {
-    font-family: freight-sans-pro;
-    font-size: 24px;
-  }
-
-  p {
-    font-family: freight-sans-pro;
-    font-size: 24px;
-    font-weight: 300;
-  }
-}
+@import 'common';
+@import 'fonts';
+@import 'footer';
+@import 'map';
+@import 'menu';
+@import 'state';
