@@ -21,11 +21,18 @@ module.exports = React.createClass
       fills: fills  
       data:  states
       done:  (datamap) =>
+        datamap.svg.selectAll('.datamaps-subunit').on 'mouseenter', (geography) ->
+          return if states[geography.id].fillKey is keys.UNAVAILABLE
+          $(@).css(cursor: 'pointer', opacity: 0.6)
+
+        datamap.svg.selectAll('.datamaps-subunit').on 'mouseleave', (geography) ->
+          $(@).css(cursor: 'normal', opacity: 1)
+          
         datamap.svg.selectAll('.datamaps-subunit').on 'click', (geography) =>
           return if states[geography.id].fillKey is keys.UNAVAILABLE
           @props.history.pushState(null, "/#{geography.id}")
       geographyConfig:
-        highlightFillColor: '#FFFFFF'
+        highlightOnHover: false
         popupTemplate: (geo, data) ->
           [
             '<div class="hoverinfo"><strong>'
