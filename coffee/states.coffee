@@ -33,22 +33,42 @@ primaryType = (key, label) ->
 states =
   AL:
     name:    'Alabama'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: 'Monday, February 15'
+    date:    'Tuesday, March 1'
+    office:
+      url:   'http://www.alabamavotes.gov/'
+      phone: '(334) 242-7210'
   AK:
     name:    'Alaska'
     fillKey: keys.UNAVAILABLE
   AZ:
     name:    'Arizona'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_PRIMARY
+    regDate: 'Monday, February 22'
+    date:    'Tuesday, March 22'
+    office:
+      url:   'http://www.azsos.gov/elections'
+      phone: '(602) 542-2228'
   AR:
     name:    'Arkansas'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: 'Monday, February 1'
+    date:    'Tuesday, March 1'
+    office:
+      url:   'http://www.sos.arkansas.gov/elections/Pages/default.aspx'
+      phone: '(501) 682-1010'
   CA:
     name:    'California'
     fillKey: keys.UNAVAILABLE
   CO:
     name:    'Colorado'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_CAUCUS
+    regDate: 'Monday, January 4'
+    date:    'Tuesday, March 1'
+    office:
+      url:   'http://www.sos.state.co.us/pubs/elections/main.html'
+      phone: '(303) 894-2200'
   CT:
     name:    'Connecticut'
     fillKey: keys.UNAVAILABLE
@@ -93,19 +113,35 @@ states =
     fillKey: keys.UNAVAILABLE
   ME:
     name:    'Maine'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_CAUCUS
+    regDate: 'Friday, February 19'
+    date:    'Sunday, March 6'
+    office:
+      url:   'http://www.maine.gov/sos/cec/elec/'
+      phone: '(207) 624-7736'
   MD:
     name:    'Maryland'
     fillKey: keys.UNAVAILABLE
   MA:
     name:    'Massachusetts'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OTHER
+    label:   'Semi-closed Primary'
+    regDate: 'Wednesday, February 10'
+    date:    'Tuesday, March 1'
+    office:
+      url:   'http://www.sec.state.ma.us/ele/'
+      phone: '(617) 727-2828'
   MI:
     name:    'Michigan'
     fillKey: keys.UNAVAILABLE
   MN:
     name:    'Minnesota'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_CAUCUS
+    regDate: 'Tuesday, March 1'
+    date:    'Tuesday, March 1'
+    office:
+      url:   'http://mnvotesinfo.sos.state.mn.us/'
+      phone: '(651) 215-1440'
   MS:
     name:    'Mississippi'
     fillKey: keys.UNAVAILABLE
@@ -181,7 +217,12 @@ states =
     fillKey: keys.UNAVAILABLE
   TX:
     name:    'Texas'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: 'Monday, February 1'
+    date:    'Tuesday, March 1'
+    office:
+      url:   'http://www.sos.state.tx.us/elections/'
+      phone: '(512) 463-5650'
   UT:
     name:    'Utah'
     fillKey: keys.UNAVAILABLE
@@ -190,7 +231,12 @@ states =
     fillKey: keys.UNAVAILABLE
   VA:
     name:    'Virginia'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: 'Monday, February 8'
+    date:    'Tuesday, March 1'
+    office:
+      url:   'http://elections.virginia.gov/'
+      phone: '(804) 864-8901'
   WA:
     name:    'Washington'
     fillKey: keys.UNAVAILABLE

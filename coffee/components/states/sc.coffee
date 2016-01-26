@@ -3,7 +3,7 @@ Generic = require('components/states/generic')
 entity  = require('utils/entity')
 
 module.exports = React.createClass
-  displayName: 'New Hampshire'
+  displayName: 'South Carolina'
 
   render: ->
     <div className='state-info'>
