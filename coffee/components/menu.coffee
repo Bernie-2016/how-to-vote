@@ -28,11 +28,11 @@ module.exports = React.createClass
         <button type="button" className="expand">Menu<span className="bar"></span><span className="bar"></span><span className="bar"></span></button>
         <ul id="menu-main-menu" className="menu">
           <li><a href="https://berniesanders.com/about/">Meet Bernie</a></li>
-          <li><a href="/issues">Issues</a></li>
+          <li><a href="https://berniesanders.com/issues">Issues</a></li>
           <li><a href="http://map.berniesanders.com">Events</a></li>
           <li><a href="https://go.berniesanders.com/page/s/volunteer-for-bernie?source=web_main_nav">Volunteer</a></li>
           <li><a href="https://berniesanders.com/news/">News</a></li>
-          <li><a href="/daily">Democracy Daily</a></li>
+          <li><a href="https://berniesanders.com/daily">Democracy Daily</a></li>
           <li><a href="#more">More…</a></li>
           <li><a href="https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=homepage_main_nav">Contribute</a></li>
         </ul>
@@ -45,9 +45,9 @@ module.exports = React.createClass
             <ul id="menu-learn" className="menu">
               <li><a href="https://berniesanders.com/">Home</a></li>
               <li><a href="https://berniesanders.com/about/">Meet Bernie</a></li>
-              <li><a href="/issues">Issues</a></li>
+              <li><a href="https://berniesanders.com/issues">Issues</a></li>
               <li><a href="https://berniesanders.com/news/">News</a></li>
-              <li><a href="/daily">Democracy Daily</a></li>
+              <li><a href="https://berniesanders.com/daily">Democracy Daily</a></li>
               <li><a href="https://berniesanders.com/es/">En Español</a></li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ module.exports = React.createClass
           <div className="navgroup">
             <h3>Media</h3>
             <ul id="menu-media" className="menu">
-              <li><a href="/press-release">Press Releases</a></li>
+              <li><a href="https://berniesanders.com/press-release">Press Releases</a></li>
               <li><a href="https://go.berniesanders.com/page/s/press-list?source=web_full_nav">Event Registration</a></li>
               <li><a href="https://berniesanders.com/media-kit/">Media Kit</a></li>
             </ul>
