@@ -14,7 +14,8 @@
   "scripts": {
     "webpack": "webpack --progress --colors --optimize-minimize",
     "dev": "webpack-dev-server --progress --colors",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "deploy": "coffee deploy.coffee"
   },
   "homepage": "https://github.com/Bernie-2016/how-to-vote#readme",
   "dependencies": {
@@ -29,8 +30,6 @@
     "d3": "^3.5.4",
     "datamaps": "^0.4.2",
     "file-loader": "^0.8.5",
-    "gulp": "^3.9.0",
-    "gulp-s3-upload": "^1.5.1",
     "history": "^1.17.0",
     "html-webpack-plugin": "^2.7.2",
     "jquery": "^2.2.0",
@@ -41,7 +40,6 @@
     "react-router": "^1.0.3",
     "resolve-url-loader": "^1.4.3",
     "sass-loader": "^3.1.2",
-    "static-site-generator-webpack-plugin": "^2.0.1",
     "style-loader": "^0.13.0",
     "svg-react-loader": "^0.3.2",
     "webpack": "^1.12.12",

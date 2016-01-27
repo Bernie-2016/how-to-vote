@@ -13,13 +13,12 @@ Information about how to vote for Bernie Sanders in each state.
 
 1. Clone the repository (`git clone git@github.com:Bernie-2016/how-to-vote.git`)
 2. Install dependencies: `npm install`
-3. Run `gulp svgpack` to generate the SVG JSON locally.
-4. Run development server: `npm start` and open [http://localhost:8080](http://localhost:8080)
+3. Run development server: `npm start` and open [http://localhost:8080](http://localhost:8080)
 
 ### Deployment
-1. Add valid IAM credentials in aws_credentials.json.
+1. Add valid IAM credentials in `aws_credentials.json`.
 2. Run `npm run webpack` to generate production assets.
-3. Run `gulp s3` to deploy.
+3. Run `npm run deploy` to deploy.
 
 ## Contributing
 

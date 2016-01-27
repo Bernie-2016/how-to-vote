@@ -1,4 +1,4 @@
-path = require('path')
+path              = require('path')
 HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports =
