@@ -25,7 +25,11 @@ module.exports =
       }
       {
         test: /\.(ttf|otf|png|ico)$/
-        loaders: ['file-loader']
+        loaders: ['file']
+      }
+      {
+        test: /\.svg$/
+        loaders: ['babel?presets[]=react,presets[]=es2015', 'svg-react']
       }
     ]
 
@@ -43,4 +47,4 @@ module.exports =
     alias:
       d3: 'd3/d3.min.js'
     root: [path.resolve('./coffee'), path.resolve('./data'), path.resolve('./'), path.resolve('./node_modules')]
-    extensions: ['', '.js', '.json', '.coffee', '.scss']
+    extensions: ['', '.js', '.json', '.coffee', '.scss', '.svg']

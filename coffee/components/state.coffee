@@ -9,7 +9,8 @@ module.exports = React.createClass
   displayName: 'State'
 
   render: ->
-    state = states[this.props.params.state.toUpperCase()]
+    state = states[@props.params.state.toUpperCase()]
+    StateSvg = require("img/states/#{@props.params.state.toLowerCase()}")
 
     return (
       <div>
@@ -19,9 +20,7 @@ module.exports = React.createClass
             <h3 className='center'>{label(state.fillKey)}</h3>
           </div>
           <div className='center'>
-            <svg className='state-svg' xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox={state.svg.viewBox} fill={fills[state.fillKey]}>
-              <path d={state.svg.path[0].d} />
-            </svg>
+            <StateSvg className='state-svg' fill={fills[state.fillKey]} />
           </div>
         </div>
         <div className='state-dates'>
