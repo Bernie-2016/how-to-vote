@@ -1,6 +1,7 @@
 React  = require('react')
 Menu   = require('components/menu')
 Footer = require('components/footer')
+window.$ = require('jquery')
 
 require('scss/app')
 

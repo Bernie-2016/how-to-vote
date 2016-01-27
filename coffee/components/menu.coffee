@@ -34,7 +34,7 @@ module.exports = React.createClass
           <li><a href="https://berniesanders.com/news/">News</a></li>
           <li><a href="https://berniesanders.com/daily">Democracy Daily</a></li>
           <li><a href="#more">More…</a></li>
-          <li><a href="https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=homepage_main_nav">Contribute</a></li>
+          <li className="btn"><a href="https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=homepage_main_nav">Contribute</a></li>
         </ul>
       </nav>
       <nav className="full-nav clearfix">

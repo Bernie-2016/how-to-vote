@@ -23,7 +23,7 @@ div.menu {
       margin: 25px;
       margin-left: 15px;
       margin-right: 15px;
-      font-family: freight-sans-pro;
+      font-family: 'freight-sans-pro';
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 2px;
@@ -61,8 +61,8 @@ $lightgray: #EFF3F7;
 $text: #364350;
 $blue: #147FD7;
 $darkblue: #0D63AA;
-$red: #ff0000;
-$redhover: #ff0000;
+$red: #F55B5B;
+$redhover: #EC3E3E;
 
 // Breakpoints
 $phoneonly: (max-width 480px);
@@ -128,14 +128,18 @@ header{
       float: left;
       display: inline-block;
       position: relative;
-      background-color: rgba(0,7,16,0.25);
-      color: $white;
       border: 0;
       border-radius: 3px;
       padding: 0.8rem 2.8rem 0.8rem 0.8rem;
-      margin-top: -.4rem;
+      margin-top: -.55rem;
       font-weight: 500;
       font-size: 1.1rem;
+      line-height: 1.2;
+      letter-spacing: 0.1em;
+      font-family: 'Freight Sans Medium';
+      text-transform: uppercase;
+      color: $text;
+      background-color: $white;
       @media (min-width: 600px) {
         margin-right: 1rem;
       }
@@ -146,7 +150,7 @@ header{
         display: block;
         height: 2px;
         width: 20px;
-        background-color:$white;
+        background-color:$text;
         position: absolute;
         top: 15px;
         right: 0.8rem;
@@ -173,7 +177,7 @@ header{
           color: $white;
           padding: 0.7rem;
           border-radius: 3px;
-          font-family: freight-sans-pro;
+          font-family: 'Freight Sans Medium';
           border-radius: 3px;
           font-style: normal;
           text-transform: uppercase;
@@ -260,7 +264,6 @@ header{
       background-color: #0B73C8;
       border: 0;
       border-radius: 3px;
-      font-family: freight-sans-pro;
       font-weight: 500;
       font-size: 1.1rem;
       position: absolute;
@@ -357,14 +360,7 @@ header{
 
   nav{
     button.expand{
-      color: $text;
-      background-color: $white;
-      @media (min-width: 980px) {
-        display: none;
-      }
-      .bar{
-        background-color:$text;
-      }
+
     }
     ul{
       li{
