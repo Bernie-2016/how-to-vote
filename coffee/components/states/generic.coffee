@@ -31,6 +31,6 @@ module.exports = React.createClass
       </p>
       <p>
         <a href={@props.office.url}>Official {@props.state} Elections Website</a><br />
-        Phone: {@props.office.phone}
+        Phone: <a href={"tel:+1#{@props.office.phone.replace(/\D/g,'')}"}>{@props.office.phone}</a>
       </p>
     </div>
