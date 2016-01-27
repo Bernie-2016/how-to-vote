@@ -98,6 +98,15 @@ div#htv-app {
 
 @media (max-width: 600px) {
   div#htv-app {
+    div.state-top {
+      display: block;
+
+      div {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
     div.state-dates {
       display: block;
 
@@ -107,8 +116,10 @@ div#htv-app {
     }
 
     div.state-info {
+      text-align: center;
+
       a.big {
-        width: 300px;
+        width: 100%;
         margin-right: 0px;
 
         &:not(:last-child) {

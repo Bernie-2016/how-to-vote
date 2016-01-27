@@ -46,7 +46,7 @@ module.exports = React.createClass
       map.resize()
 
   render: ->
-    <div>
+    <div id='map'>
       <p className='center'>
         Select your state to find out how to support Bernie in the primary or caucus.
       </p>
