@@ -8,7 +8,7 @@ module.exports = React.createClass
   render: ->
     <div className='state-info'>
       <p>
-        Iowa has semi-open caucuses {entity('mdash')} Iowans registered as a Republican cannot vote for Bernie Sanders! However, Iowans may change party affiliation at primary ballots.
+        Iowa has semi-open caucuses {entity('mdash')} Iowans registered as a Republican cannot vote for Bernie Sanders! However, Iowans may change party affiliation on caucus day.
       </p>
       <p className='center'>
         <a className='big' href={'https://mymvd.iowadot.gov/VoterRegistration'}>Register as a Democrat or Undeclared</a>
