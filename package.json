@@ -15,7 +15,8 @@
     "webpack": "webpack --progress --colors --optimize-minimize",
     "dev": "webpack-dev-server --progress --colors",
     "start": "npm run dev",
-    "deploy": "coffee deploy.coffee"
+    "deploy": "coffee deploy.coffee",
+    "lint": "coffeelint ./coffee"
   },
   "homepage": "https://github.com/Bernie-2016/how-to-vote#readme",
   "dependencies": {
@@ -25,7 +26,9 @@
     "babel-preset-react": "^6.3.13",
     "cjsx-loader": "^2.1.0",
     "coffee-loader": "^0.7.2",
+    "coffee-react-transform": "^3.3.0",
     "coffee-script": "^1.10.0",
+    "coffeelint": "^1.14.2",
     "css-loader": "^0.23.1",
     "d3": "^3.5.4",
     "datamaps": "^0.4.2",

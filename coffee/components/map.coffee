@@ -18,7 +18,7 @@ module.exports = React.createClass
       element: document.getElementById('map-container')
       scope: 'usa'
       responsive: true
-      fills: fills  
+      fills: fills
       data:  states
       done:  (datamap) =>
         datamap.svg.selectAll('.datamaps-subunit').on 'mouseenter', (geography) ->
