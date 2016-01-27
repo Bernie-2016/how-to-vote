@@ -4,20 +4,6 @@ module.exports = React.createClass
   displayName: 'Menu'
 
   render: ->
-    ###
-    <div className='menu'>
-      <img src={require('img/logo.png')} alt='Bernie 2016' />
-      <nav>
-        <a href='https://berniesanders.com/about/'>Meet Bernie</a>
-        <a href='https://berniesanders.com/issues/'>Issues</a>
-        <a href='http://map.berniesanders.com/'>Events</a>
-        <a href='https://go.berniesanders.com/page/s/volunteer-for-bernie?source=web_main_nav'>Volunteer</a>
-        <a href='https://berniesanders.com/news/'>News</a>
-        <a href='https://berniesanders.com/daily/'>Democracy Daily</a>
-        <a href='https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=homepage_main_nav' className='contribute'>Contribute</a>
-      </nav>
-    </div>
-    ###
     <header role="banner" className="clearfix">
       <a className="logo sanders-logo" href="https://berniesanders.com/?nosplash=true/" title="Home">
         <h1>
@@ -33,7 +19,7 @@ module.exports = React.createClass
           <li><a href="https://go.berniesanders.com/page/s/volunteer-for-bernie?source=web_main_nav">Volunteer</a></li>
           <li><a href="https://berniesanders.com/news/">News</a></li>
           <li><a href="https://berniesanders.com/daily">Democracy Daily</a></li>
-          <li><a href="#more">More…</a></li>
+          <li className="expand"><a href="#more">More…</a></li>
           <li className="btn"><a href="https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=homepage_main_nav">Contribute</a></li>
         </ul>
       </nav>
