@@ -1,78 +1,6 @@
+/*
 $orange: #EA504E;
 $blue: #147FD7;
-
-div.ready-form {
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $blue;
-  border-radius: 5px;
-
-  h1 {
-    color: white;
-    font-family: jubilat;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 400;
-    padding: 15px;
-    margin-bottom: 0px;
-  }
-
-  hr {
-    height: 2px;
-    width: 70%;
-    border: none;
-    background-color: #8ABFEB;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  form {
-    padding: 15px;
-    padding-top: 25px;
-    text-align: center;
-
-    input {
-      height: 45px;
-      padding-left: 25px;
-      font-family: freight-sans-pro;
-      font-weight: 300;
-      border-radius: 3px;
-      font-size: 20px;
-      outline: 0;
-      margin-right: 25px;
-      margin-bottom: 25px;
-      border: none;
-
-      &[type=email] {
-        width: 35%;
-      }
-
-      &[type=text] {
-        width: 15%;
-      }
-
-      &[type=submit] {
-        padding-left: 0px;
-        width: 20%;
-        text-align: center;
-        background-color: $orange;
-        color: white;
-        border-radius: 3px;
-        font-family: freight-sans-pro;
-        font-size: 20px;
-        letter-spacing: 2px;
-        font-weight: 600;
-        text-transform: uppercase;
-
-        &:hover {
-          background-color: darken($orange, 10%);
-          cursor: pointer;
-        }
-      }
-    }
-  }
-}
 
 div.footer-offset {
   text-align: center;
@@ -178,5 +106,276 @@ div.footer-offset {
         color: #147FD7;
       }
     }
+  }
+}
+*/
+
+$lightgray: #EFF3F7;
+$red: #F55B5B;
+$text: #364350;
+$blue: #147FD7;
+
+body{
+  margin: 0;
+}
+
+.module-wrapper{
+  position: relative;
+  &:after {
+    display: block;
+    position: absolute;
+    height: 50%;
+    background-color: $lightgray;
+    width: 100%;
+    content: "";
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+div.ready-form {
+  max-width: 590px;
+  margin: 0 .5rem;
+  background-color: $blue;
+  border-radius: 5px;
+  @media (min-width: 600px){
+    margin: 0 auto;
+  }
+  @media (min-width: 980px){
+    max-width: 600px;
+  }
+  @media (min-width: 1200px){
+    max-width: 700px;
+  }
+  h1 {
+    color: white;
+    font-family: jubilat;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    padding: 15px;
+    margin-bottom: 0px;
+  }
+
+  hr {
+    height: 2px;
+    width: 70%;
+    border: none;
+    background-color: #8ABFEB;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  form {
+    padding: 15px;
+    padding-top: 25px;
+    text-align: center;
+
+    input {
+      height: 45px;
+      padding-left: 25px;
+      font-family: freight-sans-pro;
+      font-weight: 300;
+      border-radius: 3px;
+      font-size: 20px;
+      outline: 0;
+      margin-right: 25px;
+      margin-bottom: 25px;
+      border: none;
+
+      &[type=email] {
+        width: 35%;
+      }
+
+      &[type=text] {
+        width: 15%;
+      }
+
+      &[type=submit] {
+        padding-left: 0px;
+        width: 20%;
+        text-align: center;
+        background-color: $orange;
+        color: white;
+        border-radius: 3px;
+        font-family: freight-sans-pro;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: darken($orange, 10%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.footer-offset{
+  background-color: $lightgray;
+}
+footer{
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2.5rem 0 1rem;
+  nav{
+    float: none;
+    margin: 1rem 1rem 2rem;
+    @media (min-width: 768px) {
+      margin: 2rem;
+    }
+    div{
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      &:nth-child(2n){
+        margin-right: 0;
+      }
+      &:last-of-type{
+        width: 100%;
+        margin-right: 0;
+      }
+      @media (min-width: 600px) {
+        margin-right: 2.35765%;
+        width: 18.11388%;
+        &:first-of-type{
+          margin-left: 0;
+        }
+        &:nth-child(2n){
+          margin-right: 2.35765%;
+        }
+        &:last-of-type{
+          margin-right: 0;
+          width: 18.11388%;
+          clear: none;
+        }
+      }
+      @media (min-width: 768px) {
+        margin-right: 2.35765%;
+        width: 15.55494%;
+        &:first-of-type{
+          margin-left: 8.5298%;
+        }
+        &:last-of-type{
+          margin-right: 0;
+          width: 15.55494%;
+        }
+      }
+    }
+    h3{
+      color: $red;
+      font-size: 1rem;
+      font-family: 'Freight Sans Medium';
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      text-align: center;
+      padding-top: 1.25rem;
+      @media (min-width: 600px) {
+        text-align: left;
+        padding-top: 0.5rem;
+      }
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
+      }
+      @media (min-width: 980px) {
+        font-size: 1.3rem;
+      }
+    }
+    ul{
+      text-align: center;
+      float: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      @media (min-width: 600px) {
+        text-align: left;
+      }
+      li{
+        display: block;
+        margin: 0.5rem 0;
+        line-height: 1;
+        @media (min-width: 600px) {
+          margin: 0.75rem 0;
+        }
+        @media (min-width: 768px) {
+          margin: 0.75rem 0;
+        }
+        @media (min-width: 980px) {
+          margin: 0.75rem 0;
+        }
+        a{
+          color: $text;
+          text-shadow: none;
+          text-transform: none;
+          font-family: 'freight-sans-pro';
+          text-decoration: none;
+          font-weight: 300;
+          font-size: 1rem;
+          padding: 0;
+          letter-spacing: 0;
+          display: block;
+          @media (min-width: 768px) {
+            font-size: 1rem;
+          }
+          @media (min-width: 980px) {
+            font-size: 1.1rem;
+          }
+          &:hover{
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  p{
+    text-align: center;
+    clear: both;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-family: freight-sans-pro;
+    font-size: 0.9rem;
+    a, a:link, a:visited{
+      color: $text;
+      &:hover{
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+  .address{
+    padding: 0.5rem 0;
+    line-height: 1.5;
+  }
+  .site-title{
+    font-family: freight-sans-pro;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid $text;
+    font-size: 1rem;
+    max-width: 300px;
+    padding: 0.6rem 0;
+    margin: 2rem auto 0;
+  }
+  .billionaires{
+    display: block;
+    margin: 1rem auto 3rem;
+    width: 197px;
+    height: 28px;
+    background-size: 197px 28px;
+    text-indent: -999em;
+    background-image: url('https://s.bsd.net/bernie16/main/page/-/website/billionaires-2x.png');
+  }
+  .copy a{
+    text-decoration: none;
+    margin-left: 5px;
+  }
+  span.copyright {
+    margin-right: 5px;
+    color: $text;
   }
 }
