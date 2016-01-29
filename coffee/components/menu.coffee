@@ -3,6 +3,28 @@ React = require('react')
 module.exports = React.createClass
   displayName: 'Menu'
 
+  componentDidMount: ->
+    # Navigation Toggle
+    origHeight = $('header.clearfix').outerHeight()
+
+    $('.expand, .close').on 'click', (event) ->
+      event.preventDefault()
+
+      # Get nav height value
+      winWidth = $(window).width()
+      navHeight = if winWidth > 767 then '28rem' else '50rem'
+
+      if $('.full-nav').is(':visible')
+        $('header.clearfix').animate { height: origHeight }, 300, ->
+          # complete animate
+
+        $('.full-nav').fadeToggle 100
+      else
+        $('header.clearfix').animate { height: navHeight }, 300, ->
+          # complete animate
+
+        $('.full-nav').fadeToggle 100
+
   render: ->
     <header role="banner" className="clearfix">
       <a className="logo sanders-logo" href="https://berniesanders.com/?nosplash=true/" title="Home">
