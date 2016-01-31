@@ -1,6 +1,7 @@
 // Colors
 $white: #FFFFFF;
 $lightgray: #EFF3F7;
+$lightgray-border: #E2E4EC;
 $text: #364350;
 $blue: #147FD7;
 $darkblue: #0D63AA;
@@ -22,7 +23,7 @@ header{
   min-height: 5.75rem;
   position: relative;
   background-color: $white;
-  border-bottom: 1px solid $lightgray;
+  border-bottom: 1px solid $lightgray-border;
   background-image: none;
   z-index: 0;
   @media (min-width: 600px) {

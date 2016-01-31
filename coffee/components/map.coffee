@@ -27,7 +27,7 @@ module.exports = React.createClass
 
         datamap.svg.selectAll('.datamaps-subunit').on 'mouseleave', (geography) ->
           $(@).css(cursor: 'normal', opacity: 1)
-          
+
         datamap.svg.selectAll('.datamaps-subunit').on 'click', (geography) =>
           return if states[geography.id].fillKey is keys.UNAVAILABLE
           @props.history.pushState(null, "/#{geography.id}")
@@ -48,7 +48,7 @@ module.exports = React.createClass
   render: ->
     <div id='map'>
       <p className='center'>
-        Select your state to find out how to support Bernie in the primary or caucus.
+        Primary & caucus details for each state
       </p>
 
       <select id='state-select' onChange={@onChange}>

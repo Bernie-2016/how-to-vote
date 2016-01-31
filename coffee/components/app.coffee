@@ -11,7 +11,7 @@ module.exports = React.createClass
     <div>
       <Menu />
       <div id='htv-app'>
-        <h1 className='center'>Vote for Bernie</h1>
+        <h1 className='center'><span className='kern'>V</span>oting for Bernie</h1>
         {@props.children}
       </div>
       <Footer />

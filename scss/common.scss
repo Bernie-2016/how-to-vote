@@ -5,6 +5,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  background-color: #eef0f7;
 }
 
 div#htv-app {
@@ -27,8 +28,12 @@ div#htv-app {
   h1 {
     color: $blue;
     font-family: jubilat;
-    font-size: 40px;
+    font-size: 60px;
+    margin: 0;
     font-weight: 400;
+    .kern {
+      letter-spacing: -0.1em;
+    }
   }
 
   h2 {
@@ -47,5 +52,12 @@ div#htv-app {
     font-family: freight-sans-pro;
     font-size: 24px;
     font-weight: 300;
+    &.center{
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      color: #6F7488;
+      font-family: 'Freight Sans Medium';
+    }
   }
 }
