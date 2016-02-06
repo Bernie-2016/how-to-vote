@@ -5,7 +5,8 @@ module.exports = React.createClass
 
   render: ->
     # TODO: Figure out why this doesn't work at the top of the file.
-    import { fills, primaryType } from 'states'
+    fills = require('states').fills
+    primaryType = require('states').primaryType
 
     <div className='state-dates'>
       <div className='center'>
