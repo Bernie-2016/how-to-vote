@@ -1,7 +1,9 @@
-import React                          from 'react'
-import $                              from 'jquery'
-import Datamap                        from 'datamaps/dist/datamaps.usa'
-import { keys, fills, label, states } from 'states'
+import React                   from 'react'
+import $                       from 'jquery'
+import Datamap                 from 'datamaps/dist/datamaps.usa'
+import Header                  from 'components/header'
+import { keys, label, states } from 'states'
+import entity                  from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'Map'
@@ -15,21 +17,23 @@ module.exports = React.createClass
       element: document.getElementById('map-container')
       scope: 'usa'
       responsive: true
-      fills: fills
+      fills: 
+        defaultFill: '#A2A7B7'
       data:  states
       done:  (datamap) =>
         datamap.svg.selectAll('.datamaps-subunit').on 'mouseenter', (geography) ->
           return if states[geography.id].fillKey is keys.UNAVAILABLE
-          $(@).css(cursor: 'pointer', opacity: 0.6)
+          $(@).css(cursor: 'pointer')
 
         datamap.svg.selectAll('.datamaps-subunit').on 'mouseleave', (geography) ->
-          $(@).css(cursor: 'normal', opacity: 1)
+          $(@).css(cursor: 'normal')
 
         datamap.svg.selectAll('.datamaps-subunit').on 'click', (geography) =>
           return if states[geography.id].fillKey is keys.UNAVAILABLE
           @props.history.pushState(null, "/#{geography.id}")
       geographyConfig:
-        highlightOnHover: false
+        highlightOnHover: true
+        highlightFillColor: '#EA504E'
         popupTemplate: (geo, data) ->
           [
             '<div class="hoverinfo"><strong>'
@@ -43,20 +47,23 @@ module.exports = React.createClass
       map.resize()
 
   render: ->
-    <div id='map'>
-      <p className='center'>
-        Primary & caucus details for each state
-      </p>
+    <div>
+      <Header {...@props} />
+      <div id='map'>
+        <p className='sub center'>
+          Primary {entity('amp')} caucus details for each state
+        </p>
 
-      <select id='state-select' onChange={@onChange}>
-        <option key='select' value='none'>Select State...</option>
-        {for code, state of states when state.fillKey isnt keys.UNAVAILABLE
-          <option key={code} value={code}>{state.name}</option>
-        }
-      </select>
+        <select id='state-select' onChange={@onChange}>
+          <option key='select' value='none'>Select State...</option>
+          {for code, state of states when state.fillKey isnt keys.UNAVAILABLE
+            <option key={code} value={code}>{state.name}</option>
+          }
+        </select>
 
-      <div id='map-wrapper'>
-        <div id='map-container'>
+        <div id='map-wrapper'>
+          <div id='map-container'>
+          </div>
         </div>
       </div>
     </div>

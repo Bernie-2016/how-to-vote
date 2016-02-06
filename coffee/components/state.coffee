@@ -1,23 +1,21 @@
-import React                    from 'react'
-import entity                   from 'utils/entity'
-import { fills, label, states } from 'states'
+import React             from 'react'
+import Header            from 'components/header'
+import entity            from 'utils/entity'
+import { label, states } from 'states'
 
 module.exports = React.createClass
   displayName: 'State'
 
   render: ->
     state = states[@props.params.state.toUpperCase()]
-    StateSvg = require("img/states/#{@props.params.state.toLowerCase()}")
 
     return (
       <div>
+        <Header state={state} {...@props} />
         <div className='state-top'>
           <div>
-            <h2 className='center' style={color: fills[state.fillKey]}>{state.name}</h2>
+            <h2 className='center'>{state.name}</h2>
             <h3 className='center'>{label(state.fillKey)}</h3>
-          </div>
-          <div className='center'>
-            <StateSvg className='state-svg' fill={fills[state.fillKey]} />
           </div>
         </div>
         {if state.component

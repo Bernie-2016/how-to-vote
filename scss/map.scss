@@ -1,18 +1,23 @@
-$orange: #EA504E;
-$blue: #147FD7;
+@import 'colors';
 
 div#htv-app {
-  div#map-wrapper {
-    width: 100%;
-
-    div#map-container {
-      position: relative;
-      width: 100%;
+  div#map {
+    p.sub {
+      color: $orange; 
     }
-  }
 
-  select#state-select {
-    display: none;
+    div#map-wrapper {
+      width: 100%;
+
+      div#map-container {
+        position: relative;
+        width: 100%;
+      }
+    }
+
+    select#state-select {
+      display: none;
+    }
   }
 }
 

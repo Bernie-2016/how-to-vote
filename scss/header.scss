@@ -1,0 +1,17 @@
+@import 'colors';
+
+select#header-select {
+  color: $blue;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: jubilat;
+  font-size: 60px;
+  margin: 0;
+  font-weight: 400;
+  background: none;
+  border: none;
+  border-bottom: solid 10px $lightblue;
+  outline: none;
+  border-radius: 0px;
+}

@@ -20,10 +20,6 @@
   },
   "homepage": "https://github.com/Bernie-2016/how-to-vote#readme",
   "dependencies": {
-    "babel-core": "^6.4.5",
-    "babel-loader": "^6.2.1",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
     "cjsx-loader": "^2.1.0",
     "coffee-import-loader": "^1.0.0",
     "coffee-loader": "^0.7.2",
@@ -45,7 +41,6 @@
     "resolve-url-loader": "^1.4.3",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
-    "svg-react-loader": "^0.3.2",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1"
   }

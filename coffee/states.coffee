@@ -6,14 +6,6 @@ keys =
   UNAVAILABLE:    'UNAVAILABLE'
   OTHER:          'OTHER'
 
-fills = {}
-fills[keys.OPEN_PRIMARY]   = '#147FD7'
-fills[keys.OPEN_CAUCUS]    = '#EA504E'
-fills[keys.CLOSED_PRIMARY] = '#001971'
-fills[keys.CLOSED_CAUCUS]  = '#840000'
-fills[keys.OTHER]          = '#20C361'
-fills['defaultFill']       = '#999999'
-
 label = (key) ->
   switch key
     when keys.OPEN_PRIMARY   then 'Open Primary'
@@ -256,7 +248,6 @@ for key, state of states
 
 module.exports =
   keys:        keys
-  fills:       fills
   label:       label
   primaryType: primaryType
   states:      states

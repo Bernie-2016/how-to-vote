@@ -1,5 +1,4 @@
-$orange: #EA504E;
-$blue: #147FD7;
+@import 'colors';
 
 div#htv-app {
   div.state-top {
@@ -12,11 +11,6 @@ div#htv-app {
     div {
       box-sizing: border-box;
       width: 50%;
-    }
-
-    svg.state-svg {
-      max-height: 350px;
-      max-width: 350px;
     }
   }
 
