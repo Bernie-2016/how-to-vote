@@ -13,7 +13,7 @@
   },
   "scripts": {
     "webpack": "webpack --progress --colors --optimize-minimize",
-    "dev": "webpack-dev-server --progress --colors",
+    "dev": "webpack-dev-server --progress --colors --history-api-fallback",
     "start": "npm run dev",
     "deploy": "coffee deploy.coffee",
     "lint": "coffeelint ./coffee"

@@ -1,6 +1,6 @@
-import React                                 from 'react'
-import entity                                from 'utils/entity'
-import { fills, label, primaryType, states } from 'states'
+import React                    from 'react'
+import entity                   from 'utils/entity'
+import { fills, label, states } from 'states'
 
 module.exports = React.createClass
   displayName: 'State'

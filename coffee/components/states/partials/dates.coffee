@@ -4,8 +4,8 @@ module.exports = React.createClass
   displayName: 'Dates'
 
   render: ->
-    fills       = require('states').fills
-    primaryType = require('states').primaryType
+    # TODO: Figure out why this doesn't work at the top of the file.
+    import { fills, primaryType } from 'states'
 
     <div className='state-dates'>
       <div className='center'>

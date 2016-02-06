@@ -1,14 +1,14 @@
-import React      from 'react'
-import CommonInfo from 'components/states/partials/commonInfo'
-import Dates      from 'components/states/partials/dates'
-import entity     from 'utils/entity'
+import React                  from 'react'
+import CommonInfo             from 'components/states/partials/commonInfo'
+import Dates                  from 'components/states/partials/dates'
+import entity                 from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'Colorado'
 
   render: ->
-    fills       = require('states').fills
-    primaryType = require('states').primaryType
+    # TODO: Figure out why this doesn't work at the top of the file.
+    import { fills, primaryType } from 'states'
 
     <div>
       <div className='state-dates'>
