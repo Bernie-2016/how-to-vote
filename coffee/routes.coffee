@@ -1,10 +1,8 @@
-React = require('react')
-Route = require('react-router').Route
-Redirect = require('react-router').Redirect
-
-App   = require('components/app')
-Map   = require('components/map')
-State = require('components/state')
+import React               from 'react'
+import { Route, Redirect } from 'react-router'
+import App                 from 'components/app'
+import Map                 from 'components/map'
+import State               from 'components/state'
 
 module.exports = (
   <Route component={App}>

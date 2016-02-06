@@ -1,6 +1,6 @@
-React  = require('react')
-Menu   = require('components/menu')
-Footer = require('components/footer')
+import React  from 'react'
+import Menu   from 'components/menu'
+import Footer from 'components/footer'
 
 require('scss/app')
 

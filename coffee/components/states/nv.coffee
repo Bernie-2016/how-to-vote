@@ -1,7 +1,7 @@
-React      = require('react')
-CommonInfo = require('components/states/partials/commonInfo')
-Dates      = require('components/states/partials/dates')
-entity     = require('utils/entity')
+import React      from 'react'
+import CommonInfo from 'components/states/partials/commonInfo'
+import Dates      from 'components/states/partials/dates'
+import entity     from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'Nevada'

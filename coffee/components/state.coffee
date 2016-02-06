@@ -1,9 +1,6 @@
-React       = require('react')
-entity      = require('utils/entity')
-fills       = require('states').fills
-label       = require('states').label
-primaryType = require('states').primaryType
-states      = require('states').states
+import React                                 from 'react'
+import entity                                from 'utils/entity'
+import { fills, label, primaryType, states } from 'states'
 
 module.exports = React.createClass
   displayName: 'State'

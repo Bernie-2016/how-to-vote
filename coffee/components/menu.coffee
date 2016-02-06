@@ -1,5 +1,5 @@
-React = require('react')
-$     = require('jquery')
+import React from 'react'
+import $     from 'jquery'
 
 module.exports = React.createClass
   displayName: 'Menu'
