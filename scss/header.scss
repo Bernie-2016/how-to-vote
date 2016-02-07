@@ -1,17 +1,46 @@
 @import 'colors';
 
-select#header-select {
-  color: $blue;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  font-family: jubilat;
-  font-size: 60px;
-  margin: 0;
-  font-weight: 400;
-  background: none;
-  border: none;
-  border-bottom: solid 10px $lightblue;
-  outline: none;
-  border-radius: 0px;
+h1#main-header {
+  div.state-dropdown {
+    display: inline-block;
+
+    select#header-select, select#header-select-tmp {
+      color: $blue;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      font-family: jubilat;
+      font-size: 60px;
+      margin: 0;
+      font-weight: 400;
+      background: none;
+      border: none;
+      outline: none;
+      border-radius: 0px;
+
+      // Arrow
+      background:
+        linear-gradient(45deg, transparent 50%, #A2A7B7 50%),
+        linear-gradient(135deg, #A2A7B7 50%, transparent 50%);
+      background-position:
+        calc(100% - 25px) 25px,
+        calc(100%) 25px;
+      background-size: 25px 25px;
+      background-repeat: no-repeat;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    select#header-select-tmp {
+      display: none;
+    }
+
+    hr {
+      border: solid 3px $lightblue;
+      margin: 0px;
+      width: calc(100% - 70px);
+    }
+  }
 }
