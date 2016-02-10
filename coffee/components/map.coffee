@@ -35,13 +35,24 @@ module.exports = React.createClass
         highlightOnHover: true
         highlightFillColor: '#EA504E'
         popupTemplate: (geo, data) ->
-          [
-            '<div class="hoverinfo"><strong>'
-            geo.properties.name
-            '</strong><br />'
-            if data.fillKey is keys.OTHER then data.label else label(data.fillKey)
-            '</div>'
-          ].join('')
+          if data.fillKey is keys.UNAVAILABLE
+            [
+              "<div class='hoverinfo'>"
+              "<div class='name'>#{geo.properties.name}</div>"
+              "<div class='small'>Status</div>"
+              "<div class='large'>Coming Soon</div>"
+              "</div>"
+            ].join('')
+          else
+            [
+              "<div class='hoverinfo'>"
+              "<div class='name'>#{geo.properties.name}</div>"
+              "<div class='small'>Date</div>"
+              "<div class='large'>#{data.date}</div>"
+              "<div class='small'>Type</div>"
+              "<div class='large'>#{if data.fillKey is keys.OTHER then data.label else label(data.fillKey)}</div>"
+              "</div>"
+            ].join('')
 
     $(window).on 'resize', ->
       map.resize()

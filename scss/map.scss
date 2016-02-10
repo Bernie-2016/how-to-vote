@@ -19,6 +19,42 @@ div#htv-app {
       display: none;
     }
   }
+
+  div.hoverinfo {
+    background-color: $lightgray;
+    padding: 0px;
+    width: 250px;
+
+    div.name {
+      font-family: jubilat;
+      font-size: 30px;
+      color: $blue;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+    }
+
+    div.small {
+      color: $gray;
+      font-family: freight-sans-pro;
+      text-transform: uppercase;
+      padding: 20px;
+      padding-bottom: 0px;
+      font-size: 15px;
+    }
+
+    div.large {
+      padding: 20px;
+      padding-top: 0px;
+      font-family: jubilat;
+      font-size: 20px;
+      color: $darkblue;
+
+      &:not(:last-of-type) {
+        padding-bottom: 0px;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {
