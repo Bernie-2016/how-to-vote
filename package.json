@@ -12,7 +12,7 @@
     "url": "https://github.com/Bernie-2016/how-to-vote/issues"
   },
   "scripts": {
-    "webpack": "webpack --progress --colors --optimize-minimize",
+    "webpack": "rm -rf ./dist && webpack --progress --colors --optimize-minimize",
     "dev": "webpack-dev-server --progress --colors --history-api-fallback",
     "start": "npm run dev",
     "deploy": "coffee deploy.coffee",
