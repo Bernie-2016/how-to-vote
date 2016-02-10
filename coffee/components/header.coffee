@@ -1,47 +1,45 @@
-import React      from 'react'
-import $          from 'jquery'
-import { states } from 'states'
+import React          from 'react'
+import { Link }       from 'react-router'
+import OnClickOutside from 'react-onclickoutside'
+import $              from 'jquery'
+import { states }     from 'states'
 
 window.$ = $
 
 module.exports = React.createClass
   displayName: 'Header'
 
+  mixins: [OnClickOutside]
+
   getInitialState: ->
     {
       open: false
     }
 
+  handleClickOutside: ->
+    @setState(open: false)
+
   onClick: (e) ->
     e.preventDefault()
+    @setState(open: !@state.open)
     # @props.history.pushState(null, "/#{e.target.value}")
-
-  sizeSelect: ->
-    $('select#header-select-tmp option').html($('#header-select').find(':selected').text())
-    $('#header-select').css(width: $('select#header-select-tmp').width() + 60)
-
-  componentDidUpdate: ->
-    @sizeSelect()
-
-  componentDidMount: ->
-    @sizeSelect()
 
   render: ->
     <h1 id='main-header' className='center'>
       <span className='kern'>V</span>oting for Bernie in 
-      <div className='state-dropdown'>
+      <div className='state-dropdown' onClick={@onClick}>
         {if @state.open
-          <div id=''
+          <div id='state-list'>
+            <div className='select-state'>Select Your State</div>
+            <Link to='/'>America</Link>
+            {for key, state of states
+              <Link to={"/#{key}"} key={key}>{state.name}</Link>
+            }
+          </div>
         }
-        <select id='header-select' value={@props.params.state} onClick={@onClick} onChange={@onChange} disabled={true}>
-          <option key={'AMERICA'} value=''>America</option>
-          {for state, hash of states
-            <option key={state} value={state}>{hash.name}</option>
-          }
-        </select>
-        <select id='header-select-tmp'>
-          <option></option>
-        </select>
-        <hr />
+        <div id='header-select'>
+          {(states[@props.params.state] || {}).name || 'America'}
+        </div>
+        <div id='header-arrow'></div>
       </div>
     </h1>
