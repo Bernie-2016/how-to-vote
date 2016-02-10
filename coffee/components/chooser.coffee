@@ -1,6 +1,6 @@
 import React            from 'react'
-import { Link }         from 'react-router'
 import OnClickOutside   from 'react-onclickoutside'
+import $                from 'jquery'
 import { states, keys } from 'states'
 
 module.exports = React.createClass
@@ -20,17 +20,20 @@ module.exports = React.createClass
     e.preventDefault()
     @setState(open: !@state.open)
 
+  visit: (e) ->
+    @props.history.pushState(null, $(e.target).data('url'))
+
   render: ->
     <div id='select' onClick={@onClick}>
       {(states[@props.state] || {}).name || 'America'}
       <ul hidden={!@state.open}>
         <li className='heading'>Select Your State</li>
-        <li>
-          <Link to='/'>America</Link>
+        <li data-url={'/'} onClick={@visit}>
+          America
         </li>
         {for key, state of states when state.fillKey isnt keys.UNAVAILABLE
-          <li key={key}>
-            <Link to={"/#{key}"}>{state.name}</Link>
+          <li key={key} data-url={"/#{key}"} onClick={@visit}>
+            {state.name}
           </li>
         }
       </ul>
