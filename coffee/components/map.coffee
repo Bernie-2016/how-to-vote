@@ -1,5 +1,6 @@
 import React                   from 'react'
 import $                       from 'jquery'
+import moment                  from 'moment'
 import Datamap                 from 'datamaps/dist/datamaps.usa'
 import Header                  from 'components/header'
 import { keys, label, states } from 'states'
@@ -48,7 +49,7 @@ module.exports = React.createClass
               "<div class='hoverinfo'>"
               "<div class='name'>#{geo.properties.name}</div>"
               "<div class='small'>Date</div>"
-              "<div class='large'>#{data.date}</div>"
+              "<div class='large'>#{moment(data.date, 'YYYY MM DD').format('dddd, MMMM Do')}</div>"
               "<div class='small'>Type</div>"
               "<div class='large'>#{if data.fillKey is keys.OTHER then data.label else label(data.fillKey)}</div>"
               "</div>"

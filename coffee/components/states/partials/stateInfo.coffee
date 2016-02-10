@@ -1,6 +1,7 @@
 import React    from 'react'
 import { Link } from 'react-router'
 import Sticky   from 'react-stickynode'
+import moment   from 'moment'
 import entity   from 'utils/entity'
 
 module.exports = React.createClass
@@ -17,9 +18,13 @@ module.exports = React.createClass
           <p>
             {@props.state.sameDay}
           </p>
+        else if moment(@props.state.regDate, 'YYYY MM DD') > moment()
+          <p>
+            You must be registered to vote by {moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')} in {@props.state.name}.
+          </p>
         else
           <p>
-            You must be registered to vote by {@props.state.regDate} in {@props.state.name}.
+            You must have been registered to vote by {moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')} in {@props.state.name}.
           </p>
         }
 
@@ -48,13 +53,13 @@ module.exports = React.createClass
         <Sticky top={25} bottomBoundary='section.flex'>
           <h3 className='caps'>Caucus Date</h3>
           <p className='date jubilat blue'>
-            {@props.state.date}
+            {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
           </p>
           <h3 className='caps'>
             Registration Deadline
           </h3>
           <p className='date jubilat blue'>
-            {@props.state.regDate}
+            {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
           </p>
           <p>
             <Link to={@props.state.regLink} className='btn red'>

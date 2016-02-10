@@ -26,8 +26,8 @@ states =
   AL:
     name:    'Alabama'
     fillKey: keys.OPEN_PRIMARY
-    regDate: 'Monday, February 15'
-    date:    'Tuesday, March 1'
+    regDate: '2016 02 15'
+    date:    '2016 03 01'
     office:
       url:   'http://www.alabamavotes.gov/'
       phone: '(334) 242-7210'
@@ -41,8 +41,8 @@ states =
   AZ:
     name:    'Arizona'
     fillKey: keys.CLOSED_PRIMARY
-    regDate: 'Monday, February 22'
-    date:    'Tuesday, March 22'
+    regDate: '2016 02 22'
+    date:    '2016 03 22'
     office:
       url:   'http://www.azsos.gov/elections'
       phone: '(602) 542-2228'
@@ -53,8 +53,8 @@ states =
   AR:
     name:    'Arkansas'
     fillKey: keys.OPEN_PRIMARY
-    regDate: 'Monday, February 1'
-    date:    'Tuesday, March 1'
+    regDate: '2016 02 01'
+    date:    '2016 03 01'
     office:
       url:   'http://www.sos.arkansas.gov/elections/Pages/default.aspx'
       phone: '(501) 682-1010'
@@ -68,8 +68,8 @@ states =
   CO:
     name:    'Colorado'
     fillKey: keys.CLOSED_CAUCUS
-    regDate: 'Monday, January 4'
-    date:    'Tuesday, March 1'
+    regDate: '2016 01 04'
+    date:    '2016 03 01'
     office:
       url:   'http://www.sos.state.co.us/pubs/elections/main.html'
       phone: '(303) 894-2200'
@@ -101,8 +101,8 @@ states =
     name:    'Iowa'
     fillKey: keys.OTHER
     label:   'Semi-open Caucus'
-    regDate: 'Monday, February 1'
-    date:    'Monday, February 1'
+    regDate: '2016 02 01'
+    date:    '2016 02 01'
     office:
       url:   'http://sos.iowa.gov/elections/voterinformation/index.html'
       phone: '(515) 281-5204'
@@ -123,8 +123,8 @@ states =
   ME:
     name:    'Maine'
     fillKey: keys.CLOSED_CAUCUS
-    regDate: 'Friday, February 19'
-    date:    'Sunday, March 6'
+    regDate: '2016 02 19'
+    date:    '2016 03 06'
     office:
       url:   'http://www.maine.gov/sos/cec/elec/'
       phone: '(207) 624-7736'
@@ -140,8 +140,8 @@ states =
     name:    'Massachusetts'
     fillKey: keys.OTHER
     label:   'Semi-closed Primary'
-    regDate: 'Wednesday, February 10'
-    date:    'Tuesday, March 1'
+    regDate: '2016 02 10'
+    date:    '2016 03 01'
     office:
       url:   'http://www.sec.state.ma.us/ele/'
       phone: '(617) 727-2828'
@@ -155,8 +155,8 @@ states =
   MN:
     name:    'Minnesota'
     fillKey: keys.OPEN_CAUCUS
-    regDate: 'Tuesday, March 1'
-    date:    'Tuesday, March 1'
+    regDate: '2016 03 01'
+    date:    '2016 03 01'
     office:
       url:   'http://mnvotesinfo.sos.state.mn.us/'
       phone: '(651) 215-1440'
@@ -180,8 +180,8 @@ states =
   NV:
     name:    'Nevada'
     fillKey: keys.CLOSED_CAUCUS
-    regDate: 'Saturday, February 20'
-    date:    'Saturday, February 20'
+    regDate: '2016 02 20'
+    date:    '2016 02 20'
     office:
       url:   'http://www.nvsos.gov/index.aspx?page=3'
       phone: '(775) 684-5705'
@@ -193,8 +193,8 @@ states =
     name:    'New Hampshire'
     fillKey: keys.OTHER
     label:   'Semi-open Primary'
-    regDate: 'Saturday, January 30'
-    date:    'Tuesday, February 9'
+    regDate: '2016 01 30'
+    date:    '2016 02 09'
     office:
       url:   'http://sos.nh.gov/Elections.aspx'
       phone: '(603) 271-3242'
@@ -236,8 +236,8 @@ states =
   SC:
     name:    'South Carolina'
     fillKey: keys.OPEN_PRIMARY
-    regDate: 'Wednesday, January 27'
-    date:    'Saturday, February 27'
+    regDate: '2016 01 27'
+    date:    '2016 02 27'
     office:
       url:   'http://www.scvotes.org/'
       phone: '(803) 734-9060'
@@ -254,8 +254,8 @@ states =
   TX:
     name:    'Texas'
     fillKey: keys.OPEN_PRIMARY
-    regDate: 'Monday, February 1'
-    date:    'Tuesday, March 1'
+    regDate: '2016 02 01'
+    date:    '2016 03 01'
     office:
       url:   'http://www.sos.state.tx.us/elections/'
       phone: '(512) 463-5650'
@@ -272,8 +272,8 @@ states =
   VA:
     name:    'Virginia'
     fillKey: keys.OPEN_PRIMARY
-    regDate: 'Monday, February 8'
-    date:    'Tuesday, March 1'
+    regDate: '2016 02 08'
+    date:    '2016 03 01'
     office:
       url:   'http://elections.virginia.gov/'
       phone: '(804) 864-8901'

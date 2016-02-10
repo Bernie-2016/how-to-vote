@@ -34,6 +34,7 @@
     "html-webpack-plugin": "^2.7.2",
     "jquery": "^2.2.0",
     "json-loader": "^0.5.4",
+    "moment": "^2.11.2",
     "node-sass": "^3.4.2",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",

@@ -1,7 +1,8 @@
-import React      from 'react'
-import { Link }   from 'react-router'
-import Sticky     from 'react-stickynode'
-import entity     from 'utils/entity'
+import React    from 'react'
+import { Link } from 'react-router'
+import Sticky   from 'react-stickynode'
+import moment   from 'moment'
+import entity   from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'Colorado'
@@ -46,13 +47,13 @@ module.exports = React.createClass
         <Sticky top={25} bottomBoundary='section.flex'>
           <h3 className='caps'>Caucus Date</h3>
           <p className='date jubilat blue'>
-            {@props.state.date}
+            {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
           </p>
           <h3 className='caps'>
             Registration Deadline
           </h3>
           <p className='date jubilat blue'>
-            {@props.state.regDate}
+            {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
           </p>
           <p>
             <Link to='https://www.sos.state.co.us/voter-classic/pages/pub/olvr/findVoterReg.xhtml' className='btn red'>
