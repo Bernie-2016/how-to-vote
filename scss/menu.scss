@@ -1,40 +1,23 @@
-// Colors
-$white: #FFFFFF;
-$lightgray: #EFF3F7;
-$lightgray-border: #E2E4EC;
-$text: #364350;
-$blue: #147FD7;
-$darkblue: #0D63AA;
-$red: #F55B5B;
-$redhover: #EC3E3E;
-
-// Breakpoints
-$phoneonly: (max-width 480px);
-$mdphone:   (min-width 375px);
-$lgphone:   (min-width 480px);
-$phablet:   (min-width 600px);
-$tablet: 	  (min-width 768px);
-$notebook:  (min-width 980px);
-$desktop:   (min-width 1200px);
-$xlarge:    (min-width 1350px);
+@import 'colors';
+@import 'breakpoints';
 
 header{
   height: 5.75rem;
   min-height: 5.75rem;
   position: relative;
   background-color: $white;
-  border-bottom: 1px solid $lightgray-border;
+  border-bottom: 1px solid $menu-lightgray-border;
   background-image: none;
   z-index: 0;
-  @media (min-width: 600px) {
+  @media (min-width: $phablet) {
     height: 6rem;
     min-height: 6rem;
   }
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     height: 6rem;
     min-height: 6rem;
   }
-  @media (min-width: 980px) {
+  @media (min-width: $notebook) {
     height: 6rem;
     min-height: 6rem;
   }
@@ -48,12 +31,12 @@ header{
     color:rgba($white, .6);
     background-image: url('../img/logo-2x.png');
     background-size: 135px 57px;
-    @media (min-width: 600px) {
+    @media (min-width: $phablet) {
       width: 150px;
       height: 63px;
       background-size: 150px 63px;
     }
-    @media (min-width: 980px) {
+    @media (min-width: $notebook) {
       margin: 1rem 0 1rem 2rem;
     }
     h1 {
@@ -68,7 +51,7 @@ header{
   nav{
     float: right;
     margin: 1.8rem 1rem 1rem 0;
-    @media (min-width: 600px) {
+    @media (min-width: $phablet) {
       margin: 2.2rem 1.6rem 1.5rem 0;
     }
     button.expand{
@@ -87,10 +70,10 @@ header{
       text-transform: uppercase;
       color: $text;
       background-color: $white;
-      @media (min-width: 600px) {
+      @media (min-width: $phablet) {
         margin-right: 1rem;
       }
-      @media (min-width: 980px) {
+      @media (min-width: $notebook) {
         display: none;
       }
       .bar{
@@ -116,7 +99,7 @@ header{
       padding: 0;
       li{
         display: none;
-        @media (min-width: 980px) {
+        @media (min-width: $notebook) {
           display: inline;
         }
         font-size: 1.2rem;
@@ -133,11 +116,11 @@ header{
           font-weight: 500;
           font-size: 1rem;
           text-shadow: none;
-          @media (min-width: 980px) {
+          @media (min-width: $notebook) {
             font-size: 0.85rem;
             padding: 0.7rem 0.55rem;
           }
-          @media (min-width: 1200px) {
+          @media (min-width: $desktop) {
             font-size: 1rem;
             padding: 0.7rem;
           }
@@ -149,7 +132,7 @@ header{
         }
         &.btn{
           display: none;
-          @media (min-width: 600px) {
+          @media (min-width: $phablet) {
             display: inline;
           }
           a{
@@ -181,16 +164,16 @@ header{
     z-index: 0;
     padding: 0.75rem 0.75rem 3rem;
     margin: 0 auto;
-    @media (min-width: 600px) {
+    @media (min-width: $phablet) {
       padding: 1.5rem 2rem 3rem;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       padding-top: 3rem;
     }
-    @media (min-width: 980px) {
+    @media (min-width: $notebook) {
       padding-top: 3rem;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: $desktop) {
       padding-top: 3rem;
     }
     &.expanded{
@@ -209,7 +192,7 @@ header{
       text-align: left;
       padding: 1rem 0 1rem;
       margin-top: 0;
-      @media (min-width: 768px) {
+      @media (min-width: $tablet) {
         padding: 0.5rem 0 2rem;
         font-size: 3rem;
       }
@@ -234,7 +217,7 @@ header{
         padding-left: 0.5rem;
       }
       &:hover, &:focus{
-        background-color: $darkblue;
+        background-color: $menu-darkblue;
       }
     }
     .navgroup{
@@ -248,7 +231,7 @@ header{
         margin-right: 0;
         width: 100%;
       }
-      @media (min-width: 768px) {
+      @media (min-width: $tablet) {
         float: left;
         display: block;
         margin-right: 2.35765%;
@@ -271,7 +254,7 @@ header{
         letter-spacing: .1em;
         margin-bottom: 0.25rem;
         margin-top: 0.5rem;
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
           margin-top: 0;
           margin-bottom: 0.7rem;
         }
@@ -287,7 +270,7 @@ header{
             margin: 0;
             padding: 0.2rem 0.75rem;
             font-size: 0.9rem;
-            @media (min-width: 768px) {
+            @media (min-width: $tablet) {
               padding: 0.4rem 0.75rem;
             }
           }

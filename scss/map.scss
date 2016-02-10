@@ -4,6 +4,10 @@ div#htv-app {
   div#map {
     p.sub {
       color: $orange; 
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 20px;
+      font-family: 'Freight Sans Medium';
     }
 
     div#map-wrapper {

@@ -1,10 +1,15 @@
-import React             from 'react'
-import Header            from 'components/header'
-import entity            from 'utils/entity'
-import { label, states } from 'states'
+import React                   from 'react'
+import Header                  from 'components/header'
+import entity                  from 'utils/entity'
+import { label, states, keys } from 'states'
+import StateInfo               from 'components/states/partials/stateInfo'
 
 module.exports = React.createClass
   displayName: 'State'
+
+  componentDidMount: ->
+    state = states[@props.params.state.toUpperCase()]
+    @props.history.pushState(null, '/') if state.fillKey is keys.UNAVAILABLE
 
   render: ->
     state = states[@props.params.state.toUpperCase()]
@@ -12,22 +17,11 @@ module.exports = React.createClass
     return (
       <div>
         <Header state={state} {...@props} />
-        <div className='state-top'>
-          <div>
-            <h2 className='center'>{state.name}</h2>
-            <h3 className='center'>{label(state.fillKey)}</h3>
-          </div>
-        </div>
+
         {if state.component
           <state.component state={state} />
+        else
+          <StateInfo state={state} />
         }
-        <div className='state-final'>
-          <blockquote>
-            When people vote, Democrats win
-            <cite>
-              {entity('mdash')} Sen. Bernie Sanders
-            </cite>
-          </blockquote>
-        </div>
       </div>
     )

@@ -1,26 +1,28 @@
-import React      from 'react'
-import { Link }   from 'react-router'
-import Sticky     from 'react-stickynode'
-import entity     from 'utils/entity'
+import React    from 'react'
+import { Link } from 'react-router'
+import Sticky   from 'react-stickynode'
+import entity   from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'Colorado'
+  displayName: 'State Info'
 
   render: ->
     <section className='flex'>
       <div className='left'>
         <h2>Key Information</h2>
         <p>
-          Colorado has closed caucuses {entity('mdash')} Coloradans must register as a Democrat to vote for Bernie!
+          {@props.state.name} has {@props.state.dtlName} {entity('mdash')} {@props.state.byline}
         </p>
-        <p>
-          In order to vote in Colorado, you must be:
-        </p>
-        <ul>
-          <li>A resident of the precinct for at least 30 days.</li>
-          <li>Registered to vote no later than 29 days before the caucus.</li>
-          <li>Affiliated with the party holding the caucus for at least 2 months before the caucus - Deadline was January 4, 2016. </li>
-        </ul>
+        {if @props.state.sameDay
+          <p>
+            {@props.state.sameDay}
+          </p>
+        else
+          <p>
+            You must be registered to vote by {@props.state.regDate} in {@props.state.name}.
+          </p>
+        }
+
         <h3 className='caps'>Only 17?</h3>
         <p>
           You may still vote in {@props.state.name} if you will be 18 years old by November 8, 2016.
@@ -55,7 +57,12 @@ module.exports = React.createClass
             {@props.state.regDate}
           </p>
           <p>
-            <Link to='https://www.sos.state.co.us/voter-classic/pages/pub/olvr/findVoterReg.xhtml' className='btn red'>
+            <Link to={@props.state.regLink} className='btn red'>
+              Register to Vote
+            </Link>
+          </p>
+          <p>
+            <Link to={@props.state.chkLink} className='btn'>
               Check Registration Status
             </Link>
           </p>
