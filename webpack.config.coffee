@@ -34,6 +34,7 @@ module.exports =
       new HtmlWebpackPlugin(
         template: 'index.html'
         title: 'Bernie Sanders'
+        favicon: 'img/favicon.ico'
         minify:
           collapseWhitespace: true
       )
