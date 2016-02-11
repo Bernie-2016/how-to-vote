@@ -66,13 +66,6 @@ module.exports = React.createClass
           Primary {entity('amp')} caucus details for each state
         </p>
 
-        <select id='state-select' onChange={@onChange}>
-          <option key='select' value='none'>Select State...</option>
-          {for code, state of states when state.fillKey isnt keys.UNAVAILABLE
-            <option key={code} value={code}>{state.name}</option>
-          }
-        </select>
-
         <div id='map-wrapper'>
           <div id='map-container'>
           </div>

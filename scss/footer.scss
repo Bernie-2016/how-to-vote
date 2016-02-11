@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'breakpoints';
 
 body{
   margin: 0;
@@ -23,10 +24,10 @@ div.ready-form {
   margin: 0 .5rem;
   background-color: $blue;
   border-radius: 5px;
-  @media (min-width: 600px){
+  @media (min-width: $phablet){
     margin: 0 auto;
   }
-  @media (min-width: 980px){
+  @media (min-width: $notebook){
     max-width: 600px;
   }
   @media (min-width: 1200px){
@@ -40,14 +41,14 @@ div.ready-form {
     font-weight: 400;
     padding: 15px;
     margin-bottom: 0px;
-    @media (min-width: 600px){
+    @media (min-width: $phablet){
       font-size: 3rem;
     }
-    @media (min-width: 768px){
+    @media (min-width: $tablet){
       font-size: 3.2rem;
       padding: 20px;
     }
-    @media (min-width: 768px){
+    @media (min-width: $tablet){
       font-size: 3.75rem;
       padding: 25px;
     }
@@ -66,7 +67,7 @@ div.ready-form {
     padding: 15px;
     padding-top: 20px;
     text-align: center;
-    @media (min-width: 600px){
+    @media (min-width: $phablet){
       padding-top: 25px;
     }
     input {
@@ -83,7 +84,7 @@ div.ready-form {
       box-sizing: border-box;
       &[type=email] {
         width: 100%;
-        @media (min-width: 600px){
+        @media (min-width: $phablet){
           width: 40%;
           margin-right: 15px;
           margin-bottom: 25px;
@@ -92,7 +93,7 @@ div.ready-form {
 
       &[type=text] {
         width: 100%;
-        @media (min-width: 600px){
+        @media (min-width: $phablet){
           width: 20%;
         }
       }
@@ -115,7 +116,7 @@ div.ready-form {
         box-shadow: 0px 0px 5px #095DA2;
         margin-top: 5px;
         padding: 0;
-        @media (min-width: 600px){
+        @media (min-width: $phablet){
           width: 20%;
           margin-left: 15px;
         }
@@ -138,7 +139,7 @@ footer{
   nav{
     float: none;
     margin: 1rem 1rem 2rem;
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       margin: 2rem;
     }
     div{
@@ -153,7 +154,7 @@ footer{
         width: 100%;
         margin-right: 0;
       }
-      @media (min-width: 600px) {
+      @media (min-width: $phablet) {
         margin-right: 2.35765%;
         width: 18.11388%;
         &:first-of-type{
@@ -168,7 +169,7 @@ footer{
           clear: none;
         }
       }
-      @media (min-width: 768px) {
+      @media (min-width: $tablet) {
         margin-right: 2.35765%;
         width: 15.55494%;
         &:first-of-type{
@@ -189,14 +190,14 @@ footer{
       letter-spacing: .1em;
       text-align: center;
       padding-top: 1.25rem;
-      @media (min-width: 600px) {
+      @media (min-width: $phablet) {
         text-align: left;
         padding-top: 0.5rem;
       }
-      @media (min-width: 768px) {
+      @media (min-width: $tablet) {
         font-size: 1.1rem;
       }
-      @media (min-width: 980px) {
+      @media (min-width: $notebook) {
         font-size: 1.3rem;
       }
     }
@@ -206,20 +207,20 @@ footer{
       list-style: none;
       margin: 0;
       padding: 0;
-      @media (min-width: 600px) {
+      @media (min-width: $phablet) {
         text-align: left;
       }
       li{
         display: block;
         margin: 0.5rem 0;
         line-height: 1;
-        @media (min-width: 600px) {
+        @media (min-width: $phablet) {
           margin: 0.75rem 0;
         }
-        @media (min-width: 768px) {
+        @media (min-width: $tablet) {
           margin: 0.75rem 0;
         }
-        @media (min-width: 980px) {
+        @media (min-width: $notebook) {
           margin: 0.75rem 0;
         }
         a{
@@ -233,10 +234,10 @@ footer{
           padding: 0;
           letter-spacing: 0;
           display: block;
-          @media (min-width: 768px) {
+          @media (min-width: $tablet) {
             font-size: 1rem;
           }
-          @media (min-width: 980px) {
+          @media (min-width: $notebook) {
             font-size: 1.1rem;
           }
           &:hover{
