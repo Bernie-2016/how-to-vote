@@ -51,6 +51,33 @@ div#htv-app {
       & > * {
         margin-bottom: 0.4em;
       }
+
+      div.poll-widget {
+        input {
+          box-sizing: border-box;
+          width: 100%;
+        }
+
+        a.btn, input {
+          display: block;
+          margin: 0.5em 0;
+          font-size: 0.9em;
+          padding: 0.75em 1em 0.85em;
+        }
+
+        a.btn {
+          width: 250px;
+          text-transform: uppercase;
+          text-decoration: none;
+          background-color: $orange;
+          color: $white;
+          font-weight: 600;
+          letter-spacing: 0.075em;
+          line-height: 0.9;
+          text-align: center;
+          border-radius: 3px;
+        }
+      }
     }
 
     div.right {

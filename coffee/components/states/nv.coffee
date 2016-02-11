@@ -1,9 +1,10 @@
-import React    from 'react'
-import { Link } from 'react-router'
-import Sticky   from 'react-stickynode'
-import moment   from 'moment'
-import entity   from 'utils/entity'
-import TopInfo  from 'components/states/partials/topInfo'
+import React     from 'react'
+import { Link }  from 'react-router'
+import Sticky    from 'react-stickynode'
+import moment    from 'moment'
+import entity    from 'utils/entity'
+import TopInfo   from 'components/states/partials/topInfo'
+import PollPlace from 'components/states/partials/pollPlace'
 
 module.exports = React.createClass
   displayName: 'NV State Info'
@@ -12,10 +13,7 @@ module.exports = React.createClass
     <section className='flex'>
       <div className='left'>
         <TopInfo state={@props.state} />
-        <h3 className='caps'>Where do I caucus?</h3>
-        <p>
-          Look up your caucus location <a href='http://nvdems.com/caucus/locations/'>here</a>.
-        </p>
+        <PollPlace />
         <h3 className='caps'>Only 17?</h3>
         <p>
           You may still vote in {@props.state.name} if you will be 18 years old by November 8, 2016.

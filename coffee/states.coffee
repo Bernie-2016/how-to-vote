@@ -549,6 +549,7 @@ states =
     chkLink: 'https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=VoterInfo'
     dtlName: 'open primaries'
     byline:  'South Carolinians can vote for Bernie Sanders regardless of their registered party.'
+    pollWgt: true
   SD:
     name:    'South Dakota'
     fillKey: keys.OTHER
