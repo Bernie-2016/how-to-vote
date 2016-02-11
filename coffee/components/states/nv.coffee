@@ -14,7 +14,7 @@ module.exports = React.createClass
         <TopInfo state={@props.state} />
         <h3 className='caps'>Where do I caucus?</h3>
         <p>
-          Look up your caucus location <Link to='http://nvdems.com/caucus/locations/'>here</Link>.
+          Look up your caucus location <a href='http://nvdems.com/caucus/locations/'>here</a>.
         </p>
         <h3 className='caps'>Only 17?</h3>
         <p>
@@ -26,14 +26,14 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>Military/Overseas Voters</h3>
         <p>
-          If you live, work, are in the military or study abroad, you are able to participate in Nevada’s Tele-Caucus on February 20th at 11am, but must <Link to='http://nvdems.com'>pre-register</Link> from Monday, February 1st – Sunday, February 14 (Midnight PST).
+          If you live, work, are in the military or study abroad, you are able to participate in Nevada’s Tele-Caucus on February 20th at 11am, but must <a href='http://nvdems.com'>pre-register</a> from Monday, February 1st – Sunday, February 14 (Midnight PST).
         </p>
         <p>
           After registering, you will receive a confirmation email. One week prior, you will receive a dial-in number and a unique pin. You must be dialed in to the Tele-Caucus by 12:00 p.m. PST.
         </p>
         <h3 className='caps'>More Information</h3>
         <p>
-          For more information about the Democratic caucus in Nevada, visit the <Link to='http://nvdems.com'>NVDems website</Link>.
+          For more information about the Democratic caucus in Nevada, visit the <a href='http://nvdems.com'>NVDems website</a>.
         </p>
       </div>
       <div className='right'>
@@ -43,14 +43,14 @@ module.exports = React.createClass
             {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}, 11AM
           </p>
           <p>
-            <Link to={@props.state.regLink} className='btn red'>
+            <a href={@props.state.regLink} className='btn red'>
               Register to Vote
-            </Link>
+            </a>
           </p>
           <p>
-            <Link to={@props.state.chkLink} className='btn'>
+            <a href={@props.state.chkLink} className='btn'>
               Check Registration Status
-            </Link>
+            </a>
           </p>
         </Sticky>
       </div>

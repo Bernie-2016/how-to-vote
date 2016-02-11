@@ -38,9 +38,9 @@ module.exports = React.createClass
             {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
           </p>
           <p>
-            <Link to='https://www.sos.state.co.us/voter-classic/pages/pub/olvr/findVoterReg.xhtml' className='btn red'>
+            <a href='https://www.sos.state.co.us/voter-classic/pages/pub/olvr/findVoterReg.xhtml' className='btn red'>
               Check Registration Status
-            </Link>
+            </a>
           </p>
         </Sticky>
       </div>

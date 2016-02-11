@@ -19,13 +19,13 @@ module.exports = React.createClass
         {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
       </p>
       <p>
-        <Link to={@props.state.regLink} className='btn red'>
+        <a href={@props.state.regLink} className='btn red'>
           Register to Vote
-        </Link>
+        </a>
       </p>
       <p>
-        <Link to={@props.state.chkLink} className='btn'>
+        <a href={@props.state.chkLink} className='btn'>
           Check Registration Status
-        </Link>
+        </a>
       </p>
     </Sticky>
