@@ -75,7 +75,18 @@ states =
     byline:  'Arkansans can vote for Bernie Sanders regardless of their registered party.'
   CA:
     name:    'California'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OTHER
+    label:   'Semi-closed Primary'
+    regDate: '2016 05 23'
+    date:    '2016 06 07'
+    office:
+      url:   'http://www.sos.ca.gov/elections/'
+      phone: '(916) 657-2166'
+    regLink: 'http://registertovote.ca.gov/'
+    chkLink: 'http://www.sos.ca.gov/elections/registration-status/'
+    dtlName: 'semi-closed primaries'
+    byline:  'Californians must register as a Democrat or independent ("no party preference") to vote for Bernie!'
+    early:   "Many counties in California will hold early voting for the Democratic primary between May 9 and June 6, 2016. Contact your <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/'>county elections office</a> to learn more about early voting in your county. You can request a mail-in absentee ballot by submitting <a href='http://elections.cdn.sos.ca.gov/vote-by-mail/pdf/fill-in-vote-by-mail-app-instruct.pdf'>this form</a> before May 31, 2016. You can also file an emergency absentee ballot in person at your local <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/'>county elections office</a> anytime between June 1 and 7, 2016."
   CO:
     name:    'Colorado'
     fillKey: keys.CLOSED_CAUCUS
@@ -225,7 +236,16 @@ states =
     byline:  'Kansans must be affiliated with the Democratic Party to vote for Bernie!'
   KY:
     name:    'Kentucky'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_PRIMARY
+    regDate: '2016 04 18'
+    date:    '2016 05 17'
+    office:
+      url:   'http://elect.ky.gov/'
+      phone: '(502) 573-7100'
+    regLink: 'http://elect.ky.gov/registertovote/pages/default.aspx'
+    chkLink: 'https://vrsws.sos.ky.gov/VIC/'
+    dtlName: 'closed primaries'
+    byline:  'Kentuckians must register as a Democrat to vote for Bernie!'
   LA:
     name:    'Louisiana'
     fillKey: keys.CLOSED_PRIMARY
@@ -294,13 +314,11 @@ states =
   MN:
     name:    'Minnesota'
     fillKey: keys.OPEN_CAUCUS
-    regDate: '2016 03 01'
     date:    '2016 03 01'
     office:
       url:   'http://mnvotesinfo.sos.state.mn.us/'
       phone: '(651) 215-1440'
-    regLink: 'https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationStep1.aspx'
-    chkLink: 'https://mnvotes.sos.state.mn.us/VoterStatus.aspx'
+    more:    'http://mnvotesinfo.sos.state.mn.us/'
     dtlName: 'open caucuses'
     byline:  'Minnesotans can vote for Bernie Sanders regardless of their registered party.'
     sameDay: 'Minnesota has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 1.'
@@ -332,7 +350,19 @@ states =
     idReq:   "Missouri requires you to present identification in order to vote in person.  Acceptable forms of identification include any ID issued by a federal, state of Missouri, or local agency, any ID issued by an institution of higher education, a copy of a current utility bill, bank statement, paycheck, government check, any other government document that contains your name and address, or a driver's license or state ID card from another state."
   MT:
     name:    'Montana'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: '2016 06 07'
+    date:    '2016 06 07'
+    office:
+      url:   'http://sos.mt.gov/elections/'
+      phone: '(888) 884-8683'
+    regLink: 'http://sos.mt.gov/ELECTIONS/Vote/index.asp'
+    chkLink: 'https://app.mt.gov/cgi-bin/voterinfo/voterinfo.cgi'
+    dtlName: 'open primaries'
+    byline:  'Montanans can vote for Bernie Sanders regardless of their registered party.'
+    regInfo: "Montanans can <a href='http://sos.mt.gov/ELECTIONS/Officials/Forms/documents/Voter-Registration-Application.pdf'>register</a> to vote by mail until May 9, 2016. After that date, you can register to vote in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf'>county elections office</a>."
+    early:   "Early voting for the Montana Democratic Primary takes place between May 9 and June 6, 2016. To participate in early voting, you can request and submit an absentee ballot by <a href='http://sos.mt.gov/elections/Officials/Forms/documents/Application-for-Absentee-Ballot.pdf'>mail</a> or in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf'>county elections office</a>."
+    sameDay: 'Montana has Same-Day Registration which allows you to register to vote at the primaries on Tue, June 7.'
   NE:
     name:    'Nebraska'
     fillKey: keys.CLOSED_CAUCUS
@@ -376,10 +406,31 @@ states =
     sameDay: 'New Hampshire has Same-Day Registration which allows you to register to vote at the primaries on Tue, February 9 if you are not currently registered to vote or are not affiliated with a party'
   NJ:
     name:    'New Jersey'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_PRIMARY
+    regDate: '2016 05 17'
+    date:    '2016 06 07'
+    office:
+      url:   'http://elections.nj.gov'
+      phone: '(609) 292-3760'
+    regLink: 'http://www.state.nj.us/state/elections/voting-information.html'
+    chkLink: 'https://voter.njsvrs.com/PublicAccess/servlet/com.saber.publicaccess.control.PublicAccessNavigationServlet?USERPROCESS=PublicSearch'
+    dtlName: 'closed primaries'
+    byline:  'New Jerseyans must register as a Democrat to vote for Bernie! However, unaffiliated voters can declare their affiliation with the Democratic Party any time up to (and including) election day.'
+    regInfo: "New Jerseyites registered with another political party must <a href='http://www.state.nj.us/state/elections/voting-information-party-declaration-forms.html'>change their affiliation</a> by April 13, 2016 in order to participate in the Democratic Party Primary."
+    early:   "If you can't make it to the polls on primary day, you can apply for a mail-in ballot until May 31, 2016. Find mail-in ballot applications for your county <a href='http://www.state.nj.us/state/elections/voting-information.html'>here</a>. If you don't apply for a mail-in ballot by the May 31 deadline, you can apply for (and submit) an absentee ballot in person at your local county clerk's <a href='http://www.state.nj.us/state/elections/voting-information-local-officials.html'>office</a> until June 6, 2016 at 3 P.M."
   NM:
     name:    'New Mexico'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_PRIMARY
+    regDate: '2016 05 10'
+    date:    '2016 06 07'
+    office:
+      url:   'http://www.sos.state.nm.us/'
+      phone: '(505) 827-3600'
+    regLink: 'https://portal.sos.state.nm.us/OVR/(S(mzf1lpswqewv3tertpr5t44c))/WebPages/InstructionsStep1.aspx'
+    chkLink: 'https://voterview.state.nm.us/VoterView/RegistrantSearch.do'
+    dtlName: 'closed primaries'
+    byline:  'New Mexicans must register as a Democrat to vote for Bernie!'
+    early:   "If you can't make it to the polls on primary day, you can submit an absentee ballot by mail, or you can request and submit an absentee ballot in person at your county clerk's office beginning on May 10, 2016. Your county clerk will also designate locations for early voting May 21 and June 4, 2016.  Contact your local county clerk's <a href='http://www.sos.state.nm.us/Voter_Information/County_Clerk_Information.aspx'>office</a> to learn more about early voting hours and locations near you."
   NY:
     name:    'New York'
     fillKey: keys.CLOSED_PRIMARY
@@ -409,7 +460,14 @@ states =
     idReq:   "North Carolina requires you to present photo identification in order to vote in person.  Click here <http://voterid.nc.gov/photo-id.html> for more information about what kinds of photo IDs you can use to vote."
   ND:
     name:    'North Dakota'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_CAUCUS
+    date:    '2016 06 07'
+    office:
+      url:   'http://demnpl.com/'
+      phone: '(701) 255-0460'
+    dtlName: 'open caucuses'
+    more:    'http://demnpl.com/'
+    byline:  'Any North Dakotan that intends to support the Democratic Party in the 2016 election can vote for Bernie Sanders, regardless of registration status.'
   OH:
     name:    'Ohio'
     fillKey: keys.OPEN_PRIMARY
@@ -440,7 +498,16 @@ states =
     idReq:   "Oklahoma requires you to present a photo identification in order to vote in person. Acceptable IDs must be issued by the U.S. government, the State of Oklahoma, or a federally recognized tribal government, must contain your name and photograph, and must be valid (i.e., unexpired) on the date of the primary."
   OR:
     name:    'Oregon'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_PRIMARY
+    regDate: '2016 04 26'
+    date:    '2016 05 17'
+    office:
+      url:   'http://sos.oregon.gov/voting-elections/Pages/default.aspx'
+      phone: '(503) 986-1518'
+    regLink: 'https://secure.sos.state.or.us/orestar/vr/register.do'
+    chkLink: 'https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?source=SOS'
+    dtlName: 'closed primaries'
+    byline:  'Oregonians must register as a Democrat to vote for Bernie!'
   PA:
     name:    'Pennsylvania'
     fillKey: keys.CLOSED_PRIMARY
@@ -484,7 +551,19 @@ states =
     byline:  'South Carolinians can vote for Bernie Sanders regardless of their registered party.'
   SD:
     name:    'South Dakota'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OTHER
+    label:   'Semi-closed Primary'
+    regDate: '2016 05 23'
+    date:    '2016 06 07'
+    office:
+      url:   'http://www.scvotes.org/'
+      phone: '(803) 734-9060'
+    regLink: 'https://sdsos.gov/elections-voting/voting/register-to-vote/'
+    chkLink: 'https://sos.sd.gov/Elections/VIPLogin.aspx'
+    dtlName: 'semi-closed primaries'
+    byline:  'South Dakotans must be registered as a Democrat or independent to vote for Bernie Sanders!'
+    early:   "If you can't make it to the polls on primary day, you can submit an absentee ballot by <a href='https://sdsos.gov/elections-voting/voting/absentee-voting.aspx'>mail</a>, or or you can request and submit an absentee ballot in person at your county auditor's <a href='https://sdsos.gov/contact-us/county-auditors.aspx'>office</a> beginning on April 22, 2016."
+    idReq:   "South Dakota asks that you present a photo identification in order to vote in person, but South Dakotans with no photo ID can still cast a regular ballot by signing a personal identification affidavit on election day."
   TN:
     name:    'Tennessee'
     fillKey: keys.OPEN_PRIMARY

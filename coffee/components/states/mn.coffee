@@ -1,6 +1,7 @@
-import React  from 'react'
-import Sticky from 'react-stickynode'
-import moment from 'moment'
+import React     from 'react'
+import Sticky    from 'react-stickynode'
+import moment    from 'moment'
+import RightInfo from 'components/states/partials/rightInfo'
 
 module.exports = React.createClass
   displayName: 'State Info'
@@ -27,16 +28,6 @@ module.exports = React.createClass
         </p>
       </div>
       <div className='right'>
-        <Sticky enabled={window.innerWidth >= 768} top={25} bottomBoundary='section.flex'>
-          <h3 className='caps'>Caucus Date</h3>
-          <p className='date jubilat blue'>
-            {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
-          </p>
-          <p>
-            <a href='http://mnvotesinfo.sos.state.mn.us/' className='btn red'>
-              More Info
-            </a>
-          </p>
-        </Sticky>
+        <RightInfo state={@props.state} />
       </div>
     </section>

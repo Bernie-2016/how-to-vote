@@ -13,21 +13,34 @@ module.exports = React.createClass
       <p className='date jubilat blue'>
         {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
       </p>
-      <h3 className='caps'>
-        Registration Deadline
-      </h3>
-      <p className='date jubilat blue'>
-        {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
-      </p>
-      <p>
-        <a href={@props.state.regLink} className='btn red'>
-          Register to Vote
-        </a>
-      </p>
+      {if @props.state.regDate
+        <div>
+          <h3 className='caps'>
+            Registration Deadline
+          </h3>
+          <p className='date jubilat blue'>
+            {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
+          </p>
+        </div>
+      }
+      {if @props.state.regLink
+        <p>
+          <a href={@props.state.regLink} className='btn red'>
+            Register to Vote
+          </a>
+        </p>
+      }
       {if @props.state.chkLink
         <p>
           <a href={@props.state.chkLink} className='btn'>
             Check Registration Status
+          </a>
+        </p>
+      }
+      {if @props.state.more
+        <p>
+          <a href={@props.state.more} className='btn red'>
+            More Info
           </a>
         </p>
       }
