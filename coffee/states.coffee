@@ -87,7 +87,17 @@ states =
     fillKey: keys.UNAVAILABLE
   GA:
     name:    'Georgia'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: '2016 02 01'
+    date:    '2016 03 01'
+    office:
+      url:   'http://sos.ga.gov/index.php/?section=elections'
+      phone: '(404) 656-2871'
+    regLink: 'https://registertovote.sos.ga.gov/GAOLVR/welcome.do#no-back-button'
+    chkLink: 'https://www.mvp.sos.ga.gov/MVP/mvp.do'
+    dtlName: 'open primaries'
+    byline:  'Georgians can vote for Bernie Sanders regardless of their registered party.'
+    custom:  true
   HI:
     name:    'Hawaii'
     fillKey: keys.UNAVAILABLE
@@ -116,13 +126,33 @@ states =
     sameDay: 'Iowa has Same-Day Registration which allows you to register to vote at the caucuses on Mon, February 1.'
   KS:
     name:    'Kansas'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OTHER
+    label:   'Semi-closed Caucus'
+    regDate: '2016 02 13'
+    date:    '2016 03 05'
+    office:
+      url:   'http://www.voteks.org'
+      phone: '(800) 262-8683'
+    regLink: 'https://www.kdor.org/voterregistration/'
+    chkLink: 'https://myvoteinfo.voteks.org/VoterView/RegistrantSearch.do'
+    dtlName: 'semi-closed caucuses'
+    byline:  'Kansans must be affiliated with the Democratic Party to vote for Bernie!'
   KY:
     name:    'Kentucky'
     fillKey: keys.UNAVAILABLE
   LA:
     name:    'Louisiana'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_PRIMARY
+    regDate: '2016 02 03'
+    date:    '2016 03 05'
+    office:
+      url:   'http://www.sos.la.gov/ElectionsAndVoting/Pages/default.aspx'
+      phone: '(225) 922-0900'
+    regLink: 'http://www.sos.la.gov/ElectionsAndVoting/Pages/OnlineVoterRegistration.aspx'
+    chkLink: 'https://voterportal.sos.la.gov/'
+    dtlName: 'closed primaries'
+    byline:  'Louisianans must register as a Democrat to vote for Bernie!'
+    custom:  true
   ME:
     name:    'Maine'
     fillKey: keys.CLOSED_CAUCUS
@@ -154,7 +184,17 @@ states =
     byline:  'Bay Staters must register as a Democrat or undeclared to vote for Bernie!'
   MI:
     name:    'Michigan'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: '2016 02 08'
+    date:    '2016 03 08'
+    office:
+      url:   'http://www.michigan.gov/sos/0,1607,7-127-1633---,00.html'
+      phone: '(808) 767-6424'
+    regLink: 'http://www.michigan.gov/sos/0,1607,7-127-1633_8716_8726_47669-175879--,00.html'
+    chkLink: 'http://www.michigan.gov/vote'
+    dtlName: 'open primaries'
+    byline:  'Michiganders can vote for Bernie Sanders regardless of their registered party.'
+    custom:  true
   MN:
     name:    'Minnesota'
     fillKey: keys.OPEN_CAUCUS
@@ -180,7 +220,17 @@ states =
     fillKey: keys.UNAVAILABLE
   NE:
     name:    'Nebraska'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.CLOSED_CAUCUS
+    regDate: '2016 03 05'
+    date:    '2016 03 05'
+    office:
+      url:   'http://www.sos.ne.gov/elec/'
+      phone: '(402) 471-2555'
+    regLink: 'https://www.nebraska.gov/apps-sos-voter-registration/'
+    chkLink: 'https://www.votercheck.necvr.ne.gov/VoterView/RegistrantSearch.do'
+    dtlName: 'closed caucuses'
+    byline:  'Nebraskans must be registered Democrats to vote for Bernie Sanders! However, unaffiliated Nebraskans or those registered as Republicans can register to vote or change their party affiliation prior to or at the caucus.'
+    sameDay: 'Nebraska has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 5.'
   NV:
     name:    'Nevada'
     fillKey: keys.CLOSED_CAUCUS
@@ -229,7 +279,18 @@ states =
     fillKey: keys.UNAVAILABLE
   OK:
     name:    'Oklahoma'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OTHER
+    label:   'Semi-closed Primary'
+    regDate: '2016 02 05'
+    date:    '2016 03 01'
+    office:
+      url:   'https://www.ok.gov/elections/'
+      phone: '(405) 521-2391'
+    regLink: 'https://www.ok.gov/elections/documents/Oklahoma%20Voter%20Registration%20Application%20form%20v4-20%20SEB%20web.pdf'
+    chkLink: 'https://services.okelections.us/voterSearch.aspx'
+    dtlName: 'semi-closed primaries'
+    byline:  'Oklahomans must be registered as a Democrat or independent to vote for Bernie Sanders!'
+    custom:  true
   OR:
     name:    'Oregon'
     fillKey: keys.UNAVAILABLE
@@ -256,7 +317,17 @@ states =
     fillKey: keys.UNAVAILABLE
   TN:
     name:    'Tennessee'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: '2016 02 01'
+    date:    '2016 03 01'
+    office:
+      url:   'http://sos.tn.gov/elections'
+      phone: '(615) 741-7956'
+    regLink: 'http://sos.tn.gov/products/elections/register-vote-0'
+    chkLink: 'https://tnmap.tn.gov/voterlookup/'
+    dtlName: 'open primaries'
+    byline:  'Tennesseans can vote for Bernie Sanders regardless of their registered party.'
+    custom:  true
   TX:
     name:    'Texas'
     fillKey: keys.OPEN_PRIMARY
@@ -274,7 +345,16 @@ states =
     fillKey: keys.UNAVAILABLE
   VT:
     name:    'Vermont'
-    fillKey: keys.UNAVAILABLE
+    fillKey: keys.OPEN_PRIMARY
+    regDate: '2016 02 24'
+    date:    '2016 03 01'
+    office:
+      url:   'https://www.sec.state.vt.us/elections.aspx'
+      phone: '(800) 439-8683'
+    regLink: 'https://www.sec.state.vt.us/elections/voters/registration.aspx'
+    dtlName: 'open primaries'
+    byline:  'Vermonters can vote for Bernie Sanders regardless of their registered party.'
+    custom:  true
   VA:
     name:    'Virginia'
     fillKey: keys.OPEN_PRIMARY

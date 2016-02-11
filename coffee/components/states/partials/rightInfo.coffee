@@ -23,9 +23,11 @@ module.exports = React.createClass
           Register to Vote
         </a>
       </p>
-      <p>
-        <a href={@props.state.chkLink} className='btn'>
-          Check Registration Status
-        </a>
-      </p>
+      {if @props.state.chkLink
+        <p>
+          <a href={@props.state.chkLink} className='btn'>
+            Check Registration Status
+          </a>
+        </p>
+      }
     </Sticky>
