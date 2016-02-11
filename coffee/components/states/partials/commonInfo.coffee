@@ -1,4 +1,5 @@
-import React  from 'react'
+import React     from 'react'
+import PollPlace from 'components/states/partials/pollPlace'
 
 module.exports = React.createClass
   displayName: 'State Common Info'
@@ -21,4 +22,5 @@ module.exports = React.createClass
         <a href={@props.state.office.url}>Official {@props.state.name} Elections Website</a><br />
         Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
       </p>
+      <PollPlace />
     </div>
