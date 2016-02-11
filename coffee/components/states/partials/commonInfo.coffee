@@ -5,10 +5,6 @@ module.exports = React.createClass
 
   render: ->
     <div>
-      <h3 className='caps'>Only 17?</h3>
-      <p>
-        You may still vote in {@props.state.name} if you will be 18 years old by November 8, 2016.
-      </p>
       <h3 className='caps'>College Students</h3>
       <p>
         If you are a college student not living in your home state, you can vote for Bernie in either your home state or in the state in which you are attending school!
