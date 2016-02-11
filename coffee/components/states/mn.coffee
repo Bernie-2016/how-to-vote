@@ -27,7 +27,7 @@ module.exports = React.createClass
         </p>
       </div>
       <div className='right'>
-        <Sticky top={25} bottomBoundary='section.flex'>
+        <Sticky enabled={window.innerWidth >= 768} top={25} bottomBoundary='section.flex'>
           <h3 className='caps'>Caucus Date</h3>
           <p className='date jubilat blue'>
             {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
