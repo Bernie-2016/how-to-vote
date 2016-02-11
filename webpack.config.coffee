@@ -1,5 +1,6 @@
 path              = require('path')
 HtmlWebpackPlugin = require('html-webpack-plugin')
+CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports =
   entry: './coffee/router'
@@ -38,6 +39,12 @@ module.exports =
         minify:
           collapseWhitespace: true
       )
+      new CopyWebpackPlugin([
+        {
+          from: 'img/logo.png'
+          to: 'logo.png' 
+        }
+      ])
     ]
 
   resolve:
