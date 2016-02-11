@@ -73,6 +73,8 @@ states =
     office:
       url:   'http://www.sos.state.co.us/pubs/elections/main.html'
       phone: '(303) 894-2200'
+    dtlName: 'closed caucuses'
+    byline:  'Coloradans must register as a Democrat to vote for Bernie!'
   CT:
     name:    'Connecticut'
     fillKey: keys.UNAVAILABLE
@@ -132,7 +134,7 @@ states =
     chkLink: 'http://www.maine.gov/portal/government/edemocracy/voter_lookup.php'
     dtlName: 'closed caucuses'
     byline:  'Mainers must register as a Democrat to vote for Bernie!'
-    sameDay: 'Maine has Same-Day Registration which allows you to register to vote at the caucuses on Sun, March 6 for unregistered and unaffiliated voters.'
+    sameDay: 'Maine has Same-Day Registration which allows you to register to vote at the caucuses on Sun, March 6 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Fri, Feb 19.'
   MD:
     name:    'Maryland'
     fillKey: keys.UNAVAILABLE
@@ -189,6 +191,7 @@ states =
     chkLink: 'https://nvsos.gov/votersearch/'
     dtlName: 'closed caucuses'
     byline:  'Nevadans must register as a Democrat to vote for Bernie! However Nevadans may register/update registration to Democrat on the day of the caucus.'
+    sameDay: 'Nevada has Same-Day Registration which allows you to register to vote at the caucuses on Sat, February 20.'
   NH:
     name:    'New Hampshire'
     fillKey: keys.OTHER
