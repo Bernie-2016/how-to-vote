@@ -6,7 +6,7 @@ import entity   from 'utils/entity'
 import TopInfo  from 'components/states/partials/topInfo'
 
 module.exports = React.createClass
-  displayName: 'State Info'
+  displayName: 'NV State Info'
 
   render: ->
     <section className='flex'>
@@ -26,7 +26,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>Military/Overseas Voters</h3>
         <p>
-          If you live, work, are in the military or study abroad, you are able to participate in Nevada’s Tele-Caucus on February 20th at 11am, but must <a href='http://nvdems.com'>pre-register</a> from Monday, February 1st – Sunday, February 14 (Midnight PST).
+          If you live, work, are in the military or study abroad, you are able to participate in Nevada’s Tele-Caucus on February 20th at 11am, but must <a href='http://action.nvdems.com/page/s/telecaucus'>pre-register</a> from Monday, February 1st – Sunday, February 14 (Midnight PST).
         </p>
         <p>
           After registering, you will receive a confirmation email. One week prior, you will receive a dial-in number and a unique pin. You must be dialed in to the Tele-Caucus by 12:00 p.m. PST.

@@ -283,7 +283,7 @@ states =
     regLink: 'https://vote.elections.virginia.gov/Registration/Eligibility'
     chkLink: 'https://vote.elections.virginia.gov/VoterInformation'
     dtlName: 'open primaries'
-    byline:  'Virginians can vote for Bernie Sanders regardless of their registered party.'
+    byline:  'all Virginians can request a Democratic ballot to vote for Bernie Sanders.'
   WA:
     name:    'Washington'
     fillKey: keys.UNAVAILABLE

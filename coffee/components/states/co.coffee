@@ -1,13 +1,11 @@
 import React      from 'react'
-import { Link }   from 'react-router'
 import Sticky     from 'react-stickynode'
 import moment     from 'moment'
-import entity     from 'utils/entity'
 import TopInfo    from 'components/states/partials/topInfo'
 import CommonInfo from 'components/states/partials/commonInfo'
 
 module.exports = React.createClass
-  displayName: 'Colorado'
+  displayName: 'CO State Info'
 
   render: ->
     <section className='flex'>
