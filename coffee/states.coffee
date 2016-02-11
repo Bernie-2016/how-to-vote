@@ -75,6 +75,7 @@ states =
       phone: '(303) 894-2200'
     dtlName: 'closed caucuses'
     byline:  'Coloradans must register as a Democrat to vote for Bernie!'
+    custom:  true
   CT:
     name:    'Connecticut'
     fillKey: keys.UNAVAILABLE
@@ -167,6 +168,7 @@ states =
     dtlName: 'open caucuses'
     byline:  'Minnesotans can vote for Bernie Sanders regardless of their registered party.'
     sameDay: 'Minnesota has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 1.'
+    custom:  true
   MS:
     name:    'Mississippi'
     fillKey: keys.UNAVAILABLE
@@ -192,6 +194,7 @@ states =
     dtlName: 'closed caucuses'
     byline:  'Nevadans must register as a Democrat to vote for Bernie! However Nevadans may register/update registration to Democrat on the day of the caucus.'
     sameDay: 'Nevada has Same-Day Registration which allows you to register to vote at the caucuses on Sat, February 20.'
+    custom:  true
   NH:
     name:    'New Hampshire'
     fillKey: keys.OTHER
@@ -296,10 +299,6 @@ states =
   WY:
     name:    'Wyoming'
     fillKey: keys.UNAVAILABLE
-
-for key, state of states
-  try
-    state.component = require("components/states/#{key.toLowerCase()}")
 
 module.exports =
   keys:        keys

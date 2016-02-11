@@ -13,15 +13,15 @@ module.exports = React.createClass
 
   render: ->
     state = states[@props.params.state.toUpperCase()]
+
+    if state.custom
+      StateComponent = require("components/states/#{@props.params.state.toLowerCase()}")
+    else
+      StateComponent = StateInfo
     
     return (
       <div>
         <Header state={state} {...@props} />
-
-        {if state.component
-          <state.component state={state} />
-        else
-          <StateInfo state={state} />
-        }
+        <StateComponent state={state} />
       </div>
     )
