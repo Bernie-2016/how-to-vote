@@ -3,6 +3,8 @@ import { GoogleMapLoader, GoogleMap, DirectionsRenderer } from 'react-google-map
 import GoogleMaps                                         from 'google-maps'
 import $                                                  from 'jquery'
 
+GoogleMaps.key = if __PROD__ then 'AIzaSyCFQ50iI4VcALSPhuOkxsB7YI3yElr92bE' else require('credentials.json').googleKey
+
 module.exports = React.createClass
   displayName: 'Poll Place Widget'
 

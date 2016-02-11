@@ -1,6 +1,6 @@
 s3 = require('s3')
  
-client = s3.createClient(s3Options: require('./aws_credentials.json'))
+client = s3.createClient(s3Options: require('./credentials.json'))
 
 params =
   localDir: './dist'

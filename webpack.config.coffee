@@ -1,4 +1,5 @@
 path              = require('path')
+webpack           = require('webpack')
 HtmlWebpackPlugin = require('html-webpack-plugin')
 CopyWebpackPlugin = require('copy-webpack-plugin')
 
@@ -45,6 +46,9 @@ module.exports =
           to: 'logo.png' 
         }
       ])
+      new webpack.DefinePlugin(
+        __PROD__: process.env.BUILD_PROD is 'true'
+      )
     ]
 
   resolve:

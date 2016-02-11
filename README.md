@@ -16,7 +16,7 @@ Information about how to vote for Bernie Sanders in each state.
 3. Run development server: `npm start` and open [http://localhost:8080](http://localhost:8080)
 
 ### Deployment
-1. Add valid IAM credentials in `aws_credentials.json`.
+1. Add valid IAM credentials in `credentials.json`.
 2. Run `npm run webpack` to generate production assets.
 3. Run `npm run deploy` to deploy.
 
