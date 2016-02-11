@@ -10,6 +10,11 @@ module.exports = React.createClass
     <section className='flex'>
       <div className='left'>
         <TopInfo state={@props.state} />
+        {if @props.state.regInfo
+          <div>
+            <p dangerouslySetInnerHTML={__html: @props.state.regInfo} />
+          </div>
+        }
         {if @props.state.idReq
           <div>
             <h3 className='caps'>ID Requirement</h3>
@@ -18,7 +23,7 @@ module.exports = React.createClass
         }
         {if @props.state.early
           <div>
-            <h3 className='caps'>Early Voting</h3>
+            <h3 className='caps'>Early or Absentee Voting</h3>
             <p dangerouslySetInnerHTML={__html: @props.state.early} />
           </div>
         }
