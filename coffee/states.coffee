@@ -97,7 +97,8 @@ states =
     chkLink: 'https://www.mvp.sos.ga.gov/MVP/mvp.do'
     dtlName: 'open primaries'
     byline:  'Georgians can vote for Bernie Sanders regardless of their registered party.'
-    custom:  true
+    early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26, during normal business hours, and on Saturday February 20, from 9:00 A.M. to 4:00 P.M. Georgia also lets any voter vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf'>here</a>."
+    idReq:   "Georgia requires you to present a photo identification in order to vote in person. Acceptable IDs include valid state or federal photo IDs, including a free photo ID card issued by your county registrar's office or the Georgia Department of Driver Services, a Georgia Driver's License (current or expired), employee photo IDs from any federal, state, or local agency, a valid U.S. passport, a valid U.S. military photo ID, or a valid tribal photo ID."
   HI:
     name:    'Hawaii'
     fillKey: keys.UNAVAILABLE
@@ -152,7 +153,7 @@ states =
     chkLink: 'https://voterportal.sos.la.gov/'
     dtlName: 'closed primaries'
     byline:  'Louisianans must register as a Democrat to vote for Bernie!'
-    custom:  true
+    early:   "You can participate in early voting for the Louisiana Democratic Primary at designated locations in your parish between February 20 and 27, 2016. Find your closest early voting location <a href='https://voterportal.sos.la.gov/EarlyVoting'>here</a>."
   ME:
     name:    'Maine'
     fillKey: keys.CLOSED_CAUCUS
@@ -194,7 +195,7 @@ states =
     chkLink: 'http://www.michigan.gov/vote'
     dtlName: 'open primaries'
     byline:  'Michiganders can vote for Bernie Sanders regardless of their registered party.'
-    custom:  true
+    idReq:   "Michigan voters must provide a photo ID at the polls, or sign an affidavit attesting that they do not possess a photo ID.  Acceptable Photo IDs include a valid driver's license, a federal or state-issued photo ID, a U.S. passport, a military photo ID, a high school or college photo ID, or a tribal photo ID."
   MN:
     name:    'Minnesota'
     fillKey: keys.OPEN_CAUCUS
@@ -290,7 +291,8 @@ states =
     chkLink: 'https://services.okelections.us/voterSearch.aspx'
     dtlName: 'semi-closed primaries'
     byline:  'Oklahomans must be registered as a Democrat or independent to vote for Bernie Sanders!'
-    custom:  true
+    early:   "Early voting for the Oklahoma Democratic primary takes place on Thursday, February 25 and Friday, February 26, from 8 A.M. to 6 P.M., and on Saturday, February 27, from 9 A.M. to 2 P.M.  Oklahoma also lets all residents vote by absentee ballot. You can apply for an absentee ballot <a href='https://www.ok.gov/elections/documents/Oklahoma%20Absentee%20Ballot%20Application%20-%20fillable.pdf'>here</a> until February 24, 2016."
+    idReq:   "Oklahoma requires you to present a photo identification in order to vote in person. Acceptable IDs must be issued by the U.S. government, the State of Oklahoma, or a federally recognized tribal government, must contain your name and photograph, and must be valid (i.e., unexpired) on the date of the primary."
   OR:
     name:    'Oregon'
     fillKey: keys.UNAVAILABLE
@@ -327,7 +329,8 @@ states =
     chkLink: 'https://tnmap.tn.gov/voterlookup/'
     dtlName: 'open primaries'
     byline:  'Tennesseans can vote for Bernie Sanders regardless of their registered party.'
-    custom:  true
+    early:   "You can participate in early in-person voting for the Tennessee democratic primary between February 10, 2016 and February 23, 2016, during voting hours established by your county."
+    idReq:   "Tennessee requires you to present a photo identification in order to vote in person. Acceptable IDs include valid photo IDs issued by any state government, valid U.S. passports, valid U.S. military photo IDs, and Tennessee handgun carry permits with photos."
   TX:
     name:    'Texas'
     fillKey: keys.OPEN_PRIMARY
@@ -354,7 +357,7 @@ states =
     regLink: 'https://www.sec.state.vt.us/elections/voters/registration.aspx'
     dtlName: 'open primaries'
     byline:  'Vermonters can vote for Bernie Sanders regardless of their registered party.'
-    custom:  true
+    early:   "You can participate in early in-person voting for the Vermont democratic primary at your town clerk's office any time until Monday, February 29. Any voter can also request that their town clerk mail them an early voter absentee ballot any time before the primary. You can find the form to request an absentee ballot <a href='https://www.sec.state.vt.us/media/53483/VTAbsenteeRequestGeneric.pdf'>here</a>."
   VA:
     name:    'Virginia'
     fillKey: keys.OPEN_PRIMARY

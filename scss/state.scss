@@ -8,6 +8,11 @@ div#htv-app {
     flex-direction: column;
     margin-top: 50px;
 
+    h1,h2,h3,h4,h5,p,li,ul,ol {
+      margin: 0;
+      line-height: 1;
+    }
+
     div.left {
       background-color: white;
       box-sizing: border-box;
