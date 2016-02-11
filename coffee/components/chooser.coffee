@@ -28,9 +28,6 @@ module.exports = React.createClass
       {(states[@props.state] || {}).name || 'America'}
       <ul hidden={!@state.open}>
         <li className='heading'>Select Your State</li>
-        <li data-url={'/'} onClick={@visit}>
-          America
-        </li>
         {for key, state of states when state.fillKey isnt keys.UNAVAILABLE
           <li key={key} data-url={"/#{key}"} onClick={@visit}>
             {state.name}
