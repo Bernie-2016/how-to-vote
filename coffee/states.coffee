@@ -350,7 +350,7 @@ states =
     chkLink: 'http://s1.sos.mo.gov/elections/voterlookup/'
     dtlName: 'open primaries'
     byline:  'Missourians can vote for Bernie Sanders regardless of their registered party.'
-    idReq:   "Missouri requires you to present identification in order to vote in person.  Acceptable forms of identification include any ID issued by a federal, state of Missouri, or local agency, any ID issued by an institution of higher education, a copy of a current utility bill, bank statement, paycheck, government check, any other government document that contains your name and address, or a driver's license or state ID card from another state."
+    idReq:   "Missouri requires you to present identification in order to vote in person.  Acceptable forms of identification include any ID issued by a federal, state of Missouri, or local agency; any ID issued by an institution of higher education; a copy of a current utility bill, bank statement, paycheck, government check, any other government document that contains your name and address; or a driver's license or state ID card from another state."
   MT:
     name:    'Montana'
     fillKey: keys.OPEN_PRIMARY
@@ -537,7 +537,7 @@ states =
     chkLink: 'http://www.sec.state.ri.us/vic/'
     dtlName: 'semi-closed primaries'
     byline:  'Rhode Islanders must register as a Democrat or undeclared to vote for Bernie!'
-    regInfo: "Rhode Islanders registered to vote as members of another party or who have voted in another party's primary cannot vote for Bernie Sanders in the Democratic primary unless they re-registered as Democrats by January 27, 2016.  However, Rhode Islanders who are unaffiliated with any political party and have not previously voted in another party's primary can vote in the Democratic primary."
+    regInfo: "Rhode Islanders registered to vote as members of another party cannot vote for Bernie Sanders in the Democratic primary unless they re-registered as Democrats by January 27, 2016.  However, Rhode Islanders who are unaffiliated with any political party and have not previously voted in another party's primary can vote in the Democratic primary."
     early:   "If you think you might not be able to vote in person at your local polling place, you can apply for a mail-in absentee ballot by submitting <a href='http://sos.ri.gov/assets/downloads/documents/elections-and-voting/mailballots/Mail-Ballot-Application-Democrat-English.pdf' target='_blank'>this form</a> to your local board of canvassers by April 5, 2016. If you miss that deadline, you can apply for a mail-in absentee ballot at your local board of canvassers until April 25, 2016. Your mail-in ballot must be received by the Board of Elections by 8 P.M. on April 26, 2016."
     idReq:   "Rhode Island generally requires you to present photo identification in order to vote in person. However, if you don't have an acceptable photo ID, you can present an alternative form of identification, such as a utility bill or student ID. To learn more about what types of IDs and documents satisfy Rhode Island's requirements, click <a href='http://sos.ri.gov/divisions/elections/Voters/voter-id' target='_blank'>here</a>."
   SC:
@@ -684,7 +684,7 @@ states =
     regLink: 'http://soswy.state.wy.us/elections/registeringtovote.aspx'
     dtlName: 'closed caucuses'
     byline:  'Wyomingites must register as a Democrat to vote for Bernie!'
-    regInfo: "If you are not yet 18 but will turn 18 by the November 8, 2016 presidential election, you can still vote for Bernie Sanders in your county caucus — just pre-register to vote as a Democrat with your county clerk <a href='https://soswy.state.wy.us/Elections/Docs/WYCountyClerks.pdf' target='_blank'>here</a>. (And when the presidential election comes, you'll be registered to vote as a Democrat). If you can't make it to your county caucus, use <a href='http://www.wyodems.org/sites/wyodems2015/files/CaucusSurrogateForm.pdf' target='_blank'>this form</a> to appoint a surrogate who can vote for Bernie Sanders (and candidates for other offices) on your behalf."
+    regInfo: "If you are not yet 18 but will turn 18 by the November 8, 2016 presidential election, you can still vote for Bernie Sanders in your county caucus — just pre-register to vote as a Democrat with your county clerk <a href='https://soswy.state.wy.us/Elections/Docs/WYCountyClerks.pdf' target='_blank'>here</a>. (And when the presidential election comes, you'll be registered to vote as a Democrat). If you can't make it to your county caucus, use <a href='http://www.wyodems.org/sites/wyodems2015/files/CaucusSurrogateForm_0.pdf' target='_blank'>this form</a> to appoint a surrogate who can vote for Bernie Sanders (and candidates for other offices) on your behalf."
 
 module.exports =
   keys:        keys
