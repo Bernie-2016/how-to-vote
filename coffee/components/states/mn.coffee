@@ -23,7 +23,7 @@ module.exports = React.createClass
           If you have any questions about voting in {@props.state.name} you may contact your official elections office.
         </p>
         <p>
-          <a href={@props.state.office.url}>Official {@props.state.name} Elections Website</a><br />
+          <a href={@props.state.office.url} target='_blank'>Official {@props.state.name} Elections Website</a><br />
           Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
         </p>
       </div>

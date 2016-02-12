@@ -25,21 +25,21 @@ module.exports = React.createClass
       }
       {if @props.state.regLink
         <p>
-          <a href={@props.state.regLink} className='btn red'>
+          <a href={@props.state.regLink} target='_blank' className='btn red'>
             Register to Vote
           </a>
         </p>
       }
       {if @props.state.chkLink
         <p>
-          <a href={@props.state.chkLink} className='btn'>
+          <a href={@props.state.chkLink} target='_blank' className='btn'>
             Check Registration Status
           </a>
         </p>
       }
       {if @props.state.more
         <p>
-          <a href={@props.state.more} className='btn red'>
+          <a href={@props.state.more} target='_blank' className='btn red'>
             More Info
           </a>
         </p>

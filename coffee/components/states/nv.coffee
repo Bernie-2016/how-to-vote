@@ -31,7 +31,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>More Information</h3>
         <p>
-          For more information about the Democratic caucus in Nevada, visit the <a href='http://nvdems.com'>NVDems website</a>.
+          For more information about the Democratic caucus in Nevada, visit the <a href='http://nvdems.com' target='_blank'>NVDems website</a>.
         </p>
       </div>
       <div className='right'>
@@ -41,12 +41,12 @@ module.exports = React.createClass
             {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}, 11AM
           </p>
           <p>
-            <a href={@props.state.regLink} className='btn red'>
+            <a href={@props.state.regLink} target='_blank' className='btn red'>
               Register to Vote
             </a>
           </p>
           <p>
-            <a href={@props.state.chkLink} className='btn'>
+            <a href={@props.state.chkLink} target='_blank' className='btn'>
               Check Registration Status
             </a>
           </p>

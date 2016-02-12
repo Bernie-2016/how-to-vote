@@ -59,8 +59,8 @@ states =
     chkLink: 'https://voter.azsos.gov/VoterView/RegistrantSearch.do'
     dtlName: 'closed primaries'
     byline:  'Arizonans must register as a Democrat to vote for Bernie!'
-    early:   "Arizonans can vote for Bernie Sanders before the March 22 presidential preference election, either in person or by mail-in absentee ballot, beginning February 24, 2016. Check with your <a href='http://www.azsos.gov/elections/voting-election/contact-information-county-election-officials'>local elections office</a> to learn more about early in-person or mail-in voting."
-    idReq:   "Arizonans must present a photo ID and proof of current address in order to vote. Learn more about acceptable ID documents <a href='http://www.azsos.gov/elections/voting-election'>here</a>."
+    early:   "Arizonans can vote for Bernie Sanders before the March 22 presidential preference election, either in person or by mail-in absentee ballot, beginning February 24, 2016. Check with your <a href='http://www.azsos.gov/elections/voting-election/contact-information-county-election-officials' target='_blank'>local elections office</a> to learn more about early in-person or mail-in voting."
+    idReq:   "Arizonans must present a photo ID and proof of current address in order to vote. Learn more about acceptable ID documents <a href='http://www.azsos.gov/elections/voting-election' target='_blank'>here</a>."
   AR:
     name:    'Arkansas'
     fillKey: keys.OPEN_PRIMARY
@@ -86,7 +86,7 @@ states =
     chkLink: 'http://www.sos.ca.gov/elections/registration-status/'
     dtlName: 'semi-closed primaries'
     byline:  'Californians must register as a Democrat or independent ("no party preference") to vote for Bernie!'
-    early:   "Many counties in California will hold early voting for the Democratic primary between May 9 and June 6, 2016. Contact your <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/'>county elections office</a> to learn more about early voting in your county. You can request a mail-in absentee ballot by submitting <a href='http://elections.cdn.sos.ca.gov/vote-by-mail/pdf/fill-in-vote-by-mail-app-instruct.pdf'>this form</a> before May 31, 2016. You can also file an emergency absentee ballot in person at your local <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/'>county elections office</a> anytime between June 1 and 7, 2016."
+    early:   "Many counties in California will hold early voting for the Democratic primary between May 9 and June 6, 2016. Contact your <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> to learn more about early voting in your county. You can request a mail-in absentee ballot by submitting <a href='http://elections.cdn.sos.ca.gov/vote-by-mail/pdf/fill-in-vote-by-mail-app-instruct.pdf' target='_blank'>this form</a> before May 31, 2016. You can also file an emergency absentee ballot in person at your local <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> anytime between June 1 and 7, 2016."
   CO:
     name:    'Colorado'
     fillKey: keys.CLOSED_CAUCUS
@@ -137,7 +137,7 @@ states =
     chkLink: 'http://dos.myflorida.com/elections/for-voters/check-your-voter-status-and-polling-place/'
     dtlName: 'closed primaries'
     byline:  'Floridans must register as a Democrat to vote for Bernie!'
-    early:   "You can participate in early in-person voting for the Florida Democratic Primary between March 5 and 12, 2016. You can find early voting locations and times <a href='http://dos.myflorida.com/elections/for-voters/voting/early-voting/'>here</a>."
+    early:   "You can participate in early in-person voting for the Florida Democratic Primary between March 5 and 12, 2016. You can find early voting locations and times <a href='http://dos.myflorida.com/elections/for-voters/voting/early-voting/' target='_blank'>here</a>."
     idReq:   "Florida requires people voting in person to present a valid photo ID. Acceptable IDs include a Florida driver's license, a Florida Department of Highway Safety and Motor Vehicle identification card, a U.S. Passport, a debit or credit card with a photograph, a military photo ID, a student photo ID, a retirement center ID, a neighborhood association ID, or a public assistance ID. If your photo ID does not contain a signature you will be asked to present another ID with a signature."
   GA:
     name:    'Georgia'
@@ -151,7 +151,7 @@ states =
     chkLink: 'https://www.mvp.sos.ga.gov/MVP/mvp.do'
     dtlName: 'open primaries'
     byline:  'Georgians can vote for Bernie Sanders regardless of their registered party.'
-    early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26, during normal business hours, and on Saturday February 20, from 9:00 A.M. to 4:00 P.M. Georgia also lets any voter vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf'>here</a>."
+    early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26, during normal business hours, and on Saturday February 20, from 9:00 A.M. to 4:00 P.M. Georgia also lets any voter vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
     idReq:   "Georgia requires you to present a photo identification in order to vote in person. Acceptable IDs include valid state or federal photo IDs, including a free photo ID card issued by your county registrar's office or the Georgia Department of Driver Services, a Georgia Driver's License (current or expired), employee photo IDs from any federal, state, or local agency, a valid U.S. passport, a valid U.S. military photo ID, or a valid tribal photo ID."
   HI:
     name:    'Hawaii'
@@ -191,8 +191,8 @@ states =
     chkLink: 'https://www.elections.il.gov/votinginformation/registrationlookup.aspx'
     dtlName: 'open primaries'
     byline:  'Illinoisians can vote for Bernie Sanders regardless of their registered party.'
-    regInfo: "The regular registration deadline for the Illinois Democratic Primary is on February 16, 2016, but grace period registration continues at select sites until election day. Click <a href='https://www.elections.il.gov/Downloads/ElectionInformation/PDF/GracePeriodReg.pdf'>here</a> to learn more about grace period registration locations and hours."
-    early:   "Early voting in the Illinois primary takes place between February 4 and March 14, 2016.  You can learn more about early voting locations and hours <a href='http://www.elections.state.il.us/votinginformation/earlyvotinglocations.aspx'>here</a>. Illinois also lets residents request mail-in absentee ballots until one day before the primary election. Learn more about mail-in voting in Illinois <a href='http://www.elections.state.il.us/downloads/electioninformation/pdf/votebymail.pdf'>here</a>."
+    regInfo: "The regular registration deadline for the Illinois Democratic Primary is on February 16, 2016, but grace period registration continues at select sites until election day. Click <a href='https://www.elections.il.gov/Downloads/ElectionInformation/PDF/GracePeriodReg.pdf' target='_blank'>here</a> to learn more about grace period registration locations and hours."
+    early:   "Early voting in the Illinois primary takes place between February 4 and March 14, 2016.  You can learn more about early voting locations and hours <a href='http://www.elections.state.il.us/votinginformation/earlyvotinglocations.aspx' target='_blank'>here</a>. Illinois also lets residents request mail-in absentee ballots until one day before the primary election. Learn more about mail-in voting in Illinois <a href='http://www.elections.state.il.us/downloads/electioninformation/pdf/votebymail.pdf' target='_blank'>here</a>."
   IN:
     name:    'Indiana'
     fillKey: keys.OPEN_PRIMARY
@@ -205,7 +205,7 @@ states =
     chkLink: 'https://indianavoters.in.gov/PublicSite/Public/FT1/PublicLookupMain.aspx?Link=Registration'
     dtlName: 'open primaries'
     byline:  'Indianans can vote for Bernie Sanders regardless of their registered party.'
-    early:   "Early in-person voting for the Indiana Democratic Primary takes place at your local circuit court clerk's <a href='http://www.in.gov/judiciary/2794.htm'>office</a>; early voting begins April 5, 2016 and ends at noon on May 2, 2016. Contact your <a href='http://www.in.gov/judiciary/2794.htm'>county clerk</a> for more information about early voting hours."
+    early:   "Early in-person voting for the Indiana Democratic Primary takes place at your local circuit court clerk's <a href='http://www.in.gov/judiciary/2794.htm' target='_blank'>office</a>; early voting begins April 5, 2016 and ends at noon on May 2, 2016. Contact your <a href='http://www.in.gov/judiciary/2794.htm' target='_blank'>county clerk</a> for more information about early voting hours."
     idReq:   "Indiana requires you to present a photo identification in order to vote in person. To learn more about what types of IDs are acceptable, click here. <http://www.in.gov/sos/elections/2401.htm>"
   IA:
     name:    'Iowa'
@@ -258,7 +258,7 @@ states =
     chkLink: 'https://voterportal.sos.la.gov/'
     dtlName: 'closed primaries'
     byline:  'Louisianans must register as a Democrat to vote for Bernie!'
-    early:   "You can participate in early voting for the Louisiana Democratic Primary at designated locations in your parish between February 20 and 27, 2016. Find your closest early voting location <a href='https://voterportal.sos.la.gov/EarlyVoting'>here</a>."
+    early:   "You can participate in early voting for the Louisiana Democratic Primary at designated locations in your parish between February 20 and 27, 2016. Find your closest early voting location <a href='https://voterportal.sos.la.gov/EarlyVoting' target='_blank'>here</a>."
   ME:
     name:    'Maine'
     fillKey: keys.CLOSED_CAUCUS
@@ -284,7 +284,7 @@ states =
     chkLink: 'https://voterservices.elections.maryland.gov/VoterSearch'
     dtlName: 'closed primaries'
     byline:  'Marylanders must register as a Democrat to vote for Bernie!'
-    early:   "Early voting for the Maryland Democratic Primary takes place between April 14 and 21, 2016. Find an early voting location near you <a href='http://www.elections.state.md.us/voting/early_voting.html'>here</a>. The deadline to request for an absentee ballot to be delivered to you by mail is April 19, 2016. You can request for an absentee ballot to be delivered to you through the Internet until April 22, 2016, or you can pick up an absentee ballot in person at your local <a href='http://www.elections.state.md.us/about/county_boards.html'>board of elections</a> until election day."
+    early:   "Early voting for the Maryland Democratic Primary takes place between April 14 and 21, 2016. Find an early voting location near you <a href='http://www.elections.state.md.us/voting/early_voting.html' target='_blank'>here</a>. The deadline to request for an absentee ballot to be delivered to you by mail is April 19, 2016. You can request for an absentee ballot to be delivered to you through the Internet until April 22, 2016, or you can pick up an absentee ballot in person at your local <a href='http://www.elections.state.md.us/about/county_boards.html' target='_blank'>board of elections</a> until election day."
   MA:
     name:    'Massachusetts'
     fillKey: keys.OTHER
@@ -360,8 +360,8 @@ states =
     chkLink: 'https://app.mt.gov/cgi-bin/voterinfo/voterinfo.cgi'
     dtlName: 'open primaries'
     byline:  'Montanans can vote for Bernie Sanders regardless of their registered party.'
-    regInfo: "Montanans can <a href='http://sos.mt.gov/ELECTIONS/Officials/Forms/documents/Voter-Registration-Application.pdf'>register</a> to vote by mail until May 9, 2016. After that date, you can register to vote in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf'>county elections office</a>."
-    early:   "Early voting for the Montana Democratic Primary takes place between May 9 and June 6, 2016. To participate in early voting, you can request and submit an absentee ballot by <a href='http://sos.mt.gov/elections/Officials/Forms/documents/Application-for-Absentee-Ballot.pdf'>mail</a> or in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf'>county elections office</a>."
+    regInfo: "Montanans can <a href='http://sos.mt.gov/ELECTIONS/Officials/Forms/documents/Voter-Registration-Application.pdf' target='_blank'>register</a> to vote by mail until May 9, 2016. After that date, you can register to vote in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf' target='_blank'>county elections office</a>."
+    early:   "Early voting for the Montana Democratic Primary takes place between May 9 and June 6, 2016. To participate in early voting, you can request and submit an absentee ballot by <a href='http://sos.mt.gov/elections/Officials/Forms/documents/Application-for-Absentee-Ballot.pdf' target='_blank'>mail</a> or in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf' target='_blank'>county elections office</a>."
     sameDay: 'Montana has Same-Day Registration which allows you to register to vote at the primaries on Tue, June 7.'
   NE:
     name:    'Nebraska'
@@ -416,8 +416,8 @@ states =
     chkLink: 'https://voter.njsvrs.com/PublicAccess/servlet/com.saber.publicaccess.control.PublicAccessNavigationServlet?USERPROCESS=PublicSearch'
     dtlName: 'closed primaries'
     byline:  'New Jerseyans must register as a Democrat to vote for Bernie! However, unaffiliated voters can declare their affiliation with the Democratic Party any time up to (and including) election day.'
-    regInfo: "New Jerseyites registered with another political party must <a href='http://www.state.nj.us/state/elections/voting-information-party-declaration-forms.html'>change their affiliation</a> by April 13, 2016 in order to participate in the Democratic Party Primary."
-    early:   "If you can't make it to the polls on primary day, you can apply for a mail-in ballot until May 31, 2016. Find mail-in ballot applications for your county <a href='http://www.state.nj.us/state/elections/voting-information.html'>here</a>. If you don't apply for a mail-in ballot by the May 31 deadline, you can apply for (and submit) an absentee ballot in person at your local county clerk's <a href='http://www.state.nj.us/state/elections/voting-information-local-officials.html'>office</a> until June 6, 2016 at 3 P.M."
+    regInfo: "New Jerseyites registered with another political party must <a href='http://www.state.nj.us/state/elections/voting-information-party-declaration-forms.html' target='_blank'>change their affiliation</a> by April 13, 2016 in order to participate in the Democratic Party Primary."
+    early:   "If you can't make it to the polls on primary day, you can apply for a mail-in ballot until May 31, 2016. Find mail-in ballot applications for your county <a href='http://www.state.nj.us/state/elections/voting-information.html' target='_blank'>here</a>. If you don't apply for a mail-in ballot by the May 31 deadline, you can apply for (and submit) an absentee ballot in person at your local county clerk's <a href='http://www.state.nj.us/state/elections/voting-information-local-officials.html' target='_blank'>office</a> until June 6, 2016 at 3 P.M."
   NM:
     name:    'New Mexico'
     fillKey: keys.CLOSED_PRIMARY
@@ -430,7 +430,7 @@ states =
     chkLink: 'https://voterview.state.nm.us/VoterView/RegistrantSearch.do'
     dtlName: 'closed primaries'
     byline:  'New Mexicans must register as a Democrat to vote for Bernie!'
-    early:   "If you can't make it to the polls on primary day, you can submit an absentee ballot by mail, or you can request and submit an absentee ballot in person at your county clerk's office beginning on May 10, 2016. Your county clerk will also designate locations for early voting May 21 and June 4, 2016.  Contact your local county clerk's <a href='http://www.sos.state.nm.us/Voter_Information/County_Clerk_Information.aspx'>office</a> to learn more about early voting hours and locations near you."
+    early:   "If you can't make it to the polls on primary day, you can submit an absentee ballot by mail, or you can request and submit an absentee ballot in person at your county clerk's office beginning on May 10, 2016. Your county clerk will also designate locations for early voting May 21 and June 4, 2016.  Contact your local county clerk's <a href='http://www.sos.state.nm.us/Voter_Information/County_Clerk_Information.aspx' target='_blank'>office</a> to learn more about early voting hours and locations near you."
   NY:
     name:    'New York'
     fillKey: keys.CLOSED_PRIMARY
@@ -456,7 +456,7 @@ states =
     chkLink: 'https://enr.ncsbe.gov/voter_search_public/'
     dtlName: 'semi-closed primaries'
     byline:  'North Carolinians must be registered as a Democrat or independent to vote for Bernie Sanders!'
-    early:   "North Carolina has one-stop early voting and same-day registration at select locations between March 3 and 12, 2016. Contact your <a href='https://enr.ncsbe.gov/cbesearch/'>local elections board</a> to find an early voting location near you. To take advantage of same-day registration, you must bring official proof of a current residential address in your county, such as a valid photo ID or an official document showing your address (e.g., a bank statement or utility bill) no more than two months old. Electronic versions of such documents are acceptable if they come from the original source (e.g., the bank or utility) and show your name and current address. Any registered North Carolina voter can also request a mail-in absentee ballot.  To learn more about absentee voting, click <a href='https://www.ncsbe.gov/Voting/Absentee-Voting'>here</a>."
+    early:   "North Carolina has one-stop early voting and same-day registration at select locations between March 3 and 12, 2016. Contact your <a href='https://enr.ncsbe.gov/cbesearch/' target='_blank'>local elections board</a> to find an early voting location near you. To take advantage of same-day registration, you must bring official proof of a current residential address in your county, such as a valid photo ID or an official document showing your address (e.g., a bank statement or utility bill) no more than two months old. Electronic versions of such documents are acceptable if they come from the original source (e.g., the bank or utility) and show your name and current address. Any registered North Carolina voter can also request a mail-in absentee ballot.  To learn more about absentee voting, click <a href='https://www.ncsbe.gov/Voting/Absentee-Voting' target='_blank'>here</a>."
     idReq:   "North Carolina requires you to present photo identification in order to vote in person.  Click here <http://voterid.nc.gov/photo-id.html> for more information about what kinds of photo IDs you can use to vote."
   ND:
     name:    'North Dakota'
@@ -480,7 +480,7 @@ states =
     chkLink: 'http://voterlookup.sos.state.oh.us/voterlookup.aspx'
     dtlName: 'open primaries'
     byline:  'Ohioans can vote for Bernie Sanders regardless of their registered party.'
-    early:   "Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx'>here</a> to request a mail-in absentee ballot."
+    early:   "Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx' target='_blank'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx' target='_blank'>here</a> to request a mail-in absentee ballot."
   OK:
     name:    'Oklahoma'
     fillKey: keys.OTHER
@@ -494,7 +494,7 @@ states =
     chkLink: 'https://services.okelections.us/voterSearch.aspx'
     dtlName: 'semi-closed primaries'
     byline:  'Oklahomans must be registered as a Democrat or independent to vote for Bernie Sanders!'
-    early:   "Early voting for the Oklahoma Democratic primary takes place on Thursday, February 25 and Friday, February 26, from 8 A.M. to 6 P.M., and on Saturday, February 27, from 9 A.M. to 2 P.M.  Oklahoma also lets all residents vote by absentee ballot. You can apply for an absentee ballot <a href='https://www.ok.gov/elections/documents/Oklahoma%20Absentee%20Ballot%20Application%20-%20fillable.pdf'>here</a> until February 24, 2016."
+    early:   "Early voting for the Oklahoma Democratic primary takes place on Thursday, February 25 and Friday, February 26, from 8 A.M. to 6 P.M., and on Saturday, February 27, from 9 A.M. to 2 P.M.  Oklahoma also lets all residents vote by absentee ballot. You can apply for an absentee ballot <a href='https://www.ok.gov/elections/documents/Oklahoma%20Absentee%20Ballot%20Application%20-%20fillable.pdf' target='_blank'>here</a> until February 24, 2016."
     idReq:   "Oklahoma requires you to present a photo identification in order to vote in person. Acceptable IDs must be issued by the U.S. government, the State of Oklahoma, or a federally recognized tribal government, must contain your name and photograph, and must be valid (i.e., unexpired) on the date of the primary."
   OR:
     name:    'Oregon'
@@ -520,7 +520,7 @@ states =
     chkLink: 'https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationStatus.aspx'
     dtlName: 'closed primaries'
     byline:  'Pennsylvanians must register as a Democrat to vote for Bernie!'
-    idReq:   "If the Democratic primary is your first time voting in Pennsylvania, you might be asked to provide some form of identification, such as a Photo ID, or a current bank or utility statement. To learn more about documents that satisfy the ID requirement for first-time Pennsylvania voters, click <a href='http://www.padems.com/voterid/FirstTimeVoters'>here</a>."
+    idReq:   "If the Democratic primary is your first time voting in Pennsylvania, you might be asked to provide some form of identification, such as a Photo ID, or a current bank or utility statement. To learn more about documents that satisfy the ID requirement for first-time Pennsylvania voters, click <a href='http://www.padems.com/voterid/FirstTimeVoters' target='_blank'>here</a>."
   RI:
     name:    'Rhode Island'
     fillKey: keys.OTHER
@@ -535,8 +535,8 @@ states =
     dtlName: 'semi-closed primaries'
     byline:  'Rhode Islanders must register as a Democrat or undeclared to vote for Bernie!'
     regInfo: "Rhode Islanders registered to vote as members of another party or who have voted in another party's primary cannot vote for Bernie Sanders in the Democratic primary unless they re-registered as Democrats by January 27, 2016.  However, Rhode Islanders who are unaffiliated with any political party and have not previously voted in another party's primary can vote in the Democratic primary."
-    early:   "If you think you might not be able to vote in person at your local polling place, you can apply for a mail-in absentee ballot by submitting <a href='http://sos.ri.gov/assets/downloads/documents/elections-and-voting/mailballots/Mail-Ballot-Application-Democrat-English.pdf'>this form</a> to your local board of canvassers by April 5, 2016. If you miss that deadline, you can apply for a mail-in absentee ballot at your local board of canvassers until April 25, 2016. Your mail-in ballot must be received by the Board of Elections by 8 P.M. on April 26, 2016."
-    idReq:   "Rhode Island generally requires you to present photo identification in order to vote in person. However, if you don't have an acceptable photo ID, you can present an alternative form of identification, such as a utility bill or student ID. To learn more about what types of IDs and documents satisfy Rhode Island's requirements, click <a href='http://sos.ri.gov/divisions/elections/Voters/voter-id'>here</a>."
+    early:   "If you think you might not be able to vote in person at your local polling place, you can apply for a mail-in absentee ballot by submitting <a href='http://sos.ri.gov/assets/downloads/documents/elections-and-voting/mailballots/Mail-Ballot-Application-Democrat-English.pdf' target='_blank'>this form</a> to your local board of canvassers by April 5, 2016. If you miss that deadline, you can apply for a mail-in absentee ballot at your local board of canvassers until April 25, 2016. Your mail-in ballot must be received by the Board of Elections by 8 P.M. on April 26, 2016."
+    idReq:   "Rhode Island generally requires you to present photo identification in order to vote in person. However, if you don't have an acceptable photo ID, you can present an alternative form of identification, such as a utility bill or student ID. To learn more about what types of IDs and documents satisfy Rhode Island's requirements, click <a href='http://sos.ri.gov/divisions/elections/Voters/voter-id' target='_blank'>here</a>."
   SC:
     name:    'South Carolina'
     fillKey: keys.OPEN_PRIMARY
@@ -563,7 +563,7 @@ states =
     chkLink: 'https://sos.sd.gov/Elections/VIPLogin.aspx'
     dtlName: 'semi-closed primaries'
     byline:  'South Dakotans must be registered as a Democrat or independent to vote for Bernie Sanders!'
-    early:   "If you can't make it to the polls on primary day, you can submit an absentee ballot by <a href='https://sdsos.gov/elections-voting/voting/absentee-voting.aspx'>mail</a>, or or you can request and submit an absentee ballot in person at your county auditor's <a href='https://sdsos.gov/contact-us/county-auditors.aspx'>office</a> beginning on April 22, 2016."
+    early:   "If you can't make it to the polls on primary day, you can submit an absentee ballot by <a href='https://sdsos.gov/elections-voting/voting/absentee-voting.aspx' target='_blank'>mail</a>, or or you can request and submit an absentee ballot in person at your county auditor's <a href='https://sdsos.gov/contact-us/county-auditors.aspx' target='_blank'>office</a> beginning on April 22, 2016."
     idReq:   "South Dakota asks that you present a photo identification in order to vote in person, but South Dakotans with no photo ID can still cast a regular ballot by signing a personal identification affidavit on election day."
   TN:
     name:    'Tennessee'
@@ -615,7 +615,7 @@ states =
     regLink: 'https://www.sec.state.vt.us/elections/voters/registration.aspx'
     dtlName: 'open primaries'
     byline:  'Vermonters can vote for Bernie Sanders regardless of their registered party.'
-    early:   "You can participate in early in-person voting for the Vermont democratic primary at your town clerk's office any time until Monday, February 29. Any voter can also request that their town clerk mail them an early voter absentee ballot any time before the primary. You can find the form to request an absentee ballot <a href='https://www.sec.state.vt.us/media/53483/VTAbsenteeRequestGeneric.pdf'>here</a>."
+    early:   "You can participate in early in-person voting for the Vermont democratic primary at your town clerk's office any time until Monday, February 29. Any voter can also request that their town clerk mail them an early voter absentee ballot any time before the primary. You can find the form to request an absentee ballot <a href='https://www.sec.state.vt.us/media/53483/VTAbsenteeRequestGeneric.pdf' target='_blank'>here</a>."
   VA:
     name:    'Virginia'
     fillKey: keys.OPEN_PRIMARY
@@ -654,7 +654,7 @@ states =
     chkLink: 'https://services.sos.wv.gov/Elections/Voter/AmIRegisteredToVote'
     dtlName: 'semi-closed primaries'
     byline:  'West Virginians must register as a Democrat or undeclared to vote for Bernie!'
-    early:   "Early voting in the West Virginia Democratic Primary takes place bewteen April 27 and May 7, 2016. Contact your <a href='http://www.sos.wv.gov/elections/VoterRegistration/Pages/ClerkDirectory.aspx'>county clerk</a> to confirm early voting hours and locations."
+    early:   "Early voting in the West Virginia Democratic Primary takes place bewteen April 27 and May 7, 2016. Contact your <a href='http://www.sos.wv.gov/elections/VoterRegistration/Pages/ClerkDirectory.aspx' target='_blank'>county clerk</a> to confirm early voting hours and locations."
   WI:
     name:    'Wisconsin'
     fillKey: keys.OPEN_PRIMARY
@@ -667,9 +667,9 @@ states =
     chkLink: 'https://myvote.wi.gov/Home.aspx'
     dtlName: 'open primaries'
     byline:  'Wisconsinites can vote for Bernie Sanders regardless of their registered party.'
-    regInfo: "<a href='https://myvote.wi.gov/OnlineRegistration/Default.aspx'>Mail-in registration</a> to vote in the Wisconsin Democratic Primary closes on March 16, 2016. Wisconsinites who wish to register after that date can do so until April 1, 2016 by bringing proof of residency to the office of their <a href='http://www.gab.wi.gov/clerks/directory'>municipal clerk</a>. You can also register at your polling place on election day by bringing proof of residency and certifying that you've been a resident of Wisconsin for 28 days."
-    early:   "You can participate in early voting for the Wisconsin Democratic Primary at your municipal clerk's <a href='http://www.gab.wi.gov/clerks/directory'>office</a> between March 21 and April 1, 2016. Or you can <a href='http://www.gab.wi.gov/elections-voting/voters/absentee'>request</a> a mail-in absentee ballot from your municipal clerk until March 31, 2016."
-    idReq:   "Wisconsin requires you to present a photo identification in order to vote in person. Click <a href='http://bringit.wisconsin.gov'>here</a> to learn more about acceptable photo IDs."
+    regInfo: "<a href='https://myvote.wi.gov/OnlineRegistration/Default.aspx' target='_blank'>Mail-in registration</a> to vote in the Wisconsin Democratic Primary closes on March 16, 2016. Wisconsinites who wish to register after that date can do so until April 1, 2016 by bringing proof of residency to the office of their <a href='http://www.gab.wi.gov/clerks/directory'>municipal clerk</a>. You can also register at your polling place on election day by bringing proof of residency and certifying that you've been a resident of Wisconsin for 28 days."
+    early:   "You can participate in early voting for the Wisconsin Democratic Primary at your municipal clerk's <a href='http://www.gab.wi.gov/clerks/directory' target='_blank'>office</a> between March 21 and April 1, 2016. Or you can <a href='http://www.gab.wi.gov/elections-voting/voters/absentee' target='_blank'>request</a> a mail-in absentee ballot from your municipal clerk until March 31, 2016."
+    idReq:   "Wisconsin requires you to present a photo identification in order to vote in person. Click <a href='http://bringit.wisconsin.gov' target='_blank'>here</a> to learn more about acceptable photo IDs."
   WY:
     name:    'Wyoming'
     fillKey: keys.CLOSED_CAUCUS
@@ -681,7 +681,7 @@ states =
     regLink: 'http://soswy.state.wy.us/elections/registeringtovote.aspx'
     dtlName: 'closed caucuses'
     byline:  'Wyomingites must register as a Democrat to vote for Bernie!'
-    regInfo: "If you are not yet 18 but will turn 18 by the November 8, 2016 presidential election, you can still vote for Bernie Sanders in your county caucus — just pre-register to vote as a Democrat with your county clerk <a href='https://soswy.state.wy.us/Elections/Docs/WYCountyClerks.pdf'>here</a>. (And when the presidential election comes, you'll be registered to vote as a Democrat). If you can't make it to your county caucus, use <a href='http://www.wyodems.org/sites/wyodems2015/files/CaucusSurrogateForm.pdf'>this form</a> to appoint a surrogate who can vote for Bernie Sanders (and candidates for other offices) on your behalf."
+    regInfo: "If you are not yet 18 but will turn 18 by the November 8, 2016 presidential election, you can still vote for Bernie Sanders in your county caucus — just pre-register to vote as a Democrat with your county clerk <a href='https://soswy.state.wy.us/Elections/Docs/WYCountyClerks.pdf' target='_blank'>here</a>. (And when the presidential election comes, you'll be registered to vote as a Democrat). If you can't make it to your county caucus, use <a href='http://www.wyodems.org/sites/wyodems2015/files/CaucusSurrogateForm.pdf' target='_blank'>this form</a> to appoint a surrogate who can vote for Bernie Sanders (and candidates for other offices) on your behalf."
 
 module.exports =
   keys:        keys
