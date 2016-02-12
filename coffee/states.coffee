@@ -134,7 +134,7 @@ states =
       url:   'http://dos.myflorida.com/elections/'
       phone: '(866) 308.6739 '
     regLink: 'http://dos.myflorida.com/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/'
-    chkLink: 'http://dos.myflorida.com/elections/for-voters/check-your-voter-status-and-polling-place/'
+    chkLink: 'http://registration.elections.myflorida.com/CheckVoterStatus'
     dtlName: 'closed primaries'
     byline:  'Floridans must register as a Democrat to vote for Bernie!'
     early:   "You can participate in early in-person voting for the Florida Democratic Primary between March 5 and 12, 2016. You can find early voting locations and times <a href='http://dos.myflorida.com/elections/for-voters/voting/early-voting/' target='_blank'>here</a>."
@@ -151,7 +151,7 @@ states =
     chkLink: 'https://www.mvp.sos.ga.gov/MVP/mvp.do'
     dtlName: 'open primaries'
     byline:  'Georgians can vote for Bernie Sanders regardless of their registered party.'
-    early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26, during normal business hours, and on Saturday February 20, from 9:00 A.M. to 4:00 P.M. Georgia also lets any voter vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
+    early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26, during normal business hours, and on Saturday February 20, from 9:00 A.M. to 4:00 P.M. Georgia allows any voter to vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
     idReq:   "Georgia requires you to present a photo identification in order to vote in person. Acceptable IDs include valid state or federal photo IDs, including a free photo ID card issued by your county registrar's office or the Georgia Department of Driver Services, a Georgia Driver's License (current or expired), employee photo IDs from any federal, state, or local agency, a valid U.S. passport, a valid U.S. military photo ID, or a valid tribal photo ID."
   HI:
     name:    'Hawaii'
@@ -387,7 +387,7 @@ states =
     regLink: 'https://nvsos.gov/sosvoterservices/Registration/step1.aspx'
     chkLink: 'https://nvsos.gov/votersearch/'
     dtlName: 'closed caucuses'
-    byline:  'Nevadans must register as a Democrat to vote for Bernie! However, Nevadans may register/update registration to Democrat on the day of the caucus.'
+    byline:  'Nevadans must register as a Democrat to vote for Bernie! However, Nevadans may register as/update registration to Democrat on the day of the caucus.'
     sameDay: 'Nevada has Same-Day Registration which allows you to register to vote at the caucuses on Sat, February 20.'
     custom:  true
   NH:
@@ -416,7 +416,7 @@ states =
     chkLink: 'https://voter.njsvrs.com/PublicAccess/servlet/com.saber.publicaccess.control.PublicAccessNavigationServlet?USERPROCESS=PublicSearch'
     dtlName: 'closed primaries'
     byline:  'New Jerseyans must register as a Democrat to vote for Bernie! However, unaffiliated voters can declare their affiliation with the Democratic Party any time up to (and including) election day.'
-    regInfo: "New Jerseyites registered with another political party must <a href='http://www.state.nj.us/state/elections/voting-information-party-declaration-forms.html' target='_blank'>change their affiliation</a> by April 13, 2016 in order to participate in the Democratic Party Primary."
+    regInfo: "New Jerseyans registered with another political party must <a href='http://www.state.nj.us/state/elections/voting-information-party-declaration-forms.html' target='_blank'>change their affiliation</a> by April 13, 2016 in order to participate in the Democratic Party Primary."
     early:   "If you can't make it to the polls on primary day, you can apply for a mail-in ballot until May 31, 2016. Find mail-in ballot applications for your county <a href='http://www.state.nj.us/state/elections/voting-information.html' target='_blank'>here</a>. If you don't apply for a mail-in ballot by the May 31 deadline, you can apply for (and submit) an absentee ballot in person at your local county clerk's <a href='http://www.state.nj.us/state/elections/voting-information-local-officials.html' target='_blank'>office</a> until June 6, 2016 at 3 P.M."
   NM:
     name:    'New Mexico'
@@ -430,7 +430,7 @@ states =
     chkLink: 'https://voterview.state.nm.us/VoterView/RegistrantSearch.do'
     dtlName: 'closed primaries'
     byline:  'New Mexicans must register as a Democrat to vote for Bernie!'
-    early:   "If you can't make it to the polls on primary day, you can submit an absentee ballot by mail, or you can request and submit an absentee ballot in person at your county clerk's office beginning on May 10, 2016. Your county clerk will also designate locations for early voting May 21 and June 4, 2016.  Contact your local county clerk's <a href='http://www.sos.state.nm.us/Voter_Information/County_Clerk_Information.aspx' target='_blank'>office</a> to learn more about early voting hours and locations near you."
+    early:   "If you can't make it to the polls on primary day, you can submit an absentee ballot by mail, or you can request and submit an absentee ballot in person at your county clerk's office beginning on May 10, 2016. Your county clerk will also designate locations for early voting between May 21 and June 4, 2016.  Contact your local county clerk's <a href='http://www.sos.state.nm.us/Voter_Information/County_Clerk_Information.aspx' target='_blank'>office</a> to learn more about early voting hours and locations near you."
   NY:
     name:    'New York'
     fillKey: keys.CLOSED_PRIMARY
