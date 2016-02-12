@@ -7,5 +7,5 @@ module.exports = React.createClass
   render: ->
     <h1 id='main-heading' className='center'>
       <span className='kern'>V</span>oting for Bernie in 
-      <Chooser state={@props.params.state.toUpperCase()} history={@props.history} />
+      <Chooser state={(@props.params.state || '').toUpperCase()} history={@props.history} />
     </h1>
