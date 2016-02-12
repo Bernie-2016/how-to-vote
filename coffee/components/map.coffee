@@ -23,10 +23,11 @@ module.exports = React.createClass
         defaultFill: '#A2A7B7'
       data:  states
       done:  (datamap) =>
-        datamap.svg.selectAll('.datamaps-subunit').on 'mouseenter', (geography) =>
+        history = @props.history
+        datamap.svg.selectAll('.datamaps-subunit').on 'mouseenter', (geography) ->
           return if states[geography.id].fillKey is keys.UNAVAILABLE
           if (new MobileDetect(window.navigator.userAgent)).mobile()
-            @props.history.pushState(null, "/#{geography.id}")
+            history.pushState(null, "/#{geography.id}")
           else
             $(@).css(cursor: 'pointer')
 
