@@ -53,7 +53,7 @@ module.exports = React.createClass
 
   render: ->
     <div>
-      <h3 className='caps'>Polling Location</h3>
+      <h3 className='caps'>{@props.title || 'Polling'} Location</h3>
       {if @state.google
         <div className='poll-widget'>
           {unless @state.loaded
