@@ -93,11 +93,32 @@ div#htv-app {
   }
 }
 
+div.addeventatc {
+  display: block;
+  color: white !important;
+  background-color: $orange;
+  text-transform: uppercase;
+  font-family: freight-sans-pro;
+  font-weight: 700;
+  width: 300px;
+  text-align: center;
+  margin-top: 15px;
+
+  span.addeventatc_icon {
+    background: url('../img/cal-icon.svg');
+    fill: white;
+  }
+}
+
 @media (max-width: $phablet) {
   div#htv-app {
     h1 {
       font-size: 40px;
     }
+  }
+
+  div.addeventatc {
+    width: auto;
   }
 }
 

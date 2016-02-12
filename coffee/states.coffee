@@ -162,6 +162,7 @@ states =
       url:   'http://hawaiidemocrats.org'
       phone: '(808) 596-2980'
     regLink: 'http://elections.hawaii.gov/frequently-asked-questions/online-voter-registration/'
+    chkLink: 'https://olvr.hawaii.gov/'
     dtlName: 'closed caucuses'
     byline:  'Hawaiians must register as a Democrat to vote for Bernie! However, Hawaiians may update their party affiliation to Democrat on the day of the caucus.'
     sameDay: 'Hawaii has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
@@ -205,8 +206,8 @@ states =
     chkLink: 'https://indianavoters.in.gov/PublicSite/Public/FT1/PublicLookupMain.aspx?Link=Registration'
     dtlName: 'open primaries'
     byline:  'Indianans can vote for Bernie Sanders regardless of their registered party.'
-    early:   "Early in-person voting for the Indiana Democratic Primary takes place at your local circuit court clerk's <a href='http://www.in.gov/judiciary/2794.htm' target='_blank'>office</a>; early voting begins April 5, 2016 and ends at noon on May 2, 2016. Contact your <a href='http://www.in.gov/judiciary/2794.htm' target='_blank'>county clerk</a> for more information about early voting hours."
-    idReq:   "Indiana requires you to present a photo identification in order to vote in person. To learn more about what types of IDs are acceptable, click here. <http://www.in.gov/sos/elections/2401.htm>"
+    early:   "Early in-person voting for the Indiana Democratic Primary takes place at your local circuit court clerk's office; follow <a href='http://www.in.gov/judiciary/2794.htm' target='_blank'>this link</a> and select your county from the list. Early voting begins April 5, 2016 and ends at noon on May 2, 2016."
+    idReq:   "Indiana requires you to present a photo identification in order to vote in person. To learn more about what types of IDs are acceptable, click <a href='http://www.in.gov/sos/elections/2401.htm' target='_blank'>here</a>."
   IA:
     name:    'Iowa'
     fillKey: keys.OTHER
@@ -234,6 +235,7 @@ states =
     chkLink: 'https://myvoteinfo.voteks.org/VoterView/RegistrantSearch.do'
     dtlName: 'semi-closed caucuses'
     byline:  'Kansans must be affiliated with the Democratic Party to vote for Bernie!'
+    sameDay: 'Kansas has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 5 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Sat, Feb 13.'
   KY:
     name:    'Kentucky'
     fillKey: keys.CLOSED_PRIMARY
@@ -265,12 +267,13 @@ states =
     regDate: '2016 02 19'
     date:    '2016 03 06'
     office:
-      url:   'http://www.maine.gov/sos/cec/elec/'
-      phone: '(207) 624-7736'
+      url:   'http://www.mainedems.org/page/2016-maine-caucuses'
+      phone: '(207) 622-6233'
     regLink: 'http://www.maine.gov/sos/cec/elec/voter-info/voterguide.html'
     chkLink: 'http://www.maine.gov/portal/government/edemocracy/voter_lookup.php'
     dtlName: 'closed caucuses'
     byline:  'Mainers must register as a Democrat to vote for Bernie!'
+    early:   "Can't attend the caucus in person? You can request an absentee ballot <a href='http://www.mainedems.org/page/request-absentee-ballot' target='_blank'>here</a> and return it anytime before Wed, March 2."
     sameDay: 'Maine has Same-Day Registration which allows you to register to vote at the caucuses on Sun, March 6 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Fri, Feb 19.'
   MD:
     name:    'Maryland'
@@ -557,8 +560,8 @@ states =
     regDate: '2016 05 23'
     date:    '2016 06 07'
     office:
-      url:   'http://www.scvotes.org/'
-      phone: '(803) 734-9060'
+      url:   'https://sdsos.gov/elections-voting/voting/default.aspx'
+      phone: '(605) 773-3537'
     regLink: 'https://sdsos.gov/elections-voting/voting/register-to-vote/'
     chkLink: 'https://sos.sd.gov/Elections/VIPLogin.aspx'
     dtlName: 'semi-closed primaries'

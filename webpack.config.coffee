@@ -27,7 +27,7 @@ module.exports =
         loaders: ['style', 'css', 'resolve-url', 'sass']
       }
       {
-        test: /\.(ttf|otf|png|ico)$/
+        test: /\.(ttf|otf|png|ico|svg)$/
         loaders: ['file']
       }
     ]
