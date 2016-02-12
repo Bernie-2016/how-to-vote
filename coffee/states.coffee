@@ -457,7 +457,7 @@ states =
     dtlName: 'semi-closed primaries'
     byline:  'North Carolinians must be registered as a Democrat or independent to vote for Bernie Sanders!'
     early:   "North Carolina has one-stop early voting and same-day registration at select locations between March 3 and 12, 2016. Contact your <a href='https://enr.ncsbe.gov/cbesearch/' target='_blank'>local elections board</a> to find an early voting location near you. To take advantage of same-day registration, you must bring official proof of a current residential address in your county, such as a valid photo ID or an official document showing your address (e.g., a bank statement or utility bill) no more than two months old. Electronic versions of such documents are acceptable if they come from the original source (e.g., the bank or utility) and show your name and current address. Any registered North Carolina voter can also request a mail-in absentee ballot.  To learn more about absentee voting, click <a href='https://www.ncsbe.gov/Voting/Absentee-Voting' target='_blank'>here</a>."
-    idReq:   "North Carolina requires you to present photo identification in order to vote in person.  Click here <http://voterid.nc.gov/photo-id.html> for more information about what kinds of photo IDs you can use to vote."
+    idReq:   "North Carolina requires you to present photo identification in order to vote in person.  Click <a href='http://voterid.nc.gov/photo-id.html' target='_blank'>here</a> for more information about what kinds of photo IDs you can use to vote."
   ND:
     name:    'North Dakota'
     fillKey: keys.OPEN_CAUCUS
