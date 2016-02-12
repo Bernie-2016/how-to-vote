@@ -19,7 +19,7 @@ module.exports = React.createClass
         <p>
           You must be registered to vote by {moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')} in {@props.state.name}.
         </p>
-      else
+      else if @props.state.regDate
         <p>
           You must have been registered to vote by {moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')} in {@props.state.name}.
         </p>
