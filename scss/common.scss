@@ -100,3 +100,11 @@ div#htv-app {
     }
   }
 }
+
+@media (max-width: $tablet) {
+  .sticky-inner-wrapper {
+    position: static!important;
+    transform: none !important;
+    width: auto !important;
+  }
+}

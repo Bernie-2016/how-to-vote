@@ -8,7 +8,7 @@ module.exports = React.createClass
   displayName: 'State Right Info'
 
   render: ->
-    <Sticky enabled={window.innerWidth >= 768} top={25} bottomBoundary='section.flex'>
+    <Sticky top={25} bottomBoundary='section.flex'>
       <h3 className='caps'>{primaryType(@props.state.fillKey, @props.state.label)} Date</h3>
       <p className='date jubilat blue'>
         {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
