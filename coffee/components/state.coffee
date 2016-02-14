@@ -12,7 +12,8 @@ module.exports = React.createClass
     @props.history.pushState(null, '/') if state.fillKey is keys.UNAVAILABLE
 
   render: ->
-    state = states[@props.params.state.toUpperCase()]
+    stateKey = @props.params.state.toUpperCase()
+    state = states[stateKey]
 
     if state.custom
       StateComponent = require("components/states/#{@props.params.state.toLowerCase()}")
@@ -22,6 +23,6 @@ module.exports = React.createClass
     return (
       <div>
         <Header state={state} {...@props} />
-        <StateComponent state={state} />
+        <StateComponent stateKey={stateKey} state={state} />
       </div>
     )

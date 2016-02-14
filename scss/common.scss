@@ -84,6 +84,13 @@ div#htv-app {
     text-align: center;
     border-radius: 3px;
 
+    &.blue {
+      font-size: 1em;
+      font-weight: 700;
+      color: white;
+      background-color: $blue;
+    }
+
     &.red {
       font-size: 1em;
       font-weight: 700;
@@ -95,18 +102,27 @@ div#htv-app {
 
 div.addeventatc {
   display: block;
-  color: white !important;
-  background-color: $orange;
+  background-color: #ced4e4;
+  font-size: 14px;
+  color: #0f3059 !important;
   text-transform: uppercase;
   font-family: freight-sans-pro;
   font-weight: 700;
-  width: 300px;
   text-align: center;
-  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding: 8px;
+  width: 150px;
+  border: none;
+
+  &:hover {
+    font-size: 14px;
+    border: none;
+  }
 
   span.addeventatc_icon {
-    background: url('../img/cal-icon.svg');
-    fill: white;
+    display: none;
   }
 }
 
@@ -115,10 +131,6 @@ div.addeventatc {
     h1 {
       font-size: 40px;
     }
-  }
-
-  div.addeventatc {
-    width: auto;
   }
 }
 

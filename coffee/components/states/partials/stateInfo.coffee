@@ -30,6 +30,6 @@ module.exports = React.createClass
         <CommonInfo state={@props.state} />
       </div>
       <div className='right'>
-        <RightInfo state={@props.state} />
+        <RightInfo {...@props} />
       </div>
     </section>

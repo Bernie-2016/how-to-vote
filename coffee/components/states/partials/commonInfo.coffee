@@ -1,6 +1,5 @@
 import React     from 'react'
 import PollPlace from 'components/states/partials/pollPlace'
-import Reminder  from 'components/states/partials/reminder'
 
 module.exports = React.createClass
   displayName: 'State Common Info'
@@ -10,7 +9,6 @@ module.exports = React.createClass
       {if @props.state.pollWgt
         <PollPlace />
       }
-      <Reminder state={@props.state} />
       <h3 className='caps'>College Students</h3>
       <p>
         If you are a college student not living in your home state, you can vote for Bernie in either your home state or in the state in which you are attending school!

@@ -3,6 +3,8 @@ import { Link }        from 'react-router'
 import Sticky          from 'react-stickynode'
 import moment          from 'moment'
 import { primaryType } from 'states'
+import AddToCal        from 'components/states/partials/calWidget'
+import Reminder        from 'components/states/partials/reminderWidget'
 
 module.exports = React.createClass
   displayName: 'State Right Info'
@@ -13,6 +15,7 @@ module.exports = React.createClass
       <p className='date jubilat blue'>
         {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
       </p>
+      <AddToCal date={@props.state.date} state={@props.state} />
       {if @props.state.regDate
         <div>
           <h3 className='caps'>
@@ -21,11 +24,15 @@ module.exports = React.createClass
           <p className='date jubilat blue'>
             {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
           </p>
+          <AddToCal date={@props.state.regDate} state={@props.state} />
         </div>
       }
+      <Reminder {...@props} />
+      <hr className='right-divider' />
+
       {if @props.state.regLink
         <p>
-          <a href={@props.state.regLink} target='_blank' className='btn red'>
+          <a href={@props.state.regLink} target='_blank' className='btn blue'>
             Register to Vote
           </a>
         </p>
@@ -39,7 +46,7 @@ module.exports = React.createClass
       }
       {if @props.state.more
         <p>
-          <a href={@props.state.more} target='_blank' className='btn red'>
+          <a href={@props.state.more} target='_blank' className='btn blue'>
             More Info
           </a>
         </p>

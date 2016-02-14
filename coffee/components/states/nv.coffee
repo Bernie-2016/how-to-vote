@@ -5,7 +5,8 @@ import moment    from 'moment'
 import entity    from 'utils/entity'
 import TopInfo   from 'components/states/partials/topInfo'
 import PollPlace from 'components/states/partials/pollPlace'
-import Reminder  from 'components/states/partials/reminder'
+import AddToCal  from 'components/states/partials/calWidget'
+import Reminder  from 'components/states/partials/reminderWidget'
 
 module.exports = React.createClass
   displayName: 'NV State Info'
@@ -15,7 +16,6 @@ module.exports = React.createClass
       <div className='left'>
         <TopInfo state={@props.state} />
         <PollPlace title={'Caucus'} />
-        <Reminder state={@props.state} />
         <h3 className='caps'>ID Requirement</h3>
         <p>Make sure you bring one of the following when you go to vote:</p>
         <ul>
@@ -55,14 +55,22 @@ module.exports = React.createClass
           <p className='date jubilat blue'>
             {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}, 11AM
           </p>
+          <AddToCal date={@props.state.date} state={@props.state} />
+          <Reminder {...@props} />
+          <hr className='right-divider' />
           <p>
-            <a href={@props.state.regLink} target='_blank' className='btn red'>
+            <a href={@props.state.regLink} target='_blank' className='btn blue'>
               Register to Vote
             </a>
           </p>
           <p>
             <a href={@props.state.chkLink} target='_blank' className='btn'>
               Check Registration Status
+            </a>
+          </p>
+          <p>
+            <a href='https://go.berniesanders.com/page/s/ride-caucus-day-nv' target='_blank' className='btn'>
+              Need a ride?
             </a>
           </p>
         </Sticky>

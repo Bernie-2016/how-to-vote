@@ -2,7 +2,6 @@ import React     from 'react'
 import Sticky    from 'react-stickynode'
 import moment    from 'moment'
 import RightInfo from 'components/states/partials/rightInfo'
-import Reminder  from 'components/states/partials/reminder'
 
 module.exports = React.createClass
   displayName: 'State Info'
@@ -15,9 +14,6 @@ module.exports = React.createClass
         <p>
           You may still vote in {@props.state.name} if you will be 18 years old by November 8, 2016.
         </p>
-
-        <Reminder state={@props.state} />
-
         <h3 className='caps'>College Students</h3>
         <p>
           In Minnesota, you must actively live in the precinct where you caucus.
