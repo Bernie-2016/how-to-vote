@@ -6,7 +6,9 @@ module.exports = React.createClass
   displayName: 'Add to Cal Widget'
 
   componentDidMount: ->
-    window.addeventatc.initialize() if window.addeventatc
+    if window.addeventatc
+      window.addeventatc.initialize()
+      window.addeventatc.refresh()
 
   render: ->
     <div title='Add to Calendar' className='addeventatc'>
