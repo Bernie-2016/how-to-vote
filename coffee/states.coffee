@@ -98,6 +98,7 @@ states =
     dtlName: 'closed caucuses'
     byline:  'Coloradans must register as a Democrat to vote for Bernie!'
     custom:  true
+    pollWgt: true
   CT:
     name:    'Connecticut'
     fillKey: keys.CLOSED_PRIMARY
@@ -236,6 +237,7 @@ states =
     dtlName: 'semi-closed caucuses'
     byline:  'Kansans must be affiliated with the Democratic Party to vote for Bernie!'
     sameDay: 'Kansas has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 5 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Sat, Feb 13.'
+    pollWgt: true
   KY:
     name:    'Kentucky'
     fillKey: keys.CLOSED_PRIMARY
@@ -379,6 +381,7 @@ states =
     dtlName: 'closed caucuses'
     byline:  'Nebraskans must be registered Democrats to vote for Bernie Sanders! However, unaffiliated Nebraskans or those registered as Republicans can register to vote or change their party affiliation prior to or at the caucus.'
     sameDay: 'Nebraska has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 5.'
+    pollWgt: true
   NV:
     name:    'Nevada'
     fillKey: keys.CLOSED_CAUCUS
@@ -499,6 +502,7 @@ states =
     byline:  'Oklahomans must be registered as a Democrat or independent to vote for Bernie Sanders!'
     early:   "Early voting for the Oklahoma Democratic primary takes place on Thursday, February 25 and Friday, February 26, from 8 A.M. to 6 P.M., and on Saturday, February 27, from 9 A.M. to 2 P.M.  Oklahoma also lets all residents vote by absentee ballot. You can apply for an absentee ballot <a href='https://www.ok.gov/elections/documents/Oklahoma%20Absentee%20Ballot%20Application%20-%20fillable.pdf' target='_blank'>here</a> until February 24, 2016."
     idReq:   "Oklahoma requires you to present a photo identification in order to vote in person. Acceptable IDs must be issued by the U.S. government, the State of Oklahoma, or a federally recognized tribal government, must contain your name and photograph, and must be valid (i.e., unexpired) on the date of the primary."
+    pollWgt: true
   OR:
     name:    'Oregon'
     fillKey: keys.CLOSED_PRIMARY
@@ -607,6 +611,7 @@ states =
     dtlName: 'open caucuses'
     byline:  'Utahns can vote for Bernie Sanders regardless of their registered party, so long as they declare themselves to be participating Democrats at the Utah Democratic Party Caucus.'
     sameDay: 'Utah has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.'
+    pollWgt: true
   VT:
     name:    'Vermont'
     fillKey: keys.OPEN_PRIMARY
@@ -631,6 +636,7 @@ states =
     chkLink: 'https://vote.elections.virginia.gov/VoterInformation'
     dtlName: 'open primaries'
     byline:  'all Virginians can request a Democratic ballot to vote for Bernie Sanders.'
+    pollWgt: true
   WA:
     name:    'Washington'
     fillKey: keys.OPEN_PRIMARY
@@ -644,6 +650,7 @@ states =
     dtlName: 'open primaries'
     byline:  'Washingtonians can vote for Bernie Sanders regardless of their registered party.'
     sameDay: 'Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
+    pollWgt: true
   WV:
     name:    'West Virginia'
     fillKey: keys.OTHER
