@@ -5,6 +5,9 @@ import { primaryType } from 'states'
 module.exports = React.createClass
   displayName: 'Add to Cal Widget'
 
+  componentDidMount: ->
+    window.addeventatc.initialize() if window.addeventatc
+
   render: ->
     <div title='Add to Calendar' className='addeventatc'>
       + Add to Calendar
