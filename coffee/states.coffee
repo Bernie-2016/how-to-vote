@@ -20,7 +20,7 @@ primaryType = (key, label) ->
     when keys.CLOSED_PRIMARY then 'Primary'
     when keys.OPEN_CAUCUS    then 'Caucus'
     when keys.CLOSED_CAUCUS  then 'Caucus'
-    when keys.OTHER          then if label.indexOf('Primary') isnt -1 then 'Primary' else 'Caucus'
+    when keys.OTHER          then (if label.indexOf('Primary') isnt -1 then 'Primary' else 'Caucus')
 
 states =
   AL:
