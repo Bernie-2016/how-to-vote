@@ -24,7 +24,7 @@ module.exports = React.createClass
           <p className='date jubilat blue'>
             {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
           </p>
-          <AddToCal date={@props.state.regDate} state={@props.state} />
+          <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
         </div>
       }
       <Reminder {...@props} />
