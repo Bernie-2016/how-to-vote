@@ -1,5 +1,4 @@
 import React           from 'react'
-import { Link }        from 'react-router'
 import Sticky          from 'react-stickynode'
 import moment          from 'moment'
 import { primaryType } from 'states'
