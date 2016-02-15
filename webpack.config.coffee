@@ -38,6 +38,10 @@ module.exports =
           from: 'img/logo.png'
           to: 'logo.png' 
         }
+        {
+          from: 'img/favicon.ico'
+          to: 'favicon.ico'
+        }
       ])
       new GeneratePlugin()
       new webpack.DefinePlugin(

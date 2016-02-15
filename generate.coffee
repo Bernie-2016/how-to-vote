@@ -3,7 +3,8 @@ states = require('./coffee/states').states
 
 class Generate
   constructor: (opts, compiler) ->
-    compiler.plugin 'after-optimize-chunk-assets', (params) ->
+    return unless process.env.BUILD_PROD is 'true'
+    compiler.plugin 'after-emit', (params) ->
       template = fs.readFileSync('./index.html').toString()
 
       # Copy index template
