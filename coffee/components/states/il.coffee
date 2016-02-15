@@ -56,6 +56,10 @@ module.exports = React.createClass
               <p dangerouslySetInnerHTML={__html: @props.state.early} />
             </div>
           }
+          <h3 className='caps'>Only 17?</h3>
+          <p>
+            You may still vote in Illinois if you will be 18 years old by November 8, 2016.
+          </p>
           <CommonInfo state={@props.state} />
         </div>
         <div id='wufoo-m1y5ekos0wjaphk' style={height: '2500px', overflowY: 'scroll'} hidden={!@state.register} />

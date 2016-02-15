@@ -30,7 +30,7 @@ module.exports = React.createClass
         </ul>
         <h3 className='caps'>Only 17?</h3>
         <p>
-          You may still vote in {@props.state.name} if you will be 18 years old by November 8, 2016.
+          You may still vote in Nevada if you will be 18 years old by November 8, 2016.
         </p>
         <h3 className='caps'>College Students</h3>
         <p>

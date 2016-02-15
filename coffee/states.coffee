@@ -22,6 +22,9 @@ primaryType = (key, label) ->
     when keys.CLOSED_CAUCUS  then 'Caucus'
     when keys.OTHER          then (if label.indexOf('Primary') isnt -1 then 'Primary' else 'Caucus')
 
+verb = (state) ->
+  if primaryType(state.fillKey, state.label) is 'Caucus' then 'caucus' else 'vote'
+
 states =
   AL:
     name:    'Alabama'
@@ -47,6 +50,7 @@ states =
     chkLink: 'https://webapp.state.ak.us/electionsLookup/JSP/VoterLookupMain.jsp'
     dtlName: 'closed caucuses'
     byline:  'Alaskans must register as a Democrat to vote for Bernie! However, Alaskans may update their party affiliation to Democrat on the day of the caucus.'
+    young:   'You may still caucus in Alaska if you will be 18 years old by June 24, 2016.'
   AZ:
     name:    'Arizona'
     fillKey: keys.CLOSED_PRIMARY
@@ -113,6 +117,7 @@ states =
     byline:  'Connecticuters must register as a Democrat to vote for Bernie!'
     regInfo: "If you are a new voter registering to vote by mail, your registration form must be postmarked by April 21, 2016. If you want to change your party enrollment from unaffiliated to Democratic, your registration form must be received by your municipal registrar of vote by that date. (Unfortunately, if you are enrolled in a different political party, the deadline to change your registration to Democratric has already passed.) You can register to vote or change your party affiliation from unaffiliated to Democratic in person at your local town hall until noon on April 25, 2016."
     idReq:   "If you vote in person and have never voted in a federal election in your municipality, you might be asked to present a photo ID, utility bill, bank statement, government document, or paycheck that shows your address."
+    young:   true
   DE:
     name:    'Delaware'
     fillKey: keys.CLOSED_PRIMARY
@@ -126,6 +131,7 @@ states =
     dtlName: 'closed primaries'
     byline:  'Delawareans must register as a Democrat to vote for Bernie!'
     regInfo: 'If you are already registered to vote, the deadline to change your affiliation to Democratic is February 26, 2016.'
+    young:   true
   FL:
     name:    'Florida'
     fillKey: keys.CLOSED_PRIMARY
@@ -167,6 +173,7 @@ states =
     dtlName: 'closed caucuses'
     byline:  'Hawaii residents must register as a Democrat to vote for Bernie! However, Hawaii residents may update their party affiliation to Democrat on the day of the caucus.'
     sameDay: 'Hawaii has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
+    young:   true
   ID:
     name:    'Idaho'
     fillKey: keys.OTHER
@@ -181,6 +188,7 @@ states =
     dtlName: 'semi-open primaries'
     byline:  "Idaho's Democratic Party Caucuses are open to all Idahoans, regardless of political affiliation, except those who participate in Idaho's Republican party primary on March 8, 2016."
     sameDay: 'Idaho has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.'
+    young:   true
   IL:
     name:    'Illinois'
     fillKey: keys.OPEN_PRIMARY
@@ -195,7 +203,8 @@ states =
     byline:  'Illinoisians can vote for Bernie Sanders regardless of their registered party.'
     regInfo: "The regular registration deadline for the Illinois Democratic Primary is on February 16, 2016, but grace period registration continues at select sites until election day. Click <a href='https://www.elections.il.gov/Downloads/ElectionInformation/PDF/GracePeriodReg.pdf' target='_blank'>here</a> to learn more about grace period registration locations and hours."
     early:   "Early voting in the Illinois primary takes place between February 4 and March 14, 2016.  You can learn more about early voting locations and hours <a href='http://www.elections.state.il.us/votinginformation/earlyvotinglocations.aspx' target='_blank'>here</a>. Illinois also lets residents request mail-in absentee ballots until one day before the primary election. Learn more about mail-in voting in Illinois <a href='http://www.elections.state.il.us/downloads/electioninformation/pdf/votebymail.pdf' target='_blank'>here</a>."
-    custom: true
+    young:   true
+    custom:  true
   IN:
     name:    'Indiana'
     fillKey: keys.OPEN_PRIMARY
@@ -210,6 +219,7 @@ states =
     byline:  'Indianans can vote for Bernie Sanders regardless of their registered party.'
     early:   "Early in-person voting for the Indiana Democratic Primary takes place at your local circuit court clerk's office; follow <a href='http://www.in.gov/judiciary/2794.htm' target='_blank'>this link</a> and select your county from the list. Early voting begins April 5, 2016 and ends at noon on May 2, 2016."
     idReq:   "Indiana requires you to present a photo identification in order to vote in person. To learn more about what types of IDs are acceptable, click <a href='http://www.in.gov/sos/elections/2401.htm' target='_blank'>here</a>."
+    young:   true
   IA:
     name:    'Iowa'
     fillKey: keys.OTHER
@@ -224,6 +234,7 @@ states =
     dtlName: 'semi-open caucuses'
     byline:  'Iowans registered as a Republican cannot vote for Bernie Sanders! However, Iowans may change party affiliation on caucus day.'
     sameDay: 'Iowa has Same-Day Registration which allows you to register to vote at the caucuses on Mon, February 1.'
+    young:   true
   KS:
     name:    'Kansas'
     fillKey: keys.OTHER
@@ -239,6 +250,7 @@ states =
     byline:  'Kansans must be affiliated with the Democratic Party to vote for Bernie!'
     sameDay: 'Kansas has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 5 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Sat, Feb 13.'
     pollWgt: true
+    young:   true
   KY:
     name:    'Kentucky'
     fillKey: keys.CLOSED_PRIMARY
@@ -251,6 +263,7 @@ states =
     chkLink: 'https://vrsws.sos.ky.gov/VIC/'
     dtlName: 'closed primaries'
     byline:  'Kentuckians must register as a Democrat to vote for Bernie!'
+    young:   true
   LA:
     name:    'Louisiana'
     fillKey: keys.CLOSED_PRIMARY
@@ -278,6 +291,7 @@ states =
     byline:  'Mainers must register as a Democrat to vote for Bernie!'
     early:   "Can't attend the caucus in person? You can request an absentee ballot <a href='http://www.mainedems.org/page/request-absentee-ballot' target='_blank'>here</a> and return it anytime before Wed, March 2."
     sameDay: 'Maine has Same-Day Registration which allows you to register to vote at the caucuses on Sun, March 6 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Fri, Feb 19.'
+    young:   true
   MD:
     name:    'Maryland'
     fillKey: keys.CLOSED_PRIMARY
@@ -291,6 +305,7 @@ states =
     dtlName: 'closed primaries'
     byline:  'Marylanders must register as a Democrat to vote for Bernie!'
     early:   "Early voting for the Maryland Democratic Primary takes place between April 14 and 21, 2016. Find an early voting location near you <a href='http://www.elections.state.md.us/voting/early_voting.html' target='_blank'>here</a>. The deadline to request for an absentee ballot to be delivered to you by mail is April 19, 2016. You can request for an absentee ballot to be delivered to you through the Internet until April 22, 2016, or you can pick up an absentee ballot in person at your local <a href='http://www.elections.state.md.us/about/county_boards.html' target='_blank'>board of elections</a> until election day."
+    young:   true
   MA:
     name:    'Massachusetts'
     fillKey: keys.OTHER
@@ -329,6 +344,7 @@ states =
     byline:  'Minnesotans can vote for Bernie Sanders regardless of their registered party.'
     sameDay: 'Minnesota has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 1.'
     custom:  true
+    young:   true
   MS:
     name:    'Mississippi'
     fillKey: keys.OPEN_PRIMARY
@@ -341,6 +357,7 @@ states =
     dtlName: 'open primaries'
     byline:  'Missippians can vote for Bernie Sanders regardless of their registered party.'
     idReq:   "Mississippi requires you to present a valid photo ID in order to vote in person.  Acceptable forms of photo ID include driver's licenses, photo IDs issued by any branch of the United States government or any state government, a U.S. passport, a government employee photo ID, a firearms license, a student ID from an accredited Mississippi college or junior college, a U.S. military photo ID, a tribal photo ID, or a Mississippi voter identification card."
+    young:   true
   MO:
     name:    'Missouri'
     fillKey: keys.OPEN_PRIMARY
@@ -397,6 +414,7 @@ states =
     byline:  'Nevadans must register as a Democrat to vote for Bernie! However, Nevadans may register as/update registration to Democrat on the day of the caucus.'
     sameDay: 'Nevada has Same-Day Registration which allows you to register to vote at the caucuses on Sat, February 20.'
     custom:  true
+    young:   true
   NH:
     name:    'New Hampshire'
     fillKey: keys.OTHER
@@ -465,6 +483,7 @@ states =
     byline:  'North Carolinians must be registered as a Democrat or independent to vote for Bernie Sanders!'
     early:   "North Carolina has one-stop early voting and same-day registration at select locations between March 3 and 12, 2016. Contact your <a href='https://enr.ncsbe.gov/cbesearch/' target='_blank'>local elections board</a> to find an early voting location near you. To take advantage of same-day registration, you must bring official proof of a current residential address in your county, such as a valid photo ID or an official document showing your address (e.g., a bank statement or utility bill) no more than two months old. Electronic versions of such documents are acceptable if they come from the original source (e.g., the bank or utility) and show your name and current address. Any registered North Carolina voter can also request a mail-in absentee ballot.  To learn more about absentee voting, click <a href='https://www.ncsbe.gov/Voting/Absentee-Voting' target='_blank'>here</a>."
     idReq:   "North Carolina requires you to present photo identification in order to vote in person.  Click <a href='http://voterid.nc.gov/photo-id.html' target='_blank'>here</a> for more information about what kinds of photo IDs you can use to vote."
+    young:   true
   ND:
     name:    'North Dakota'
     fillKey: keys.OPEN_CAUCUS
@@ -489,6 +508,7 @@ states =
     byline:  'Ohioans can vote for Bernie Sanders regardless of their registered party.'
     regInfo: '​If you voted via Republican ballot in the last general election, the poll worker will automatically give you a Republican ballot. You must explicitly request a Democrat ballot before you head to the voting machine.'
     early:   "Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx' target='_blank'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx' target='_blank'>here</a> to request a mail-in absentee ballot."
+    young:   true
   OK:
     name:    'Oklahoma'
     fillKey: keys.OTHER
@@ -626,6 +646,7 @@ states =
     dtlName: 'open primaries'
     byline:  'Vermonters can vote for Bernie Sanders regardless of their registered party.'
     early:   "You can participate in early in-person voting for the Vermont democratic primary at your town clerk's office any time until Monday, February 29. Any voter can also request that their town clerk mail them an early voter absentee ballot any time before the primary. You can find the form to request an absentee ballot <a href='https://www.sec.state.vt.us/media/53483/VTAbsenteeRequestGeneric.pdf' target='_blank'>here</a>."
+    young:   true
   VA:
     name:    'Virginia'
     fillKey: keys.OPEN_PRIMARY
@@ -639,6 +660,7 @@ states =
     dtlName: 'open primaries'
     byline:  'all Virginians can request a Democratic ballot to vote for Bernie Sanders.'
     pollWgt: true
+    young:   true
   WA:
     name:    'Washington'
     fillKey: keys.OPEN_CAUCUS
@@ -653,6 +675,7 @@ states =
     byline:  'Washingtonians can caucus for Bernie Sanders regardless of their registered party.'
     sameDay: 'Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
     pollWgt: true
+    young:   true
   WV:
     name:    'West Virginia'
     fillKey: keys.OTHER
@@ -667,6 +690,7 @@ states =
     dtlName: 'semi-closed primaries'
     byline:  'West Virginians must register as a Democrat or undeclared to vote for Bernie!'
     early:   "Early voting in the West Virginia Democratic Primary takes place bewteen April 27 and May 7, 2016. Contact your <a href='http://www.sos.wv.gov/elections/VoterRegistration/Pages/ClerkDirectory.aspx' target='_blank'>county clerk</a> to confirm early voting hours and locations."
+    young:   true
   WI:
     name:    'Wisconsin'
     fillKey: keys.OPEN_PRIMARY
@@ -694,9 +718,11 @@ states =
     dtlName: 'closed caucuses'
     byline:  'Wyomingites must register as a Democrat to vote for Bernie!'
     regInfo: "If you are not yet 18 but will turn 18 by the November 8, 2016 presidential election, you can still vote for Bernie Sanders in your county caucus — just pre-register to vote as a Democrat with your county clerk <a href='https://soswy.state.wy.us/Elections/Docs/WYCountyClerks.pdf' target='_blank'>here</a>. (And when the presidential election comes, you'll be registered to vote as a Democrat). If you can't make it to your county caucus, use <a href='http://www.wyodems.org/sites/wyodems2015/files/CaucusSurrogateForm_0.pdf' target='_blank'>this form</a> to appoint a surrogate who can vote for Bernie Sanders (and candidates for other offices) on your behalf."
+    young:   true
 
 module.exports =
   keys:        keys
   label:       label
   primaryType: primaryType
+  verb:        verb
   states:      states

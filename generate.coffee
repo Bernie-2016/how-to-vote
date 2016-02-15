@@ -1,6 +1,6 @@
-fs          = require('fs')
-states      = require('./coffee/states').states
-primaryType = require('./coffee/states').primaryType
+fs     = require('fs')
+states = require('./coffee/states').states
+verb   = require('./coffee/states').verb
 
 class Generate
   constructor: (opts, compiler) ->
@@ -18,10 +18,9 @@ class Generate
       for key, state of states
         folder = "./dist/#{key}"
         fs.mkdirSync(folder) unless fs.existsSync(folder)
-        
-        verb = if primaryType(state.fillKey, state.label) is 'Caucus' then 'caucus' else 'vote'
+
         generated = template.replace(new RegExp('#stateText#', 'g'), state.name)
-                            .replace(new RegExp('#stateVerb#', 'g'), verb)
+                            .replace(new RegExp('#stateVerb#', 'g'), verb(state))
                             .replace(new RegExp('#stateCode#', 'g'), "#{key}/")
         fs.writeFileSync "#{folder}/index.html", generated
 

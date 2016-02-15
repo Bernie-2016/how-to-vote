@@ -2,6 +2,7 @@ import React      from 'react'
 import TopInfo    from 'components/states/partials/topInfo'
 import CommonInfo from 'components/states/partials/commonInfo'
 import RightInfo  from 'components/states/partials/rightInfo'
+import { verb }   from 'states'
 
 module.exports = React.createClass
   displayName: 'State Info'
@@ -25,6 +26,21 @@ module.exports = React.createClass
           <div>
             <h3 className='caps'>Early or Absentee Voting</h3>
             <p dangerouslySetInnerHTML={__html: @props.state.early} />
+          </div>
+        }
+        {if @props.state.young is true
+          <div>
+            <h3 className='caps'>Only 17?</h3>
+            <p>
+              You may still {verb(@props.state)} in {@props.state.name} if you will be 18 years old by November 8, 2016.
+            </p>
+          </div>
+        else if @props.state.young
+          <div>
+            <h3 className='caps'>Only 17?</h3>
+            <p>
+              {@props.state.young}
+            </p>
           </div>
         }
         <CommonInfo state={@props.state} />
