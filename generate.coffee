@@ -8,13 +8,13 @@ class Generate
       template = fs.readFileSync('./index.html').toString()
 
       # Copy index template
-      fs.writeFileSync './dist/index.html', template.replace(new RegExp('#stateText#', 'g'), 'your state primary or caucus')
+      fs.writeFileSync './dist/index.html', template.replace(new RegExp('#stateText#', 'g')).replace(new RegExp('#stateCode#', 'g'), '')
 
       # Create index file for each state
       for key, state of states
         folder = "./dist/#{key}"
         fs.mkdirSync(folder) unless fs.existsSync(folder)
-        fs.writeFileSync "#{folder}/index.html", template.replace(new RegExp('#stateText#', 'g'), state.name)
+        fs.writeFileSync "#{folder}/index.html", template.replace(new RegExp('#stateText#', 'g'), state.name).replace(new RegExp('#stateCode#', 'g'), key)
 
 module.exports = (options) ->
   {

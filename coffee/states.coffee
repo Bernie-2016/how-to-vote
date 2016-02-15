@@ -165,7 +165,7 @@ states =
     regLink: 'http://elections.hawaii.gov/frequently-asked-questions/online-voter-registration/'
     chkLink: 'https://olvr.hawaii.gov/'
     dtlName: 'closed caucuses'
-    byline:  'Hawaiians must register as a Democrat to vote for Bernie! However, Hawaiians may update their party affiliation to Democrat on the day of the caucus.'
+    byline:  'Hawaii residents must register as a Democrat to vote for Bernie! However, Hawaii residents may update their party affiliation to Democrat on the day of the caucus.'
     sameDay: 'Hawaii has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
   ID:
     name:    'Idaho'
@@ -487,6 +487,7 @@ states =
     chkLink: 'http://voterlookup.sos.state.oh.us/voterlookup.aspx'
     dtlName: 'open primaries'
     byline:  'Ohioans can vote for Bernie Sanders regardless of their registered party.'
+    regInfo: '​If you voted via Republican ballot in the last general election, the poll worker will automatically give you a Republican ballot. You must explicitly request a Democrat ballot before you head to the voting machine.'
     early:   "Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx' target='_blank'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx' target='_blank'>here</a> to request a mail-in absentee ballot."
   OK:
     name:    'Oklahoma'
