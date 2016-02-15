@@ -22,7 +22,7 @@ class Generate
         verb = if primaryType(state.fillKey, state.label) is 'Caucus' then 'caucus' else 'vote'
         generated = template.replace(new RegExp('#stateText#', 'g'), state.name)
                             .replace(new RegExp('#stateVerb#', 'g'), verb)
-                            .replace(new RegExp('#stateCode#', 'g'), key)
+                            .replace(new RegExp('#stateCode#', 'g'), "#{key}/")
         fs.writeFileSync "#{folder}/index.html", generated
 
 module.exports = (options) ->
