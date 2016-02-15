@@ -35,8 +35,8 @@ module.exports =
    plugins: [
       new CopyWebpackPlugin([
         {
-          from: 'img/logo.png'
-          to: 'logo.png' 
+          from: 'img/share.png'
+          to: 'share.png' 
         }
         {
           from: 'img/favicon.ico'
