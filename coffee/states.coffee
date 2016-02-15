@@ -640,7 +640,7 @@ states =
     pollWgt: true
   WA:
     name:    'Washington'
-    fillKey: keys.OPEN_PRIMARY
+    fillKey: keys.OPEN_CAUCUS
     regDate: '2016 03 26'
     date:    '2016 03 26'
     office:
@@ -648,8 +648,8 @@ states =
       phone: '(206) 583-0664'
     regLink: 'http://www.dol.wa.gov/driverslicense/voter.html'
     chkLink: 'https://www.sos.wa.gov/elections/myvote/'
-    dtlName: 'open primaries'
-    byline:  'Washingtonians can vote for Bernie Sanders regardless of their registered party.'
+    dtlName: 'open caucuses'
+    byline:  'Washingtonians can caucus for Bernie Sanders regardless of their registered party.'
     sameDay: 'Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
     pollWgt: true
   WV:
