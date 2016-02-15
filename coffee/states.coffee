@@ -118,6 +118,21 @@ states =
     regInfo: "If you are a new voter registering to vote by mail, your registration form must be postmarked by April 21, 2016. If you want to change your party enrollment from unaffiliated to Democratic, your registration form must be received by your municipal registrar of vote by that date. (Unfortunately, if you are enrolled in a different political party, the deadline to change your registration to Democratric has already passed.) You can register to vote or change your party affiliation from unaffiliated to Democratic in person at your local town hall until noon on April 25, 2016."
     idReq:   "If you vote in person and have never voted in a federal election in your municipality, you might be asked to present a photo ID, utility bill, bank statement, government document, or paycheck that shows your address."
     young:   true
+  DC:
+    name:    'D.C.'
+    fillKey: keys.CLOSED_PRIMARY
+    regDate: '2016 05 16'
+    date:    '2016 06 14'
+    office:
+      url:   'http://www.azsos.gov/elections'
+      phone: '(602) 542-2228'
+    regLink: 'https://www.vote4dc.com/Voter/Voter/CommonVoter'
+    chkLink: 'https://www.dcboee.org/voter_info/reg_status/'
+    dtlName: 'closed primaries'
+    byline:  'D.C. residents must register as a Democrat to vote for Bernie!'
+    regInfo: "Mail-in voter registration for the Washington D.C. Democratic Primary closes on May 16, 2016. However, you can register to vote and cast a ballot in person at One Judiciary Square from May 31 to June 11, 2016, between 8:30 A.M. and 7 P.M."
+    early:   "D.C. will permit registration and early voting at designated <a href='https://www.dcboee.org/ev/' target='_blank'>locations in each ward</a> between June 4 and 11, 2016."
+    sameDay: 'Washington, D.C. has Same-Day Registration which allows you to register to vote at the primaries on Tue, June 14 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Mon, May 16.'
   DE:
     name:    'Delaware'
     fillKey: keys.CLOSED_PRIMARY
