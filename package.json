@@ -12,10 +12,11 @@
     "url": "https://github.com/Bernie-2016/how-to-vote/issues"
   },
   "scripts": {
-    "webpack": "rm -rf ./dist && BUILD_PROD=true webpack --progress --colors --optimize-minimize",
+    "webpack": "rm -rf ./dist && BUILD_PROD=true webpack --progress --colors",
+    "webpackProd": "rm -rf ./dist && BUILD_PROD=true webpack --progress --colors --optimize-minimize",
     "dev": "webpack-dev-server --progress --colors --history-api-fallback",
     "start": "npm run dev",
-    "deploy": "npm run webpack && coffee deploy.coffee",
+    "deploy": "npm run webpackProd && coffee deploy.coffee",
     "lint": "coffeelint ./coffee"
   },
   "homepage": "https://github.com/Bernie-2016/how-to-vote#readme",
@@ -33,7 +34,6 @@
     "file-loader": "^0.8.5",
     "google-maps": "^3.2.1",
     "history": "^1.17.0",
-    "html-webpack-plugin": "^2.7.2",
     "jquery": "^2.2.0",
     "json-loader": "^0.5.4",
     "mobile-detect": "^1.3.1",

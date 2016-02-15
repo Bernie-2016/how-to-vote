@@ -1,7 +1,7 @@
 path              = require('path')
 webpack           = require('webpack')
-HtmlWebpackPlugin = require('html-webpack-plugin')
 CopyWebpackPlugin = require('copy-webpack-plugin')
+GeneratePlugin    = require('./generate')
 
 module.exports =
   entry: './coffee/router'
@@ -33,19 +33,13 @@ module.exports =
     ]
 
    plugins: [
-      new HtmlWebpackPlugin(
-        template: 'index.html'
-        title: 'Bernie Sanders'
-        favicon: 'img/favicon.ico'
-        minify:
-          collapseWhitespace: true
-      )
       new CopyWebpackPlugin([
         {
           from: 'img/logo.png'
           to: 'logo.png' 
         }
       ])
+      new GeneratePlugin()
       new webpack.DefinePlugin(
         __PROD__: process.env.BUILD_PROD is 'true'
       )
