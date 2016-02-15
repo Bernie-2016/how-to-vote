@@ -5,6 +5,7 @@ import TopInfo    from 'components/states/partials/topInfo'
 import CommonInfo from 'components/states/partials/commonInfo'
 import AddToCal   from 'components/states/partials/calWidget'
 import Reminder   from 'components/states/partials/reminderWidget'
+import PollPlace  from 'components/states/partials/pollPlace'
 
 module.exports = React.createClass
   displayName: 'CO State Info'
@@ -15,15 +16,32 @@ module.exports = React.createClass
         <TopInfo state={@props.state} />
 
         <p>
-          In order to vote in Colorado, you must be:
+          Requirements for eligibility:
         </p>
         <ul>
-          <li>A resident of the precinct for at least 30 days.</li>
-          <li>Registered to vote no later than 29 days before the caucus.</li>
-          <li>Affiliated with the party holding the caucus for at least 2 months before the caucus - Deadline was January 4, 2016. </li>
+          <li>Affiliated with the Democratic party by January 4, 2016</li>
+          <li>Registered to vote 29 days prior to the caucus</li>
+          <li>Resident of your precinct for at least 30 days</li>
+          <li>Anyone who turns 18 or becomes a citizen on or before March 1 can caucus!</li>
         </ul>
+        <p>
+          <strong>Please arrive to your caucus early!</strong> Doors open between 6pm and 6:30pm.
+        </p>
+        <p>
+          <strong>You must be in line by 7pm</strong> or you will <strong>not</strong> be let into the caucus.
+        </p>
 
-        <CommonInfo state={@props.state} />
+        {if @props.state.pollWgt
+          <PollPlace title={'Caucus'} />
+        }
+        <h3 className='caps'>More Information</h3>
+        <p>
+          If you have any questions about voting in {@props.state.name} you may contact your state elections office for more information.
+        </p>
+        <p>
+          <a href={@props.state.office.url} target='_blank'>{@props.state.name} Elections Information</a><br />
+          Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
+        </p>
       </div>
       <div className='right'>
         <Sticky top={25} bottomBoundary='section.flex'>
