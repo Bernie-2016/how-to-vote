@@ -42,6 +42,10 @@ module.exports =
           from: 'img/favicon.ico'
           to: 'favicon.ico'
         }
+        {
+          from: 'img/share'
+          to: 'share'
+        }
       ])
       new GeneratePlugin()
       new webpack.DefinePlugin(
