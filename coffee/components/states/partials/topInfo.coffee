@@ -15,11 +15,11 @@ module.exports = React.createClass
         <p>
           {@props.state.sameDay}
         </p>
-      else unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')
+      else unless @props.state.sameDay is false || moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')
         <p>
           You must be registered to vote by {moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')} in {@props.state.name}.
         </p>
-      else if @props.state.regDate
+      else if @props.state.regDate && @props.state.sameDay isnt false
         <p>
           You must have been registered to vote by {moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')} in {@props.state.name}.
         </p>

@@ -218,8 +218,8 @@ states =
     byline:  'Illinoisians can vote for Bernie Sanders regardless of their registered party.'
     regInfo: "The regular registration deadline for the Illinois Democratic Primary is on February 16, 2016, but grace period registration continues at select sites until election day. Click <a href='https://www.elections.il.gov/Downloads/ElectionInformation/PDF/GracePeriodReg.pdf' target='_blank'>here</a> to learn more about grace period registration locations and hours."
     early:   "Early voting in the Illinois primary takes place between February 4 and March 14, 2016.  You can learn more about early voting locations and hours <a href='http://www.elections.state.il.us/votinginformation/earlyvotinglocations.aspx' target='_blank'>here</a>. Illinois also lets residents request mail-in absentee ballots until one day before the primary election. Learn more about mail-in voting in Illinois <a href='http://www.elections.state.il.us/downloads/electioninformation/pdf/votebymail.pdf' target='_blank'>here</a>."
+    sameDay: false
     young:   true
-    custom:  true
   IN:
     name:    'Indiana'
     fillKey: keys.OPEN_PRIMARY
