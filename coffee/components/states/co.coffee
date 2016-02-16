@@ -34,6 +34,9 @@ module.exports = React.createClass
         <p>
           <strong>You must be in line by 7pm</strong> or you will <strong>not</strong> be let into the caucus.
         </p>
+        <p>
+          Questions or issues at the caucus? Call our East Metro Bernie Office: <a href='tel:+13033210089'>(303) 321-0089</a>
+        </p>
 
         {if @props.state.pollWgt
           <PollPlace title={'Caucus'} />
@@ -45,9 +48,6 @@ module.exports = React.createClass
         <p>
           <a href={@props.state.office.url} target='_blank'>{@props.state.name} Elections Information</a><br />
           Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
-        </p>
-        <p>
-          Questions or issues at the caucus? Call our East Metro Bernie Office: <a href='tel:+13033210089'>(303) 321-0089</a>
         </p>
       </div>
       <div className='right'>
