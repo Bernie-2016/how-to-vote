@@ -173,7 +173,7 @@ states =
     chkLink: 'https://www.mvp.sos.ga.gov/MVP/mvp.do'
     dtlName: 'open primaries'
     byline:  'Georgians can vote for Bernie Sanders regardless of their registered party.'
-    early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26, during normal business hours, and on Saturday February 20, from 9:00 A.M. to 4:00 P.M. Georgia allows any voter to vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
+    early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26. Click <a href='http://sos.ga.gov/elections/CountyContacts/AdvanceVotingDisplay.aspx' target='_blank'>here</a> for information about early voting times and locations in your county. Georgia allows any voter to vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
     idReq:   "Georgia requires you to present a photo identification in order to vote in person. Acceptable IDs include valid state or federal photo IDs, including a free photo ID card issued by your county registrar's office or the Georgia Department of Driver Services, a Georgia Driver's License (current or expired), employee photo IDs from any federal, state, or local agency, a valid U.S. passport, a valid U.S. military photo ID, or a valid tribal photo ID."
   HI:
     name:    'Hawaii'
@@ -254,7 +254,7 @@ states =
     name:    'Kansas'
     fillKey: keys.OTHER
     label:   'Semi-closed Caucus'
-    regDate: '2016 02 13'
+    regDate: '2016 03 05'
     date:    '2016 03 05'
     office:
       url:   'http://www.voteks.org'
@@ -263,7 +263,7 @@ states =
     chkLink: 'https://myvoteinfo.voteks.org/VoterView/RegistrantSearch.do'
     dtlName: 'semi-closed caucuses'
     byline:  'Kansans must be affiliated with the Democratic Party to vote for Bernie!'
-    sameDay: 'Kansas has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 5 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Sat, Feb 13.'
+    sameDay: 'Kansas has Same-Day Registration which allows you to register to vote or update your affiliation to Democrat at the caucuses on Sat, March 5.'
     pollWgt: true
     young:   true
   KY:
@@ -415,6 +415,7 @@ states =
     byline:  'Nebraskans must be registered Democrats to vote for Bernie Sanders! However, unaffiliated Nebraskans or those registered as Republicans can register to vote or change their party affiliation prior to or at the caucus.'
     sameDay: 'Nebraska has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 5.'
     pollWgt: true
+    young:   true
   NV:
     name:    'Nevada'
     fillKey: keys.CLOSED_CAUCUS
@@ -595,6 +596,7 @@ states =
     byline:  'South Carolinians can vote for Bernie Sanders regardless of their registered party.'
     early:   "South Carolinians can vote for Bernie Sanders before the February 27 primary, either in person or by mail-in absentee ballot. Visit <a href='http://www.scvotes.org/2016/02/03/absentee_voting_underway_for_presidential_primaries' target='_blank'>this link</a> to get more information and request your ballot."
     pollWgt: true
+    young:   true
   SD:
     name:    'South Dakota'
     fillKey: keys.OTHER
@@ -636,6 +638,7 @@ states =
     chkLink: 'https://teamrv-mvp.sos.texas.gov/MVP/languageChange.do'
     dtlName: 'open primaries'
     byline:  'Texans can vote for Bernie Sanders regardless of their registered party.'
+    early:   "Early voting for the Texas Democratic Party Primary takes place between February 16 and 26, 2016. Contact your <a href='http://www.sos.state.tx.us/elections/voter/county.shtml' target='_blank'>county elections administrator</a> for information about early voting times and locations near you."
   UT:
     name:    'Utah'
     fillKey: keys.OPEN_CAUCUS
