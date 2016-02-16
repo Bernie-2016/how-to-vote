@@ -15,19 +15,6 @@ module.exports = React.createClass
       <div className='left'>
         <TopInfo state={@props.state} />
         <PollPlace title={'Caucus'} />
-        <h3 className='caps'>ID Requirement</h3>
-        <p>Make sure you bring one of the following when you go to vote:</p>
-        <ul>
-        <li>Nevada Driver’s license</li>
-        <li>Nevada Identification Card</li>
-        <li>Armed Forces Identification Card</li>
-        <li>Sheriff’s Work Identification Card</li>
-        <li>Identification Card issued by an Agency of the State of Nevada or other political subdivision</li>
-        <li>Student Identification Card</li>
-        <li>United States Passport</li>
-        <li>Tribal Identification Card</li>
-        <li>Other forms of identification may be used; please check with your County Clerk/Registrar of Voters for other acceptable forms of identification.</li>
-        </ul>
         <h3 className='caps'>Only 17?</h3>
         <p>
           You may still vote in Nevada if you will be 18 years old by November 8, 2016.
