@@ -79,6 +79,9 @@ module.exports = React.createClass
               <p className='date jubilat blue'>
                 {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
               </p>
+              {if moment().isSame(moment(@props.state.regDate, 'YYYY MM DD'), 'days')
+                <h4>(today!)</h4>
+              }
               <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
             </div>
           }
