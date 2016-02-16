@@ -15,7 +15,7 @@ module.exports = React.createClass
         <p>
           {@props.state.sameDay}
         </p>
-      else if moment(@props.state.regDate, 'YYYY MM DD') > moment()
+      else if moment(@props.state.regDate, 'YYYY MM DD') > moment().subtract(1, 'day')
         <p>
           You must be registered to vote by {moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')} in {@props.state.name}.
         </p>
