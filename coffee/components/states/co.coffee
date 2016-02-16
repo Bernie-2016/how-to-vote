@@ -55,6 +55,12 @@ module.exports = React.createClass
           <h3 className='caps'>Caucus Date</h3>
           <p className='date jubilat blue'>
             {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
+            {if moment().isSame(moment(@props.state.date, 'YYYY MM DD'), 'days')
+              <div>
+                <h4>(today!)</h4>
+                <br />
+              </div>
+            }
           </p>
           <AddToCal date={@props.state.date} state={@props.state} />
           <div>
