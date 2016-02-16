@@ -1,7 +1,7 @@
 import React      from 'react'
-import TopInfo    from 'components/states/partials/topInfo'
-import CommonInfo from 'components/states/partials/commonInfo'
-import RightInfo  from 'components/states/partials/rightInfo'
+import TopInfo    from 'components/partials/topInfo'
+import CommonInfo from 'components/partials/commonInfo'
+import RightInfo  from 'components/partials/rightInfo'
 import { verb }   from 'states'
 
 module.exports = React.createClass

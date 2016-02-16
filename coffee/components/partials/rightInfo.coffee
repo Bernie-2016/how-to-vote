@@ -2,8 +2,8 @@ import React           from 'react'
 import Sticky          from 'react-stickynode'
 import moment          from 'moment'
 import { primaryType } from 'states'
-import AddToCal        from 'components/states/partials/calWidget'
-import Reminder        from 'components/states/partials/reminderWidget'
+import AddToCal        from 'components/widgets/addToCalWidget'
+import Reminder        from 'components/widgets/reminderWidget'
 
 module.exports = React.createClass
   displayName: 'State Right Info'

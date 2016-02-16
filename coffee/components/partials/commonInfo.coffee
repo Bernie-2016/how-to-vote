@@ -1,5 +1,5 @@
 import React     from 'react'
-import PollPlace from 'components/states/partials/pollPlace'
+import PollPlace from 'components/widgets/pollPlaceWidget'
 
 module.exports = React.createClass
   displayName: 'State Common Info'

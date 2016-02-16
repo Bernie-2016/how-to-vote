@@ -2,7 +2,7 @@ import React                   from 'react'
 import Header                  from 'components/header'
 import entity                  from 'utils/entity'
 import { label, states, keys } from 'states'
-import StateInfo               from 'components/states/partials/stateInfo'
+import StateInfo               from 'components/partials/stateInfo'
 
 module.exports = React.createClass
   displayName: 'State'

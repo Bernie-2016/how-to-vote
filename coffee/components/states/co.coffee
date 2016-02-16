@@ -1,11 +1,11 @@
 import React      from 'react'
 import Sticky     from 'react-stickynode'
 import moment     from 'moment'
-import TopInfo    from 'components/states/partials/topInfo'
-import CommonInfo from 'components/states/partials/commonInfo'
-import AddToCal   from 'components/states/partials/calWidget'
-import Reminder   from 'components/states/partials/reminderWidget'
-import PollPlace  from 'components/states/partials/pollPlace'
+import TopInfo    from 'components/partials/topInfo'
+import CommonInfo from 'components/partials/commonInfo'
+import AddToCal   from 'components/widgets/addToCalWidget'
+import Reminder   from 'components/widgets/reminderWidget'
+import PollPlace  from 'components/widgets/pollPlaceWidget'
 import entity     from 'utils/entity'
 
 module.exports = React.createClass

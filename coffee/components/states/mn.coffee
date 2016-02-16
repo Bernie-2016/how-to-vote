@@ -1,7 +1,7 @@
 import React     from 'react'
 import Sticky    from 'react-stickynode'
 import moment    from 'moment'
-import RightInfo from 'components/states/partials/rightInfo'
+import RightInfo from 'components/partials/rightInfo'
 
 module.exports = React.createClass
   displayName: 'State Info'
