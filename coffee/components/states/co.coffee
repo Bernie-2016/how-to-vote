@@ -48,6 +48,7 @@ module.exports = React.createClass
         </p>
         <p>
           Questions or issues at the caucus? Call our East Metro Bernie Office: <a href='tel:+13033210089'>(303) 321-0089</a>
+        </p>
       </div>
       <div className='right'>
         <Sticky top={25} bottomBoundary='section.flex'>
