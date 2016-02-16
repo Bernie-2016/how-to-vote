@@ -6,6 +6,7 @@ import CommonInfo from 'components/states/partials/commonInfo'
 import AddToCal   from 'components/states/partials/calWidget'
 import Reminder   from 'components/states/partials/reminderWidget'
 import PollPlace  from 'components/states/partials/pollPlace'
+import entity     from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'CO State Info'
@@ -13,7 +14,10 @@ module.exports = React.createClass
   render: ->
     <section className='flex'>
       <div className='left'>
-        <TopInfo state={@props.state} />
+        <h2>Key Information</h2>
+        <p>
+          {@props.state.name} has {@props.state.dtlName} {entity('mdash')} {@props.state.byline}
+        </p>
 
         <p>
           Requirements for eligibility:
