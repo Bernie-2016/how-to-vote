@@ -46,6 +46,8 @@ module.exports = React.createClass
           <a href={@props.state.office.url} target='_blank'>{@props.state.name} Elections Information</a><br />
           Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
         </p>
+        <p>
+          Questions or issues at the caucus? Call our East Metro Bernie Office: <a href='tel:+13033210089'>(303) 321-0089</a>
       </div>
       <div className='right'>
         <Sticky top={25} bottomBoundary='section.flex'>
