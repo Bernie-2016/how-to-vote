@@ -23,10 +23,12 @@ module.exports = React.createClass
     if @state.email is '' && @state.phone is ''
       alert 'Please enter either your email address or your phone number.'
       return
+    phone = @state.phone.replace(/\D/g, '')
     data =
       email: @state.email
-      phone: @state.phone.replace(/\D/g, '')
-      state: @props.stateKey
+      phone: phone
+      state_cd: @props.stateKey
+      'custom-7456': if phone is '' then 0 else 1
     $.post 'https://go.berniesanders.com/page/sapi/state-voting-site-signup', data, (r) =>
       if r.status isnt 'success'
         alert 'Submission error; please double-check and try again.'
