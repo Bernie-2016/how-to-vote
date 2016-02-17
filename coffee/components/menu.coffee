@@ -55,6 +55,7 @@ module.exports = React.createClass
               <li><a href="https://berniesanders.com/">Home</a></li>
               <li><a href="https://berniesanders.com/about/">Meet Bernie</a></li>
               <li><a href="https://berniesanders.com/issues">Issues</a></li>
+              <li><a href="https://vote.berniesanders.com/">How to Vote</a></li>
               <li><a href="https://berniesanders.com/news/">News</a></li>
               <li><a href="https://berniesanders.com/daily">Democracy Daily</a></li>
               <li><a href="https://berniesanders.com/es/">En Español</a></li>
