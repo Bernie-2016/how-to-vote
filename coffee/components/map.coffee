@@ -2,6 +2,7 @@ import React                   from 'react'
 import $                       from 'jquery'
 import MobileDetect            from 'mobile-detect'
 import moment                  from 'moment'
+import isEdge                  from 'is-edge'
 import Datamap                 from 'datamaps/dist/datamaps.usa'
 import Header                  from 'components/header'
 import { keys, label, states } from 'states'
@@ -38,7 +39,7 @@ module.exports = React.createClass
           return if states[geography.id].fillKey is keys.UNAVAILABLE
           @props.history.pushState(null, "/#{geography.id}")
       geographyConfig:
-        highlightOnHover: true
+        highlightOnHover: !isEdge()
         highlightFillColor: '#EA504E'
         popupTemplate: (geo, data) ->
           if data.fillKey is keys.UNAVAILABLE
