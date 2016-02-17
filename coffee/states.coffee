@@ -89,7 +89,8 @@ states =
     regLink: 'http://registertovote.ca.gov/'
     chkLink: 'http://www.sos.ca.gov/elections/registration-status/'
     dtlName: 'semi-closed primaries'
-    byline:  'Californians must register as a Democrat or independent ("no party preference") to vote for Bernie!'
+    byline:  'Californians must register as a Democrat or "no party preference" to vote for Bernie!'
+    regInfo: "If you're independent, make sure you're registered as 'no party preference'. There is also an Independent party in California which is NOT eligible to vote for Bernie -- only Democrats and 'no party preference' voters can vote for Bernie in the primary."
     early:   "Many counties in California will hold early voting for the Democratic primary between May 9 and June 6, 2016. Contact your <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> to learn more about early voting in your county. You can request a mail-in absentee ballot by submitting <a href='http://elections.cdn.sos.ca.gov/vote-by-mail/pdf/fill-in-vote-by-mail-app-instruct.pdf' target='_blank'>this form</a> before May 31, 2016. You can also file an emergency absentee ballot in person at your local <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> anytime between June 1 and 7, 2016."
   CO:
     name:    'Colorado'
@@ -481,7 +482,7 @@ states =
       url:   'http://www.elections.ny.gov'
       phone: '(518) 474-6220'
     regLink: 'http://www.elections.ny.gov/VotingRegister.html'
-    chkLink: 'https://voterlookup.elections.state.ny.us/ExceptionPage.aspx?aspxerrorpath=/VoterSearch.aspx'
+    chkLink: 'https://voterlookup.elections.state.ny.us/VoterSearch.aspx'
     dtlName: 'closed primaries'
     byline:  'New Yorkers must register as a Democrat to vote for Bernie!'
   NC:
