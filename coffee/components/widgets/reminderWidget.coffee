@@ -33,6 +33,9 @@ module.exports = React.createClass
       else
         @setState(done: true)
 
+  componentDidUpdate: (prevProps) ->
+    @setState(@getInitialState()) unless @props.stateKey is prevProps.stateKey
+
   render: ->
     <div className='reminder-widget'>
       {if @state.done
