@@ -187,9 +187,10 @@ states =
     regLink: 'http://elections.hawaii.gov/frequently-asked-questions/online-voter-registration/'
     chkLink: 'https://olvr.hawaii.gov/'
     dtlName: 'closed caucuses'
-    byline:  'Hawaii residents must register as a Democrat to vote for Bernie! However, Hawaii residents may update their party affiliation to Democrat on the day of the caucus.'
-    sameDay: 'Hawaii has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
+    byline:  'Hawaii residents must join the Democratic Party to vote for Bernie! However, Hawaii residents may join the Party on the day of the caucus.'
+    sameDay: 'The rules of the Democratic Party of Hawaii allow you to register to vote at the caucuses on Sat, March 26.'
     young:   true
+    custom:  true
   ID:
     name:    'Idaho'
     fillKey: keys.OTHER
