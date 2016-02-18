@@ -2,6 +2,7 @@ import React                                              from 'react'
 import { GoogleMapLoader, GoogleMap, DirectionsRenderer } from 'react-google-maps'
 import GoogleMaps                                         from 'google-maps'
 import $                                                  from 'jquery'
+import queryString                                        from 'queryString'
 
 GoogleMaps.KEY = if __PROD__ then 'AIzaSyCFQ50iI4VcALSPhuOkxsB7YI3yElr92bE' else require('credentials.json').googleKey
 
@@ -14,14 +15,18 @@ module.exports = React.createClass
       loaded:      false
       notFound:    false
       origin:      null
+      address:     queryString.parse(location.search)['?newaddr'] || ''
       directions:  null
       google:      null
       geocoder:    null
       pollPlace:   {}
     }
 
-  lookup: (e) ->
+  lookupClick: (e) ->
     e.preventDefault()
+    @lookup()
+
+  lookup: ->
     @setState(loaded: false, loading: true, notFound: false)
 
     # Geocode and set origin at 
@@ -47,6 +52,7 @@ module.exports = React.createClass
   componentDidMount: ->
     GoogleMaps.load (google) =>
       @setState(google: google, origin: new google.maps.LatLng(37.09024, -95.712891), geocoder: new google.maps.Geocoder())
+      @lookup() unless @state.address is ''
     
   componentWillUnmount: ->
     GoogleMaps.release()
@@ -59,7 +65,7 @@ module.exports = React.createClass
           {unless @state.loaded
             <div>
               <input placeholder='Home Address' value={@state.address} onChange={ (e) => @setState(address: e.target.value) } />
-              <a href='#' onClick={@lookup} className='btn'>{if @state.loading then 'Searching...' else 'Look up'}</a>
+              <a href='#' onClick={@lookupClick} className='btn'>{if @state.loading then 'Searching...' else 'Look up'}</a>
             </div>
           }
           {if @state.loaded
