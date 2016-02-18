@@ -40,7 +40,7 @@ module.exports = React.createClass
 
       {if @props.state.regLink
         <p>
-          <a href={@props.state.regLink} target='_blank' className='btn blue'>
+          <a href={@props.state.regLink} target='_blank' className={if moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days') then 'btn' else 'btn blue'}>
             Register to Vote
           </a>
         </p>
