@@ -233,7 +233,7 @@ states =
     regLink: 'https://indianavoters.in.gov/PublicSite/OVR/Introduction.aspx'
     chkLink: 'https://indianavoters.in.gov/PublicSite/Public/FT1/PublicLookupMain.aspx?Link=Registration'
     dtlName: 'open primaries'
-    byline:  'Indianans can vote for Bernie Sanders regardless of their registered party.'
+    byline:  'Hoosiers can vote for Bernie Sanders regardless of their registered party.'
     early:   "Early in-person voting for the Indiana Democratic Primary takes place at your local circuit court clerk's office; follow <a href='http://www.in.gov/judiciary/2794.htm' target='_blank'>this link</a> and select your county from the list. Early voting begins April 5, 2016 and ends at noon on May 2, 2016."
     idReq:   "Indiana requires you to present a photo identification in order to vote in person. To learn more about what types of IDs are acceptable, click <a href='http://www.in.gov/sos/elections/2401.htm' target='_blank'>here</a>."
     young:   true
