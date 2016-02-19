@@ -64,7 +64,7 @@ module.exports = React.createClass
         <div className='poll-widget'>
           {unless @state.loaded
             <div>
-              <input placeholder='Home Address' value={@state.address} onChange={ (e) => @setState(address: e.target.value) } />
+              <input placeholder="Address where you're registered to vote" value={@state.address} onChange={ (e) => @setState(address: e.target.value) } />
               <a href='#' onClick={@lookupClick} className='btn'>{if @state.loading then 'Searching...' else 'Look up'}</a>
             </div>
           }
