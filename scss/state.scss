@@ -112,6 +112,8 @@ div#htv-app {
       }
 
       div.reminder-widget {
+        font-size: 16px;
+        
         input {
           box-sizing: border-box;
           width: 100%;
@@ -119,6 +121,12 @@ div#htv-app {
           margin: 0.5em 0;
           font-size: 0.9em;
           padding: 0.75em 1em 0.85em;
+
+          &[type=checkbox] {
+            display: inline;
+            width: auto;
+            margin-right: 10px;
+          }
         }
 
         p.disclaimer {
