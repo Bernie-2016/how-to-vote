@@ -1,5 +1,6 @@
 import React       from 'react'
 import MaskedInput from 'react-maskedinput'
+import moment      from 'moment'
 import $           from 'jquery'
 import entity      from 'utils/entity'
 
@@ -40,7 +41,7 @@ module.exports = React.createClass
     @setState(@getInitialState()) unless @props.stateKey is prevProps.stateKey
 
   render: ->
-    <div className='reminder-widget'>
+    <div className='reminder-widget' hidden={moment().isAfter(moment(@props.state.date, 'YYYY MM DD'), 'days')}>
       {if @state.done
         <div>
           <strong>Thanks!</strong>
