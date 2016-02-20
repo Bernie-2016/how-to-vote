@@ -176,6 +176,7 @@ states =
     byline:  'Georgians can vote for Bernie Sanders regardless of their registered party.'
     early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26. Click <a href='http://sos.ga.gov/elections/CountyContacts/AdvanceVotingDisplay.aspx' target='_blank'>here</a> for information about early voting times and locations in your county. Georgia allows any voter to vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
     idReq:   "Georgia requires you to present a photo identification in order to vote in person. Acceptable IDs include valid state or federal photo IDs, including a free photo ID card issued by your county registrar's office or the Georgia Department of Driver Services, a Georgia Driver's License (current or expired), employee photo IDs from any federal, state, or local agency, a valid U.S. passport, a valid U.S. military photo ID, or a valid tribal photo ID."
+    pollWgt: true
   HI:
     name:    'Hawaii'
     fillKey: keys.CLOSED_CAUCUS
@@ -190,6 +191,7 @@ states =
     byline:  'Hawaii residents must join the Democratic Party to vote for Bernie! However, Hawaii residents may join the Party on the day of the caucus.'
     sameDay: 'The rules of the Democratic Party of Hawaii allow you to register to vote at the caucuses on Sat, March 26.'
     young:   true
+    pollWgt: true
     custom:  true
   ID:
     name:    'Idaho'
@@ -294,6 +296,7 @@ states =
     dtlName: 'closed primaries'
     byline:  'Louisianans must register as a Democrat to vote for Bernie!'
     early:   "You can participate in early voting for the Louisiana Democratic Primary at designated locations in your parish between February 20 and 27, 2016. Find your closest early voting location <a href='https://voterportal.sos.la.gov/EarlyVoting' target='_blank'>here</a>."
+    pollWgt: true
   ME:
     name:    'Maine'
     fillKey: keys.CLOSED_CAUCUS
@@ -349,6 +352,7 @@ states =
     dtlName: 'open primaries'
     byline:  'Michiganders can vote for Bernie Sanders regardless of their registered party.'
     idReq:   "Michigan voters must provide a photo ID at the polls, or sign an affidavit attesting that they do not possess a photo ID.  Acceptable Photo IDs include a valid driver's license, a federal or state-issued photo ID, a U.S. passport, a military photo ID, a high school or college photo ID, or a tribal photo ID."
+    pollWgt: true
   MN:
     name:    'Minnesota'
     fillKey: keys.OPEN_CAUCUS
@@ -362,6 +366,7 @@ states =
     sameDay: 'Minnesota has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 1.'
     custom:  true
     young:   true
+    pollWgt: true
   MS:
     name:    'Mississippi'
     fillKey: keys.OPEN_PRIMARY
@@ -502,6 +507,7 @@ states =
     early:   "North Carolina has one-stop early voting and same-day registration at select locations between March 3 and 12, 2016. Contact your <a href='https://enr.ncsbe.gov/cbesearch/' target='_blank'>local elections board</a> to find an early voting location near you. To take advantage of same-day registration, you must bring official proof of a current residential address in your county, such as a valid photo ID or an official document showing your address (e.g., a bank statement or utility bill) no more than two months old. Electronic versions of such documents are acceptable if they come from the original source (e.g., the bank or utility) and show your name and current address. Any registered North Carolina voter can also request a mail-in absentee ballot.  To learn more about absentee voting, click <a href='https://www.ncsbe.gov/Voting/Absentee-Voting' target='_blank'>here</a>."
     idReq:   "North Carolina requires you to present photo identification in order to vote in person.  Click <a href='http://voterid.nc.gov/photo-id.html' target='_blank'>here</a> for more information about what kinds of photo IDs you can use to vote."
     young:   true
+    pollWgt: true
   ND:
     name:    'North Dakota'
     fillKey: keys.OPEN_CAUCUS
@@ -628,6 +634,7 @@ states =
     byline:  'Tennesseans can vote for Bernie Sanders regardless of their registered party.'
     early:   "You can participate in early in-person voting for the Tennessee democratic primary between February 10, 2016 and February 23, 2016, during voting hours established by your county."
     idReq:   "Tennessee requires you to present a photo identification in order to vote in person. Acceptable IDs include valid photo IDs issued by any state government, valid U.S. passports, valid U.S. military photo IDs, and Tennessee handgun carry permits with photos."
+    pollWgt: true
   TX:
     name:    'Texas'
     fillKey: keys.OPEN_PRIMARY
