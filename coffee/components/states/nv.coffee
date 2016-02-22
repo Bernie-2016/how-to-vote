@@ -14,7 +14,6 @@ module.exports = React.createClass
     <section className='flex'>
       <div className='left'>
         <TopInfo state={@props.state} />
-        <PollPlace title={'Caucus'} />
         <h3 className='caps'>Only 17?</h3>
         <p>
           You may still vote in Nevada if you will be 18 years old by November 8, 2016.

@@ -2,6 +2,7 @@ import React     from 'react'
 import Sticky    from 'react-stickynode'
 import moment    from 'moment'
 import RightInfo from 'components/partials/rightInfo'
+import PollPlace from 'components/widgets/pollPlaceWidget'
 
 module.exports = React.createClass
   displayName: 'State Info'
@@ -10,6 +11,9 @@ module.exports = React.createClass
     <section className='flex'>
       <div className='left'>
         <h2>Key Information</h2>
+        {if @props.state.pollWgt
+          <PollPlace />
+        }
         <h3 className='caps'>Only 17?</h3>
         <p>
           You may still vote in {@props.state.name} if you will be 18 years old by November 8, 2016.
