@@ -37,6 +37,9 @@ module.exports = React.createClass
         <p>
           Questions or issues at the caucus? Call our East Metro Bernie Office: <a href='tel:+13033210089'>(303) 321-0089</a>
         </p>
+        <p>
+          Text CO or COLORADO to 82623 to commit to caucus!
+        </p>
 
         {if @props.state.pollWgt
           <PollPlace title={'Caucus'} />
@@ -78,6 +81,11 @@ module.exports = React.createClass
           <p>
             <a href='https://www.sos.state.co.us/voter-classic/pages/pub/olvr/findVoterReg.xhtml' target='_blank' className='btn blue'>
               Check Registration Status
+            </a>
+          </p>
+          <p>
+            <a href='https://go.berniesanders.com/page/s/commit-to-caucus-for-bernie' target='_blank' className='btn'>
+              Commit to Caucus
             </a>
           </p>
         </Sticky>
