@@ -84,7 +84,7 @@ module.exports = React.createClass
             </a>
           </p>
           <p>
-            <a href='https://go.berniesanders.com/page/s/commit-to-caucus-for-bernie' target='_blank' className='btn'>
+            <a href='https://go.berniesanders.com/page/s/co-commit-to-caucus-sms' target='_blank' className='btn'>
               Commit to Caucus
             </a>
           </p>
