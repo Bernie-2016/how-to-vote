@@ -51,6 +51,17 @@ states =
     dtlName: 'closed caucuses'
     byline:  'Alaskans must register as a Democrat to vote for Bernie! However, Alaskans may update their party affiliation to Democrat on the day of the caucus.'
     young:   'You may still caucus in Alaska if you will be 18 years old by June 24, 2016.'
+  AS:
+    name:    'American Samoa'
+    fillKey: keys.CLOSED_CAUCUS
+    regDate: '2016 02 22'
+    date:    '2016 03 01'
+    office:
+      url:   'https://www.facebook.com/asdems'
+      phone: '(684) 699-2828'
+    dtlName: 'closed caucuses'
+    byline:  'American Samoans must register with the Democratic party to caucus for Bernie!'
+    regInfo: 'Political parties are not officially utilized in elections in American Samoa. Because of this, the American Samoa Democratic Party handles its own voter registration. The American Samoa Democratic Party requires all interested voters to register with the Party by February 22, 2016 if they wish the participate in caucus.'
   AZ:
     name:    'Arizona'
     fillKey: keys.CLOSED_PRIMARY
@@ -342,7 +353,8 @@ states =
     byline:  'Bay Staters must register as a Democrat or undeclared to vote for Bernie!'
   MI:
     name:    'Michigan'
-    fillKey: keys.OPEN_PRIMARY
+    fillKey: keys.OTHER
+    label:   'Semi-open Primary'
     regDate: '2016 02 08'
     date:    '2016 03 08'
     office:
@@ -350,8 +362,8 @@ states =
       phone: '(808) 767-6424'
     regLink: 'http://www.michigan.gov/sos/0,1607,7-127-1633_8716_8726_47669-175879--,00.html'
     chkLink: 'http://www.michigan.gov/vote'
-    dtlName: 'open primaries'
-    byline:  'Michiganders can vote for Bernie Sanders regardless of their registered party.'
+    dtlName: 'semi-open primaries'
+    byline:  'any Michigander can vote for Bernie Sanders. You must request a Democratic primary ballot in writing at the polling place or in your absentee ballot application.'
     idReq:   "Michigan voters must provide a photo ID at the polls, or sign an affidavit attesting that they do not possess a photo ID.  Acceptable Photo IDs include a valid driver's license, a federal or state-issued photo ID, a U.S. passport, a military photo ID, a high school or college photo ID, or a tribal photo ID."
     pollWgt: true
   MN:
@@ -521,7 +533,8 @@ states =
     byline:  'Any North Dakotan that intends to support the Democratic Party in the 2016 election can vote for Bernie Sanders, regardless of registration status.'
   OH:
     name:    'Ohio'
-    fillKey: keys.OPEN_PRIMARY
+    fillKey: keys.OTHER
+    label:   'Semi-open Primary'
     regDate: '2016 02 16'
     date:    '2016 03 15'
     office:
@@ -529,9 +542,9 @@ states =
       phone: '(614) 466-2585'
     regLink: 'http://www.sos.state.oh.us/elections/voters/register.aspx'
     chkLink: 'http://voterlookup.sos.state.oh.us/voterlookup.aspx'
-    dtlName: 'open primaries'
-    byline:  'Ohioans can vote for Bernie Sanders regardless of their registered party.'
-    regInfo: '​If you voted via Republican ballot in the last general election, the poll worker will automatically give you a Republican ballot. You must explicitly request a Democrat ballot before you head to the voting machine.'
+    dtlName: 'semi-open primaries'
+    byline:  'any Ohioan can vote for Bernie Sanders.'
+    regInfo: '​You must request a Democratic primary ballot at the polling place or in your absentee ballot application. If you voted via Republican ballot in the last general election, the poll worker will automatically give you a Republican ballot. Make sure you have your desired party ballot before you head to the voting machine.'
     early:   "Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx' target='_blank'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx' target='_blank'>here</a> to request a mail-in absentee ballot."
     young:   true
   OK:
