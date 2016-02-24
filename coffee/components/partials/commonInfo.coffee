@@ -1,5 +1,6 @@
-import React     from 'react'
-import PollPlace from 'components/widgets/pollPlaceWidget'
+import React           from 'react'
+import { primaryType } from 'states'
+import PollPlace       from 'components/widgets/pollPlaceWidget'
 
 module.exports = React.createClass
   displayName: 'State Common Info'
@@ -19,10 +20,10 @@ module.exports = React.createClass
       </p>
       <h3 className='caps'>More Information</h3>
       <p>
-        If you have any questions about voting in {@props.state.name} you may contact your state elections office for more information.
+        If you have any questions about voting in {@props.state.name} you may contact your state {if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'party' else 'elections office'} for more information.
       </p>
       <p>
-        <a href={@props.state.office.url} target='_blank'>{@props.state.name} Elections Information</a><br />
+        <a href={@props.state.office.url} target='_blank'>{@props.state.name} {if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'Democratic Party' else 'Elections Office'}</a><br />
         Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
       </p>
     </div>

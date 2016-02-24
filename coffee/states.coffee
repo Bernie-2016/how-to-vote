@@ -701,7 +701,7 @@ states =
     regLink: 'http://www.dol.wa.gov/driverslicense/voter.html'
     chkLink: 'https://www.sos.wa.gov/elections/myvote/'
     dtlName: 'open caucuses'
-    byline:  'Washingtonians can caucus for Bernie Sanders regardless of their registered party.'
+    byline:  'anyone can caucus for Bernie Sanders. Participation in Washington’s caucuses is open to all voters who wish to participate as Democrats.'
     sameDay: 'Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
     pollWgt: true
     young:   true
