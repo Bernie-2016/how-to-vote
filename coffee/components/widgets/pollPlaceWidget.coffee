@@ -14,12 +14,15 @@ module.exports = React.createClass
       loading:     false
       loaded:      false
       notFound:    false
+      submitted:   false
       origin:      null
       address:     queryString.parse(location.search)['?newaddr'] || ''
       directions:  null
       google:      null
       geocoder:    null
       pollPlace:   {}
+      addressObj:  {}
+      email:       null
     }
 
   lookupClick: (e) ->
@@ -35,7 +38,12 @@ module.exports = React.createClass
 
     $.getJSON 'https://ppapi.democrats.org/api', api_key: 'MjBhNGFhNzY5YTk5ZjkyY2JiN2I1ZjE1', address: @state.address, (response) =>
       if response.status isnt 'success'
-        @setState(notFound: true, loading: false)
+        address =
+          address: response.homeAddress.line1
+          city: response.homeAddress.city
+          state: response.homeAddress.state
+          zip: response.homeAddress.zip 
+        @setState(notFound: true, loading: false, addressObj: address)
       else
         pollAddress = "#{response.pollingLocation.line1}, #{response.pollingLocation.city}, #{response.pollingLocation.state} #{response.pollingLocation.zip}"
         @state.geocoder.geocode address: pollAddress, (results, status) =>
@@ -45,9 +53,26 @@ module.exports = React.createClass
           DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) => 
             @setState(loaded: true, loading: false, directions: result, pollPlace: response.pollingLocation)
 
+  submitClick: (e) ->
+    e.preventDefault()
+    if @state.email is ''
+      alert 'Please enter your email address.'
+      return
+    data =
+      email: @state.email
+      addr1: @state.address.address
+      city: @state.address.city
+      state_cd: @state.address.state
+      zip: @state.address.zip
+    $.post 'https://go.berniesanders.com/page/sapi/missing-polling-location', data, (r) =>
+      if r.status isnt 'success'
+        alert 'Submission error; please double-check and try again.'
+      else
+        @setState(submitted: true)
+
   reset: (e) ->
     e.preventDefault()
-    @setState(address: null, loaded: false, loading: false, origin: null, directions: null, pollPlace: {})
+    @setState(address: null, loaded: false, loading: false, submitted: false, origin: null, directions: null, pollPlace: {}, addressObj: {}, email: null)
 
   componentDidMount: ->
     GoogleMaps.load (google) =>
@@ -62,7 +87,7 @@ module.exports = React.createClass
       <h3 className='caps'>{@props.title || 'Polling'} Location</h3>
       {if @state.google
         <div className='poll-widget'>
-          {unless @state.loaded
+          {unless @state.loaded || @state.notFound
             <div>
               <input placeholder="Address where you're registered to vote" value={@state.address} onChange={ (e) => @setState(address: e.target.value) } />
               <a href='#' onClick={@lookupClick} className='btn'>{if @state.loading then 'Searching...' else 'Look up'}</a>
@@ -96,9 +121,17 @@ module.exports = React.createClass
               <a href='#' onClick={@reset} className='btn'>Look Up Another</a>
             </div>
           }
-          {if @state.notFound
+          {if @state.notFound && !@state.submitted
             <p>
-              We were unable to locate the polling place for that address; please consult your state's website.
+              We were unable to locate the polling place for that address; please enter your email address to be notified about your location.
+              <input placeholder='Email address' value={@state.email} onChange={ (e) => @setState(email: e.target.value) } />
+              <a href='#' onClick={@submitClick} className='btn'>Submit</a>
+            </p>
+          }
+          {if @state.notFound && @state.submitted
+            <p>
+              Thanks! We'll email you your polling location.
+              <a href='#' onClick={@reset} className='btn'>Look Up Another</a>
             </p>
           }
         </div>
