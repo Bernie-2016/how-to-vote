@@ -60,10 +60,10 @@ module.exports = React.createClass
       return
     data =
       email: @state.email
-      addr1: @state.address.address
-      city: @state.address.city
-      state_cd: @state.address.state
-      zip: @state.address.zip
+      addr1: @state.addressObj.address
+      city: @state.addressObj.city
+      state_cd: @state.addressObj.state
+      zip: @state.addressObj.zip
     $.post 'https://go.berniesanders.com/page/sapi/missing-polling-location', data, (r) =>
       if r.status isnt 'success'
         alert 'Submission error; please double-check and try again.'
