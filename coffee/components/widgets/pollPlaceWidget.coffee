@@ -3,6 +3,7 @@ import { GoogleMapLoader, GoogleMap, DirectionsRenderer } from 'react-google-map
 import GoogleMaps                                         from 'google-maps'
 import $                                                  from 'jquery'
 import queryString                                        from 'queryString'
+import { primaryType }                                    from 'states'
 
 GoogleMaps.KEY = if __PROD__ then 'AIzaSyCFQ50iI4VcALSPhuOkxsB7YI3yElr92bE' else require('credentials.json').googleKey
 
@@ -84,12 +85,12 @@ module.exports = React.createClass
 
   render: ->
     <div>
-      <h3 className='caps'>{@props.title || 'Polling'} Location</h3>
+      <h3 className='caps'>{if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'Precinct Caucus' else 'Polling'} Location</h3>
       {if @state.google
         <div className='poll-widget'>
           {unless @state.loaded || @state.notFound
             <div>
-              <input placeholder="Address where you're registered to vote" value={@state.address} onChange={ (e) => @setState(address: e.target.value) } />
+              <input placeholder={@props.placeholder || "Address where you're registered to vote"} value={@state.address} onChange={ (e) => @setState(address: e.target.value) } />
               <a href='#' onClick={@lookupClick} className='btn'>{if @state.loading then 'Searching...' else 'Look up'}</a>
             </div>
           }

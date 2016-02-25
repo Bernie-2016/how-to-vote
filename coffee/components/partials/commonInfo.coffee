@@ -8,7 +8,7 @@ module.exports = React.createClass
   render: ->
     <div>
       {if @props.state.pollWgt
-        <PollPlace />
+        <PollPlace state={@props.state} />
       }
       <h3 className='caps'>College Students</h3>
       <p>

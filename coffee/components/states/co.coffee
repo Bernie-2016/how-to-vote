@@ -42,7 +42,7 @@ module.exports = React.createClass
         </p>
 
         {if @props.state.pollWgt
-          <PollPlace title={'Caucus'} />
+          <PollPlace state={@props.state} />
         }
         <h3 className='caps'>More Information</h3>
         <p>

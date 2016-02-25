@@ -12,22 +12,28 @@ module.exports = React.createClass
       <div className='left'>
         <h2>Key Information</h2>
         {if @props.state.pollWgt
-          <PollPlace />
+          <PollPlace state={@props.state} placeholder='Enter your local address' />
         }
-        <h3 className='caps'>Only 17?</h3>
+        <h3 className='caps'>Can I Caucus?</h3>
         <p>
-          You may still vote in {@props.state.name} if you will be 18 years old by November 8, 2016.
+          You can caucus if you live in Minnesota and will be eligible to vote on November 8, 2016. That's it!
+        </p>
+        <p>
+          You do NOT need to be registered to vote.
+        </p>
+        <p>
+          You do NOT need to bring an ID.
         </p>
         <h3 className='caps'>College Students</h3>
         <p>
-          In Minnesota, you must actively live in the precinct where you caucus.
+          If you are from out of state but go school in Minnesota, you can and should caucus! Just look up the caucus location for your Minnesota address.
         </p>
         <h3 className='caps'>More Information</h3>
         <p>
-          If you have any questions about voting in {@props.state.name} you may contact your official elections office.
+          For more information you can contact the Bernie campaign office at (651) 330-0560 or the Minnesota DFL party:
         </p>
         <p>
-          <a href={@props.state.office.url} target='_blank'>Official {@props.state.name} Elections Website</a><br />
+          <a href={@props.state.office.url} target='_blank'>DFL Website</a><br />
           Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
         </p>
       </div>

@@ -371,9 +371,9 @@ states =
     fillKey: keys.OPEN_CAUCUS
     date:    '2016 03 01'
     office:
-      url:   'http://mnvotesinfo.sos.state.mn.us/'
-      phone: '(651) 215-1440'
-    more:    'http://mnvotesinfo.sos.state.mn.us/'
+      url:   'https://www.dfl.org/'
+      phone: '(651) 293-1200'
+    more:    'https://www.dfl.org/'
     dtlName: 'open caucuses'
     byline:  'Minnesotans can vote for Bernie Sanders regardless of their registered party.'
     sameDay: 'Minnesota has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 1.'
