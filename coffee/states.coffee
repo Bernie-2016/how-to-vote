@@ -279,7 +279,7 @@ states =
     dtlName: 'semi-closed caucuses'
     byline:  'Kansans must be affiliated with the Democratic Party to vote for Bernie!'
     sameDay: 'Kansas has Same-Day Registration which allows you to register to vote or update your affiliation to Democrat at the caucuses on Sat, March 5.'
-    regInfo: "You must arrive by 2:30 PM in order to caucus. Don't be late!"
+    regInfo: 'Doors open at 1:00 PM. Doors close at 3pm. Arrive early!'
     pollWgt: true
     young:   true
   KY:
