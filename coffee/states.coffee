@@ -54,14 +54,14 @@ states =
   AS:
     name:    'American Samoa'
     fillKey: keys.CLOSED_CAUCUS
-    regDate: '2016 02 22'
+    regDate: '2016 03 01'
     date:    '2016 03 01'
     office:
       url:   'https://www.facebook.com/asdems'
       phone: '(684) 699-2828'
     dtlName: 'closed caucuses'
     byline:  'American Samoans must register with the Democratic party to caucus for Bernie!'
-    regInfo: 'Political parties are not officially utilized in elections in American Samoa. Because of this, the American Samoa Democratic Party handles its own voter registration. The American Samoa Democratic Party requires all interested voters to register with the Party by February 22, 2016 if they wish the participate in caucus.'
+    regInfo: 'Political parties are not officially utilized in elections in American Samoa. Because of this, the American Samoa Democratic Party handles its own voter registration. Party Members may register at any party meeting up to and including the March 01, 2016 Territorial Caucus.'
   AZ:
     name:    'Arizona'
     fillKey: keys.CLOSED_PRIMARY
