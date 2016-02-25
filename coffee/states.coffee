@@ -544,7 +544,7 @@ states =
     chkLink: 'http://voterlookup.sos.state.oh.us/voterlookup.aspx'
     dtlName: 'semi-open primaries'
     byline:  'any Ohioan can vote for Bernie Sanders.'
-    regInfo: '​You must request a Democratic primary ballot at the polling place or in your absentee ballot application. If you voted via Republican ballot in the last general election, the poll worker will automatically give you a Republican ballot. Make sure you have your desired party ballot before you head to the voting machine.'
+    regInfo: '​You must request a Democratic primary ballot at the polling place or in your absentee ballot application. If you voted via Republican ballot in the last general election, the poll worker will automatically give you a Republican ballot, unless you request a Democratic ballot. Make sure you have your desired party ballot before you head to the voting machine.'
     early:   "Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx' target='_blank'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx' target='_blank'>here</a> to request a mail-in absentee ballot."
     young:   true
   OK:
