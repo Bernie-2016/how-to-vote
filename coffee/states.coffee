@@ -433,6 +433,7 @@ states =
     chkLink: 'https://www.votercheck.necvr.ne.gov/VoterView/RegistrantSearch.do'
     dtlName: 'closed caucuses'
     byline:  'Nebraskans must be registered Democrats to vote for Bernie Sanders! However, unaffiliated Nebraskans or those registered as Republicans can register to vote or change their party affiliation prior to or at the caucus.'
+    regInfo: "Nebraska caucuses at different times depending on your precinct; find yours <a href='http://nebraskacaucus2016.org' target='_blank'>here</a>."
     sameDay: 'Nebraska has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 5.'
     pollWgt: true
     young:   true
