@@ -93,3 +93,18 @@ div#htv-app {
     }
   }
 }
+
+@media (max-width: $phablet) {
+  div#htv-app {
+    margin-top: 2em;
+
+    h1#main-heading {
+      font-size: 1.5em;
+      margin-bottom: 0px;
+
+      div#select {
+        padding-right: 25px;
+      }
+    }
+  }
+}
