@@ -17,7 +17,7 @@ module.exports = React.createClass
       notFound:    false
       submitted:   false
       origin:      null
-      address:     queryString.parse(location.search)['?newaddr'] || ''
+      address:     queryString.parse(location.search)['newaddr'] || ''
       directions:  null
       google:      null
       geocoder:    null
