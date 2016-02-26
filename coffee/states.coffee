@@ -617,7 +617,6 @@ states =
     chkLink: 'https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=VoterInfo'
     dtlName: 'open primaries'
     byline:  'South Carolinians can vote for Bernie Sanders regardless of their registered party.'
-    early:   "South Carolinians can vote for Bernie Sanders before the February 27 primary, either in person or by mail-in absentee ballot. Visit <a href='http://www.scvotes.org/2016/02/03/absentee_voting_underway_for_presidential_primaries' target='_blank'>this link</a> to get more information and request your ballot."
     pollWgt: true
     young:   true
   SD:

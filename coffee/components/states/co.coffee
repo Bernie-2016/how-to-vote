@@ -15,6 +15,9 @@ module.exports = React.createClass
     <section className='flex'>
       <div className='left'>
         <h2>Key Information</h2>
+        {if @props.state.pollWgt
+          <PollPlace state={@props.state} />
+        }
         <p>
           {@props.state.name} has {@props.state.dtlName} {entity('mdash')} {@props.state.byline}
         </p>
@@ -41,9 +44,6 @@ module.exports = React.createClass
           Text CO or COLORADO to 82623 to commit to caucus!
         </p>
 
-        {if @props.state.pollWgt
-          <PollPlace state={@props.state} />
-        }
         <h3 className='caps'>More Information</h3>
         <p>
           If you have any questions about voting in {@props.state.name} you may contact your state elections office for more information.

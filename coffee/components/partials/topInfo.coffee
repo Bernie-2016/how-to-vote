@@ -1,6 +1,7 @@
-import React  from 'react'
-import moment from 'moment'
-import entity from 'utils/entity'
+import React     from 'react'
+import moment    from 'moment'
+import PollPlace from 'components/widgets/pollPlaceWidget'
+import entity    from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'State Top Info'
@@ -8,6 +9,9 @@ module.exports = React.createClass
   render: ->
     <div>
       <h2>Key Information</h2>
+      {if @props.state.pollWgt
+        <PollPlace state={@props.state} />
+      }
       <p>
         {@props.state.name} has {@props.state.dtlName} {entity('mdash')} {@props.state.byline}
       </p>
