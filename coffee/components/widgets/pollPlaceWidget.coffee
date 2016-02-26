@@ -78,7 +78,9 @@ module.exports = React.createClass
   componentDidMount: ->
     GoogleMaps.load (google) =>
       @setState(google: google, origin: new google.maps.LatLng(37.09024, -95.712891), geocoder: new google.maps.Geocoder())
-      @lookup() unless @state.address is ''
+      unless @state.address is ''
+        @lookup()
+        $(window).scrollTop $(@getDOMNode()).offset().top
     
   componentWillUnmount: ->
     GoogleMaps.release()
