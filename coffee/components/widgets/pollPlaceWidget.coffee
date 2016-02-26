@@ -2,7 +2,7 @@ import React                                              from 'react'
 import { GoogleMapLoader, GoogleMap, DirectionsRenderer } from 'react-google-maps'
 import GoogleMaps                                         from 'google-maps'
 import $                                                  from 'jquery'
-import queryString                                        from 'queryString'
+import queryString                                        from 'query-string'
 import { primaryType }                                    from 'states'
 
 GoogleMaps.KEY = if __PROD__ then 'AIzaSyCFQ50iI4VcALSPhuOkxsB7YI3yElr92bE' else require('credentials.json').googleKey
