@@ -1,4 +1,5 @@
 import React      from 'react'
+import PollPlace  from 'components/widgets/pollPlaceWidget'
 import TopInfo    from 'components/partials/topInfo'
 import CommonInfo from 'components/partials/commonInfo'
 import RightInfo  from 'components/partials/rightInfo'
