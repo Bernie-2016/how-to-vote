@@ -76,6 +76,7 @@ states =
     byline:  'Arizonans must register as a Democrat to vote for Bernie!'
     early:   "Arizonans can vote for Bernie Sanders before the March 22 presidential preference election, either in person or by mail-in absentee ballot, beginning February 24, 2016. Check with your <a href='http://www.azsos.gov/elections/voting-election/contact-information-county-election-officials' target='_blank'>local elections office</a> to learn more about early in-person or mail-in voting."
     idReq:   "Arizonans must present a photo ID and proof of current address in order to vote. Learn more about acceptable ID documents <a href='http://www.azsos.gov/elections/voting-election' target='_blank'>here</a>."
+    pollWgt: true
   AR:
     name:    'Arkansas'
     fillKey: keys.OPEN_PRIMARY
@@ -237,6 +238,7 @@ states =
     early:   "Early voting in the Illinois primary takes place between February 4 and March 14, 2016.  You can learn more about early voting locations and hours <a href='http://www.elections.state.il.us/votinginformation/earlyvotinglocations.aspx' target='_blank'>here</a>. Illinois also lets residents request mail-in absentee ballots until one day before the primary election. Learn more about mail-in voting in Illinois <a href='http://www.elections.state.il.us/downloads/electioninformation/pdf/votebymail.pdf' target='_blank'>here</a>."
     sameDay: false
     young:   true
+    pollWgt: true
   IN:
     name:    'Indiana'
     fillKey: keys.OPEN_PRIMARY
@@ -326,6 +328,7 @@ states =
     early:   "Can't attend the caucus in person? You can request an absentee ballot <a href='http://www.mainedems.org/page/request-absentee-ballot' target='_blank'>here</a> and return it anytime before Wed, March 2."
     sameDay: 'Maine has Same-Day Registration which allows you to register to vote at the caucuses on Sun, March 6 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Fri, Feb 19.'
     young:   true
+    pollWgt: true
   MD:
     name:    'Maryland'
     fillKey: keys.CLOSED_PRIMARY
@@ -395,6 +398,7 @@ states =
     byline:  'Missippians can vote for Bernie Sanders regardless of their registered party.'
     idReq:   "Mississippi requires you to present a valid photo ID in order to vote in person.  Acceptable forms of photo ID include driver's licenses, photo IDs issued by any branch of the United States government or any state government, a U.S. passport, a government employee photo ID, a firearms license, a student ID from an accredited Mississippi college or junior college, a U.S. military photo ID, a tribal photo ID, or a Mississippi voter identification card."
     young:   true
+    pollWgt: true
   MO:
     name:    'Missouri'
     fillKey: keys.OPEN_PRIMARY
@@ -550,6 +554,7 @@ states =
     regInfo: '​You must request a Democratic primary ballot at the polling place or in your absentee ballot application. If you voted via Republican ballot in the last general election, the poll worker will automatically give you a Republican ballot, unless you request a Democratic ballot. Make sure you have your desired party ballot before you head to the voting machine.'
     early:   "Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx' target='_blank'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx' target='_blank'>here</a> to request a mail-in absentee ballot."
     young:   true
+    pollWgt: true
   OK:
     name:    'Oklahoma'
     fillKey: keys.OTHER
@@ -664,6 +669,7 @@ states =
     dtlName: 'open primaries'
     byline:  'Texans can vote for Bernie Sanders regardless of their registered party.'
     early:   "Early voting for the Texas Democratic Party Primary takes place between February 16 and 26, 2016. Contact your <a href='http://www.sos.state.tx.us/elections/voter/county.shtml' target='_blank'>county elections administrator</a> for information about early voting times and locations near you."
+    pollWgt: true
   UT:
     name:    'Utah'
     fillKey: keys.OPEN_CAUCUS
