@@ -356,6 +356,7 @@ states =
     chkLink: 'http://www.sec.state.ma.us/VoterRegistrationSearch/MyVoterRegStatus.aspx'
     dtlName: 'semi-closed primaries'
     byline:  'Bay Staters must register as a Democrat or undeclared to vote for Bernie!'
+    pollWgt: true
   MI:
     name:    'Michigan'
     fillKey: keys.OTHER
