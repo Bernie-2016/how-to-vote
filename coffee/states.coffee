@@ -173,6 +173,7 @@ states =
     byline:  'Floridans must register as a Democrat to vote for Bernie!'
     early:   "You can participate in early in-person voting for the Florida Democratic Primary between March 5 and 12, 2016. You can find early voting locations and times <a href='http://dos.myflorida.com/elections/for-voters/voting/early-voting/' target='_blank'>here</a>."
     idReq:   "Florida requires people voting in person to present a valid photo ID. Acceptable IDs include a Florida driver's license, a Florida Department of Highway Safety and Motor Vehicle identification card, a U.S. Passport, a debit or credit card with a photograph, a military photo ID, a student photo ID, a retirement center ID, a neighborhood association ID, or a public assistance ID. If your photo ID does not contain a signature you will be asked to present another ID with a signature."
+    pollWgt: true
   GA:
     name:    'Georgia'
     fillKey: keys.OPEN_PRIMARY
@@ -219,6 +220,7 @@ states =
     byline:  "Idaho's Democratic Party Caucuses are open to all Idahoans, regardless of political affiliation, except those who participate in Idaho's Republican party primary on March 8, 2016."
     sameDay: 'Idaho has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.'
     young:   true
+    pollWgt: true
   IL:
     name:    'Illinois'
     fillKey: keys.OPEN_PRIMARY
@@ -689,6 +691,7 @@ states =
     byline:  'Vermonters can vote for Bernie Sanders regardless of their registered party.'
     early:   "You can participate in early in-person voting for the Vermont democratic primary at your town clerk's office any time until Monday, February 29. Any voter can also request that their town clerk mail them an early voter absentee ballot any time before the primary. You can find the form to request an absentee ballot <a href='https://www.sec.state.vt.us/media/53483/VTAbsenteeRequestGeneric.pdf' target='_blank'>here</a>."
     young:   true
+    pollWgt: true
   VA:
     name:    'Virginia'
     fillKey: keys.OPEN_PRIMARY
