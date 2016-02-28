@@ -1,9 +1,9 @@
-import React                                  from 'react'
+import React                                              from 'react'
 import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from 'react-google-maps'
-import { triggerEvent }                       from 'react-google-maps/lib/utils'
-import GoogleMaps                             from 'google-maps'
-import $                                      from 'jquery'
-import _                                      from 'lodash'
+import { triggerEvent }                                   from 'react-google-maps/lib/utils'
+import GoogleMaps                                         from 'google-maps'
+import $                                                  from 'jquery'
+import _                                                  from 'lodash'
 
 GoogleMaps.KEY = if __PROD__ then 'AIzaSyCFQ50iI4VcALSPhuOkxsB7YI3yElr92bE' else require('credentials.json').googleKey
 
