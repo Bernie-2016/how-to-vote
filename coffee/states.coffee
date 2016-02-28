@@ -76,7 +76,6 @@ states =
     byline:  'Arizonans must register as a Democrat to vote for Bernie!'
     early:   "Arizonans can vote for Bernie Sanders before the March 22 presidential preference election, either in person or by mail-in absentee ballot, beginning February 24, 2016. Check with your <a href='http://www.azsos.gov/elections/voting-election/contact-information-county-election-officials' target='_blank'>local elections office</a> to learn more about early in-person or mail-in voting."
     idReq:   "Arizonans must present a photo ID and proof of current address in order to vote. Learn more about acceptable ID documents <a href='http://www.azsos.gov/elections/voting-election' target='_blank'>here</a>."
-    pollWgt: true
   AR:
     name:    'Arkansas'
     fillKey: keys.OPEN_PRIMARY
@@ -324,7 +323,6 @@ states =
     dtlName: 'closed primaries'
     byline:  'Louisianans must register as a Democrat to vote for Bernie!'
     early:   "You can participate in early voting for the Louisiana Democratic Primary at designated locations in your parish between February 20 and 27, 2016. Find your closest early voting location <a href='https://voterportal.sos.la.gov/EarlyVoting' target='_blank'>here</a>."
-    pollWgt: true
   ME:
     name:    'Maine'
     fillKey: keys.CLOSED_CAUCUS
@@ -682,7 +680,6 @@ states =
     dtlName: 'open primaries'
     byline:  'Texans can vote for Bernie Sanders regardless of their registered party.'
     early:   "Early voting for the Texas Democratic Party Primary takes place between February 16 and 26, 2016. Contact your <a href='http://www.sos.state.tx.us/elections/voter/county.shtml' target='_blank'>county elections administrator</a> for information about early voting times and locations near you."
-    pollWgt: true
   UT:
     name:    'Utah'
     fillKey: keys.OPEN_CAUCUS
