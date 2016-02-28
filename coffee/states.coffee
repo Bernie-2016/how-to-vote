@@ -190,6 +190,18 @@ states =
     early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26. Click <a href='http://sos.ga.gov/elections/CountyContacts/AdvanceVotingDisplay.aspx' target='_blank'>here</a> for information about early voting times and locations in your county. Georgia allows any voter to vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
     idReq:   "Georgia requires you to present a photo identification in order to vote in person. Acceptable IDs include valid state or federal photo IDs, including a free photo ID card issued by your county registrar's office or the Georgia Department of Driver Services, a Georgia Driver's License (current or expired), employee photo IDs from any federal, state, or local agency, a valid U.S. passport, a valid U.S. military photo ID, or a valid tribal photo ID."
     pollWgt: true
+  GU:
+    name:    'Guam'
+    fillKey: keys.CLOSED_CAUCUS
+    regDate: '2016 05 07'
+    date:    '2016 05 07'
+    office:
+      url:   'https://www.facebook.com/guamdemocrats/'
+      phone: '(671) 777-1482'
+    regLink: 'http://gec.guam.gov/'
+    dtlName: 'closed caucuses'
+    byline:  'Guam residents must register as a Democrat to caucus for Bernie! However, Guam residents may register as/update registration to Democrat on the day of the caucus.'
+    sameDay: 'Guam has Same-Day Registration which allows you to register to vote at the caucuses on Sat, May 7.'
   HI:
     name:    'Hawaii'
     fillKey: keys.CLOSED_CAUCUS
@@ -699,6 +711,16 @@ states =
     early:   "You can participate in early in-person voting for the Vermont democratic primary at your town clerk's office any time until Monday, February 29. Any voter can also request that their town clerk mail them an early voter absentee ballot any time before the primary. You can find the form to request an absentee ballot <a href='https://www.sec.state.vt.us/media/53483/VTAbsenteeRequestGeneric.pdf' target='_blank'>here</a>."
     young:   true
     pollWgt: true
+  VI:
+    name:    'Virgin Islands'
+    fillKey: keys.CLOSED_CAUCUS
+    regDate: '2016 05 03'
+    date:    '2016 06 04'
+    office:
+      url:   'https://www.facebook.com/democratsvi/'
+    regLink: 'http://www.vivote.gov/content/register-vote'
+    dtlName: 'closed caucuses'
+    byline:  'Virgin Islands residents must register as a Democrat to caucus for Bernie!'
   VA:
     name:    'Virginia'
     fillKey: keys.OPEN_PRIMARY
