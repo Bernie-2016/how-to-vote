@@ -8,7 +8,7 @@ module.exports =
 
   output:
     filename: 'production.min.js'
-    path: './dist'
+    path: './dist/base'
     libraryTarget: 'umd'
     publicPath: '/'
 
