@@ -16,5 +16,5 @@ module.exports = React.createClass
           <span className='kern'>V</span>oting for Bernie in 
         </span>
       }
-      <Chooser state={(@props.params.state || '').toUpperCase()} history={@props.history} />
+      <Chooser state={(@props.params.state || '').toUpperCase()} />
     </h1>

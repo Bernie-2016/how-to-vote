@@ -8,6 +8,9 @@ module.exports = React.createClass
 
   mixins: [OnClickOutside]
 
+  contextTypes:
+    router: React.PropTypes.object
+
   getInitialState: ->
     {
       open: false
@@ -21,7 +24,7 @@ module.exports = React.createClass
     @setState(open: !@state.open)
 
   visit: (e) ->
-    @props.history.pushState(null, $(e.target).data('url'))
+    @context.router.push($(e.target).data('url'))
 
   render: ->
     <div id='select' onClick={@onClick}>

@@ -11,9 +11,12 @@ import entity                  from 'utils/entity'
 module.exports = React.createClass
   displayName: 'Map'
 
+  contextTypes:
+    router: React.PropTypes.object
+
   onChange: (e) ->
     return if e.target.value is 'none'
-    @props.history.pushState(null, "/#{e.target.value}")
+    @context.router.push("/#{e.target.value}")
 
   componentDidMount: ->
     map = new Datamap
@@ -24,11 +27,11 @@ module.exports = React.createClass
         defaultFill: '#A2A7B7'
       data:  states
       done:  (datamap) =>
-        history = @props.history
+        router = @context.router
         datamap.svg.selectAll('.datamaps-subunit').on 'mouseenter', (geography) ->
           return if states[geography.id].fillKey is keys.UNAVAILABLE
           if (new MobileDetect(window.navigator.userAgent)).mobile()
-            history.pushState(null, "/#{geography.id}")
+            router.push("/#{geography.id}")
           else
             $(@).css(cursor: 'pointer')
 
@@ -37,7 +40,7 @@ module.exports = React.createClass
 
         datamap.svg.selectAll('.datamaps-subunit').on 'click', (geography) =>
           return if states[geography.id].fillKey is keys.UNAVAILABLE
-          @props.history.pushState(null, "/#{geography.id}")
+          @context.router.push("/#{geography.id}")
       geographyConfig:
         highlightOnHover: !isEdge()
         highlightFillColor: '#EA504E'

@@ -7,9 +7,12 @@ import StateInfo               from 'components/partials/stateInfo'
 module.exports = React.createClass
   displayName: 'State'
 
+  contextTypes:
+    router: React.PropTypes.object
+
   componentDidMount: ->
     state = states[@props.params.state.toUpperCase()]
-    @props.history.pushState(null, '/') if state.fillKey is keys.UNAVAILABLE
+    @context.router.push('/') if state.fillKey is keys.UNAVAILABLE
 
   render: ->
     stateKey = @props.params.state.toUpperCase()
