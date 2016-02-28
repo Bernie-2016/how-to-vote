@@ -35,6 +35,7 @@ module.exports = React.createClass
     GoogleMaps.release()
 
   fit: (map) ->
+    return unless map
     map.fitBounds(@state.bounds) 
     map.panToBounds(@state.bounds) 
   
