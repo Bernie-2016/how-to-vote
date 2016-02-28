@@ -1,7 +1,6 @@
 import React                                              from 'react'
 import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from 'react-google-maps'
 import GoogleMaps                                         from 'google-maps'
-import $                                                  from 'jquery'
 import _                                                  from 'lodash'
 import offices                                            from 'offices'
 
