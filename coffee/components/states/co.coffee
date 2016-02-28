@@ -31,10 +31,10 @@ module.exports = React.createClass
           <li>Anyone who turns 18 or becomes a citizen on or before March 1 can caucus!</li>
         </ul>
         <p>
-          <strong>Please arrive to your caucus early!</strong> Doors open between 6pm and 6:30pm.
+          <strong>Please arrive to your caucus early! Doors open between 6pm and 6:30pm.</strong>
         </p>
         <p>
-          <strong>You must be in line by 7pm</strong> or you will <strong>not</strong> be let into the caucus.
+          You must be in line by 7pm.
         </p>
         <p>
           Questions or issues at the caucus? Call our East Metro Bernie Office: <a href='tel:+13033210089'>(303) 321-0089</a>
