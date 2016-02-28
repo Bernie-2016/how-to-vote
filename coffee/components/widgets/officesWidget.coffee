@@ -12,7 +12,7 @@ module.exports = React.createClass
 
   getInitialState: ->
     {
-      google:  null
+      loaded:  false
       bounds:  null
       markers: []
     }
@@ -32,7 +32,7 @@ module.exports = React.createClass
       geocoder = new google.maps.Geocoder()
 
       geocoder.geocode address: "State of #{@props.state.name}", (results, status) =>
-        @setState(google: google, bounds: results[0].geometry.viewport)
+        @setState(loaded: true, bounds: results[0].geometry.viewport)
 
     $.getJSON 'http://googledoctoapi.forberniesanders.com/1hJadb6JyDekHf5Vzx-77h7sdJRCOB01XUPvEpKIckDs/', (response) =>
       @setState(markers: _.filter(response, state: @props.stateKey))
@@ -50,7 +50,7 @@ module.exports = React.createClass
   render: ->
     <div hidden={_.isEmpty(@state.markers)}>
       <h3 className='caps'>Campaign Offices</h3>
-      {if @state.google
+      {if @state.loaded
         <GoogleMapLoader
           containerElement={
             <div {...@props} style={ height: '400px' } />
@@ -81,4 +81,7 @@ module.exports = React.createClass
           }
         />
       }
+      <a className='btn blue block' href='https://berniesanders.com/volunteer' target='_blank'>
+        Volunteer
+      </a>
     </div>

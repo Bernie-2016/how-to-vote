@@ -84,18 +84,34 @@ div#htv-app {
     text-align: center;
     border-radius: 3px;
 
+    &:hover {
+      background-color: darken(#ced4e4, 5%);
+    }
+
+    &.block {
+      width: 200px;
+    }
+
     &.blue {
       font-size: 1em;
       font-weight: 700;
       color: white;
       background-color: $blue;
+
+      &:hover {
+        background-color: lighten($blue, 5%);
+      }
     }
 
     &.red {
       font-size: 1em;
       font-weight: 700;
       color: white;
-      background-color: #f75956;
+      background-color: $orange;
+
+      &:hover {
+        background-color: lighten($orange, 5%);
+      }
     }
   }
 }

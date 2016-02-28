@@ -22,7 +22,7 @@ div#htv-app {
       flex-basis: auto;
       order: 2;
 
-      a {
+      a:not(.btn) {
         color: #0076d7;
         text-decoration: none;
         font-weight: 500;
