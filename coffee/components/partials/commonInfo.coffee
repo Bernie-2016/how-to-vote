@@ -1,5 +1,6 @@
 import React           from 'react'
 import { primaryType } from 'states'
+import Offices         from 'components/widgets/officesWidget'
 
 module.exports = React.createClass
   displayName: 'State Common Info'
@@ -26,4 +27,5 @@ module.exports = React.createClass
           </span>
         }
       </p>
+      <Offices {...@props} />
     </div>

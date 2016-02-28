@@ -1,7 +1,7 @@
 import React      from 'react'
+import Offices    from 'components/widgets/officesWidget'
 import PollPlace  from 'components/widgets/pollPlaceWidget'
 import TopInfo    from 'components/partials/topInfo'
-import CommonInfo from 'components/partials/commonInfo'
 import RightInfo  from 'components/partials/rightInfo'
 import { verb }   from 'states'
 
@@ -59,6 +59,7 @@ module.exports = React.createClass
           <a href={@props.state.office.url} target='_blank'>Democratic Party of Hawaii</a><br />
           Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
         </p>
+        <Offices {...@props} />
       </div>
       <div className='right'>
         <RightInfo {...@props} />

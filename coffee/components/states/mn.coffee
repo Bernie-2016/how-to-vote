@@ -3,6 +3,7 @@ import Sticky    from 'react-stickynode'
 import moment    from 'moment'
 import RightInfo from 'components/partials/rightInfo'
 import PollPlace from 'components/widgets/pollPlaceWidget'
+import Offices   from 'components/widgets/officesWidget'
 
 module.exports = React.createClass
   displayName: 'State Info'
@@ -36,6 +37,7 @@ module.exports = React.createClass
           <a href={@props.state.office.url} target='_blank'>DFL Website</a><br />
           Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
         </p>
+        <Offices {...@props} />
       </div>
       <div className='right'>
         <RightInfo state={@props.state} />

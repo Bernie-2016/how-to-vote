@@ -1,11 +1,10 @@
 import React      from 'react'
 import Sticky     from 'react-stickynode'
 import moment     from 'moment'
-import TopInfo    from 'components/partials/topInfo'
-import CommonInfo from 'components/partials/commonInfo'
 import AddToCal   from 'components/widgets/addToCalWidget'
 import Reminder   from 'components/widgets/reminderWidget'
 import PollPlace  from 'components/widgets/pollPlaceWidget'
+import Offices    from 'components/widgets/officesWidget'
 import entity     from 'utils/entity'
 
 module.exports = React.createClass
@@ -52,6 +51,7 @@ module.exports = React.createClass
           <a href={@props.state.office.url} target='_blank'>{@props.state.name} Elections Information</a><br />
           Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
         </p>
+        <Offices {...@props} />
       </div>
       <div className='right'>
         <Sticky top={25} bottomBoundary='section.flex'>

@@ -5,6 +5,7 @@ import entity    from 'utils/entity'
 import TopInfo   from 'components/partials/topInfo'
 import AddToCal  from 'components/widgets/addToCalWidget'
 import Reminder  from 'components/widgets/reminderWidget'
+import Offices   from 'components/widgets/officesWidget'
 
 module.exports = React.createClass
   displayName: 'NV State Info'
@@ -32,6 +33,7 @@ module.exports = React.createClass
         <p>
           For more information about the Democratic caucus in Nevada, visit the <a href='http://nvdems.com' target='_blank'>NVDems website</a>.
         </p>
+        <Offices {...@props} />
       </div>
       <div className='right'>
         <Sticky top={25} bottomBoundary='section.flex'>

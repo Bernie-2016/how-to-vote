@@ -43,7 +43,7 @@ module.exports = React.createClass
             </p>
           </div>
         }
-        <CommonInfo state={@props.state} />
+        <CommonInfo {...@props} />
       </div>
       <div className='right'>
         <RightInfo {...@props} />
