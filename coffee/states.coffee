@@ -38,6 +38,7 @@ states =
     chkLink: 'https://myinfo.alabamavotes.gov/VoterView/RegistrantSearch.do'
     dtlName: 'open primaries'
     byline:  'Alabamians can vote for Bernie Sanders regardless of their registered party.'
+    pollWgt: true
   AK:
     name:    'Alaska'
     fillKey: keys.CLOSED_CAUCUS
@@ -323,6 +324,7 @@ states =
     dtlName: 'closed primaries'
     byline:  'Louisianans must register as a Democrat to vote for Bernie!'
     early:   "You can participate in early voting for the Louisiana Democratic Primary at designated locations in your parish between February 20 and 27, 2016. Find your closest early voting location <a href='https://voterportal.sos.la.gov/EarlyVoting' target='_blank'>here</a>."
+    pollWgt: true
   ME:
     name:    'Maine'
     fillKey: keys.CLOSED_CAUCUS
@@ -680,6 +682,7 @@ states =
     dtlName: 'open primaries'
     byline:  'Texans can vote for Bernie Sanders regardless of their registered party.'
     early:   "Early voting for the Texas Democratic Party Primary takes place between February 16 and 26, 2016. Contact your <a href='http://www.sos.state.tx.us/elections/voter/county.shtml' target='_blank'>county elections administrator</a> for information about early voting times and locations near you."
+    pollWgt: true
   UT:
     name:    'Utah'
     fillKey: keys.OPEN_CAUCUS
