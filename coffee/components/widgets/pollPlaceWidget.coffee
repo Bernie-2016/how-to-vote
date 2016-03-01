@@ -26,6 +26,9 @@ module.exports = React.createClass
       email:       null
     }
 
+  onKeyUp: (e) ->
+    @lookup() if e.keyCode is 13
+
   lookupClick: (e) ->
     e.preventDefault()
     @lookup()
@@ -107,7 +110,7 @@ module.exports = React.createClass
         <div className='poll-widget'>
           {unless @state.loaded || @state.notFound
             <div>
-              <input placeholder={@props.placeholder || "Address where you're registered to vote"} value={@state.address} onChange={ (e) => @setState(address: e.target.value) } />
+              <input placeholder={@props.placeholder || "Address where you're registered to vote"} value={@state.address} onChange={ (e) => @setState(address: e.target.value) } onKeyUp={@onKeyUp} />
               <a href='#' onClick={@lookupClick} className='btn'>{if @state.loading then 'Searching...' else 'Look up'}</a>
             </div>
           }
