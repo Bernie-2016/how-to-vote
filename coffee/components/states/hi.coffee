@@ -1,6 +1,5 @@
 import React      from 'react'
 import Offices    from 'components/widgets/officesWidget'
-import PollPlace  from 'components/widgets/pollPlaceWidget'
 import TopInfo    from 'components/partials/topInfo'
 import RightInfo  from 'components/partials/rightInfo'
 import { verb }   from 'states'
@@ -43,9 +42,6 @@ module.exports = React.createClass
               {@props.state.young}
             </p>
           </div>
-        }
-        {if @props.state.pollWgt
-          <PollPlace state={@props.state} />
         }
         <h3 className='caps'>College Students</h3>
         <p>
