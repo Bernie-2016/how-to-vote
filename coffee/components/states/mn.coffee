@@ -25,6 +25,9 @@ module.exports = React.createClass
         <p>
           You do NOT need to bring an ID.
         </p>
+        <p>
+          Registration starts at 6:30PM. If you're in line by 8, you will receive a ballot.
+        </p>
         <h3 className='caps'>College Students</h3>
         <p>
           If you are from out of state but go school in Minnesota, you can and should caucus! Just look up the caucus location for your Minnesota address.
