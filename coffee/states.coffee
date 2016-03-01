@@ -681,8 +681,8 @@ states =
     chkLink: 'https://teamrv-mvp.sos.texas.gov/MVP/languageChange.do'
     dtlName: 'open primaries'
     byline:  'Texans can vote for Bernie Sanders regardless of their registered party.'
+    regInfo: "You can look up your polling place for the primary <a href='https://teamrv-mvp.sos.texas.gov/MVP/mvp.do' target='_blank'>here</a>."
     early:   "Early voting for the Texas Democratic Party Primary takes place between February 16 and 26, 2016. Contact your <a href='http://www.sos.state.tx.us/elections/voter/county.shtml' target='_blank'>county elections administrator</a> for information about early voting times and locations near you."
-    pollWgt: true
   UT:
     name:    'Utah'
     fillKey: keys.OPEN_CAUCUS
