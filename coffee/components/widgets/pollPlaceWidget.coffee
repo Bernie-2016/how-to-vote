@@ -46,7 +46,18 @@ module.exports = React.createClass
           zip: response.homeAddress.zip 
         @setState(notFound: true, loading: false, addressObj: address)
       else
-        pollAddress = "#{response.pollingLocation.line1}, #{response.pollingLocation.city}, #{response.pollingLocation.state} #{response.pollingLocation.zip}"
+        # Special case for incorrect DNC API results
+        if response.pollingLocation.locationName is 'GA TECH STUDENT SVC BLDG' && response.pollingLocation.line1 is '353 FERST DR NW'
+          pollingLocation = 
+            locationName: 'ALL SAINTS EPISCOPAL CHURCH'
+            line1: '634 W PEACHTREE ST NW'
+            city: 'ATLANTA'
+            state: 'GA'
+            zip: '30308'
+        else
+          pollingLocation = response.pollingLocation
+
+        pollAddress = "#{pollingLocation.line1}, #{pollingLocation.city}, #{pollingLocation.state} #{pollingLocation.zip}"
         @state.geocoder.geocode address: pollAddress, (results, status) =>
           # Special case for poll location that Google does not correctly geocode.
           if results[0].formatted_address is '1421 N Meridian Ct, Oklahoma City, OK 73127, USA'
@@ -56,7 +67,7 @@ module.exports = React.createClass
 
           DirectionsService = new @state.google.maps.DirectionsService()
           DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) => 
-            @setState(loaded: true, loading: false, directions: result, pollPlace: response.pollingLocation)
+            @setState(loaded: true, loading: false, directions: result, pollPlace: pollingLocation)
 
   submitClick: (e) ->
     e.preventDefault()
