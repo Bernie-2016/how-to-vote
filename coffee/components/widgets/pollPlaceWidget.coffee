@@ -57,6 +57,13 @@ module.exports = React.createClass
             city: 'ATLANTA'
             state: 'GA'
             zip: '30308'
+        else if response.pollingLocation.locationName is 'MEMORIAL SCHOOL' && response.pollingLocation.line1 is '107 ELIOT ST'
+          pollingLocation =
+            locationName: 'COMMUNITY SENIOR CENTER'
+            line1: '117 EAST CENTRAL ST'
+            city: 'NATICK'
+            state: 'MA'
+            zip: '01760'
         else
           pollingLocation = response.pollingLocation
 
