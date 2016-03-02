@@ -38,7 +38,6 @@ states =
     chkLink: 'https://myinfo.alabamavotes.gov/VoterView/RegistrantSearch.do'
     dtlName: 'open primaries'
     byline:  'Alabamians can vote for Bernie Sanders regardless of their registered party.'
-    pollWgt: true
   AK:
     name:    'Alaska'
     fillKey: keys.CLOSED_CAUCUS
@@ -115,7 +114,6 @@ states =
     dtlName: 'closed caucuses'
     byline:  'Coloradans must register as a Democrat to vote for Bernie!'
     custom:  true
-    pollWgt: true
   CT:
     name:    'Connecticut'
     fillKey: keys.CLOSED_PRIMARY
@@ -189,7 +187,6 @@ states =
     byline:  'Georgians can vote for Bernie Sanders regardless of their registered party.'
     early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26. Click <a href='http://sos.ga.gov/elections/CountyContacts/AdvanceVotingDisplay.aspx' target='_blank'>here</a> for information about early voting times and locations in your county. Georgia allows any voter to vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
     idReq:   "Georgia requires you to present a photo identification in order to vote in person. Acceptable IDs include valid state or federal photo IDs, including a free photo ID card issued by your county registrar's office or the Georgia Department of Driver Services, a Georgia Driver's License (current or expired), employee photo IDs from any federal, state, or local agency, a valid U.S. passport, a valid U.S. military photo ID, or a valid tribal photo ID."
-    pollWgt: true
   GU:
     name:    'Guam'
     fillKey: keys.CLOSED_CAUCUS
@@ -368,7 +365,6 @@ states =
     chkLink: 'http://www.sec.state.ma.us/VoterRegistrationSearch/MyVoterRegStatus.aspx'
     dtlName: 'semi-closed primaries'
     byline:  'Bay Staters must register as a Democrat or undeclared to vote for Bernie!'
-    pollWgt: true
   MI:
     name:    'Michigan'
     fillKey: keys.OTHER
@@ -397,7 +393,6 @@ states =
     sameDay: 'Minnesota has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 1.'
     custom:  true
     young:   true
-    pollWgt: true
   MS:
     name:    'Mississippi'
     fillKey: keys.OPEN_PRIMARY
@@ -583,7 +578,6 @@ states =
     byline:  'Oklahomans must be registered as a Democrat or independent to vote for Bernie Sanders!'
     early:   "Early voting for the Oklahoma Democratic primary takes place on Thursday, February 25 and Friday, February 26, from 8 A.M. to 6 P.M., and on Saturday, February 27, from 9 A.M. to 2 P.M.  Oklahoma also lets all residents vote by absentee ballot. You can apply for an absentee ballot <a href='https://www.ok.gov/elections/documents/Oklahoma%20Absentee%20Ballot%20Application%20-%20fillable.pdf' target='_blank'>here</a> until February 24, 2016."
     idReq:   "Oklahoma requires you to present a photo identification in order to vote in person. Acceptable IDs must be issued by the U.S. government, the State of Oklahoma, or a federally recognized tribal government, must contain your name and photograph, and must be valid (i.e., unexpired) on the date of the primary."
-    pollWgt: true
   OR:
     name:    'Oregon'
     fillKey: keys.CLOSED_PRIMARY
@@ -668,7 +662,6 @@ states =
     byline:  'Tennesseans can vote for Bernie Sanders regardless of their registered party.'
     early:   "You can participate in early in-person voting for the Tennessee democratic primary between February 10, 2016 and February 23, 2016, during voting hours established by your county."
     idReq:   "Tennessee requires you to present a photo identification in order to vote in person. Acceptable IDs include valid photo IDs issued by any state government, valid U.S. passports, valid U.S. military photo IDs, and Tennessee handgun carry permits with photos."
-    pollWgt: true
   TX:
     name:    'Texas'
     fillKey: keys.OPEN_PRIMARY
@@ -710,7 +703,6 @@ states =
     byline:  'Vermonters can vote for Bernie Sanders regardless of their registered party.'
     early:   "You can participate in early in-person voting for the Vermont democratic primary at your town clerk's office any time until Monday, February 29. Any voter can also request that their town clerk mail them an early voter absentee ballot any time before the primary. You can find the form to request an absentee ballot <a href='https://www.sec.state.vt.us/media/53483/VTAbsenteeRequestGeneric.pdf' target='_blank'>here</a>."
     young:   true
-    pollWgt: true
   VI:
     name:    'Virgin Islands'
     fillKey: keys.CLOSED_CAUCUS
@@ -733,7 +725,6 @@ states =
     chkLink: 'https://vote.elections.virginia.gov/VoterInformation'
     dtlName: 'open primaries'
     byline:  'all Virginians can request a Democratic ballot to vote for Bernie Sanders.'
-    pollWgt: true
     young:   true
   WA:
     name:    'Washington'
