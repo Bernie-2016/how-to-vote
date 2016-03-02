@@ -108,6 +108,9 @@ module.exports = React.createClass
                 {@state.pollPlace.locationName}
               </p>
               <p>
+                {@state.pollPlace.hours}
+              </p>
+              <p>
                 {@state.pollPlace.line1}
               </p>
               <p>
