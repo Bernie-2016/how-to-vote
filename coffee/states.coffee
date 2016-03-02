@@ -61,7 +61,8 @@ states =
       phone: '(684) 699-2828'
     dtlName: 'closed caucuses'
     byline:  'American Samoans must register with the Democratic party to caucus for Bernie!'
-    regInfo: 'Political parties are not officially utilized in elections in American Samoa. Because of this, the American Samoa Democratic Party handles its own voter registration. Party Members may register at any party meeting up to and including the March 01, 2016 Territorial Caucus.'
+    regInfo: 'There is no deadline to register to vote.  Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on Tuesday, March 1st.'
+    skipCM:  true
   AZ:
     name:    'Arizona'
     fillKey: keys.CLOSED_PRIMARY
@@ -197,8 +198,9 @@ states =
       phone: '(671) 777-1482'
     regLink: 'http://gec.guam.gov/'
     dtlName: 'closed caucuses'
-    byline:  'Guam residents must register as a Democrat to caucus for Bernie! However, Guam residents may register as/update registration to Democrat on the day of the caucus.'
-    sameDay: 'Guam has Same-Day Registration which allows you to register to vote at the caucuses on Sat, May 7.'
+    byline:  'Guamanians must register with the Democratic party to caucus for Bernie!'
+    sameDay: 'There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.'
+    skipCM:  true
   HI:
     name:    'Hawaii'
     fillKey: keys.CLOSED_CAUCUS
@@ -537,6 +539,16 @@ states =
     young:   true
     pollWgt: true
   ND:
+    name:    'Northern Mariana Islands'
+    fillKey: keys.CLOSED_CAUCUS
+    date:    '2016 03 12'
+    office:
+      url:   'https://www.facebook.com/CNMIDemocrats'
+    dtlName: 'closed caucuses'
+    byline:  'Northern Mariana Islanders must register with the Democratic party to caucus for Bernie.'
+    sameDay: 'There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on March 12th.'
+    skipCM:  true
+  NMI:
     name:    'North Dakota'
     fillKey: keys.OPEN_CAUCUS
     date:    '2016 06 07'
@@ -712,7 +724,8 @@ states =
       url:   'https://www.facebook.com/democratsvi/'
     regLink: 'http://www.vivote.gov/content/register-vote'
     dtlName: 'closed caucuses'
-    byline:  'Virgin Islands residents must register as a Democrat to caucus for Bernie!'
+    byline:  'Virgin Islanders must register with the Democratic party to caucus for Bernie!'
+    skipCM:  true
   VA:
     name:    'Virginia'
     fillKey: keys.OPEN_PRIMARY
