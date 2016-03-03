@@ -287,8 +287,8 @@ states =
     regDate: '2016 03 05'
     date:    '2016 03 05'
     office:
-      url:   'http://www.voteks.org'
-      phone: '(800) 262-8683'
+      url:   'http://www.ksdp.org/'
+      phone: '(785) 234-0425'
     regLink: 'https://www.kdor.org/voterregistration/'
     chkLink: 'https://myvoteinfo.voteks.org/VoterView/RegistrantSearch.do'
     dtlName: 'semi-closed caucuses'
