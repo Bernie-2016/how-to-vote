@@ -1,37 +1,23 @@
-import React     from 'react'
-import Html      from 'react-html'
-import Menu      from 'components/menu'
-import Footer    from 'components/footer'
-import _         from 'lodash'
-import stringify from 'json-stringify-safe'
+import React           from 'react'
+import GoogleAnalytics from 'react-g-analytics'
+import Menu            from 'components/menu'
+import Footer          from 'components/footer'
 
 require('scss/app')
-
-safeStringify = (obj) ->
-  stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--')
 
 module.exports = React.createClass
   displayName: 'App'
 
-  render: ->
-    if typeof document is 'undefined'
-      propsToStringify = _.cloneDeep(@props)
-      delete propsToStringify.history
+  componentDidMount: ->
+    window.addeventasync = ->
+      addeventatc.settings(license: 'acTHErYsazWyqhMFwmra14373')
 
-    contents = 
-      <div>
-        <Menu />
-        <div id='htv-app'>
-          {@props.children}
-        </div>
-        <Footer />
-        {if typeof document is 'undefined'
-          <script id='initial-props' type='application/json' dangerouslySetInnerHTML={__html: safeStringify(propsToStringify)} />
-        }
-        <script src='../production.min.js' />
+  render: ->
+    <div>
+      <Menu />
+      <div id='htv-app'>
+        {@props.children}
       </div>
-    
-    if typeof document is 'undefined'
-      <Html>{contents}</Html>
-    else
-      <div>{contents}</div>
+      <Footer />
+      <GoogleAnalytics id='UA-58354050-1' />
+    </div>

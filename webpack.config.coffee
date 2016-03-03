@@ -3,17 +3,18 @@ webpack                   = require('webpack')
 CopyWebpackPlugin         = require('copy-webpack-plugin')
 GeneratePlugin            = require('./generate')
 StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
+states                    = require('./coffee/states').states
 
-paths = [
-  '/IL/'
-]
+paths = ['/']
+for key, _ of states
+  paths.push "/#{key}/"
 
 module.exports =
   entry: './coffee/router'
 
   output:
     filename: 'production.min.js'
-    path: './dist/base'
+    path: './dist'
     libraryTarget: 'umd'
     publicPath: '/'
 
@@ -34,6 +35,10 @@ module.exports =
       {
         test: /\.(ttf|otf|png|ico|svg)$/
         loaders: ['file']
+      }
+      {
+        test: /\.html$/
+        loaders: ['raw']
       }
       {
         test: /[\/\\]node_modules[\/\\]datamaps[\/\\]dist[\/\\]datamaps.usa\.js$/
