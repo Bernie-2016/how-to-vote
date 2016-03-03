@@ -39,7 +39,7 @@ module.exports = React.createClass
       'https://addevent.com/libs/atc/1.6.1/atc.min.js'
     ]
 
-    <Html title='Vote for Bernie' metatags={metatags} scripts={scripts}>
+    <Html title='Vote for Bernie' metatags={metatags} scripts={scripts} stylesheets=['/production.min.css']>
       <div id='app'>
         {@props.children}
       </div>
