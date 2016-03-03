@@ -37,15 +37,7 @@ module.exports =
         loaders: ['file']
       }
       {
-        test: /\.html$/
-        loaders: ['raw']
-      }
-      {
         test: /[\/\\]node_modules[\/\\]datamaps[\/\\]dist[\/\\]datamaps.usa\.js$/
-        loaders: ['imports?window=>{}']
-      }
-      {
-        test: /[\/\\]node_modules[\/\\]google-maps[\/\\]lib[\/\\]Google\.js$/
         loaders: ['imports?window=>{}']
       }
     ]

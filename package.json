@@ -33,7 +33,7 @@
     "datamaps": "^0.4.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
-    "google-maps": "^3.2.1",
+    "google-maps": "git://github.com/schneidmaster/Js-GoogleMapsLoader.git",
     "imports-loader": "^0.6.5",
     "is-edge": "^1.0.1",
     "jquery": "^2.2.0",
@@ -57,8 +57,5 @@
     "style-loader": "git://github.com/schneidmaster/style-loader.git",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1"
-  },
-  "devDependencies": {
-    "raw-loader": "^0.5.1"
   }
 }
