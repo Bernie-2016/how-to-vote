@@ -53,7 +53,10 @@ module.exports = React.createClass
 
         pollAddress = "#{pollingLocation.line1}, #{pollingLocation.city}, #{pollingLocation.state} #{pollingLocation.zip}"
         @state.geocoder.geocode address: pollAddress, (results, status) =>
-          destination = results[0].geometry.location
+          if results[0].place_id is 'ChIJmbLGziSoPIgRQswYxvwy7fA'
+            destination = new google.maps.LatLng(lat: 42.305748, lng: -83.603743)
+          else
+            destination = results[0].geometry.location
 
           DirectionsService = new @state.google.maps.DirectionsService()
           DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) => 
