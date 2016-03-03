@@ -16,6 +16,8 @@ module.exports = React.createClass
     }
 
   handleMarkerClick: (marker) ->
+    openMarker = _.find(@state.markers, showInfo: true)
+    openMarker.showInfo = false if openMarker
     marker = _.find(@state.markers, marker)
     marker.showInfo = true
     @setState(markers: @state.markers)
