@@ -1,7 +1,12 @@
-path              = require('path')
-webpack           = require('webpack')
-CopyWebpackPlugin = require('copy-webpack-plugin')
-GeneratePlugin    = require('./generate')
+path                      = require('path')
+webpack                   = require('webpack')
+CopyWebpackPlugin         = require('copy-webpack-plugin')
+GeneratePlugin            = require('./generate')
+StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
+
+paths = [
+  '/IL/'
+]
 
 module.exports =
   entry: './coffee/router'
@@ -30,6 +35,14 @@ module.exports =
         test: /\.(ttf|otf|png|ico|svg)$/
         loaders: ['file']
       }
+      {
+        test: /[\/\\]node_modules[\/\\]datamaps[\/\\]dist[\/\\]datamaps.usa\.js$/
+        loaders: ['imports?window=>{}']
+      }
+      {
+        test: /[\/\\]node_modules[\/\\]google-maps[\/\\]lib[\/\\]Google\.js$/
+        loaders: ['imports?window=>{}']
+      }
     ]
 
    plugins: [
@@ -47,7 +60,12 @@ module.exports =
           to: 'share'
         }
       ])
-      new GeneratePlugin()
+      # new GeneratePlugin()
+      new webpack.ProvidePlugin(
+        'window.d3': 'd3'
+        'window.topojson': 'topojson'
+      )
+      new StaticSiteGeneratorPlugin('main', paths)
       new webpack.DefinePlugin(
         __PROD__: process.env.BUILD_PROD is 'true'
       )
