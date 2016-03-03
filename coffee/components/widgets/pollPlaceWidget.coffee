@@ -17,7 +17,7 @@ module.exports = React.createClass
       notFound:    false
       submitted:   false
       origin:      null
-      address:     queryString.parse(location.search)['newaddr'] || ''
+      address:     if typeof location isnt 'undefined' then queryString.parse(location.search)['newaddr'] || '' else ''
       directions:  null
       google:      null
       geocoder:    null

@@ -3,6 +3,7 @@ import TopInfo    from 'components/partials/topInfo'
 import CommonInfo from 'components/partials/commonInfo'
 import RightInfo  from 'components/partials/rightInfo'
 import { verb }   from 'states'
+import $          from 'jquery'
 
 module.exports = React.createClass
   displayName: 'State Info'

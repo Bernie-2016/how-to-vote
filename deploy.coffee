@@ -7,7 +7,7 @@ s3Params =
   Bucket: 'vote.berniesanders.com'
 
 params =
-  localDir: './dist/base'
+  localDir: './dist'
   deleteRemoved: true
   s3Params: s3Params
 
@@ -16,25 +16,5 @@ uploader.on('error', (err) ->
   console.error('Deployment failed:', err.stack)
 )
 uploader.on('end', ->
-  params =
-    localDir: './dist/upper'
-    s3Params: s3Params
-
-  uploader = client.uploadDir(params)
-  uploader.on('error', (err) ->
-    console.error('Deployment failed:', err.stack)
-  )
-  uploader.on('end', ->
-    params =
-      localDir: './dist/lower'
-      s3Params: s3Params
-
-    uploader = client.uploadDir(params)
-    uploader.on('error', (err) ->
-      console.error('Deployment failed:', err.stack)
-    )
-    uploader.on('end', ->
-      console.log('Done!')
-    )
-  )
+  console.log('Done!')
 )

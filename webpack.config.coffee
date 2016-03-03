@@ -1,14 +1,20 @@
-path              = require('path')
-webpack           = require('webpack')
-CopyWebpackPlugin = require('copy-webpack-plugin')
-GeneratePlugin    = require('./generate')
+path                      = require('path')
+webpack                   = require('webpack')
+CopyWebpackPlugin         = require('copy-webpack-plugin')
+StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
+ExtractTextPlugin         = require('extract-text-webpack-plugin')
+states                    = require('./coffee/states').states
+
+paths = ['/']
+for key, _ of states
+  paths.push "/#{key}/"
 
 module.exports =
   entry: './coffee/router'
 
   output:
     filename: 'production.min.js'
-    path: './dist/base'
+    path: './dist'
     libraryTarget: 'umd'
     publicPath: '/'
 
@@ -24,11 +30,15 @@ module.exports =
       }
       {
         test: /\.scss$/
-        loaders: ['style', 'css', 'resolve-url', 'sass']
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader!resolve-url-loader!sass-loader')
       }
       {
         test: /\.(ttf|otf|png|ico|svg)$/
         loaders: ['file']
+      }
+      {
+        test: /[\/\\]node_modules[\/\\]datamaps[\/\\]dist[\/\\]datamaps.usa\.js$/
+        loaders: ['imports?window=>{}']
       }
     ]
 
@@ -47,7 +57,12 @@ module.exports =
           to: 'share'
         }
       ])
-      new GeneratePlugin()
+      new webpack.ProvidePlugin(
+        'window.d3': 'd3'
+        'window.topojson': 'topojson'
+      )
+      new StaticSiteGeneratorPlugin('main', paths)
+      new ExtractTextPlugin('production.min.css', allChunks: true)
       new webpack.DefinePlugin(
         __PROD__: process.env.BUILD_PROD is 'true'
       )
