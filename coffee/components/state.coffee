@@ -29,6 +29,6 @@ module.exports = React.createClass
     return (
       <div>
         <Header state={state} {...@props} />
-        <StateComponent stateKey={stateKey} state={state} />
+        <StateComponent skipHeader={true} stateKey={stateKey} state={state} />
       </div>
     )
