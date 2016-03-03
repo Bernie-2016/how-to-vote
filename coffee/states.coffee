@@ -754,6 +754,7 @@ states =
     sameDay: 'Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
     pollWgt: true
     young:   true
+    custom:  true
   WV:
     name:    'West Virginia'
     fillKey: keys.OTHER
