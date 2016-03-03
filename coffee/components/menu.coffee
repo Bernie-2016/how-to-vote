@@ -1,5 +1,6 @@
-import React from 'react'
-import $     from 'jquery'
+import React  from 'react'
+import $      from 'jquery'
+import entity from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'Menu'
@@ -42,7 +43,7 @@ module.exports = React.createClass
           <li><a href="https://go.berniesanders.com/page/s/volunteer-for-bernie?source=web_main_nav">Volunteer</a></li>
           <li><a href="https://berniesanders.com/news/">News</a></li>
           <li><a href="https://berniesanders.com/daily">Democracy Daily</a></li>
-          <li className="expand"><a href="#more">More…</a></li>
+          <li className="expand"><a href="#more">More{entity('hellip')}</a></li>
           <li className="btn"><a href="https://secure.actblue.com/contribute/page/lets-go-bernie?refcode=homepage_main_nav">Contribute</a></li>
         </ul>
       </nav>
