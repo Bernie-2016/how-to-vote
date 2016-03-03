@@ -39,11 +39,10 @@ module.exports = React.createClass
         </p>
         <p>
           <a href={@props.state.office.url} target='_blank'>{@props.state.name} {if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'Democratic Party' else 'Elections Office'}</a><br />
-          {if @props.state.office.phone
-            <span>
-              Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
-            </span>
-          }
+          Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
+        </p>
+        <p>
+          You may also contact Bernie Sanders Washington State HQ:<br /> <a href='tel:+12065551212'>(206) 555-1212</a>.
         </p>
         <Offices {...@props} />
       </div>
