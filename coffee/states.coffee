@@ -47,7 +47,7 @@ states =
       url:   'http://www.alaskademocrats.org/how-to-caucus'
       phone: '(907) 258-3050'
     regLink: 'http://voterregistration.alaska.gov/'
-    chkLink: 'https://webapp.state.ak.us/electionsLookup/JSP/VoterLookupMain.jsp'
+    chkLink: 'https://myvoterinformation.alaska.gov/'
     dtlName: 'closed caucuses'
     byline:  'Alaskans must register as a Democrat to vote for Bernie! However, Alaskans may update their party affiliation to Democrat on the day of the caucus.'
     young:   'You may still caucus in Alaska if you will be 18 years old by June 24, 2016.'
