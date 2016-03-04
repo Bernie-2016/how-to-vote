@@ -323,7 +323,6 @@ states =
     dtlName: 'closed primaries'
     byline:  'Louisianans must register as a Democrat to vote for Bernie!'
     early:   "You can participate in early voting for the Louisiana Democratic Primary at designated locations in your parish between February 20 and 27, 2016. Find your closest early voting location <a href='https://voterportal.sos.la.gov/EarlyVoting' target='_blank'>here</a>."
-    pollWgt: true
   ME:
     name:    'Maine'
     fillKey: keys.CLOSED_CAUCUS
