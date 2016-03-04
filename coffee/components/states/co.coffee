@@ -5,6 +5,7 @@ import AddToCal   from 'components/widgets/addToCalWidget'
 import Reminder   from 'components/widgets/reminderWidget'
 import PollPlace  from 'components/widgets/pollPlaceWidget'
 import Offices    from 'components/widgets/officesWidget'
+import Share      from 'components/widgets/shareWidget'
 import entity     from 'utils/entity'
 
 module.exports = React.createClass
@@ -13,7 +14,10 @@ module.exports = React.createClass
   render: ->
     <section className='flex'>
       <div className='left'>
-        <h2>Key Information</h2>
+        <h2>
+          Key Information
+          <Share {...@props} />
+        </h2>
         {if @props.state.pollWgt
           <PollPlace state={@props.state} />
         }

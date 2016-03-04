@@ -4,6 +4,7 @@ import moment    from 'moment'
 import RightInfo from 'components/partials/rightInfo'
 import PollPlace from 'components/widgets/pollPlaceWidget'
 import Offices   from 'components/widgets/officesWidget'
+import Share     from 'components/widgets/shareWidget'
 
 module.exports = React.createClass
   displayName: 'State Info'
@@ -11,7 +12,10 @@ module.exports = React.createClass
   render: ->
     <section className='flex'>
       <div className='left'>
-        <h2>Key Information</h2>
+        <h2>
+          Key Information
+          <Share {...@props} />
+        </h2>
         {if @props.state.pollWgt
           <PollPlace state={@props.state} placeholder='Enter your local address' />
         }

@@ -39,6 +39,22 @@ div#htv-app {
         text-transform: none;
         font-weight: 400;
         margin-bottom: 15px;
+
+        div.share {
+          float: right;
+        
+          div.share-btn {
+            display: inline-block;
+
+            &:first-child {
+              margin-right: 5px;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
       }
 
       h3 {
@@ -168,7 +184,19 @@ div#htv-app {
 
 @media (max-width: $phablet) {
   div#htv-app {
-    section.flex{
+    section.flex {
+      div.left {
+        h2 {
+          text-align: center;
+
+          div.share {
+            float: none;
+            text-align: center;
+            margin-top: 5px;
+          }
+        }
+      }
+
       div.right {
         .date {
           font-size: 1.4em;
