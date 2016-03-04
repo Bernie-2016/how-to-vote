@@ -24,7 +24,10 @@ module.exports = React.createClass
     @setState(open: !@state.open)
 
   visit: (e) ->
-    @context.router.push($(e.target).data('url'))
+    if $(e.target).data('url') is '/DA'
+      window.location.href = 'http://go.berniesanders.com/page/s/democrats-abroad'
+    else
+      @context.router.push($(e.target).data('url'))
 
   render: ->
     <div id='select' onClick={@onClick}>

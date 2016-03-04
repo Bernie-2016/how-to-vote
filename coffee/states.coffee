@@ -159,6 +159,12 @@ states =
     byline:  'Delawareans must register as a Democrat to vote for Bernie!'
     regInfo: 'If you are already registered to vote, the deadline to change your affiliation to Democratic is February 26, 2016.'
     young:   true
+  DA:
+    name:    'Dems Abroad'
+    fillKey: keys.OTHER
+    label:   'Closed Primary'
+    office:
+      url:   'http://go.berniesanders.com/page/s/democrats-abroad'
   FL:
     name:    'Florida'
     fillKey: keys.CLOSED_PRIMARY

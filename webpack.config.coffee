@@ -7,7 +7,7 @@ states                    = require('./coffee/states').states
 
 paths = ['/']
 for key, _ of states
-  paths.push "/#{key}/"
+  paths.push "/#{key}/" unless key is 'DA'
 
 module.exports =
   entry: './coffee/router'
