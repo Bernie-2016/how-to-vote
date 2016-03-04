@@ -1,5 +1,7 @@
 import React                               from 'react'
 import { ShareButtons, generateShareIcon } from 'react-share'
+import { verb }                            from 'states'
+import _                                   from 'lodash'
 
 module.exports = React.createClass
   display: 'Share'
@@ -9,10 +11,10 @@ module.exports = React.createClass
     TwitterIcon = generateShareIcon('twitter')
 
     <div className='share'>
-      <ShareButtons.FacebookShareButton title='Share on Facebook' className='share-btn' url={"https://vote.berniesanders.com/#{@props.stateKey}"}>
+      <ShareButtons.FacebookShareButton title={"Vote for Bernie in #{@props.state.name}!"} className='share-btn' url={"https://vote.berniesanders.com/#{@props.stateKey}"}>
         <FacebookIcon size={40} round={true} />
       </ShareButtons.FacebookShareButton>
-      <ShareButtons.TwitterShareButton title='Share on Twitter' className='share-btn' url={"https://vote.berniesanders.com/#{@props.stateKey}"}>
+      <ShareButtons.TwitterShareButton title={"#{_.capitalize(verb(@props.state))} for Bernie in #{@props.state.name}!"} className='share-btn' url={"https://vote.berniesanders.com/#{@props.stateKey}"}>
         <TwitterIcon size={40} round={true} />
       </ShareButtons.TwitterShareButton>
     </div>

@@ -10,7 +10,7 @@ module.exports = React.createClass
   render: ->
     <section className='flex'>
       <div className='left'>
-        <TopInfo state={@props.state} />
+        <TopInfo {...@props} />
         {if @props.state.regInfo
           <div>
             <p dangerouslySetInnerHTML={__html: @props.state.regInfo} />

@@ -11,7 +11,7 @@ module.exports = React.createClass
   render: ->
     <section className='flex'>
       <div className='left'>
-        <TopInfo state={@props.state} />
+        <TopInfo {...@props} />
         <h3 className='caps'>Can't attend in person?</h3>
         <p>
           You can complete affidavit forms from now until March 18th. Anyone who cannot attend the caucuses for the reasons below will be allowed to submit a "surrogate affidavit", allowing you to cast your vote remotely.
