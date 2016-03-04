@@ -1,5 +1,6 @@
 import React       from 'react'
 import MaskedInput from 'react-maskedinput'
+import Share       from 'components/widgets/shareWidget'
 import moment      from 'moment'
 import $           from 'jquery'
 import entity      from 'utils/entity'
@@ -48,6 +49,10 @@ module.exports = React.createClass
           <p>
             Successfully signed up for reminders.
           </p>
+          <p>
+            Share this page on social media!
+          </p>
+          <Share {...@props} />
         </div>
       else if @state.open
         <div>

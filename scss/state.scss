@@ -122,6 +122,22 @@ div#htv-app {
         }
       }
 
+      div.share {
+        margin-top: 10px;
+
+        div.share-btn {
+          display: inline;
+
+          &:first-child {
+            margin-right: 10px;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
       .date {
         font-size: 1.6em;
         padding-bottom: 0.4em;
