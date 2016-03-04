@@ -380,7 +380,7 @@ states =
     date:    '2016 03 08'
     office:
       url:   'http://www.michigan.gov/sos/0,1607,7-127-1633---,00.html'
-      phone: '(808) 767-6424'
+      phone: '(888) 767-6424'
     regLink: 'http://www.michigan.gov/sos/0,1607,7-127-1633_8716_8726_47669-175879--,00.html'
     chkLink: 'http://www.michigan.gov/vote'
     dtlName: 'semi-open primaries'
