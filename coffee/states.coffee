@@ -538,16 +538,6 @@ states =
     young:   true
     pollWgt: true
   ND:
-    name:    'Northern Mariana Islands'
-    fillKey: keys.CLOSED_CAUCUS
-    date:    '2016 03 12'
-    office:
-      url:   'https://www.facebook.com/CNMIDemocrats'
-    dtlName: 'closed caucuses'
-    byline:  'Northern Mariana Islanders must register with the Democratic party to caucus for Bernie.'
-    sameDay: 'There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on March 12th.'
-    skipCM:  true
-  NMI:
     name:    'North Dakota'
     fillKey: keys.OPEN_CAUCUS
     date:    '2016 06 07'
@@ -557,6 +547,16 @@ states =
     dtlName: 'open caucuses'
     more:    'http://demnpl.com/'
     byline:  'Any North Dakotan that intends to support the Democratic Party in the 2016 election can vote for Bernie Sanders, regardless of registration status.'
+  NMI:
+    name:    'Northern Mariana Islands'
+    fillKey: keys.CLOSED_CAUCUS
+    date:    '2016 03 12'
+    office:
+      url:   'https://www.facebook.com/CNMIDemocrats'
+    dtlName: 'closed caucuses'
+    byline:  'Northern Mariana Islanders must register with the Democratic party to caucus for Bernie.'
+    sameDay: 'There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on March 12th.'
+    skipCM:  true
   OH:
     name:    'Ohio'
     fillKey: keys.OTHER
