@@ -36,8 +36,7 @@ states =
       phone: '(334) 242-7210'
     regLink: 'https://www.alabamavotes.gov/olvr/default.aspx'
     chkLink: 'https://myinfo.alabamavotes.gov/VoterView/RegistrantSearch.do'
-    dtlName: 'open primaries'
-    byline:  'Alabamians can vote for Bernie Sanders regardless of their registered party.'
+    custom:  true
   AK:
     name:    'Alaska'
     fillKey: keys.CLOSED_CAUCUS
@@ -48,9 +47,7 @@ states =
       phone: '(907) 258-3050'
     regLink: 'http://voterregistration.alaska.gov/'
     chkLink: 'https://myvoterinformation.alaska.gov/'
-    dtlName: 'closed caucuses'
-    byline:  'Alaskans must register as a Democrat to vote for Bernie! However, Alaskans may update their party affiliation to Democrat on the day of the caucus.'
-    young:   'You may still caucus in Alaska if you will be 18 years old by June 24, 2016.'
+    custom:  true
   AS:
     name:    'American Samoa'
     fillKey: keys.CLOSED_CAUCUS
@@ -59,10 +56,7 @@ states =
     office:
       url:   'https://www.facebook.com/asdems'
       phone: '(684) 699-2828'
-    dtlName: 'closed caucuses'
-    byline:  'American Samoans must register with the Democratic party to caucus for Bernie!'
-    regInfo: 'There is no deadline to register to vote.  Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on Tuesday, March 1st.'
-    skipCM:  true
+    custom:  true
   AZ:
     name:    'Arizona'
     fillKey: keys.CLOSED_PRIMARY
@@ -73,10 +67,7 @@ states =
       phone: '(602) 542-2228'
     regLink: 'http://servicearizona.com/voterRegistration'
     chkLink: 'https://voter.azsos.gov/VoterView/RegistrantSearch.do'
-    dtlName: 'closed primaries'
-    byline:  'Arizonans must register as a Democrat to vote for Bernie!'
-    early:   "Arizonans can vote for Bernie Sanders before the March 22 presidential preference election, either in person or by mail-in absentee ballot, beginning February 24, 2016. Check with your <a href='http://www.azsos.gov/elections/voting-election/contact-information-county-election-officials' target='_blank'>local elections office</a> to learn more about early in-person or mail-in voting."
-    idReq:   "Arizonans must present a photo ID and proof of current address in order to vote. Learn more about acceptable ID documents <a href='http://www.azsos.gov/elections/voting-election' target='_blank'>here</a>."
+    custom:  true
   AR:
     name:    'Arkansas'
     fillKey: keys.OPEN_PRIMARY
@@ -87,8 +78,7 @@ states =
       phone: '(501) 682-1010'
     regLink: 'http://www.sos.arkansas.gov/elections/pages/voterregistration.aspx'
     chkLink: 'https://www.voterview.ar-nova.org/VoterView/RegistrantSearch.do'
-    dtlName: 'open primaries'
-    byline:  'Arkansans can vote for Bernie Sanders regardless of their registered party.'
+    custom:  true
   CA:
     name:    'California'
     fillKey: keys.OTHER
@@ -100,10 +90,7 @@ states =
       phone: '(916) 657-2166'
     regLink: 'http://registertovote.ca.gov/'
     chkLink: 'http://www.sos.ca.gov/elections/registration-status/'
-    dtlName: 'semi-closed primaries'
-    byline:  'Californians must register as a Democrat or "no party preference" to vote for Bernie!'
-    regInfo: "If you're independent, make sure you're registered as 'no party preference'. There is also an Independent party in California which is NOT eligible to vote for Bernie -- only Democrats and 'no party preference' voters can vote for Bernie in the primary."
-    early:   "Many counties in California will hold early voting for the Democratic primary between May 9 and June 6, 2016. Contact your <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> to learn more about early voting in your county. You can request a mail-in absentee ballot by submitting <a href='http://elections.cdn.sos.ca.gov/vote-by-mail/pdf/fill-in-vote-by-mail-app-instruct.pdf' target='_blank'>this form</a> before May 31, 2016. You can also file an emergency absentee ballot in person at your local <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> anytime between June 1 and 7, 2016."
+    custom:  true
   CO:
     name:    'Colorado'
     fillKey: keys.CLOSED_CAUCUS
@@ -123,11 +110,7 @@ states =
       phone: '(860) 509-6100'
     regLink: 'https://voterregistration.ct.gov/OLVR/welcome.do'
     chkLink: 'https://voterregistration.ct.gov/OLVR/welcome.do'
-    dtlName: 'closed primaries'
-    byline:  'Connecticuters must register as a Democrat to vote for Bernie!'
-    regInfo: "If you are a new voter registering to vote by mail, your registration form must be postmarked by April 21, 2016. If you want to change your party enrollment from unaffiliated to Democratic, your registration form must be received by your municipal registrar of vote by that date. (Unfortunately, if you are enrolled in a different political party, the deadline to change your registration to Democratric has already passed.) You can register to vote or change your party affiliation from unaffiliated to Democratic in person at your local town hall until noon on April 25, 2016."
-    idReq:   "If you vote in person and have never voted in a federal election in your municipality, you might be asked to present a photo ID, utility bill, bank statement, government document, or paycheck that shows your address."
-    young:   true
+    custom:  true
   DC:
     name:    'D.C.'
     fillKey: keys.CLOSED_PRIMARY
@@ -138,11 +121,7 @@ states =
       phone: '(602) 542-2228'
     regLink: 'https://www.vote4dc.com/Voter/Voter/CommonVoter'
     chkLink: 'https://www.dcboee.org/voter_info/reg_status/'
-    dtlName: 'closed primaries'
-    byline:  'D.C. residents must register as a Democrat to vote for Bernie!'
-    regInfo: "Mail-in voter registration for the Washington D.C. Democratic Primary closes on May 16, 2016. However, you can register to vote and cast a ballot in person at One Judiciary Square from May 31 to June 11, 2016, between 8:30 A.M. and 7 P.M."
-    early:   "D.C. will permit registration and early voting at designated <a href='https://www.dcboee.org/ev/' target='_blank'>locations in each ward</a> between June 4 and 11, 2016."
-    sameDay: 'Washington, D.C. has Same-Day Registration which allows you to register to vote at the primaries on Tue, June 14 for unregistered and unaffiliated voters. Previously registered voters must update their affiliation to Democrat by Mon, May 16.'
+    custom:  true
   DE:
     name:    'Delaware'
     fillKey: keys.CLOSED_PRIMARY
@@ -153,10 +132,7 @@ states =
       phone: '(302) 739-4277'
     regLink: 'https://ivote.de.gov/voterregterms.aspx'
     chkLink: 'https://ivote.de.gov/voterinfo.aspx'
-    dtlName: 'closed primaries'
-    byline:  'Delawareans must register as a Democrat to vote for Bernie!'
-    regInfo: 'If you are already registered to vote, the deadline to change your affiliation to Democratic is February 26, 2016.'
-    young:   true
+    custom:  true
   DA:
     name:    'Dems Abroad'
     fillKey: keys.OTHER
@@ -173,10 +149,7 @@ states =
       phone: '(866) 308.6739 '
     regLink: 'http://dos.myflorida.com/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/'
     chkLink: 'http://registration.elections.myflorida.com/CheckVoterStatus'
-    dtlName: 'closed primaries'
-    byline:  'Floridans must register as a Democrat to vote for Bernie!'
-    early:   "You can participate in early in-person voting for the Florida Democratic Primary between March 5 and 12, 2016. You can find early voting locations and times <a href='http://dos.myflorida.com/elections/for-voters/voting/early-voting/' target='_blank'>here</a>."
-    idReq:   "Florida requires people voting in person to present a valid photo ID. Acceptable IDs include a Florida driver's license, a Florida Department of Highway Safety and Motor Vehicle identification card, a U.S. Passport, a debit or credit card with a photograph, a military photo ID, a student photo ID, a retirement center ID, a neighborhood association ID, or a public assistance ID. If your photo ID does not contain a signature you will be asked to present another ID with a signature."
+    custom:  true
     pollWgt: true
   GA:
     name:    'Georgia'
@@ -188,10 +161,7 @@ states =
       phone: '(404) 656-2871'
     regLink: 'https://registertovote.sos.ga.gov/GAOLVR/welcome.do#no-back-button'
     chkLink: 'https://www.mvp.sos.ga.gov/MVP/mvp.do'
-    dtlName: 'open primaries'
-    byline:  'Georgians can vote for Bernie Sanders regardless of their registered party.'
-    early:   "Advanced voting for the Georgia democratic primary takes place between February 8 and February 26. Click <a href='http://sos.ga.gov/elections/CountyContacts/AdvanceVotingDisplay.aspx' target='_blank'>here</a> for information about early voting times and locations in your county. Georgia allows any voter to vote by absentee ballot. You can apply for an absentee ballot <a href='http://sos.ga.gov/admin/uploads/absentee_ballot_app_201431.pdf' target='_blank'>here</a>."
-    idReq:   "Georgia requires you to present a photo identification in order to vote in person. Acceptable IDs include valid state or federal photo IDs, including a free photo ID card issued by your county registrar's office or the Georgia Department of Driver Services, a Georgia Driver's License (current or expired), employee photo IDs from any federal, state, or local agency, a valid U.S. passport, a valid U.S. military photo ID, or a valid tribal photo ID."
+    custom:  true
   GU:
     name:    'Guam'
     fillKey: keys.CLOSED_CAUCUS
@@ -201,10 +171,7 @@ states =
       url:   'https://www.facebook.com/guamdemocrats/'
       phone: '(671) 777-1482'
     regLink: 'http://gec.guam.gov/'
-    dtlName: 'closed caucuses'
-    byline:  'Guamanians must register with the Democratic party to caucus for Bernie!'
-    sameDay: 'There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.'
-    skipCM:  true
+    custom:  true
   HI:
     name:    'Hawaii'
     fillKey: keys.CLOSED_CAUCUS

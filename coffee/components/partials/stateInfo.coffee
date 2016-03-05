@@ -12,7 +12,6 @@ import Offices               from 'components/widgets/officesWidget'
 import PollPlace             from 'components/widgets/pollPlaceWidget'
 import Reminder              from 'components/widgets/reminderWidget'
 import Share                 from 'components/widgets/shareWidget'
-import $                     from 'jquery'
 import moment                from 'moment'
 import { primaryType, verb } from 'states'
 import entity                from 'utils/entity'
@@ -67,7 +66,7 @@ module.exports = React.createClass
           <hr className='right-divider' />
 
           {if @props.state.regLink
-            <Button title='Register to Vote' link={@props.state.regLink} classes={'blue' if moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
+            <Button title='Register to Vote' link={@props.state.regLink} classes={'blue' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
           }
           {if @props.state.chkLink
             <Button title='Check Registration Status' link={@props.state.chkLink} />
