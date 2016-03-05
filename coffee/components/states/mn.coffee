@@ -1,10 +1,15 @@
-import React     from 'react'
-import Sticky    from 'react-stickynode'
-import moment    from 'moment'
-import RightInfo from 'components/partials/rightInfo'
-import PollPlace from 'components/widgets/pollPlaceWidget'
-import Offices   from 'components/widgets/officesWidget'
-import Share     from 'components/widgets/shareWidget'
+import React           from 'react'
+import Sticky          from 'react-stickynode'
+import Button          from 'components/blocks/button'
+import DateBox         from 'components/blocks/dateBox'
+import Young           from 'components/blocks/young'
+import AddToCal        from 'components/widgets/addToCalWidget'
+import Offices         from 'components/widgets/officesWidget'
+import PollPlace       from 'components/widgets/pollPlaceWidget'
+import Reminder        from 'components/widgets/reminderWidget'
+import Share           from 'components/widgets/shareWidget'
+import { primaryType } from 'states'
+import moment          from 'moment'
 
 module.exports = React.createClass
   displayName: 'State Info'
@@ -16,9 +21,7 @@ module.exports = React.createClass
           Key Information
           <Share {...@props} />
         </h2>
-        {if @props.state.pollWgt
-          <PollPlace state={@props.state} placeholder='Enter your local address' />
-        }
+        <PollPlace state={@props.state} placeholder='Enter your local address' />
         <h3 className='caps'>Can I Caucus?</h3>
         <p>
           You can caucus if you live in Minnesota and will be eligible to vote on November 8, 2016. That's it!
@@ -47,6 +50,13 @@ module.exports = React.createClass
         <Offices {...@props} />
       </div>
       <div className='right'>
-        <RightInfo state={@props.state} />
+        <Sticky top={25} bottomBoundary='section.flex'>
+          <DateBox title={"#{primaryType(@props.state.fillKey, @props.state.label)} Date"} date={@props.state.date} />
+          <AddToCal date={@props.state.date} state={@props.state} />
+          <Reminder {...@props} />
+
+          <hr className='right-divider' />
+          <Button title='More Info' link='https://www.dfl.org/' classes='blue' />
+        </Sticky>
       </div>
     </section>

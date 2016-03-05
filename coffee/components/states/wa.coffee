@@ -1,9 +1,20 @@
 import React                 from 'react'
-import TopInfo               from 'components/partials/topInfo'
-import RightInfo             from 'components/partials/rightInfo'
+import Sticky                from 'react-stickynode'
+import Button                from 'components/blocks/button'
+import College               from 'components/blocks/college'
+import DateBox               from 'components/blocks/dateBox'
+import Deadline              from 'components/blocks/deadline'
+import MoreInfo              from 'components/blocks/moreInfo'
+import Young                 from 'components/blocks/young'
+import AddToCal              from 'components/widgets/addToCalWidget'
 import Offices               from 'components/widgets/officesWidget'
-import { primaryType, verb } from 'states'
+import PollPlace             from 'components/widgets/pollPlaceWidget'
+import Reminder              from 'components/widgets/reminderWidget'
+import Share                 from 'components/widgets/shareWidget'
 import $                     from 'jquery'
+import moment                from 'moment'
+import { primaryType, verb } from 'states'
+import entity                from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'WA State Info'
@@ -11,7 +22,17 @@ module.exports = React.createClass
   render: ->
     <section className='flex'>
       <div className='left'>
-        <TopInfo {...@props} />
+        <h2>
+          Key Information
+          <Share {...@props} />
+        </h2>
+        <PollPlace state={@props.state} />
+        <p>
+          Washington has open caucuses {entity('mdash')} anyone can caucus for Bernie Sanders. Participation in Washington's caucuses is open to all voters who wish to participate as Democrats.
+        </p>
+        <p>
+          Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.
+        </p>
         <h3 className='caps'>Can't attend in person?</h3>
         <p>
           You can complete affidavit forms from now until March 18th. Anyone who cannot attend the caucuses for the reasons below will be allowed to submit a "surrogate affidavit", allowing you to cast your vote remotely.
@@ -25,28 +46,25 @@ module.exports = React.createClass
         <p>
           You can download the surrogate affidavit <a href='http://www.wa-democrats.org/sites/wadems/files/documents/2016%20Precinct%20Caucuses%20-%2099%20-%20Surrogate%20Affidavit%20Form.pdf' target='_blank'>here</a>. Please scan and email forms to <a href='mailto:WACaucus@berniesanders.com'>WACaucus@berniesanders.com</a> on or before March 18, 2016.
         </p>
-        <h3 className='caps'>Only 17?</h3>
-        <p>
-          You may still {verb(@props.state)} in {@props.state.name} if you will be 18 years old by November 8, 2016.
-        </p>
-        <h3 className='caps'>College Students</h3>
-        <p>
-          If you are a college student not living in your home state, you can vote for Bernie in either your home state or in the state in which you are attending school!
-        </p>
-        <h3 className='caps'>More Information</h3>
-        <p>
-          If you have any questions about voting in {@props.state.name} you may contact your state {if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'party' else 'elections office'} for more information.
-        </p>
-        <p>
-          <a href={@props.state.office.url} target='_blank'>{@props.state.name} {if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'Democratic Party' else 'Elections Office'}</a><br />
-          Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
-        </p>
+        <Young {...@props} />
+        <College {...@props} />
+        <MoreInfo {...@props} />
         <p>
           You may also contact Bernie Sanders Washington State HQ:<br /> <a href='tel:+12065551212'>(206) 555-1212</a>.
         </p>
         <Offices {...@props} />
       </div>
       <div className='right'>
-        <RightInfo {...@props} />
+        <Sticky top={25} bottomBoundary='section.flex'>
+          <DateBox title={"#{primaryType(@props.state.fillKey, @props.state.label)} Date"} date={@props.state.date} />
+          <AddToCal date={@props.state.date} state={@props.state} />
+          <DateBox title='Registration Deadline' date={@props.state.regDate} />
+          <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
+          <Reminder {...@props} />
+          
+          <hr className='right-divider' />
+          <Button title='Register to Vote' link={@props.state.regLink} classes={'blue' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
+          <Button title='Check Registration Status' link={@props.state.chkLink} />
+        </Sticky>
       </div>
     </section>

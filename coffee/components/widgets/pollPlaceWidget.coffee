@@ -84,6 +84,7 @@ module.exports = React.createClass
     @setState(address: null, loaded: false, loading: false, submitted: false, origin: null, directions: null, pollPlace: {}, addressObj: {}, email: null)
 
   componentDidMount: ->
+    return unless @props.state.pollWgt
     GoogleMaps.load (google) =>
       @setState(google: google, origin: new google.maps.LatLng(37.09024, -95.712891), geocoder: new google.maps.Geocoder())
       unless @state.address is ''
@@ -94,7 +95,7 @@ module.exports = React.createClass
     GoogleMaps.release()
 
   render: ->
-    <div>
+    <div hidden={!@props.state.pollWgt}>
       <h3 className='caps'>{if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'Precinct Caucus' else 'Polling'} Location</h3>
       {if @state.google
         <div className='poll-widget'>

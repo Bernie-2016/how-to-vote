@@ -112,8 +112,6 @@ states =
     office:
       url:   'http://www.sos.state.co.us/pubs/elections/main.html'
       phone: '(303) 894-2200'
-    dtlName: 'closed caucuses'
-    byline:  'Coloradans must register as a Democrat to vote for Bernie!'
     custom:  true
   CT:
     name:    'Connecticut'
@@ -215,12 +213,6 @@ states =
     office:
       url:   'http://hawaiidemocrats.org'
       phone: '(808) 596-2980'
-    regLink: 'http://elections.hawaii.gov/frequently-asked-questions/online-voter-registration/'
-    chkLink: 'https://olvr.hawaii.gov/'
-    dtlName: 'closed caucuses'
-    byline:  'Hawaii residents must join the Democratic Party to vote for Bernie! However, Hawaii residents may join the Party on the day of the caucus.'
-    sameDay: 'The rules of the Democratic Party of Hawaii allow you to register to vote at the caucuses on Sat, March 26.'
-    young:   true
     pollWgt: true
     custom:  true
   ID:
@@ -394,12 +386,7 @@ states =
     office:
       url:   'https://www.dfl.org/'
       phone: '(651) 293-1200'
-    more:    'https://www.dfl.org/'
-    dtlName: 'open caucuses'
-    byline:  'Minnesotans can vote for Bernie Sanders regardless of their registered party.'
-    sameDay: 'Minnesota has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 1.'
     custom:  true
-    young:   true
   MS:
     name:    'Mississippi'
     fillKey: keys.OPEN_PRIMARY
@@ -468,11 +455,7 @@ states =
       phone: '(775) 684-5705'
     regLink: 'https://nvsos.gov/sosvoterservices/Registration/step1.aspx'
     chkLink: 'https://nvsos.gov/votersearch/'
-    dtlName: 'closed caucuses'
-    byline:  'Nevadans must register as a Democrat to vote for Bernie! However, Nevadans may register as/update registration to Democrat on the day of the caucus.'
-    sameDay: 'Nevada has Same-Day Registration which allows you to register to vote at the caucuses on Sat, February 20.'
     custom:  true
-    young:   true
   NH:
     name:    'New Hampshire'
     fillKey: keys.OTHER
@@ -754,11 +737,7 @@ states =
       phone: '(206) 583-0664'
     regLink: 'http://www.dol.wa.gov/driverslicense/voter.html'
     chkLink: 'https://www.sos.wa.gov/elections/myvote/'
-    dtlName: 'open caucuses'
-    byline:  "anyone can caucus for Bernie Sanders. Participation in Washington's caucuses is open to all voters who wish to participate as Democrats."
-    sameDay: 'Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.'
     pollWgt: true
-    young:   true
     custom:  true
   WV:
     name:    'West Virginia'

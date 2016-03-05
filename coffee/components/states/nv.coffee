@@ -1,11 +1,15 @@
 import React     from 'react'
 import Sticky    from 'react-stickynode'
-import moment    from 'moment'
-import entity    from 'utils/entity'
-import TopInfo   from 'components/partials/topInfo'
+import Button    from 'components/blocks/button'
+import College   from 'components/blocks/college'
+import Young     from 'components/blocks/young'
 import AddToCal  from 'components/widgets/addToCalWidget'
-import Reminder  from 'components/widgets/reminderWidget'
 import Offices   from 'components/widgets/officesWidget'
+import PollPlace from 'components/widgets/pollPlaceWidget'
+import Reminder  from 'components/widgets/reminderWidget'
+import Share     from 'components/widgets/shareWidget'
+import entity    from 'utils/entity'
+import moment    from 'moment'
 
 module.exports = React.createClass
   displayName: 'NV State Info'
@@ -13,15 +17,19 @@ module.exports = React.createClass
   render: ->
     <section className='flex'>
       <div className='left'>
-        <TopInfo {...@props} />
-        <h3 className='caps'>Only 17?</h3>
+        <h2>
+          Key Information
+          <Share {...@props} />
+        </h2>
+        <PollPlace state={@props.state} />
         <p>
-          You may still vote in Nevada if you will be 18 years old by November 8, 2016.
+          Nevada has closed caucuses {entity('mdash')} Nevadans must register as a Democrat to vote for Bernie! However, Nevadans may register as/update registration to Democrat on the day of the caucus.
         </p>
-        <h3 className='caps'>College Students</h3>
         <p>
-          If you are a college student not living in your home state, you can vote for Bernie in either your home state or in the state in which you are attending school!
+          Nevada has Same-Day Registration which allows you to register to vote at the caucuses on Sat, February 20.
         </p>
+        <Young {...@props} />
+        <College {...@props} />
         <h3 className='caps'>Military/Overseas Voters</h3>
         <p>
           If you live, work, are in the military or study abroad, you are able to participate in Nevada's Tele-Caucus on February 20th at 11am, but must <a href='http://action.nvdems.com/page/s/telecaucus' target='_blank'>pre-register</a> from Monday, February 1st – Sunday, February 14 (Midnight PST).
@@ -50,21 +58,9 @@ module.exports = React.createClass
           <AddToCal date={@props.state.date} state={@props.state} />
           <Reminder {...@props} />
           <hr className='right-divider' />
-          <p>
-            <a href={@props.state.regLink} target='_blank' className='btn blue'>
-              Register to Vote
-            </a>
-          </p>
-          <p>
-            <a href={@props.state.chkLink} target='_blank' className='btn'>
-              Check Registration Status
-            </a>
-          </p>
-          <p>
-            <a href='https://go.berniesanders.com/page/s/ride-caucus-day-nv' target='_blank' className='btn'>
-              Need a ride?
-            </a>
-          </p>
+          <Button title='Register to Vote' link={@props.state.regLink} classes={'blue' if moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
+          <Button title='Check Registration Status' link={@props.state.chkLink} />
+          <Button title='Need a ride?' link='https://go.berniesanders.com/page/s/ride-caucus-day-nv' />
         </Sticky>
       </div>
     </section>

@@ -1,8 +1,16 @@
-import React      from 'react'
-import Offices    from 'components/widgets/officesWidget'
-import TopInfo    from 'components/partials/topInfo'
-import RightInfo  from 'components/partials/rightInfo'
-import { verb }   from 'states'
+import React           from 'react'
+import Sticky          from 'react-stickynode'
+import moment          from 'moment'
+import Button          from 'components/blocks/button'
+import DateBox         from 'components/blocks/dateBox'
+import Young           from 'components/blocks/young'
+import AddToCal        from 'components/widgets/addToCalWidget'
+import Offices         from 'components/widgets/officesWidget'
+import PollPlace       from 'components/widgets/pollPlaceWidget'
+import Reminder        from 'components/widgets/reminderWidget'
+import Share           from 'components/widgets/shareWidget'
+import { primaryType } from 'states'
+import entity          from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'HI State Info'
@@ -10,39 +18,18 @@ module.exports = React.createClass
   render: ->
     <section className='flex'>
       <div className='left'>
-        <TopInfo {...@props} />
-        {if @props.state.regInfo
-          <div>
-            <p dangerouslySetInnerHTML={__html: @props.state.regInfo} />
-          </div>
-        }
-        {if @props.state.idReq
-          <div>
-            <h3 className='caps'>ID Requirement</h3>
-            <p dangerouslySetInnerHTML={__html: @props.state.idReq} />
-          </div>
-        }
-        {if @props.state.early
-          <div>
-            <h3 className='caps'>Early or Absentee Voting</h3>
-            <p dangerouslySetInnerHTML={__html: @props.state.early} />
-          </div>
-        }
-        {if @props.state.young is true
-          <div>
-            <h3 className='caps'>Only 17?</h3>
-            <p>
-              You may still {verb(@props.state)} in {@props.state.name} if you will be 18 years old by November 8, 2016.
-            </p>
-          </div>
-        else if @props.state.young
-          <div>
-            <h3 className='caps'>Only 17?</h3>
-            <p>
-              {@props.state.young}
-            </p>
-          </div>
-        }
+        <h2>
+          Key Information
+          <Share {...@props} />
+        </h2>
+        <PollPlace state={@props.state} />
+        <p>
+          Hawaii has closed caucuses {entity('mdash')} Hawaii residents must join the Democratic Party to vote for Bernie! However, Hawaii residents may join the Party on the day of the caucus.
+        </p>
+        <p>
+          The rules of the Democratic Party of Hawaii allow you to register to vote at the caucuses on Sat, March 26.
+        </p>
+        <Young {...@props} />
         <h3 className='caps'>College Students</h3>
         <p>
           A college student must be a legal resident of Hawaii in order to be able to caucus for Bernie in Hawaii.
@@ -58,6 +45,16 @@ module.exports = React.createClass
         <Offices {...@props} />
       </div>
       <div className='right'>
-        <RightInfo {...@props} />
+        <Sticky top={25} bottomBoundary='section.flex'>
+          <DateBox title={"#{primaryType(@props.state.fillKey, @props.state.label)} Date"} date={@props.state.date} />
+          <AddToCal date={@props.state.date} state={@props.state} />
+          <DateBox title='Registration Deadline' date={@props.state.regDate} />
+          <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
+          <Reminder {...@props} />
+          <hr className='right-divider' />
+
+          <Button title='Register to Vote' link='http://elections.hawaii.gov/frequently-asked-questions/online-voter-registration/' classes={'blue' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
+          <Button title='Check Registration Status' link='https://olvr.hawaii.gov/' />
+        </Sticky>
       </div>
     </section>

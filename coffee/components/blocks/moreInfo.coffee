@@ -1,24 +1,11 @@
 import React           from 'react'
 import { primaryType } from 'states'
-import Offices         from 'components/widgets/officesWidget'
 
 module.exports = React.createClass
-  displayName: 'State Common Info'
+  displayName: 'More Info'
 
   render: ->
     <div>
-      {unless @props.state.skipCM
-        <div>
-          <h3 className='caps'>College Students</h3>
-          <p>
-            If you are a college student not living in your home state, you can vote for Bernie in either your home state or in the state in which you are attending school!
-          </p>
-          <h3 className='caps'>Military/Overseas Voters</h3>
-          <p>
-            If you are a military voter or a United States citizen living abroad, you are able to <a href='https://www.votefromabroad.org/vote/home.htm' target='_blank'>request a ballot here</a>.
-          </p>
-        </div>
-      }
       <h3 className='caps'>More Information</h3>
       <p>
         If you have any questions about voting in {@props.state.name} you may contact your state {if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'party' else 'elections office'} for more information.
@@ -31,5 +18,4 @@ module.exports = React.createClass
           </span>
         }
       </p>
-      <Offices {...@props} />
     </div>

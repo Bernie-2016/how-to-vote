@@ -18,11 +18,9 @@ module.exports = React.createClass
           Key Information
           <Share {...@props} />
         </h2>
-        {if @props.state.pollWgt
-          <PollPlace state={@props.state} />
-        }
+        <PollPlace state={@props.state} />
         <p>
-          {@props.state.name} has {@props.state.dtlName} {entity('mdash')} {@props.state.byline}
+          Colorado has closed caucuses {entity('mdash')} Coloradans must register as a Democrat to vote for Bernie!
         </p>
 
         <p>
