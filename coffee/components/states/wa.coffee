@@ -12,6 +12,9 @@ module.exports = React.createClass
     <section className='flex'>
       <div className='left'>
         <TopInfo {...@props} />
+        <p>
+          <strong>Please plan to arrive no later than 9:30 AM.</strong>
+        </p>
         <h3 className='caps'>Can't attend in person?</h3>
         <p>
           You can complete affidavit forms from now until March 18th. Anyone who cannot attend the caucuses for the reasons below will be allowed to submit a "surrogate affidavit", allowing you to cast your vote remotely.
@@ -42,7 +45,7 @@ module.exports = React.createClass
           Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
         </p>
         <p>
-          You may also contact Bernie Sanders Washington State HQ:<br /> <a href='tel:+12065551212'>(206) 555-1212</a>.
+          You may also contact Bernie Sanders Washington State HQ:<br /> <a href='tel:+12064027924'>(206) 402-7924</a>.
         </p>
         <Offices {...@props} />
       </div>
