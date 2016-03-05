@@ -536,6 +536,7 @@ states =
     dtlName: 'open caucuses'
     more:    'http://demnpl.com/'
     byline:  'Any North Dakotan that intends to support the Democratic Party in the 2016 election can vote for Bernie Sanders, regardless of registration status.'
+    sameDay: false
   NMI:
     name:    'Northern Mariana Islands'
     fillKey: keys.CLOSED_CAUCUS
