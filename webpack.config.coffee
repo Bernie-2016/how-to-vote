@@ -2,6 +2,7 @@ path                      = require('path')
 webpack                   = require('webpack')
 CopyWebpackPlugin         = require('copy-webpack-plugin')
 StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
+SitemapPlugin             = require('sitemap-webpack-plugin')
 ExtractTextPlugin         = require('extract-text-webpack-plugin')
 states                    = require('./coffee/states').states
 
@@ -63,6 +64,7 @@ module.exports =
       )
       new StaticSiteGeneratorPlugin('main', paths)
       new ExtractTextPlugin('production.min.css', allChunks: true)
+      new SitemapPlugin('https://vote.berniesanders.com', paths)
       new webpack.DefinePlugin(
         __PROD__: process.env.BUILD_PROD is 'true'
       )
