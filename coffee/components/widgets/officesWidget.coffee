@@ -1,7 +1,7 @@
 import React                                              from 'react'
 import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from 'react-google-maps'
 import GoogleMaps                                         from 'google-maps'
-import _                                                  from 'lodash'
+import _                                                  from 'lodash/core'
 import offices                                            from 'data/offices'
 
 GoogleMaps.KEY = if __PROD__ then 'AIzaSyCFQ50iI4VcALSPhuOkxsB7YI3yElr92bE' else require('credentials.json').googleKey
