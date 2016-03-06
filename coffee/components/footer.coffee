@@ -29,7 +29,7 @@ module.exports = React.createClass
                 <li><a href="https://vote.berniesanders.com/">How to Vote</a></li>
                 <li><a href="https://berniesanders.com/news/">News</a></li>
                 <li><a href="https://berniesanders.com/daily">Democracy Daily</a></li>
-                <li><a href="https://berniesanders.com/es/">En Español</a></li>
+                <li><a href="https://berniesanders.com/es/">En Espa{entity('ntilde')}ol</a></li>
               </ul>
             </div>
             <div className="navgroup">
