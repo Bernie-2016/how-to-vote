@@ -31,7 +31,8 @@
     "office": {
       "url": "https://www.facebook.com/asdems",
       "phone": "(684) 699-2828"
-    }
+    },
+    "noImage": true
   },
   "AZ": {
     "name": "Arizona",
@@ -158,7 +159,8 @@
       "url": "https://www.facebook.com/guamdemocrats/",
       "phone": "(671) 777-1482"
     },
-    "regLink": "http://gec.guam.gov/"
+    "regLink": "http://gec.guam.gov/",
+    "noImage": true
   },
   "HI": {
     "name": "Hawaii",
@@ -459,7 +461,8 @@
     "date": "2016 03 12",
     "office": {
       "url": "https://www.facebook.com/CNMIDemocrats"
-    }
+    },
+    "noImage": true
   },
   "OH": {
     "name": "Ohio",
@@ -607,7 +610,8 @@
     "office": {
       "url": "https://www.facebook.com/democratsvi/"
     },
-    "regLink": "http://www.vivote.gov/content/register-vote"
+    "regLink": "http://www.vivote.gov/content/register-vote",
+    "noImage": true
   },
   "VA": {
     "name": "Virginia",

@@ -1,6 +1,5 @@
 path                      = require('path')
 webpack                   = require('webpack')
-CopyWebpackPlugin         = require('copy-webpack-plugin')
 StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 SitemapPlugin             = require('sitemap-webpack-plugin')
 ExtractTextPlugin         = require('extract-text-webpack-plugin')
@@ -35,7 +34,7 @@ module.exports =
       }
       {
         test: /\.(ttf|otf|png|ico|svg)$/
-        loaders: ['file']
+        loaders: ['file?name=[name].[ext]']
       }
       {
         test: /[\/\\]node_modules[\/\\]datamaps[\/\\]dist[\/\\]datamaps.usa\.js$/
@@ -44,20 +43,6 @@ module.exports =
     ]
 
    plugins: [
-      new CopyWebpackPlugin([
-        {
-          from: 'img/share.png'
-          to: 'share.png' 
-        }
-        {
-          from: 'img/favicon.ico'
-          to: 'favicon.ico'
-        }
-        {
-          from: 'img/share'
-          to: 'share'
-        }
-      ])
       new webpack.ProvidePlugin(
         'window.d3': 'd3'
         'window.topojson': 'topojson'

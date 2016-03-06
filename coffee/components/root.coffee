@@ -3,6 +3,7 @@ import Html       from 'react-html-document'
 import { states } from 'states'
 
 require('scss/app')
+require('img/favicon.ico')
 
 module.exports = React.createClass
   displayName: 'Root'
@@ -13,11 +14,14 @@ module.exports = React.createClass
       state = states[stateKey]
       description = "Information about how to vote for Bernie in #{state.name}."
       url = "https://vote.berniesanders.com/#{stateKey}"
-      image = "https://vote.berniesanders.com/share/#{stateKey}.png"
+      if state.noImage
+        image = require('img/share.png')
+      else
+        image = require("img/share/#{stateKey}.png")
     else
       description = 'Information about how to vote for Bernie in your state.'
       url = 'https://vote.berniesanders.com'
-      image = 'https://vote.berniesanders.com/share.png'
+      image = require('img/share.png')
 
     metatags = [
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' }
