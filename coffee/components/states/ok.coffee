@@ -10,7 +10,7 @@ import Share     from 'components/widgets/shareWidget'
 import entity    from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'FL State Info'
+  displayName: 'OK State Info'
 
   render: ->
     <section className='flex'>
@@ -21,16 +21,16 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Florida has closed primaries {entity('mdash')} Floridans must register as a Democrat to vote for Bernie!
+          Oklahoma has semi-closed primaries {entity('mdash')} Oklahomans must be registered as a Democrat or independent to vote for Bernie Sanders!
         </p>
         <Deadline {...@props} />
         <h3 className='caps'>ID Requirement</h3>
         <p>
-          Florida requires people voting in person to present a valid photo ID. Acceptable IDs include a Florida driver's license, a Florida Department of Highway Safety and Motor Vehicle identification card, a U.S. Passport, a debit or credit card with a photograph, a military photo ID, a student photo ID, a retirement center ID, a neighborhood association ID, or a public assistance ID. If your photo ID does not contain a signature you will be asked to present another ID with a signature.
+          Oklahoma requires you to present a photo identification in order to vote in person. Acceptable IDs must be issued by the U.S. government, the State of Oklahoma, or a federally recognized tribal government, must contain your name and photograph, and must be valid (i.e., unexpired) on the date of the primary.
         </p>
-        <h3 className='caps'>Early Voting</h3>
+        <h3 className='caps'>Early/Absentee Voting</h3>
         <p>
-          You can participate in early in-person voting for the Florida Democratic Primary between March 5 and 12, 2016. You can find early voting locations and times <a href='http://dos.myflorida.com/elections/for-voters/voting/early-voting/' target='_blank'>here</a>.
+          Early voting for the Oklahoma Democratic primary takes place on Thursday, February 25 and Friday, February 26, from 8 A.M. to 6 P.M., and on Saturday, February 27, from 9 A.M. to 2 P.M.  Oklahoma also lets all residents vote by absentee ballot. You can apply for an absentee ballot <a href='https://www.ok.gov/elections/documents/Oklahoma%20Absentee%20Ballot%20Application%20-%20fillable.pdf' target='_blank'>here</a> until February 24, 2016.
         </p>
         <College {...@props} />
         <Military {...@props} />

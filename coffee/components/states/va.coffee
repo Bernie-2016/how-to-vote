@@ -1,13 +1,17 @@
 import React     from 'react'
+import College   from 'components/blocks/college'
+import Deadline  from 'components/blocks/deadline'
+import Military  from 'components/blocks/military'
 import MoreInfo  from 'components/blocks/moreInfo'
 import Right     from 'components/blocks/right'
+import Young     from 'components/blocks/young'
 import Offices   from 'components/widgets/officesWidget'
 import PollPlace from 'components/widgets/pollPlaceWidget'
 import Share     from 'components/widgets/shareWidget'
 import entity    from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'GU State Info'
+  displayName: 'VA State Info'
 
   render: ->
     <section className='flex'>
@@ -18,11 +22,12 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Guam has closed caucuses {entity('mdash')} Guamanians must register with the Democratic party to caucus for Bernie!
+          Virginia has open primaries {entity('mdash')} all Virginians can request a Democratic ballot to vote for Bernie Sanders.
         </p>
-        <p>
-          There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.
-        </p>
+        <Deadline {...@props} />
+        <Young {...@props} />
+        <College {...@props} />
+        <Military {...@props} />
         <MoreInfo {...@props} />
         <Offices {...@props} />
       </div>

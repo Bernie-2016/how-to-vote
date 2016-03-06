@@ -1,13 +1,16 @@
 import React     from 'react'
+import College   from 'components/blocks/college'
+import Military  from 'components/blocks/military'
 import MoreInfo  from 'components/blocks/moreInfo'
 import Right     from 'components/blocks/right'
+import Young     from 'components/blocks/young'
 import Offices   from 'components/widgets/officesWidget'
 import PollPlace from 'components/widgets/pollPlaceWidget'
 import Share     from 'components/widgets/shareWidget'
 import entity    from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'GU State Info'
+  displayName: 'ID State Info'
 
   render: ->
     <section className='flex'>
@@ -18,11 +21,14 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Guam has closed caucuses {entity('mdash')} Guamanians must register with the Democratic party to caucus for Bernie!
+          Idaho has semi-open primaries {entity('mdash')} Idaho's Democratic Party Caucuses are open to all Idahoans, regardless of political affiliation, except those who participate in Idaho's Republican party primary on March 8, 2016.
         </p>
         <p>
-          There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.
+          Idaho has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.
         </p>
+        <Young {...@props} />
+        <College {...@props} />
+        <Military {...@props} />
         <MoreInfo {...@props} />
         <Offices {...@props} />
       </div>

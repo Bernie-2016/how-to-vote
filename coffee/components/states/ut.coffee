@@ -1,4 +1,7 @@
 import React     from 'react'
+import College   from 'components/blocks/college'
+import Deadline  from 'components/blocks/deadline'
+import Military  from 'components/blocks/military'
 import MoreInfo  from 'components/blocks/moreInfo'
 import Right     from 'components/blocks/right'
 import Offices   from 'components/widgets/officesWidget'
@@ -7,7 +10,7 @@ import Share     from 'components/widgets/shareWidget'
 import entity    from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'GU State Info'
+  displayName: 'UT State Info'
 
   render: ->
     <section className='flex'>
@@ -18,11 +21,13 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Guam has closed caucuses {entity('mdash')} Guamanians must register with the Democratic party to caucus for Bernie!
+          Utah has open caucuses {entity('mdash')} Utahns can vote for Bernie Sanders regardless of their registered party, so long as they declare themselves to be participating Democrats at the Utah Democratic Party Caucus.
         </p>
         <p>
-          There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.
+          Utah has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.
         </p>
+        <College {...@props} />
+        <Military {...@props} />
         <MoreInfo {...@props} />
         <Offices {...@props} />
       </div>

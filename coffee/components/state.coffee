@@ -1,9 +1,8 @@
 import React                   from 'react'
 import Header                  from 'components/header'
+import NotFound                from 'components/notFound'
 import entity                  from 'utils/entity'
 import { label, states, keys } from 'states'
-import StateInfo               from 'components/partials/stateInfo'
-import NotFound                from 'components/notFound'
 
 module.exports = React.createClass
   displayName: 'State'
@@ -21,10 +20,8 @@ module.exports = React.createClass
 
     if typeof state is 'undefined'
       StateComponent = NotFound
-    else if state.custom
-      StateComponent = require("components/states/#{@props.params.state.toLowerCase()}")
     else
-      StateComponent = StateInfo
+      StateComponent = require("components/states/#{@props.params.state.toLowerCase()}")
     
     return (
       <div>

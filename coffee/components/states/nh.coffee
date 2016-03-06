@@ -1,4 +1,6 @@
 import React     from 'react'
+import College   from 'components/blocks/college'
+import Military  from 'components/blocks/military'
 import MoreInfo  from 'components/blocks/moreInfo'
 import Right     from 'components/blocks/right'
 import Offices   from 'components/widgets/officesWidget'
@@ -7,7 +9,7 @@ import Share     from 'components/widgets/shareWidget'
 import entity    from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'GU State Info'
+  displayName: 'NH State Info'
 
   render: ->
     <section className='flex'>
@@ -18,11 +20,13 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Guam has closed caucuses {entity('mdash')} Guamanians must register with the Democratic party to caucus for Bernie!
+          New Hampshire has semi-open primaries {entity('mdash')} New Hampshirites must register as Democrat or undeclared to vote for Bernie! However, new and undeclared voters are able to register and change party at election ballots.
         </p>
         <p>
-          There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.
+          New Hampshire has Same-Day Registration which allows you to register to vote at the primaries on Tue, February 9 if you are not currently registered to vote or are not affiliated with a party
         </p>
+        <College {...@props} />
+        <Military {...@props} />
         <MoreInfo {...@props} />
         <Offices {...@props} />
       </div>

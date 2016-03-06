@@ -1,16 +1,10 @@
-import React           from 'react'
-import Sticky          from 'react-stickynode'
-import Button          from 'components/blocks/button'
-import DateBox         from 'components/blocks/dateBox'
-import MoreInfo        from 'components/blocks/moreInfo'
-import AddToCal        from 'components/widgets/addToCalWidget'
-import Offices         from 'components/widgets/officesWidget'
-import PollPlace       from 'components/widgets/pollPlaceWidget'
-import Reminder        from 'components/widgets/reminderWidget'
-import Share           from 'components/widgets/shareWidget'
-import moment          from 'moment'
-import { primaryType } from 'states'
-import entity          from 'utils/entity'
+import React     from 'react'
+import MoreInfo  from 'components/blocks/moreInfo'
+import Right     from 'components/blocks/right'
+import Offices   from 'components/widgets/officesWidget'
+import PollPlace from 'components/widgets/pollPlaceWidget'
+import Share     from 'components/widgets/shareWidget'
+import entity    from 'utils/entity'
 
 module.exports = React.createClass
   displayName: 'AS State Info'
@@ -33,12 +27,6 @@ module.exports = React.createClass
         <Offices {...@props} />
       </div>
       <div className='right'>
-        <Sticky top={25} bottomBoundary='section.flex'>
-          <DateBox title={"#{primaryType(@props.state.fillKey, @props.state.label)} Date"} date={@props.state.date} />
-          <AddToCal date={@props.state.date} state={@props.state} />
-          <DateBox title='Registration Deadline' date={@props.state.regDate} />
-          <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
-          <Reminder {...@props} />
-        </Sticky>
+        <Right {...@props} />
       </div>
     </section>

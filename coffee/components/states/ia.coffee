@@ -1,13 +1,16 @@
 import React     from 'react'
+import College   from 'components/blocks/college'
+import Military  from 'components/blocks/military'
 import MoreInfo  from 'components/blocks/moreInfo'
 import Right     from 'components/blocks/right'
+import Young     from 'components/blocks/young'
 import Offices   from 'components/widgets/officesWidget'
 import PollPlace from 'components/widgets/pollPlaceWidget'
 import Share     from 'components/widgets/shareWidget'
 import entity    from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'GU State Info'
+  displayName: 'IA State Info'
 
   render: ->
     <section className='flex'>
@@ -18,11 +21,14 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Guam has closed caucuses {entity('mdash')} Guamanians must register with the Democratic party to caucus for Bernie!
+          Iowa has semi-open caucuses {entity('mdash')} Iowans registered as a Republican cannot vote for Bernie Sanders! However, Iowans may change party affiliation on caucus day.
         </p>
         <p>
-          There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.
+          Iowa has Same-Day Registration which allows you to register to vote at the caucuses on Mon, February 1.
         </p>
+        <Young {...@props} />
+        <College {...@props} />
+        <Military {...@props} />
         <MoreInfo {...@props} />
         <Offices {...@props} />
       </div>

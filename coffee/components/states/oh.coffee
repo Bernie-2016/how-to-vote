@@ -11,7 +11,7 @@ import Share     from 'components/widgets/shareWidget'
 import entity    from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'DE State Info'
+  displayName: 'OH State Info'
 
   render: ->
     <section className='flex'>
@@ -22,11 +22,15 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Delaware has closed primaries {entity('mdash')} Delawareans must register as a Democrat to vote for Bernie!
+          Ohio has semi-open primaries {entity('mdash')} any Ohioan can vote for Bernie Sanders.
         </p>
         <Deadline {...@props} />
         <p>
-          If you are already registered to vote, the deadline to change your affiliation to Democratic is February 26, 2016.
+          You must request a Democratic primary ballot at the polling place or in your absentee ballot application. If you voted via Republican ballot in the last general election, the poll worker will automatically give you a Republican ballot, unless you request a Democratic ballot. Make sure you have your desired party ballot before you head to the voting machine.
+        </p>
+        <h3 className='caps'>Early/Absentee Voting</h3>
+        <p>
+          Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx' target='_blank'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx' target='_blank'>here</a> to request a mail-in absentee ballot.
         </p>
         <Young {...@props} />
         <College {...@props} />

@@ -1,4 +1,7 @@
 import React     from 'react'
+import College   from 'components/blocks/college'
+import Deadline  from 'components/blocks/deadline'
+import Military  from 'components/blocks/military'
 import MoreInfo  from 'components/blocks/moreInfo'
 import Right     from 'components/blocks/right'
 import Offices   from 'components/widgets/officesWidget'
@@ -7,7 +10,7 @@ import Share     from 'components/widgets/shareWidget'
 import entity    from 'utils/entity'
 
 module.exports = React.createClass
-  displayName: 'GU State Info'
+  displayName: 'OR State Info'
 
   render: ->
     <section className='flex'>
@@ -18,11 +21,11 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Guam has closed caucuses {entity('mdash')} Guamanians must register with the Democratic party to caucus for Bernie!
+          Oregon has closed primaries {entity('mdash')} Oregonians must register as a Democrat to vote for Bernie!
         </p>
-        <p>
-          There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.
-        </p>
+        <Deadline {...@props} />
+        <College {...@props} />
+        <Military {...@props} />
         <MoreInfo {...@props} />
         <Offices {...@props} />
       </div>
