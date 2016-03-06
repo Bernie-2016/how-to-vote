@@ -223,7 +223,6 @@ states =
       phone: '(785) 234-0425'
     regLink: 'https://www.kdor.org/voterregistration/'
     chkLink: 'https://myvoteinfo.voteks.org/VoterView/RegistrantSearch.do'
-    pollWgt: true
   KY:
     name:    'Kentucky'
     fillKey: keys.CLOSED_PRIMARY
@@ -335,7 +334,6 @@ states =
       phone: '(402) 471-2555'
     regLink: 'https://www.nebraska.gov/apps-sos-voter-registration/'
     chkLink: 'https://www.votercheck.necvr.ne.gov/VoterView/RegistrantSearch.do'
-    pollWgt: true
   NV:
     name:    'Nevada'
     fillKey: keys.CLOSED_CAUCUS
