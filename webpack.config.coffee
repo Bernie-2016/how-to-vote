@@ -4,7 +4,7 @@ CopyWebpackPlugin         = require('copy-webpack-plugin')
 StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 SitemapPlugin             = require('sitemap-webpack-plugin')
 ExtractTextPlugin         = require('extract-text-webpack-plugin')
-states                    = require('./coffee/states').states
+states                    = require('./data/states')
 
 paths = ['/']
 for key, _ of states
@@ -73,5 +73,5 @@ module.exports =
   resolve:
     alias:
       d3: 'd3/d3.min.js'
-    root: [path.resolve('./coffee'), path.resolve('./data'), path.resolve('./'), path.resolve('./node_modules')]
+    root: [path.resolve('./coffee'), path.resolve('./'), path.resolve('./node_modules')]
     extensions: ['', '.js', '.json', '.coffee', '.scss']
