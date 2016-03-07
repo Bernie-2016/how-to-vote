@@ -25,6 +25,9 @@ module.exports = React.createClass
           Michigan has semi-open primaries {entity('mdash')} any Michigander can vote for Bernie Sanders. You must request a Democratic primary ballot in writing at the polling place or in your absentee ballot application.
         </p>
         <Deadline {...@props} />
+        <p>
+          Polls open at 7:00AM and close at 8:00PM statewide.
+        </p>
         <h3 className='caps'>ID Requirement</h3>
         <p>
           Michigan voters must provide a photo ID at the polls, or sign an affidavit attesting that they do not possess a photo ID.  Acceptable Photo IDs include a valid driver's license, a federal or state-issued photo ID, a U.S. passport, a military photo ID, a high school or college photo ID, or a tribal photo ID.
