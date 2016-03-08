@@ -25,7 +25,7 @@ module.exports = React.createClass
           Washington has open caucuses {entity('mdash')} anyone can caucus for Bernie Sanders. Participation in Washington's caucuses is open to all voters who wish to participate as Democrats.
         </p>
         <p>
-          Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26.
+          Washington has Same-Day Registration which allows you to register to vote at the caucuses on Sat, March 26. You can also pre-register for the caucuses <a href='https://www.demcaucus.com/register' target='_blank'>here</a>.
         </p>
         <p>
           <strong>Please plan to arrive no later than 9:30 AM.</strong>
