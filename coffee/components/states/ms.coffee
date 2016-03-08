@@ -22,7 +22,7 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Mississippi has open primaries {entity('mdash')} Missippians can vote for Bernie Sanders regardless of their registered party.
+          Mississippi has open primaries {entity('mdash')} Mississippians can vote for Bernie Sanders regardless of their registered party.
         </p>
         <Deadline {...@props} />
         <h3 className='caps'>ID Requirement</h3>
