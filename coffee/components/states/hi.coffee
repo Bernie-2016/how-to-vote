@@ -27,10 +27,35 @@ module.exports = React.createClass
           Hawaii has closed caucuses {entity('mdash')} Hawaii residents must join the Democratic Party to vote for Bernie! However, Hawaii residents may join the Party on the day of the caucus.
         </p>
         <p>
-          The rules of the Democratic Party of Hawaii allow you to register to vote at the caucuses on Sat, March 26.
+          The caucus will be held on <strong>Saturday, March 26, 2016</strong> at <strong>12:15PM</strong> at a location near you. Doors will open at 12 noon, and voting in the Presidential Preference Poll will take place until at least 1:30 p.m..
         </p>
-        <Young {...@props} />
-        <h3 className='caps'>College Students</h3>
+        <ol>
+          <li>
+            <strong>Register to Vote:</strong> You need to be registered to vote at your current address. If you need to register or update your voting information, please visit <a href='https://olvr.hawaii.gov/(S(pru0giobre0ixtkf0vv5mt4u))/Default.aspx' target='_blank'>this link</a>.
+          </li>
+          <li>
+            <strong>Join the Democratic Party of Hawaii:</strong> You'll need to be a member of the Democratic Party of Hawaii to cast a vote. To join or update your address, please visit <a href='https://hawaiidemocrats.org/join' target='_blank'>this link</a>.
+          </li>
+          <li>
+            <strong>Find your caucus location and get there on time:</strong> You can use the caucus location finder at the top of this page.
+          </li>
+          <li>
+            <strong>Volunteer to help:</strong> A caucus is a volunteer run process and our campaign depends on your help. To lend a hand, please sign up to volunteer <a href='https://go.berniesanders.com/page/s/commit-caucus-hawaii' target='_blank'>here</a>.
+          </li>
+        </ol>
+        <h3 className='caps'>How long does it take?</h3>
+        <p>
+          Depending on the lines, it could take less than an hour to sign in and cast your ballot for President. However, we are asking supporters to please stay for the election of delegates and precinct officers, which will happen towards the end of the caucus.
+        </p>
+        <h3 className='caps'>Is same day registration allowed?</h3>
+        <p>
+          Hawaii Caucus rules allow you to register to vote and join the Democratic party at the caucus and still participate. If you have friends who are not registered, please invite them to attend. However, we ask all of our supporters to register in advance if possible so that it does not create long lines at the caucus.
+        </p>
+        <h3 className='caps'>I'm only 17. Can I vote at the caucus?</h3>
+        <p>
+          You may still caucus in Hawaii if you will be 18 years old by November 8, 2016.
+        </p>
+        <h3 className='caps'>Can college students vote at the caucus?</h3>
         <p>
           A college student must be a legal resident of Hawaii in order to be able to caucus for Bernie in Hawaii.
         </p>
