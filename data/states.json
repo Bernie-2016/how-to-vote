@@ -310,8 +310,7 @@
       "phone": "(888) 767-6424"
     },
     "regLink": "http://www.michigan.gov/sos/0,1607,7-127-1633_8716_8726_47669-175879--,00.html",
-    "chkLink": "http://www.michigan.gov/vote",
-    "pollWgt": true
+    "chkLink": "http://www.michigan.gov/vote"
   },
   "MN": {
     "name": "Minnesota",
@@ -331,8 +330,7 @@
       "url": "http://www.sos.ms.gov/elections-voting/Pages/default.aspx",
       "phone": "(800) 829-6786"
     },
-    "regLink": "http://www.sos.ms.gov/elections-voting/pages/voter-registration-information.aspx",
-    "pollWgt": true
+    "regLink": "http://www.sos.ms.gov/elections-voting/pages/voter-registration-information.aspx"
   },
   "MO": {
     "name": "Missouri",
