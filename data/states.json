@@ -271,8 +271,7 @@
       "phone": "(207) 622-6233"
     },
     "regLink": "http://www.maine.gov/sos/cec/elec/voter-info/voterguide.html",
-    "chkLink": "http://www.maine.gov/portal/government/edemocracy/voter_lookup.php",
-    "pollWgt": true
+    "chkLink": "http://www.maine.gov/portal/government/edemocracy/voter_lookup.php"
   },
   "MD": {
     "name": "Maryland",
@@ -545,8 +544,7 @@
       "phone": "(803) 734-9060"
     },
     "regLink": "https://info.scvotes.sc.gov/eng/ovr/start.aspx",
-    "chkLink": "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=VoterInfo",
-    "pollWgt": true
+    "chkLink": "https://info.scvotes.sc.gov/eng/voterinquiry/VoterInformationRequest.aspx?PageMode=VoterInfo"
   },
   "SD": {
     "name": "South Dakota",
