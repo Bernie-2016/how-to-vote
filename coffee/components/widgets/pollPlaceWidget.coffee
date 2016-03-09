@@ -95,8 +95,10 @@ module.exports = React.createClass
     GoogleMaps.release()
 
   render: ->
+    title = @props.title
+    title ||= (if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'Precinct Caucus' else 'Polling')
     <div hidden={!@props.state.pollWgt}>
-      <h3 className='caps'>{if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'Precinct Caucus' else 'Polling'} Location</h3>
+      <h3 className='caps'>{title} Location</h3>
       {if @state.google
         <div className='poll-widget'>
           {unless @state.loaded || @state.notFound

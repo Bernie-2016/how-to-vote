@@ -19,9 +19,9 @@ module.exports = React.createClass
           Key Information
           <Share {...@props} />
         </h2>
-        <PollPlace state={@props.state} />
+        <PollPlace title='County Caucus' state={@props.state} />
         <p>
-          Idaho has semi-open caucuses {entity('mdash')} Idaho's Democratic Party Caucuses are open to all Idahoans, regardless of political affiliation, except those who participate in Idaho's Republican party primary on March 8, 2016.
+          Idaho has semi-open caucuses {entity('mdash')} Idaho's Democratic Party Caucuses are open to all Idahoans, regardless of political affiliation, except those who participate in Idaho's Republican party primary on March 8, 2016. To caucus, you must sign a form publicly declaring that you are a Democrat and the party can list you as such.
         </p>
         <p>
           Idaho has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.
