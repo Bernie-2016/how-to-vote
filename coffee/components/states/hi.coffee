@@ -27,7 +27,10 @@ module.exports = React.createClass
           Hawaii has closed caucuses {entity('mdash')} Hawaii residents must join the Democratic Party to vote for Bernie! However, Hawaii residents may join the Party on the day of the caucus.
         </p>
         <p>
-          The caucus will be held on <strong>Saturday, March 26, 2016</strong> at <strong>12:15PM</strong> at a location near you. Doors will open at 12 noon, and voting in the Presidential Preference Poll will take place until at least 1:30 p.m..
+          The caucus will be held on <strong>Saturday, March 26, 2016</strong> at <strong>1PM</strong> at a location near you. We recommend you try to arrive by 12:15 if possible so you can sign in and have your party membership and voter registration confirmed before voting in the Presidential Preference Poll begins at 1 pm. Please allow time for parking.
+        </p>
+        <p>
+          If the line is short, the voting period may end shortly after 1:30PM. But if the turnout is large, voting will go on for much longer. Everyone who arrives while there is still a line will be allowed to vote, so it is difficult to predict when the opportunity to vote will end.
         </p>
         <ol>
           <li>
