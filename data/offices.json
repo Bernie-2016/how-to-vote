@@ -1,732 +1,742 @@
 [
   {
+    "address": "542 4th Ave., Fairbanks, AK 99701 (Suite B101)",
+    "state": "AK",
     "opening_event": "",
     "lat": "64.842485",
-    "name": "Fairbanks",
-    "state": "AK",
-    "address": "542 4th Ave., Fairbanks, AK 99701 (Suite B101)",
     "phone": "-",
-    "photo": "https://i.imgur.com/gzp8dyY.png",
-    "lon": "-147.719475"
+    "name": "Fairbanks",
+    "lon": "-147.719475",
+    "photo": "https://i.imgur.com/gzp8dyY.png"
   },
   {
+    "address": "3101 Penland Pkwy., Anchorage, AK 99508 (Suite E10)",
+    "state": "AK",
     "opening_event": "",
     "lat": "61.216992",
-    "name": "Anchorage",
-    "state": "AK",
-    "address": "3101 Penland Pkwy., Anchorage, AK 99508 (Suite E10)",
     "phone": "-",
-    "photo": "https://i.imgur.com/r9Xy87Y.png",
-    "lon": "-149.820258"
+    "name": "Anchorage",
+    "lon": "-149.820258",
+    "photo": "https://i.imgur.com/r9Xy87Y.png"
   },
   {
+    "address": "1301 E. Washington St., Phoenix, AZ 85034",
+    "state": "AZ",
     "opening_event": "",
     "lat": "33.447948",
-    "name": "Phoenix",
-    "state": "AZ",
-    "address": "1301 E. Washington St., Phoenix, AZ 85034",
     "phone": "(602) 354-5179",
-    "photo": "https://i.imgur.com/qdEZ7Pl.png",
-    "lon": "-112.053936"
+    "name": "Phoenix",
+    "lon": "-112.053936",
+    "photo": "https://i.imgur.com/qdEZ7Pl.png"
   },
   {
+    "address": "1832 East 6th St., Tucson, AZ 85719",
+    "state": "AZ",
     "opening_event": "",
     "lat": "32.22758",
-    "name": "Tucson",
-    "state": "AZ",
-    "address": "1832 East 6th St., Tucson, AZ 85719",
     "phone": "(520) 268-4282",
-    "photo": "https://i.imgur.com/x3mk6mF.png",
-    "lon": "-110.944296"
+    "name": "Tucson",
+    "lon": "-110.944296",
+    "photo": "https://i.imgur.com/x3mk6mF.png"
   },
   {
+    "address": "312 Massachusetts Ave. NE, Washington, DC 20002",
+    "state": "DC",
     "opening_event": "",
     "lat": "38.8943255",
-    "name": "Washington, D.C.",
-    "state": "DC",
-    "address": "312 Massachusetts Ave. NE, Washington, DC 20002",
     "phone": "(202) 506-5831",
-    "photo": "https://imgur.com/zJuvxXJ.png",
-    "lon": "-77.0013426"
+    "name": "Washington, D.C.",
+    "lon": "-77.0013426",
+    "photo": "https://imgur.com/zJuvxXJ.png"
   },
   {
+    "address": "1710 Main St. N, Jacksonville, FL 32206",
+    "state": "FL",
     "opening_event": "",
     "lat": "30.344662",
-    "name": "Jacksonville",
-    "state": "FL",
-    "address": "1710 Main St. N, Jacksonville, FL 32206",
     "phone": "(904) 805-2180",
-    "photo": "https://i.imgur.com/vuqXq5C.png",
-    "lon": "-81.654256"
+    "name": "Jacksonville",
+    "lon": "-81.654256",
+    "photo": "https://i.imgur.com/vuqXq5C.png"
   },
   {
+    "address": "48 NW 25th St., Miami, FL 33127",
+    "state": "FL",
     "opening_event": "",
     "lat": "25.800521",
-    "name": "Miami",
-    "state": "FL",
-    "address": "48 NW 25th St., Miami, FL 33127",
     "phone": "(786) 600-3734",
-    "photo": "https://i.imgur.com/W3vsscN.png",
-    "lon": "-80.195925"
+    "name": "Miami",
+    "lon": "-80.195925",
+    "photo": "https://i.imgur.com/W3vsscN.png"
   },
   {
+    "address": "1200 E. Hillcrest St., Orlando, FL 32803",
+    "state": "FL",
     "opening_event": "",
     "lat": "28.552045",
-    "name": "Orlando",
-    "state": "FL",
-    "address": "1200 E. Hillcrest St., Orlando, FL 32803",
     "phone": "(954) 895-1622",
-    "photo": "https://i.imgur.com/WXsZZhf.png",
-    "lon": "-81.364015"
+    "name": "Orlando",
+    "lon": "-81.364015",
+    "photo": "https://i.imgur.com/WXsZZhf.png"
   },
   {
+    "address": "1050 Ala Moana Blvd., Honolulu, HI 96814",
+    "state": "HI",
     "opening_event": "",
     "lat": "21.2951",
-    "name": "Honolulu (Suite 2500)",
-    "state": "HI",
-    "address": "1050 Ala Moana Blvd., Honolulu, HI 96814",
     "phone": "(630) 200-5611",
-    "photo": "https://i.imgur.com/KtBu1JE.png",
-    "lon": "-157.857177"
+    "name": "Honolulu (Suite 2500)",
+    "lon": "-157.857177",
+    "photo": "https://i.imgur.com/KtBu1JE.png"
   },
   {
+    "address": "500 West Broadway, Council Bluffs, IA 51503",
+    "state": "IA",
     "opening_event": "",
     "lat": "41.2612218",
-    "name": "Council Bluffs",
-    "state": "IA",
-    "address": "500 West Broadway, Council Bluffs, IA 51503",
     "phone": "(712) 323-7232",
-    "photo": "https://i.imgur.com/F9AExrf.png",
-    "lon": "-95.8499378"
+    "name": "Council Bluffs",
+    "lon": "-95.8499378",
+    "photo": "https://i.imgur.com/F9AExrf.png"
   },
   {
+    "address": "736 Federal St., Davenport, IA 52801",
+    "state": "IA",
     "opening_event": "",
     "lat": "41.5247596",
-    "name": "Davenport",
-    "state": "IA",
-    "address": "736 Federal St., Davenport, IA 52801",
     "phone": "(563) 323-0559",
-    "photo": "https://i.imgur.com/zAxjGHT.png",
-    "lon": "-90.5633143"
+    "name": "Davenport",
+    "lon": "-90.5633143",
+    "photo": "https://i.imgur.com/zAxjGHT.png"
   },
   {
+    "address": "3839 Merle Hay, Des Moines, IA 50310",
+    "state": "IA",
     "opening_event": "",
     "lat": "41.6308099",
-    "name": "Des Moines",
-    "state": "IA",
-    "address": "3839 Merle Hay, Des Moines, IA 50310",
     "phone": "(515) 251-6335",
-    "photo": "https://i.imgur.com/BVPuA37.png",
-    "lon": "-93.697183"
+    "name": "Des Moines",
+    "lon": "-93.697183",
+    "photo": "https://i.imgur.com/BVPuA37.png"
   },
   {
+    "address": "280 N. 8th St., Boise, ID 83702 (Suite 118)",
+    "state": "ID",
+    "opening_event": "",
+    "lat": "43.616914",
+    "phone": "(843) 250-9021",
+    "name": "Boise",
+    "lon": "-116.201815",
+    "photo": "https://i.imgur.com/yAckA0H.png"
+  },
+  {
+    "address": "144 W. Wilson St., Batavia, IL 60510",
+    "state": "IL",
     "opening_event": "",
     "lat": "41.849871",
-    "name": "Batavia",
-    "state": "IL",
-    "address": "144 W. Wilson St., Batavia, IL 60510",
     "phone": "(630) 406-5035 ",
-    "photo": "https://i.imgur.com/PQj0oRO.png",
-    "lon": "-88.309993"
+    "name": "Batavia",
+    "lon": "-88.309993",
+    "photo": "https://i.imgur.com/PQj0oRO.png"
   },
   {
+    "address": "6902 Cermak Rd., Berwyn, IL 60402",
+    "state": "IL",
     "opening_event": "",
     "lat": "41.850704",
-    "name": "Berwyn",
-    "state": "IL",
-    "address": "6902 Cermak Rd., Berwyn, IL 60402",
     "phone": "(708) 317-4550",
-    "photo": "https://i.imgur.com/OjujDdA.png",
-    "lon": "-87.796034"
+    "name": "Berwyn",
+    "lon": "-87.796034",
+    "photo": "https://i.imgur.com/OjujDdA.png"
   },
   {
+    "address": "510 E Washington St., Bloomington, IL 61701 (Suites 101 & 103) ",
+    "state": "IL",
     "opening_event": "",
     "lat": "40.480167",
-    "name": "Bloomington-Normal",
-    "state": "IL",
-    "address": "510 E Washington St., Bloomington, IL 61701 (Suites 101 & 103) ",
     "phone": "-",
-    "photo": "https://i.imgur.com/whFK7zD.png",
-    "lon": "-88.987804"
+    "name": "Bloomington-Normal",
+    "lon": "-88.987804",
+    "photo": "https://i.imgur.com/whFK7zD.png"
   },
   {
+    "address": "715 S University Ave., Carbondale, IL 62901",
+    "state": "IL",
     "opening_event": "",
     "lat": "37.720141",
-    "name": "Carbondale",
-    "state": "IL",
-    "address": "715 S University Ave., Carbondale, IL 62901",
     "phone": "(603) 851-6003",
-    "photo": "https://i.imgur.com/rdvwDp1.png",
-    "lon": "-89.217459"
+    "name": "Carbondale",
+    "lon": "-89.217459",
+    "photo": "https://i.imgur.com/rdvwDp1.png"
   },
   {
+    "address": "1717 Philo Rd., Urbana, IL 61802 (Suite 12)",
+    "state": "IL",
     "opening_event": "",
     "lat": "40.097017",
-    "name": "Champaign-Urbana",
-    "state": "IL",
-    "address": "1717 Philo Rd., Urbana, IL 61802 (Suite 12)",
     "phone": "(217) 693-7068",
-    "photo": "https://i.imgur.com/XPljMT8.png",
-    "lon": "-88.192353"
+    "name": "Champaign-Urbana",
+    "lon": "-88.192353",
+    "photo": "https://i.imgur.com/XPljMT8.png"
   },
   {
+    "address": "600 W Roosevelt Rd., Chicago, IL 60607",
+    "state": "IL",
     "opening_event": "",
     "lat": "41.867602",
-    "name": "Chicago",
-    "state": "IL",
-    "address": "600 W Roosevelt Rd., Chicago, IL 60607",
     "phone": "(312) 877-5318",
-    "photo": "https://i.imgur.com/toHoTM6.png",
-    "lon": "-87.642415"
+    "name": "Chicago",
+    "lon": "-87.642415",
+    "photo": "https://i.imgur.com/toHoTM6.png"
   },
   {
+    "address": "705 E. 75th St., Chicago, IL 60619",
+    "state": "IL",
     "opening_event": "",
     "lat": "41.758309",
-    "name": "Chicago - South Side",
-    "state": "IL",
-    "address": "705 E. 75th St., Chicago, IL 60619",
     "phone": "(773) 962-2298",
-    "photo": "https://i.imgur.com/zAjm1Ed.png",
-    "lon": "-87.607474"
+    "name": "Chicago - South Side",
+    "lon": "-87.607474",
+    "photo": "https://i.imgur.com/zAjm1Ed.png"
   },
   {
+    "address": "114 W Main St., Collinsville, IL 62234",
+    "state": "IL",
     "opening_event": "",
     "lat": "38.6697",
-    "name": "Collinsville",
-    "state": "IL",
-    "address": "114 W Main St., Collinsville, IL 62234",
     "phone": "(618) 855-8757",
-    "photo": "https://i.imgur.com/JgQbDLN.png",
-    "lon": "-89.986851"
+    "name": "Collinsville",
+    "lon": "-89.986851",
+    "photo": "https://i.imgur.com/JgQbDLN.png"
   },
   {
+    "address": "217 Franklin St., DeKalb, IL 60115",
+    "state": "IL",
     "opening_event": "",
     "lat": "41.928334",
-    "name": "DeKalb",
-    "state": "IL",
-    "address": "217 Franklin St., DeKalb, IL 60115",
     "phone": "(815) 754-0704",
-    "photo": "https://i.imgur.com/c0BvrV3.png",
-    "lon": "-88.752934"
+    "name": "DeKalb",
+    "lon": "-88.752934",
+    "photo": "https://i.imgur.com/c0BvrV3.png"
   },
   {
+    "address": "516 Dempster Ave., Evanston, IL 60202",
+    "state": "IL",
     "opening_event": "",
     "lat": "42.041015",
-    "name": "Evanston",
-    "state": "IL",
-    "address": "516 Dempster Ave., Evanston, IL 60202",
     "phone": "(847) 859-6812",
-    "photo": "https://i.imgur.com/uiqPeMM.png",
-    "lon": "-87.679873"
+    "name": "Evanston",
+    "lon": "-87.679873",
+    "photo": "https://i.imgur.com/uiqPeMM.png"
   },
   {
+    "address": "58 N Chicago St., Joliet, IL 60432",
+    "state": "IL",
     "opening_event": "",
     "lat": "41.525252",
-    "name": "Joliet",
-    "state": "IL",
-    "address": "58 N Chicago St., Joliet, IL 60432",
     "phone": "(779) 379-5775",
-    "photo": "https://i.imgur.com/h55kG2E.png",
-    "lon": "-88.081342"
+    "name": "Joliet",
+    "lon": "-88.081342",
+    "photo": "https://i.imgur.com/h55kG2E.png"
   },
   {
+    "address": "112 S. Main St., Lombard, IL 60148",
+    "state": "IL",
     "opening_event": "",
     "lat": "41.885883",
-    "name": "Lombard",
-    "state": "IL",
-    "address": "112 S. Main St., Lombard, IL 60148",
     "phone": "(630) 709-5754",
-    "photo": "https://i.imgur.com/C2FGyYJ.png",
-    "lon": "-88.018536"
+    "name": "Lombard",
+    "lon": "-88.018536",
+    "photo": "https://i.imgur.com/C2FGyYJ.png"
   },
   {
+    "address": "309 Mulberry St., Rockford, IL",
+    "state": "IL",
     "opening_event": "",
     "lat": "42.272395",
-    "name": "Rockford",
-    "state": "IL",
-    "address": "309 Mulberry St., Rockford, IL",
     "phone": "(779) 210-7434",
-    "photo": "https://i.imgur.com/MUTSWMG.png",
-    "lon": "-89.094244"
+    "name": "Rockford",
+    "lon": "-89.094244",
+    "photo": "https://i.imgur.com/MUTSWMG.png"
   },
   {
+    "address": "1535 W Wabash Ave., Springfield, IL 62704",
+    "state": "IL",
     "opening_event": "",
     "lat": "39.76456",
-    "name": "Springfield",
-    "state": "IL",
-    "address": "1535 W Wabash Ave., Springfield, IL 62704",
     "phone": "(773) 962-2298",
-    "photo": "https://i.imgur.com/0q2DL7K.png",
-    "lon": "-89.67928"
+    "name": "Springfield",
+    "lon": "-89.67928",
+    "photo": "https://i.imgur.com/0q2DL7K.png"
   },
   {
+    "address": "1534 Washington St., Waukegan, IL 60085",
+    "state": "IL",
     "opening_event": "",
     "lat": "42.359692",
-    "name": "Waukegan",
-    "state": "IL",
-    "address": "1534 Washington St., Waukegan, IL 60085",
     "phone": "(224) 637-8590",
-    "photo": "https://i.imgur.com/Ipsa8pq.png",
-    "lon": "-87.851007"
+    "name": "Waukegan",
+    "lon": "-87.851007",
+    "photo": "https://i.imgur.com/Ipsa8pq.png"
   },
   {
+    "address": "918 15th Ave., East Moline, IL 61244",
+    "state": "IL",
     "opening_event": "",
     "lat": "41.515828",
-    "name": "Quad Cities",
-    "state": "IL",
-    "address": "918 15th Ave., East Moline, IL 61244",
     "phone": "(309) 755-2628",
-    "photo": "https://i.imgur.com/LSJxRkX.png",
-    "lon": "-90.440135"
+    "name": "Quad Cities",
+    "lon": "-90.440135",
+    "photo": "https://i.imgur.com/LSJxRkX.png"
   },
   {
-    "opening_event": "",
-    "lat": "42.24546",
-    "name": "Ann Arbor / Ypsi - THANK YOU MICHIGAN!",
-    "state": "MI",
     "address": "4072 Packard Rd., Ann Arbor, MI 48108",
+    "state": "MI",
+    "opening_event": "https://goo.gl/12fp3J",
+    "lat": "42.24546",
     "phone": "(734) 548-7864",
-    "photo": "https://i.imgur.com/fkFMlYh.png",
-    "lon": "-83.679144"
+    "name": "Ann Arbor / Ypsi - THANK YOU MICHIGAN!",
+    "lon": "-83.679144",
+    "photo": "https://i.imgur.com/fkFMlYh.png"
   },
   {
+    "address": "4907 Schaefer Rd., Dearborn, MI 48126",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "42.322913",
-    "name": "Dearborn - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "4907 Schaefer Rd., Dearborn, MI 48126",
     "phone": "(603) 493-7715",
-    "photo": "https://i.imgur.com/AyosNUz.png",
-    "lon": "-83.176284"
+    "name": "Dearborn - THANK YOU MICHIGAN!",
+    "lon": "-83.176284",
+    "photo": "https://i.imgur.com/AyosNUz.png"
   },
   {
+    "address": "7500 Oakland St., Detroit MI 48211",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "42.375522",
-    "name": "Detroit - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "7500 Oakland St., Detroit MI 48211",
     "phone": "(313) 826-2434",
-    "photo": "https://i.imgur.com/JsXJSjX.png",
-    "lon": "-83.065255"
+    "name": "Detroit - THANK YOU MICHIGAN!",
+    "lon": "-83.065255",
+    "photo": "https://i.imgur.com/JsXJSjX.png"
   },
   {
+    "address": "600 Harrison St., Flint, MI 48502",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "43.015388",
-    "name": "Flint - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "600 Harrison St., Flint, MI 48502",
     "phone": "(989) 859-6649",
-    "photo": "https://i.imgur.com/7uYEPPX.png",
-    "lon": "-83.688789"
+    "name": "Flint - THANK YOU MICHIGAN!",
+    "lon": "-83.688789",
+    "photo": "https://i.imgur.com/7uYEPPX.png"
   },
   {
+    "address": "3446 Plainfield Ave. NE, Grand Rapids, MI 49525",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "43.026333",
-    "name": "Grand Rapids - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "3446 Plainfield Ave. NE, Grand Rapids, MI 49525",
     "phone": "(603) 493-7659",
-    "photo": "https://i.imgur.com/R5vuVYW.png",
-    "lon": "-85.632427"
+    "name": "Grand Rapids - THANK YOU MICHIGAN!",
+    "lon": "-85.632427",
+    "photo": "https://i.imgur.com/R5vuVYW.png"
   },
   {
+    "address": "4038 N Westnedge Ave., Kalamazoo, MI 49094",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "42.331313",
-    "name": "Kalamazoo - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "4038 N Westnedge Ave., Kalamazoo, MI 49094",
     "phone": "(603) 998-4415",
-    "photo": "https://i.imgur.com/iNNRnAE.png",
-    "lon": "-85.588239"
+    "name": "Kalamazoo - THANK YOU MICHIGAN!",
+    "lon": "-85.588239",
+    "photo": "https://i.imgur.com/iNNRnAE.png"
   },
   {
+    "address": "2722 E Michigan Ave., Lansing, MI 48912 (Suite 101)",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "42.733068",
-    "name": "Lansing - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "2722 E Michigan Ave., Lansing, MI 48912 (Suite 101)",
     "phone": "(517) 367-0805",
-    "photo": "https://i.imgur.com/Qwd4VuQ.png",
-    "lon": "-84.512831"
+    "name": "Lansing - THANK YOU MICHIGAN!",
+    "lon": "-84.512831",
+    "photo": "https://i.imgur.com/Qwd4VuQ.png"
   },
   {
+    "address": "4 North Saginaw St., Pontiac, MI 48342",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "42.636867",
-    "name": "Pontiac - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "4 North Saginaw St., Pontiac, MI 48342",
     "phone": "(603) 851-5420",
-    "photo": "https://i.imgur.com/SfODkNx.png",
-    "lon": "-83.2915"
+    "name": "Pontiac - THANK YOU MICHIGAN!",
+    "lon": "-83.2915",
+    "photo": "https://i.imgur.com/SfODkNx.png"
   },
   {
+    "address": "1614 Mershon St., Saginaw, MI 48602",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "43.430944",
-    "name": "Saginaw - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "1614 Mershon St., Saginaw, MI 48602",
     "phone": "(248) 210-0455",
-    "photo": "https://i.imgur.com/2Mp4ut9.png",
-    "lon": "-83.963733"
+    "name": "Saginaw - THANK YOU MICHIGAN!",
+    "lon": "-83.963733",
+    "photo": "https://i.imgur.com/2Mp4ut9.png"
   },
   {
+    "address": "1000 Milliken Dr.,Traverse City, MI 49686",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "44.767101",
-    "name": "Traverse City - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "1000 Milliken Dr.,Traverse City, MI 49686",
     "phone": "(603) 851-5993",
-    "photo": "https://i.imgur.com/hWkN1vt.png",
-    "lon": "-85.590009"
+    "name": "Traverse City - THANK YOU MICHIGAN!",
+    "lon": "-85.590009",
+    "photo": "https://i.imgur.com/hWkN1vt.png"
   },
   {
+    "address": "5818 N Wayne Rd., Westland, MI 48145",
+    "state": "MI",
     "opening_event": "https://goo.gl/12fp3J",
     "lat": "42.326473",
-    "name": "Westland - THANK YOU MICHIGAN!",
-    "state": "MI",
-    "address": "5818 N Wayne Rd., Westland, MI 48145",
     "phone": "(845) 901-5659",
-    "photo": "https://i.imgur.com/9lKVyrV.png",
-    "lon": "-83.388647"
+    "name": "Westland - THANK YOU MICHIGAN!",
+    "lon": "-83.388647",
+    "photo": "https://i.imgur.com/9lKVyrV.png"
   },
   {
+    "address": "823 Broadway St., Cape Girardeau, MO 63701",
+    "state": "MO",
     "opening_event": "",
     "lat": "37.306729",
-    "name": "Cape Girardeau",
-    "state": "MO",
-    "address": "823 Broadway St., Cape Girardeau, MO 63701",
     "phone": "-",
-    "photo": "https://i.imgur.com/swkLZDN.png",
-    "lon": "-89.529209"
+    "name": "Cape Girardeau",
+    "lon": "-89.529209",
+    "photo": "https://i.imgur.com/swkLZDN.png"
   },
   {
+    "address": "15 S 10th St., Columbia, MO 65201",
+    "state": "MO",
     "opening_event": "",
     "lat": "38.950906",
-    "name": "Columbia",
-    "state": "MO",
-    "address": "15 S 10th St., Columbia, MO 65201",
     "phone": "(603) 851-5912",
-    "photo": "https://i.imgur.com/sRLXGg7.png",
-    "lon": "-92.326806"
+    "name": "Columbia",
+    "lon": "-92.326806",
+    "photo": "https://i.imgur.com/sRLXGg7.png"
   },
   {
+    "address": "14 Church St., Ferguson, MO 63135",
+    "state": "MO",
     "opening_event": "",
     "lat": "38.744931",
-    "name": "Ferguson",
-    "state": "MO",
-    "address": "14 Church St., Ferguson, MO 63135",
     "phone": "-",
-    "photo": "https://i.imgur.com/kLBHtjo.png",
-    "lon": "-90.304639"
+    "name": "Ferguson",
+    "lon": "-90.304639",
+    "photo": "https://i.imgur.com/kLBHtjo.png"
   },
   {
+    "address": "3600 Broadway, Kansas City, MO 64111",
+    "state": "MO",
     "opening_event": "",
     "lat": "39.062155",
-    "name": "Kansas City",
-    "state": "MO",
-    "address": "3600 Broadway, Kansas City, MO 64111",
     "phone": "(573) 489-5233",
-    "photo": "https://i.imgur.com/QzDXOTb.png",
-    "lon": "-94.59048"
+    "name": "Kansas City",
+    "lon": "-94.59048",
+    "photo": "https://i.imgur.com/QzDXOTb.png"
   },
   {
+    "address": "431 S Jefferson Ave., Springfield, MO 65806",
+    "state": "MO",
     "opening_event": "",
     "lat": "37.206032",
-    "name": "Springfield",
-    "state": "MO",
-    "address": "431 S Jefferson Ave., Springfield, MO 65806",
     "phone": "-",
-    "photo": "https://i.imgur.com/yGwcTP7.png",
-    "lon": "-93.290647"
+    "name": "Springfield",
+    "lon": "-93.290647",
+    "photo": "https://i.imgur.com/yGwcTP7.png"
   },
   {
+    "address": "2626 Cherokee St., St. Louis, MO 63118",
+    "state": "MO",
     "opening_event": "",
     "lat": "38.593204",
-    "name": "St. Louis - Cherokee St.",
-    "state": "MO",
-    "address": "2626 Cherokee St., St. Louis, MO 63118",
     "phone": "-",
-    "photo": "https://i.imgur.com/tQYY9Cv.png",
-    "lon": "-90.226917"
+    "name": "St. Louis - Cherokee St.",
+    "lon": "-90.226917",
+    "photo": "https://i.imgur.com/tQYY9Cv.png"
   },
   {
+    "address": "509 N Garrison Ave., St Louis, MO 63103",
+    "state": "MO",
     "opening_event": "",
     "lat": "38.636165",
-    "name": "St. Louis - Garrison Ave.",
-    "state": "MO",
-    "address": "509 N Garrison Ave., St Louis, MO 63103",
     "phone": "-",
-    "photo": "https://i.imgur.com/QM4yXn4.png",
-    "lon": "-90.22172"
+    "name": "St. Louis - Garrison Ave.",
+    "lon": "-90.22172",
+    "photo": "https://i.imgur.com/QM4yXn4.png"
   },
   {
+    "address": "3911 Greer Ave., St. Louis, MO 63107",
+    "state": "MO",
     "opening_event": "",
     "lat": "38.660387",
-    "name": "St. Louis - Greer Ave.",
-    "state": "MO",
-    "address": "3911 Greer Ave., St. Louis, MO 63107",
     "phone": "-",
-    "photo": "https://i.imgur.com/CeraJ4O.png",
-    "lon": "-90.225627"
+    "name": "St. Louis - Greer Ave.",
+    "lon": "-90.225627",
+    "photo": "https://i.imgur.com/CeraJ4O.png"
   },
   {
+    "address": "2296 US 70 Hwy., Swannanoa, NC 28778",
+    "state": "NC",
     "opening_event": "",
     "lat": "35.599755",
-    "name": "Asheville",
-    "state": "NC",
-    "address": "2296 US 70 Hwy., Swannanoa, NC 28778",
     "phone": "(828) 581-4311",
-    "photo": "https://i.imgur.com/QfTtzcg.png",
-    "lon": "-82.407745"
+    "name": "Asheville",
+    "lon": "-82.407745",
+    "photo": "https://i.imgur.com/QfTtzcg.png"
   },
   {
+    "address": "2424 N. Davidson St., Charlotte, NC 28205",
+    "state": "NC",
     "opening_event": "",
     "lat": "35.239994",
-    "name": "Charlotte",
-    "state": "NC",
-    "address": "2424 N. Davidson St., Charlotte, NC 28205",
     "phone": "(980) 272-1417",
-    "photo": "https://i.imgur.com/0x1vWVg.png",
-    "lon": "-80.811127"
+    "name": "Charlotte",
+    "lon": "-80.811127",
+    "photo": "https://i.imgur.com/0x1vWVg.png"
   },
   {
+    "address": "207 N. Church St., Durham, NC 27701",
+    "state": "NC",
     "opening_event": "",
     "lat": "35.995271",
-    "name": "Durham",
-    "state": "NC",
-    "address": "207 N. Church St., Durham, NC 27701",
     "phone": "(919) 972-8407",
-    "photo": "https://i.imgur.com/XVehuEY.png",
-    "lon": "-78.899002"
+    "name": "Durham",
+    "lon": "-78.899002",
+    "photo": "https://i.imgur.com/XVehuEY.png"
   },
   {
+    "address": "111 East 3rd St., Greenville, NC 27858",
+    "state": "NC",
     "opening_event": "",
     "lat": "35.613309",
-    "name": "Greenville",
-    "state": "NC",
-    "address": "111 East 3rd St., Greenville, NC 27858",
     "phone": "-",
-    "photo": "https://i.imgur.com/GsxWRop.png",
-    "lon": "-77.371868"
+    "name": "Greenville",
+    "lon": "-77.371868",
+    "photo": "https://i.imgur.com/GsxWRop.png"
   },
   {
+    "address": " 2106 Rhodes Ave., Wilmington, NC 28405",
+    "state": "NC",
     "opening_event": "",
     "lat": "34.241721",
-    "name": "Wilmington",
-    "state": "NC",
-    "address": " 2106 Rhodes Ave., Wilmington, NC 28405",
     "phone": "(910) 742-0946",
-    "photo": "https://i.imgur.com/54xyiR8.png",
-    "lon": "-77.922424"
+    "name": "Wilmington",
+    "lon": "-77.922424",
+    "photo": "https://i.imgur.com/54xyiR8.png"
   },
   {
+    "address": "95 Waughtown St., Winston-Salem, NC 27127",
+    "state": "NC",
     "opening_event": "",
     "lat": "36.079276",
-    "name": "Winston-Salem",
-    "state": "NC",
-    "address": "95 Waughtown St., Winston-Salem, NC 27127",
     "phone": "(336) 283-6098",
-    "photo": "https://i.imgur.com/OIRAiR8.png",
-    "lon": "-80.237869"
+    "name": "Winston-Salem",
+    "lon": "-80.237869",
+    "photo": "https://i.imgur.com/OIRAiR8.png"
   },
   {
+    "address": "835 Hanover St., Manchester, NH 03104",
+    "state": "NH",
     "opening_event": "",
     "lat": "42.9873012",
-    "name": "Manchester",
-    "state": "NH",
-    "address": "835 Hanover St., Manchester, NH 03104",
     "phone": "(603) 935-9084 ",
-    "photo": "https://i.imgur.com/t8aTBLA.png",
-    "lon": "-71.4294765"
+    "name": "Manchester",
+    "lon": "-71.4294765",
+    "photo": "https://i.imgur.com/t8aTBLA.png"
   },
   {
+    "address": "1155 West 4th St., Reno, NV 89503",
+    "state": "NV",
     "opening_event": "",
     "lat": "39.526454",
-    "name": "Reno",
-    "state": "NV",
-    "address": "1155 West 4th St., Reno, NV 89503",
     "phone": "(775) 857-7104",
-    "photo": "https://i.imgur.com/EpaCQYi.png",
-    "lon": "-119.828996"
+    "name": "Reno",
+    "lon": "-119.828996",
+    "photo": "https://i.imgur.com/EpaCQYi.png"
   },
   {
+    "address": "4440 S. Maryland Parkway, Las Vegas, NV 89119",
+    "state": "NV",
     "opening_event": "",
     "lat": "36.10884",
-    "name": "Las Vegas",
-    "state": "NV",
-    "address": "4440 S. Maryland Parkway, Las Vegas, NV 89119",
     "phone": "-",
-    "photo": "https://i.imgur.com/2sEjkZ4.png",
-    "lon": "-115.137068"
+    "name": "Las Vegas",
+    "lon": "-115.137068",
+    "photo": "https://i.imgur.com/2sEjkZ4.png"
   },
   {
+    "address": "131 Cleveland Ave. S.W., Canton, OH 44702",
+    "state": "OH",
     "opening_event": "",
     "lat": "40.798393",
-    "name": "Canton",
-    "state": "OH",
-    "address": "131 Cleveland Ave. S.W., Canton, OH 44702",
     "phone": "-",
-    "photo": "https://i.imgur.com/6iEQmQX.png",
-    "lon": "-81.376869"
+    "name": "Canton",
+    "lon": "-81.376869",
+    "photo": "https://i.imgur.com/6iEQmQX.png"
   },
   {
+    "address": "1385 Tennessee Ave., Cincinnati, OH 45229",
+    "state": "OH",
     "opening_event": "https://goo.gl/46oG2J",
     "lat": "39.168024",
-    "name": "Cincinnati",
-    "state": "OH",
-    "address": "1385 Tennessee Ave., Cincinnati, OH 45229",
     "phone": "-",
-    "photo": "https://i.imgur.com/TypVz5Y.png",
-    "lon": "-84.470832"
+    "name": "Cincinnati",
+    "lon": "-84.470832",
+    "photo": "https://i.imgur.com/TypVz5Y.png"
   },
   {
+    "address": "2020 Euclid Ave., Cleveland, OH 44115",
+    "state": "OH",
     "opening_event": "",
     "lat": "41.501464",
-    "name": "Cleveland",
-    "state": "OH",
-    "address": "2020 Euclid Ave., Cleveland, OH 44115",
     "phone": "(440) 315-2852",
-    "photo": "https://i.imgur.com/TrU8HCg.png",
-    "lon": "-81.67617"
+    "name": "Cleveland",
+    "lon": "-81.67617",
+    "photo": "https://i.imgur.com/TrU8HCg.png"
   },
   {
+    "address": "1181 E. Main St., Columbus, OH 43205",
+    "state": "OH",
     "opening_event": "",
     "lat": "39.957172",
-    "name": "Columbus",
-    "state": "OH",
-    "address": "1181 E. Main St., Columbus, OH 43205",
     "phone": "(540) 998-9425",
-    "photo": "https://imgur.com/CcyKVUR.png",
-    "lon": "-82.967561"
+    "name": "Columbus",
+    "lon": "-82.967561",
+    "photo": "https://imgur.com/CcyKVUR.png"
   },
   {
+    "address": "111 West First St., Dayton, OH 45402",
+    "state": "OH",
     "opening_event": "",
     "lat": "39.762254",
-    "name": "Dayton",
-    "state": "OH",
-    "address": "111 West First St., Dayton, OH 45402",
     "phone": "(571) 606-3434",
-    "photo": "https://i.imgur.com/RfK5yjl.png",
-    "lon": "-84.19488"
+    "name": "Dayton",
+    "lon": "-84.19488",
+    "photo": "https://i.imgur.com/RfK5yjl.png"
   },
   {
+    "address": "807 Lime City Rd., Rossford, OH 43460 ",
+    "state": "OH",
     "opening_event": "",
     "lat": "41.590027",
-    "name": "Toledo",
-    "state": "OH",
-    "address": "807 Lime City Rd., Rossford, OH 43460 ",
     "phone": "(567) 202-7340",
-    "photo": "https://i.imgur.com/adlY3Yj.png",
-    "lon": "-83.566635"
+    "name": "Toledo",
+    "lon": "-83.566635",
+    "photo": "https://i.imgur.com/adlY3Yj.png"
   },
   {
+    "address": "950 Youngstown Warren Rd., Niles, OH 44446",
+    "state": "OH",
     "opening_event": "",
     "lat": "41.199041",
-    "name": "Youngstown / Niles",
-    "state": "OH",
-    "address": "950 Youngstown Warren Rd., Niles, OH 44446",
     "phone": "(951) 852-1455",
-    "photo": "https://i.imgur.com/aEwJcNa.png",
-    "lon": "-80.732408"
+    "name": "Youngstown / Niles",
+    "lon": "-80.732408",
+    "photo": "https://i.imgur.com/aEwJcNa.png"
   },
   {
+    "address": "17 400 S, Salt Lake City, UT 84111",
+    "state": "UT",
     "opening_event": "",
     "lat": "40.760939",
-    "name": "Salt Lake City",
-    "state": "UT",
-    "address": "17 400 S, Salt Lake City, UT 84111",
     "phone": "(385) 223-6954",
-    "photo": "https://i.imgur.com/FvoyGBM.png",
-    "lon": "-111.890384"
+    "name": "Salt Lake City",
+    "lon": "-111.890384",
+    "photo": "https://i.imgur.com/FvoyGBM.png"
   },
   {
+    "address": "131 Church St., Burlington, VT 05401",
+    "state": "VT",
     "opening_event": "",
     "lat": "44.476761",
-    "name": "Burlington",
-    "state": "VT",
-    "address": "131 Church St., Burlington, VT 05401",
     "phone": "(855) 423-7643",
-    "photo": "https://i.imgur.com/ZdZHJ6C.png",
-    "lon": "-73.212811"
+    "name": "Burlington",
+    "lon": "-73.212811",
+    "photo": "https://i.imgur.com/ZdZHJ6C.png"
   },
   {
+    "address": "105 E Holly St., Bellingham, WA 98229",
+    "state": "WA",
     "opening_event": "",
     "lat": "48.749554",
-    "name": "Bellingham",
-    "state": "WA",
-    "address": "105 E Holly St., Bellingham, WA 98229",
     "phone": "(801) 663-3051",
-    "photo": "https://i.imgur.com/xxz9584.png",
-    "lon": "-122.478786"
+    "name": "Bellingham",
+    "lon": "-122.478786",
+    "photo": "https://i.imgur.com/xxz9584.png"
   },
   {
-    "opening_event": "",
-    "lat": "48.13204",
-    "name": "Port Townsend",
+    "address": "617 E Pike St., Seattle, WA 98122",
     "state": "WA",
-    "address": "1319 V St., Port Townsend, WA",
-    "phone": "(562) 522-4712",
-    "photo": "https://i.imgur.com/ARyYmCZ.png",
-    "lon": "-122.773997"
-  },
-  {
     "opening_event": "",
     "lat": "47.613935",
-    "name": "Seattle - Downtown",
-    "state": "WA",
-    "address": "617 E Pike St., Seattle, WA 98122",
     "phone": "(559) 579-2734",
-    "photo": "https://i.imgur.com/ygJMUfs.png",
-    "lon": "-122.323587"
+    "name": "Seattle - Downtown",
+    "lon": "-122.323587",
+    "photo": "https://i.imgur.com/ygJMUfs.png"
   },
   {
+    "address": "11742 15th Ave. NE, Seattle, WA 98125",
+    "state": "WA",
     "opening_event": "",
     "lat": "47.714786",
-    "name": "Seattle - North",
-    "state": "WA",
-    "address": "11742 15th Ave. NE, Seattle, WA 98125",
     "phone": "(304) 541-7428",
-    "photo": "https://i.imgur.com/CuTX1Tq.png",
-    "lon": "-122.31251"
+    "name": "Seattle - North",
+    "lon": "-122.31251",
+    "photo": "https://i.imgur.com/CuTX1Tq.png"
   },
   {
+    "address": "2209 N Monroe St., Spokane, WA 99205",
+    "state": "WA",
     "opening_event": "",
     "lat": "47.677977",
-    "name": "Spokane",
-    "state": "WA",
-    "address": "2209 N Monroe St., Spokane, WA 99205",
     "phone": "(630) 621-5398",
-    "photo": "https://i.imgur.com/cy83hrV.png",
-    "lon": "-117.426839"
+    "name": "Spokane",
+    "lon": "-117.426839",
+    "photo": "https://i.imgur.com/cy83hrV.png"
   },
   {
+    "address": "5631 Tacoma Mall Blvd., Tacoma, WA",
+    "state": "WA",
     "opening_event": "",
     "lat": "47.205366",
-    "name": "Tacoma",
-    "state": "WA",
-    "address": "5631 Tacoma Mall Blvd., Tacoma, WA",
     "phone": "(217) 799-2459",
-    "photo": "https://i.imgur.com/M7aWaDL.png",
-    "lon": "-122.463473"
+    "name": "Tacoma",
+    "lon": "-122.463473",
+    "photo": "https://i.imgur.com/M7aWaDL.png"
   },
   {
+    "address": "400 E Evergreen Blvd., Vancouver, WA 98660",
+    "state": "WA",
     "opening_event": "",
     "lat": "45.62937",
-    "name": "Vancouver",
-    "state": "WA",
-    "address": "400 E Evergreen Blvd., Vancouver, WA 98660",
     "phone": "(303) 881-8429",
-    "photo": "https://i.imgur.com/DRsLVrO.png",
-    "lon": "-122.66794"
+    "name": "Vancouver",
+    "lon": "-122.66794",
+    "photo": "https://i.imgur.com/DRsLVrO.png"
   },
   {
+    "address": "116 Pendleton Way, Yakima, WA 98901",
+    "state": "WA",
     "opening_event": "",
     "lat": "46.603539",
-    "name": "Yakima",
-    "state": "WA",
-    "address": "116 Pendleton Way, Yakima, WA 98901",
     "phone": "(323) 485-4017",
-    "photo": "https://imgur.com/KYTpIE4.png",
-    "lon": "-120.50646"
+    "name": "Yakima",
+    "lon": "-120.50646",
+    "photo": "https://imgur.com/KYTpIE4.png"
+  },
+  {
+    "address": "111 Grand Ave., Laramie, WY 82072",
+    "state": "WY",
+    "opening_event": "",
+    "lat": "41.311307",
+    "phone": "-",
+    "name": "Laramie",
+    "lon": "-105.595745",
+    "photo": "https://i.imgur.com/zDCBSHk.png"
   }
 ]
