@@ -30,7 +30,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>Early Voting</h3>
         <p>
-          You can participate in early in-person voting for the Florida Democratic Primary between March 5 and 12, 2016. You can find early voting locations and times <a href='http://dos.myflorida.com/elections/for-voters/voting/early-voting/' target='_blank'>here</a>.
+          The following counties have early voting through March 13: Bradford, Broward, Charlotte, Duval, Hillsborough, Miami-Dade, Orange, Palm Beach and Pinellas. If you live in one of these counties, you can vote early through Sunday, March 13. For the rest of the state, early voting goes through Saturday, March 12. You can find early voting locations and times <a href='http://dos.myflorida.com/elections/for-voters/voting/early-voting/' target='_blank'>here</a>.
         </p>
         <College {...@props} />
         <Military {...@props} />
