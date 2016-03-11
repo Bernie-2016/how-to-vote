@@ -21,7 +21,8 @@
       "phone": "(907) 258-3050"
     },
     "regLink": "http://voterregistration.alaska.gov/",
-    "chkLink": "https://myvoterinformation.alaska.gov/"
+    "chkLink": "https://myvoterinformation.alaska.gov/",
+    "pollWgt": true
   },
   "AS": {
     "name": "American Samoa",
@@ -341,7 +342,8 @@
       "phone": "(573) 751-2301"
     },
     "regLink": "http://www.sos.mo.gov/elections/govotemissouri/register",
-    "chkLink": "http://s1.sos.mo.gov/elections/voterlookup/"
+    "chkLink": "http://s1.sos.mo.gov/elections/voterlookup/",
+    "pollWgt": true
   },
   "MT": {
     "name": "Montana",
