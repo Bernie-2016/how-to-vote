@@ -4,7 +4,6 @@ import Deadline  from 'components/blocks/deadline'
 import Military  from 'components/blocks/military'
 import MoreInfo  from 'components/blocks/moreInfo'
 import Right     from 'components/blocks/right'
-import Young     from 'components/blocks/young'
 import Offices   from 'components/widgets/officesWidget'
 import PollPlace from 'components/widgets/pollPlaceWidget'
 import Share     from 'components/widgets/shareWidget'
@@ -32,7 +31,10 @@ module.exports = React.createClass
         <p>
           Ohioans can vote before the March 15 primary, either in person or by mail-in absentee ballot, beginning February 17, 2016.  Check with your <a href='http://www.sos.state.oh.us/sos/elections/electionsofficials/boeDirectory.aspx' target='_blank'>local elections board</a> to learn more about early in-person voting times and locations. Click <a href='http://www.sos.state.oh.us/SOS/elections/Voters/votingAbsenteeByMail.aspx' target='_blank'>here</a> to request a mail-in absentee ballot.
         </p>
-        <Young {...@props} />
+        <h3 className='caps'>Only 17?</h3>
+        <p>
+          If you will be 18 years old by November 8, 2016, stay tuned. Ohio Secretary of State Jon Husted is trying to change the rules to prevent 17-year-olds who will be 18 by the general election from voting, but Bernie 2016 has filed a lawsuit to protect the voting rights of young people in Ohio. You can read more about it <a href='https://berniesanders.com/sanders-sues-in-ohio-to-protect-young-and-minority-voters/' target='_blank'>here</a>.
+        </p>
         <College {...@props} />
         <Military {...@props} />
         <MoreInfo {...@props} />
