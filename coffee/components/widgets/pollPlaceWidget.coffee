@@ -49,7 +49,16 @@ module.exports = React.createClass
           zip: response.homeAddress.zip 
         @setState(notFound: true, loading: false, addressObj: address)
       else
-        pollingLocation = response.pollingLocation
+        if response.pollingLocation.locationName is 'Southside Christian Church' && response.pollingLocation.line1 is '2100 LAKEVIEW Rd'
+          pollingLocation =
+            locationName: 'First Presbyterian Church of Mexico'
+            hours: '6am-7pm'
+            line1: '400 Lakeview Rd.'
+            city: 'Mexico'
+            state: 'MO'
+            zip: '65265'
+        else
+          pollingLocation = response.pollingLocation
 
         pollAddress = "#{pollingLocation.line1}, #{pollingLocation.city}, #{pollingLocation.state} #{pollingLocation.zip}"
         @state.geocoder.geocode address: pollAddress, (results, status) =>
