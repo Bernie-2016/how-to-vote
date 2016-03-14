@@ -5,7 +5,7 @@ overrides = overrides.split("\n")
 overrides = _.map(overrides, (o) -> o.split(','))
 
 module.exports = (location) ->
-  override = _.find(overrides, (o) -> o[0] is location.precinctCode)
+  override = _.find(overrides, (o) -> o[0] is location.precinctCode && o[4] is location.state)
   if override
     {
       locationName: override[1]
