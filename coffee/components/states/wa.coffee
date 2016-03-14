@@ -47,7 +47,7 @@ module.exports = React.createClass
         <College {...@props} />
         <MoreInfo {...@props} />
         <p>
-          You may also contact Bernie Sanders Washington State HQ:<br /> <a href='tel:+12064027924'>(206) 402-7924</a>.
+          You may also contact Bernie Sanders Washington State HQ:<br /> <a href='tel:+12064068527'>(206) 406-8527</a>.
         </p>
         <Offices {...@props} />
       </div>
