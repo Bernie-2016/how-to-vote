@@ -24,6 +24,9 @@ module.exports = React.createClass
           New York has closed primaries {entity('mdash')} New Yorkers must register as a Democrat to vote for Bernie!
         </p>
         <Deadline {...@props} />
+        <p>
+          If you are not registered as a Democrat, the deadline to change your party affiliation has already passed.
+        </p>
         <College {...@props} />
         <Military {...@props} />
         <MoreInfo {...@props} />
