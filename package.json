@@ -43,6 +43,7 @@
     "moment": "^2.11.2",
     "node-sass": "^3.4.2",
     "query-string": "^3.0.0",
+    "raw-loader": "^0.5.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.6",
     "react-g-analytics": "^0.2.3",

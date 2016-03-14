@@ -26,7 +26,7 @@ module.exports =
       }
       {
         test: /\.json$/
-        loaders: ['json']
+        loader: 'json'
       }
       {
         test: /\.scss$/
@@ -34,11 +34,15 @@ module.exports =
       }
       {
         test: /\.(ttf|otf|png|ico|svg)$/
-        loaders: ['file?name=[name].[ext]']
+        loader: 'file?name=[name].[ext]'
+      }
+      {
+        test: /\.csv?$/
+        loader: 'raw'
       }
       {
         test: /[\/\\]node_modules[\/\\]datamaps[\/\\]dist[\/\\]datamaps.usa\.js$/
-        loaders: ['imports?window=>{}']
+        loader: 'imports?window=>{}'
       }
     ]
 
@@ -59,4 +63,4 @@ module.exports =
     alias:
       d3: 'd3/d3.min.js'
     root: [path.resolve('./coffee'), path.resolve('./'), path.resolve('./node_modules')]
-    extensions: ['', '.js', '.json', '.coffee', '.scss']
+    extensions: ['', '.js', '.json', '.coffee', '.scss', '.csv']
