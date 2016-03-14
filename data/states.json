@@ -135,8 +135,7 @@
       "phone": "(866) 308.6739 "
     },
     "regLink": "http://dos.myflorida.com/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/",
-    "chkLink": "http://registration.elections.myflorida.com/CheckVoterStatus",
-    "pollWgt": true
+    "chkLink": "http://registration.elections.myflorida.com/CheckVoterStatus"
   },
   "GA": {
     "name": "Georgia",
