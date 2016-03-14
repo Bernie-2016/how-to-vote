@@ -26,7 +26,7 @@ module.exports = React.createClass
         <Deadline {...@props} />
         <h3 className='caps'>ID Requirement</h3>
         <p>
-          If the Democratic primary is your first time voting in Pennsylvania, you might be asked to provide some form of identification, such as a Photo ID, or a current bank or utility statement. To learn more about documents that satisfy the ID requirement for first-time Pennsylvania voters, click <a href='http://www.padems.com/voterid/FirstTimeVoters' target='_blank'>here</a>.
+          If the Democratic primary is your first time voting in Pennsylvania, you might be asked to provide some form of identification, such as a Photo ID, or a current bank or utility statement. To learn more about documents that satisfy the ID requirement for first-time Pennsylvania voters, click <a href='https://iwillvote.com/guidelines/PA/#identification' target='_blank'>here</a>.
         </p>
         <College {...@props} />
         <Military {...@props} />
