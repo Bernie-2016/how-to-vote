@@ -28,7 +28,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>ID Requirement</h3>
         <p>
-          North Carolina requires you to present photo identification in order to vote in person.  Click <a href='http://voterid.nc.gov/photo-id.html' target='_blank'>here</a> for more information about what kinds of photo IDs you can use to vote.
+          North Carolina requires you to present photo identification in order to vote in person.  Click <a href='http://voterid.nc.gov/photo-id.html' target='_blank'>here</a> for more information about what kinds of photo IDs you can use to vote. You may also be able to vote without an ID under certain circumstances -- click <a href='http://voterid.nc.gov/exceptions.html' target='_blank'>here</a> for more information.
         </p>
         <h3 className='caps'>Absentee Voting</h3>
         <p>
