@@ -1,10 +1,13 @@
-import _         from 'lodash'
-import overrides from 'data/overrides'
+import _            from 'lodash'
+import overrides    from 'data/overrides'
+import geoOverrides from 'data/geoOverrides'
 
 overrides = overrides.split("\n")
 overrides = _.map(overrides, (o) -> o.split(','))
+geoOverrides = geoOverrides.split("\n")
+geoOverrides = _.map(geoOverrides, (o) -> o.split(','))
 
-module.exports = (location) ->
+place = (location) ->
   override = _.find(overrides, (o) -> o[0] is location.precinctCode && o[4] is location.state)
   if override
     {
@@ -17,3 +20,15 @@ module.exports = (location) ->
     }
   else
     location
+
+geocode = (placeId) ->
+  override = _.find(geoOverrides, (o) -> o[0] is placeId)
+  if override
+    {
+      lat: parseFloat(override[1])
+      lng: parseFloat(override[2])
+    }
+
+module.exports = 
+  place: place
+  geocode: geocode

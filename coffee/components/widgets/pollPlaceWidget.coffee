@@ -50,12 +50,13 @@ module.exports = React.createClass
           zip: response.homeAddress.zip 
         @setState(notFound: true, loading: false, addressObj: address)
       else
-        pollingLocation = overrides(response.pollingLocation) || response.pollingLocation
+        pollingLocation = overrides.place(response.pollingLocation) || response.pollingLocation
 
         pollAddress = "#{pollingLocation.line1}, #{pollingLocation.city}, #{pollingLocation.state} #{pollingLocation.zip}"
         @state.geocoder.geocode address: pollAddress, (results, status) =>
-          if results[0].place_id is 'ChIJmbLGziSoPIgRQswYxvwy7fA'
-            destination = new google.maps.LatLng(lat: 42.305748, lng: -83.603743)
+          override = overrides.geocode(results[0].place_id)
+          if override
+            destination = new google.maps.LatLng(override)
           else
             destination = results[0].geometry.location
 
