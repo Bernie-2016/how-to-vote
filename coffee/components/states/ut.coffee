@@ -21,7 +21,7 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          Utah has open caucuses {entity('mdash')} Utahns can vote for Bernie Sanders regardless of their registered party, so long as they declare themselves to be participating Democrats at the Utah Democratic Party Caucus.
+          Utah has open caucuses {entity('mdash')} Utahns can vote for Bernie Sanders regardless of their registered party.
         </p>
         <p>
           Utah has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.
