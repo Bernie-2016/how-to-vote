@@ -21,8 +21,7 @@
       "phone": "(907) 258-3050"
     },
     "regLink": "http://voterregistration.alaska.gov/",
-    "chkLink": "https://myvoterinformation.alaska.gov/",
-    "pollWgt": true
+    "chkLink": "https://myvoterinformation.alaska.gov/"
   },
   "AS": {
     "name": "American Samoa",
