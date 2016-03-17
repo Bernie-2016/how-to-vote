@@ -27,17 +27,17 @@ module.exports = React.createClass
           Hawaii has closed caucuses {entity('mdash')} Hawaii residents must join the Democratic Party to vote for Bernie! However, Hawaii residents may join the Party on the day of the caucus.
         </p>
         <p>
-          The caucus will be held on <strong>Saturday, March 26, 2016</strong> at <strong>1PM</strong> at a location near you. We recommend you try to arrive by 12:15 if possible so you can sign in and have your party membership and voter registration confirmed before voting in the Presidential Preference Poll begins at 1 pm. Please allow time for parking.
+          The caucus will be held on <strong>Saturday, March 26, 2016</strong> at <strong>1PM</strong> at a location near you. We recommend you try to arrive by <strong>12PM</strong> when the line starts so you can sign in and have your party membership and voter registration confirmed before voting in the Presidential Preference Poll. Please allow time for parking.
         </p>
         <p>
           If the line is short, the voting period may end shortly after 1:30PM. But if the turnout is large, voting will go on for much longer. Everyone who arrives while there is still a line will be allowed to vote, so it is difficult to predict when the opportunity to vote will end.
         </p>
         <ol>
           <li>
-            <strong>Register to Vote:</strong> You need to be registered to vote at your current address. If you need to register or update your voting information, please visit <a href='https://olvr.hawaii.gov/(S(pru0giobre0ixtkf0vv5mt4u))/Default.aspx' target='_blank'>this link</a>.
+            <strong>Register to Vote:</strong> You can register to vote on the day of the caucus. To make the lines go more quickly on that day you can print out your form at home and bring it with you all filled out. If you or anyone going with you needs to register please print a form from <a href='https://olvr.hawaii.gov/(S(pru0giobre0ixtkf0vv5mt4u))/Default.aspx' target='_blank'>this link</a>.
           </li>
           <li>
-            <strong>Join the Democratic Party of Hawaii:</strong> You'll need to be a member of the Democratic Party of Hawaii to cast a vote. To join or update your address, please visit <a href='https://hawaiidemocrats.org/join' target='_blank'>this link</a>.
+            <strong>Join the Democratic Party of Hawaii:</strong> You can also become a member of the Democratic Party of Hawaii on caucus day. You can help keep the line moving quickly by printing out a form found at <a href='https://hawaiidemocrats.org/join' target='_blank'>this link</a> and bringing it with you."
           </li>
           <li>
             <strong>Find your caucus location and get there on time:</strong> You can use the caucus location finder at the top of this page.
@@ -52,7 +52,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>Is same day registration allowed?</h3>
         <p>
-          Hawaii Caucus rules allow you to register to vote and join the Democratic party at the caucus and still participate. If you have friends who are not registered, please invite them to attend. However, we ask all of our supporters to register in advance if possible so that it does not create long lines at the caucus.
+          Hawaii Caucus rules allow you to register to vote and join the Democratic party at the caucus and still participate. If you have friends who are not registered, please invite them to attend. If you can, it may be helpful to print forms out in advance and bring them with you on caucus day to help keep lines moving. Links are above.
         </p>
         <h3 className='caps'>I'm only 17. Can I vote at the caucus?</h3>
         <p>
