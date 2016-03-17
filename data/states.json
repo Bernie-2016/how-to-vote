@@ -44,7 +44,8 @@
       "phone": "(602) 542-2228"
     },
     "regLink": "http://servicearizona.com/voterRegistration",
-    "chkLink": "https://voter.azsos.gov/VoterView/RegistrantSearch.do"
+    "chkLink": "https://voter.azsos.gov/VoterView/RegistrantSearch.do",
+    "pollWgt": true
   },
   "AR": {
     "name": "Arkansas",
@@ -195,8 +196,7 @@
       "phone": "(217) 782-4141"
     },
     "regLink": "https://ova.elections.il.gov/",
-    "chkLink": "https://www.elections.il.gov/votinginformation/registrationlookup.aspx",
-    "pollWgt": true
+    "chkLink": "https://www.elections.il.gov/votinginformation/registrationlookup.aspx"
   },
   "IN": {
     "name": "Indiana",
@@ -340,8 +340,7 @@
       "phone": "(573) 751-2301"
     },
     "regLink": "http://www.sos.mo.gov/elections/govotemissouri/register",
-    "chkLink": "http://s1.sos.mo.gov/elections/voterlookup/",
-    "pollWgt": true
+    "chkLink": "http://s1.sos.mo.gov/elections/voterlookup/"
   },
   "MT": {
     "name": "Montana",
@@ -439,8 +438,7 @@
       "phone": "(919) 733-7173"
     },
     "regLink": "https://www.ncsbe.gov/registering-to-vote",
-    "chkLink": "https://enr.ncsbe.gov/voter_search_public/",
-    "pollWgt": true
+    "chkLink": "https://enr.ncsbe.gov/voter_search_public/"
   },
   "ND": {
     "name": "North Dakota",
@@ -471,8 +469,7 @@
       "phone": "(614) 466-2585"
     },
     "regLink": "http://www.sos.state.oh.us/elections/voters/register.aspx",
-    "chkLink": "http://voterlookup.sos.state.oh.us/voterlookup.aspx",
-    "pollWgt": true
+    "chkLink": "http://voterlookup.sos.state.oh.us/voterlookup.aspx"
   },
   "OK": {
     "name": "Oklahoma",
