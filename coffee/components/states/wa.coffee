@@ -41,7 +41,7 @@ module.exports = React.createClass
           <li>Disability or illness</li>
         </ul>
         <p>
-          You can download the surrogate affidavit <a href='http://www.wa-democrats.org/sites/wadems/files/documents/2016%20Precinct%20Caucuses%20-%2099%20-%20Surrogate%20Affidavit%20Form.pdf' target='_blank'>here</a>. Please scan and email forms to <a href='mailto:WACaucus@berniesanders.com'>WACaucus@berniesanders.com</a> on or before March 18, 2016.
+          You can download the surrogate affidavit <a href='http://www.wa-democrats.org/sites/wadems/files/documents/2016%20Precinct%20Caucuses%20-%2099%20-%20Surrogate%20Affidavit%20Form.pdf' target='_blank'>here</a>. Please scan and email forms to <a href='mailto:greg@wa-democrats.org'>greg@wa-democrats.org</a> on or before March 18, 2016.
         </p>
         <Young {...@props} />
         <College {...@props} />
