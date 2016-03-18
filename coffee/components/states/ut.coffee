@@ -26,6 +26,9 @@ module.exports = React.createClass
         <p>
           Utah has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.
         </p>
+        <p>
+          Doors open at <strong>6PM</strong>; you must be in line by <strong>8:30PM</strong> in order to caucus.
+        </p>
         <College {...@props} />
         <Military {...@props} />
         <MoreInfo {...@props} />
