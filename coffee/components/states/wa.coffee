@@ -30,19 +30,6 @@ module.exports = React.createClass
         <p>
           <strong>Please plan to arrive no later than 9:30 AM.</strong>
         </p>
-        <h3 className='caps'>Can't attend in person?</h3>
-        <p>
-          You can complete affidavit forms from now until March 18th. Anyone who cannot attend the caucuses for the reasons below will be allowed to submit a "surrogate affidavit", allowing you to cast your vote remotely.
-        </p>
-        <ul>
-          <li>Religious observance</li>
-          <li>Military service</li>
-          <li>Work schedule</li>
-          <li>Disability or illness</li>
-        </ul>
-        <p>
-          You can download the surrogate affidavit <a href='http://www.wa-democrats.org/sites/wadems/files/documents/2016%20Precinct%20Caucuses%20-%2099%20-%20Surrogate%20Affidavit%20Form.pdf' target='_blank'>here</a>. Please scan and email forms to <a href='mailto:greg@wa-democrats.org'>greg@wa-democrats.org</a> on or before March 18, 2016.
-        </p>
         <Young {...@props} />
         <College {...@props} />
         <MoreInfo {...@props} />
