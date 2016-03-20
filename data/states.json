@@ -424,7 +424,7 @@
       "url": "http://www.elections.ny.gov",
       "phone": "(518) 474-6220"
     },
-    "regLink": "https://dmv.ny.gov/more-info/electronic-voter-registration-application",
+    "regLink": "http://www.elections.ny.gov/VotingRegister.html",
     "chkLink": "https://voterlookup.elections.state.ny.us/VoterSearch.aspx"
   },
   "NC": {
