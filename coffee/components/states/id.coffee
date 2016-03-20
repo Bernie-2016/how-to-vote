@@ -26,6 +26,9 @@ module.exports = React.createClass
         <p>
           Idaho has Same-Day Registration which allows you to register to vote at the caucuses on Tue, March 22.
         </p>
+        <p>
+          Caucus times vary based on time zone. If your caucus is in Mountain Time, it runs from 6PM-9PM with doors closing at 7PM. If your caucus is in Pacific Time, it runs from 5PM-8PM with doors closing at 6PM.
+        </p>
         <Young {...@props} />
         <College {...@props} />
         <Military {...@props} />

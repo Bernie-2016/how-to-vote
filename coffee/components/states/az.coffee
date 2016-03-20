@@ -24,6 +24,9 @@ module.exports = React.createClass
           Arizona has closed primaries {entity('mdash')} Arizonans must register as a Democrat to vote for Bernie!
         </p>
         <Deadline {...@props} />
+        <p>
+          All Arizona polls are open from 6AM-7PM.
+        </p>
         <h3 className='caps'>ID Requirement</h3>
         <p>
           Arizonans must present a photo ID and proof of current address in order to vote. Learn more about acceptable ID documents <a href='http://www.azsos.gov/elections/voting-election' target='_blank'>here</a>.
