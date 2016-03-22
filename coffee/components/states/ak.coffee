@@ -30,6 +30,9 @@ module.exports = React.createClass
           Alaska has closed caucuses {entity('mdash')} Alaskans must register as a Democrat to vote for Bernie! However, Alaskans may update their party affiliation to Democrat on the day of the caucus.
         </p>
         <Deadline {...@props} />
+        <p>
+          You can look up your caucus location <a href='http://www.alaskademocrats.org/caucus-locations/' target='_blank'>here</a>.
+        </p>
         <h3 className='caps'>Only 17?</h3>
         <p>
           You may still caucus in Alaska if you will be 18 years old by June 24, 2016.
