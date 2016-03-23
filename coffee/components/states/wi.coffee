@@ -1,6 +1,5 @@
 import React     from 'react'
 import College   from 'components/blocks/college'
-import Deadline  from 'components/blocks/deadline'
 import Military  from 'components/blocks/military'
 import MoreInfo  from 'components/blocks/moreInfo'
 import Right     from 'components/blocks/right'
@@ -23,7 +22,6 @@ module.exports = React.createClass
         <p>
           Wisconsin has open primaries {entity('mdash')} Wisconsinites can vote for Bernie Sanders regardless of their registered party.
         </p>
-        <Deadline {...@props} />
         <p>
           <a href='https://myvote.wi.gov/OnlineRegistration/Default.aspx' target='_blank'>Mail-in registration</a> to vote in the Wisconsin Democratic Primary closes on March 16, 2016. Wisconsinites who wish to register after that date can do so until April 1, 2016 by bringing proof of residency to the office of their <a href='http://www.gab.wi.gov/clerks/directory'>municipal clerk</a>. You can also register at your polling place on election day by bringing proof of residency and certifying that you've been a resident of Wisconsin for 28 days.
         </p>
