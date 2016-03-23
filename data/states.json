@@ -44,8 +44,7 @@
       "phone": "(602) 542-2228"
     },
     "regLink": "http://servicearizona.com/voterRegistration",
-    "chkLink": "https://voter.azsos.gov/VoterView/RegistrantSearch.do",
-    "pollWgt": true
+    "chkLink": "https://voter.azsos.gov/VoterView/RegistrantSearch.do"
   },
   "AR": {
     "name": "Arkansas",
@@ -183,8 +182,7 @@
       "phone": "(208) 336-1815"
     },
     "regLink": "http://www.idahovotes.gov/voter_info.shtml",
-    "chkLink": "http://www.idahovotes.gov/AbsenteeBallot/Default.aspx",
-    "pollWgt": true
+    "chkLink": "http://www.idahovotes.gov/AbsenteeBallot/Default.aspx"
   },
   "IL": {
     "name": "Illinois",
@@ -590,8 +588,7 @@
       "phone": "(801) 328-1212"
     },
     "regLink": "https://secure.utah.gov/voterreg/index.html",
-    "chkLink": "http://vote.utah.gov/vote/menu/index",
-    "pollWgt": true
+    "chkLink": "http://vote.utah.gov/vote/menu/index"
   },
   "VT": {
     "name": "Vermont",
