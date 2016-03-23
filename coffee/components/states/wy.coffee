@@ -1,12 +1,17 @@
-import React     from 'react'
-import College   from 'components/blocks/college'
-import Deadline  from 'components/blocks/deadline'
-import MoreInfo  from 'components/blocks/moreInfo'
-import Right     from 'components/blocks/right'
-import Offices   from 'components/widgets/officesWidget'
-import PollPlace from 'components/widgets/pollPlaceWidget'
-import Share     from 'components/widgets/shareWidget'
-import entity    from 'utils/entity'
+import React           from 'react'
+import Sticky          from 'react-stickynode'
+import Button          from 'components/blocks/button'
+import College         from 'components/blocks/college'
+import DateBox         from 'components/blocks/dateBox'
+import Deadline        from 'components/blocks/deadline'
+import MoreInfo        from 'components/blocks/moreInfo'
+import AddToCal        from 'components/widgets/addToCalWidget'
+import Offices         from 'components/widgets/officesWidget'
+import PollPlace       from 'components/widgets/pollPlaceWidget'
+import Reminder        from 'components/widgets/reminderWidget'
+import Share           from 'components/widgets/shareWidget'
+import entity          from 'utils/entity'
+import moment          from 'moment'
 
 module.exports = React.createClass
   displayName: 'WY State Info'
@@ -39,6 +44,24 @@ module.exports = React.createClass
         <Offices {...@props} />
       </div>
       <div className='right'>
-        <Right {...@props} />
+        <Sticky top={25} bottomBoundary='section.flex'>
+          <DateBox title='Caucus Date' date={@props.state.date} />
+          <AddToCal date={@props.state.date} state={@props.state} />
+          <DateBox title='Registration Deadline' date={@props.state.regDate} />
+          <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
+          <DateBox title='Surrogate Affidavit Deadline' date='2016 04 01' />
+          <AddToCal date='2016 04 01' state={@props.state} addendum=' Surrogate Affidavit Deadline' />
+          <Reminder {...@props} />
+
+          {if @props.state.regLink || @props.state.chkLink
+            <hr className='right-divider' />
+          }
+          {if @props.state.regLink
+            <Button title='Register to Vote' link={@props.state.regLink} classes={'blue' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
+          }
+          {if @props.state.chkLink
+            <Button title='Check Registration Status' link={@props.state.chkLink} />
+          }
+        </Sticky>
       </div>
     </section>
