@@ -505,16 +505,6 @@
     "regLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationApplication.aspx",
     "chkLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationStatus.aspx"
   },
-  "PR": {
-    "name": "Puerto Rico",
-    "fillKey": "CLOSED_CAUCUS",
-    "regDate": "2016 05 29",
-    "date": "2016 06 05",
-    "office": {
-      "url": "https://www.facebook.com/dpcpr/"
-    },
-    "noImage": true
-  },
   "RI": {
     "name": "Rhode Island",
     "fillKey": "OTHER",
