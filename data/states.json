@@ -516,7 +516,8 @@
       "phone": "(401) 222-2345"
     },
     "regLink": "http://www.elections.state.ri.us/voting/registration.php",
-    "chkLink": "http://www.sec.state.ri.us/vic/"
+    "chkLink": "http://www.sec.state.ri.us/vic/",
+    "pollWgt": true
   },
   "SC": {
     "name": "South Carolina",
@@ -649,7 +650,8 @@
       "phone": "(608) 266-8005"
     },
     "regLink": "https://myvote.wi.gov/",
-    "chkLink": "https://myvote.wi.gov/Home.aspx"
+    "chkLink": "https://myvote.wi.gov/Home.aspx",
+    "pollWgt": true
   },
   "WY": {
     "name": "Wyoming",
