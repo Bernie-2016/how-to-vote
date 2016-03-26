@@ -22,6 +22,7 @@ module.exports = React.createClass
       description = 'Information about how to vote for Bernie in your state.'
       url = 'https://vote.berniesanders.com'
       image = require('img/share.png')
+    image = "https://vote.berniesanders.com#{image}"
 
     metatags = [
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1' }
