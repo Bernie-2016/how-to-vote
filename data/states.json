@@ -167,8 +167,7 @@
     "office": {
       "url": "http://hawaiidemocrats.org",
       "phone": "(808) 596-2980"
-    },
-    "pollWgt": true
+    }
   },
   "ID": {
     "name": "Idaho",
@@ -624,8 +623,7 @@
       "phone": "(206) 583-0664"
     },
     "regLink": "http://www.dol.wa.gov/driverslicense/voter.html",
-    "chkLink": "https://www.sos.wa.gov/elections/myvote/",
-    "pollWgt": true
+    "chkLink": "https://www.sos.wa.gov/elections/myvote/"
   },
   "WV": {
     "name": "West Virginia",
