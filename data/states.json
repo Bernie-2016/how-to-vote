@@ -91,7 +91,8 @@
       "phone": "(860) 509-6100"
     },
     "regLink": "https://voterregistration.ct.gov/OLVR/welcome.do",
-    "chkLink": "https://voterregistration.ct.gov/OLVR/welcome.do"
+    "chkLink": "https://voterregistration.ct.gov/OLVR/welcome.do",
+    "pollWgt": true
   },
   "DC": {
     "name": "D.C.",
