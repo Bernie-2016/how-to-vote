@@ -278,7 +278,8 @@
       "phone": "(410) 269-2840"
     },
     "regLink": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1",
-    "chkLink": "https://voterservices.elections.maryland.gov/VoterSearch"
+    "chkLink": "https://voterservices.elections.maryland.gov/VoterSearch",
+    "pollWgt": true
   },
   "MA": {
     "name": "Massachusetts",
@@ -660,6 +661,7 @@
       "url": "http://www.wyodems.org/2016-caucus-information",
       "phone": "(307) 777-5860"
     },
-    "regLink": "http://soswy.state.wy.us/elections/registeringtovote.aspx"
+    "regLink": "http://soswy.state.wy.us/elections/registeringtovote.aspx",
+    "pollWgt": true
   }
 }
