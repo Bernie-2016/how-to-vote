@@ -32,7 +32,7 @@ module.exports = React.createClass
           <strong>You can register to vote at your polling place on election day</strong> by bringing proof of residency and certifying that you've been a resident of Wisconsin for 28 days.
         </p>
         <div className='vid-container'>
-          <iframe src='https://www.youtube.com/embed/Bm0XvRAjK-w' frameborder='0' allowfullscreen />
+          <iframe src='https://www.youtube.com/embed/Bm0XvRAjK-w' frameBorder='0' allowFullScreen />
         </div>
         <h3 className='caps'>ID Requirement</h3>
         <p>
