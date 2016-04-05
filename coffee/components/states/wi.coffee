@@ -20,6 +20,9 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
+          Call our hotline with any questions: <a href='tel:+16083711257' target='_blank'>(608) 371-1257</a>
+        </p>
+        <p>
           Wisconsin has open primaries {entity('mdash')} Wisconsinites can vote for Bernie Sanders regardless of their registered party.
         </p>
         <p>
