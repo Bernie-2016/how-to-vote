@@ -25,6 +25,9 @@ module.exports = React.createClass
           Kentucky has closed primaries {entity('mdash')} Kentuckians must register as a Democrat to vote for Bernie!
         </p>
         <Deadline {...@props} />
+        <p>
+          If you are registered as a Republican or unaffiliated, the deadline to change your party affiliation has already passed. If you are not yet registered to vote, you may still register up until the deadline.
+        </p>
         <Young {...@props} />
         <College {...@props} />
         <Military {...@props} />
