@@ -649,8 +649,7 @@
       "phone": "(608) 266-8005"
     },
     "regLink": "https://myvote.wi.gov/",
-    "chkLink": "https://myvote.wi.gov/Home.aspx",
-    "pollWgt": true
+    "chkLink": "https://myvote.wi.gov/Home.aspx"
   },
   "WY": {
     "name": "Wyoming",
