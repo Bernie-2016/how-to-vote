@@ -386,6 +386,17 @@
   },
   {
     "phone": "-",
+    "address": "31-00 47th Ave., Queens, NY 11101",
+    "lon": "-73.93552",
+    "opening_event": "",
+    "name": "Queens",
+    "photo": "https://i.imgur.com/mBC7AUz.png",
+    "type": "office",
+    "lat": "40.742082",
+    "state": "NY"
+  },
+  {
+    "phone": "-",
     "address": " 64670 Strickler Ave., Bend, OR 97701",
     "lon": "-121.333829",
     "opening_event": "https://goo.gl/IAZuwE",
@@ -427,6 +438,28 @@
     "type": "office",
     "lat": "45.535425",
     "state": "OR"
+  },
+  {
+    "phone": "-",
+    "address": "516 Hamilton St., Allentown, PA 18101",
+    "lon": "-75.468488",
+    "opening_event": "",
+    "name": "Allentown",
+    "photo": "https://i.imgur.com/YsLHuKO.png",
+    "type": "office",
+    "lat": "40.602948",
+    "state": "PA"
+  },
+  {
+    "phone": "(610) 442-7858",
+    "address": "50 E Broad St., Bethlehem, PA 18018",
+    "lon": "-75.376947",
+    "opening_event": "",
+    "name": "Bethlehem",
+    "photo": "https://i.imgur.com/3EXpKI3.png",
+    "type": "office",
+    "lat": "40.621852",
+    "state": "PA"
   },
   {
     "phone": "-",
@@ -492,17 +525,6 @@
     "photo": "https://i.imgur.com/5VkOcLX.png",
     "type": "office",
     "lat": "40.039067",
-    "state": "PA"
-  },
-  {
-    "phone": "(610) 442-7858",
-    "address": "50 E Broad St., Bethlehem, PA 18018",
-    "lon": "-75.376947",
-    "opening_event": "",
-    "name": "Lehigh Valley",
-    "photo": "https://i.imgur.com/3EXpKI3.png",
-    "type": "office",
-    "lat": "40.621852",
     "state": "PA"
   },
   {
@@ -649,6 +671,17 @@
     "state": "PA"
   },
   {
+    "phone": "-",
+    "address": "500 Broad St., Providence, RI 02907",
+    "lon": "-71.420992",
+    "opening_event": "",
+    "name": "Providence",
+    "photo": "https://i.imgur.com/LrGLrfI.png",
+    "type": "office",
+    "lat": "41.810406",
+    "state": "RI"
+  },
+  {
     "phone": "(855) 423-7643",
     "address": "131 Church St., Burlington, VT 05401",
     "lon": "-73.212811",
@@ -680,127 +713,6 @@
     "type": "office",
     "lat": "46.603539",
     "state": "WA"
-  },
-  {
-    "phone": "-",
-    "address": "822B Broad St., Beloit, WI 53511",
-    "lon": "-89.028158",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Beloit - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/6O3fHGV.png",
-    "type": "office",
-    "lat": "42.498406",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "713 S Barstow St., Eau Claire, WI 54701",
-    "lon": "-91.496216",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Eau Claire - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/XR7oRsP.png",
-    "type": "office",
-    "lat": "44.807471",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "163 N. Broadway, Green Bay, WI 54303",
-    "lon": "-88.021151",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Green Bay - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/lTt0LLS.png",
-    "type": "office",
-    "lat": "44.51806",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "5725 6th Ave., Kenosha, WI 53140",
-    "lon": "-87.817831",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Kenosha - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/wbSbHXZ.png",
-    "type": "office",
-    "lat": "42.583477",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "1610 Madison St., La Crosse, WI 54601",
-    "lon": "-91.232081",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "La Crosse - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/IKKBHzh.png",
-    "type": "office",
-    "lat": "43.806521",
-    "state": "WI"
-  },
-  {
-    "phone": "(608) 422-5054",
-    "address": "122 State St., Madison, WI 53711",
-    "lon": "-89.387383",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Madison - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/m1GJRq6.png",
-    "type": "office",
-    "lat": "43.075041",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "932 S 12th St., Manitowoc, WI 54220",
-    "lon": "-87.663567",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Manitowoc - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/kc6K9db.png",
-    "type": "office",
-    "lat": "44.089232",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "1816 N Marshall St., Milwaukee, WI 53202",
-    "lon": "-87.900788",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Milwaukee - Marshall St. - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/BXArBrV.png",
-    "type": "office",
-    "lat": "43.054693",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "642 W North Ave., Milwaukee, WI 53212",
-    "lon": "-87.919767",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Milwaukee - North Ave. - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/5DNvKWm.png",
-    "type": "office",
-    "lat": "43.060544",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "2220 Division St., Stevens Point, WI 54481",
-    "lon": "-89.5751",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Stevens Point - THANK YOU WISCONSIN!",
-    "photo": "https://i.imgur.com/uWYVqX1.png",
-    "type": "office",
-    "lat": "44.515",
-    "state": "WI"
-  },
-  {
-    "phone": "-",
-    "address": "1302 Lincoln St., Superior, WI 54880",
-    "lon": "-92.096672",
-    "opening_event": "https://goo.gl/d7fdYx",
-    "name": "Superior - THANK YOU WISCONSIN! ",
-    "photo": "https://i.imgur.com/LeVvWUF.png",
-    "type": "office",
-    "lat": "46.714023",
-    "state": "WI"
   },
   {
     "phone": "-",
