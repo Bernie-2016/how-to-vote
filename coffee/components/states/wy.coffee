@@ -25,7 +25,7 @@ module.exports = React.createClass
         </p>
         <Deadline {...@props} />
         <p>
-          You can find a full list of caucus locations <a href='http://www.wyodems.org/find-my-county-caucus' target='_blank'>here</a>. If you want to skip the line on caucus day, you can fill out the <a href='http://www.wyodems.org/form/-5238963398761904128' target='_blank'>pre-registration form</a>.
+          You can find a full list of caucus locations <a href='http://www.wyodems.org/find-my-county-caucus' target='_blank'>here</a>. Doors open at <strong>9AM</strong> and you must be in line by <strong>11AM</strong> in order to caucus.
         </p>
         <h3 className='caps'>Absentee Caucusing</h3>
         <p>
