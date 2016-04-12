@@ -505,7 +505,8 @@
       "phone": "(717) 787-5280"
     },
     "regLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationApplication.aspx",
-    "chkLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationStatus.aspx"
+    "chkLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationStatus.aspx",
+    "pollWgt": true
   },
   "RI": {
     "name": "Rhode Island",
@@ -662,7 +663,6 @@
       "url": "http://www.wyodems.org/2016-caucus-information",
       "phone": "(307) 777-5860"
     },
-    "regLink": "http://soswy.state.wy.us/elections/registeringtovote.aspx",
-    "pollWgt": true
+    "regLink": "http://soswy.state.wy.us/elections/registeringtovote.aspx"
   }
 }
