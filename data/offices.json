@@ -55,6 +55,17 @@
     "opening_event": ""
   },
   {
+    "lat": "41.052957",
+    "phone": "-",
+    "type": "office",
+    "address": "1 Bank St., Stamford, CT 06901",
+    "state": "CT",
+    "photo": "https://i.imgur.com/1AwvUU8.png",
+    "name": "Stamford",
+    "lon": "-73.540721",
+    "opening_event": ""
+  },
+  {
     "lat": "38.8943255",
     "phone": "(202) 791-0796",
     "type": "office",
@@ -215,9 +226,9 @@
     "address": "116 Hillsmere Dr., Annapolis, MD 21403",
     "state": "MD",
     "photo": "https://i.imgur.com/KCKEDPh.png",
-    "name": "Anne Arundel County (Opens April 12th - Click Here to RSVP)",
+    "name": "Anne Arundel County",
     "lon": "-76.493254",
-    "opening_event": "https://goo.gl/svc3XZ"
+    "opening_event": ""
   },
   {
     "lat": "39.306008",
