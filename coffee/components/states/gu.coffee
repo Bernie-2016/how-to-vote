@@ -23,6 +23,12 @@ module.exports = React.createClass
         <p>
           There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.
         </p>
+        <p>
+          There is one Democratic caucus location for Guam:<br />
+          Guam Legislature<br />
+          155 Hesler Place, Hagat{entity('ntilde')}a, Guam<br />
+          10AM-8PM
+        </p>
         <MoreInfo {...@props} />
         <Offices {...@props} />
       </div>
