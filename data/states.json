@@ -115,7 +115,8 @@
       "phone": "(302) 739-4277"
     },
     "regLink": "https://ivote.de.gov/voterregterms.aspx",
-    "chkLink": "https://ivote.de.gov/voterinfo.aspx"
+    "chkLink": "https://ivote.de.gov/voterinfo.aspx",
+    "pollWgt": true
   },
   "DA": {
     "name": "Dems Abroad",
