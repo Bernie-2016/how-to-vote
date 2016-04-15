@@ -509,6 +509,16 @@
     "chkLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationStatus.aspx",
     "pollWgt": true
   },
+  "PR": {
+    "name": "Puerto Rico",
+    "fillKey": "OPEN_PRIMARY",
+    "regDate": "2016 04 16",
+    "date": "2016 06 05",
+    "office": {
+      "url": "https://www.facebook.com/dpcpr/"
+    },
+    "noImage": true
+  },
   "RI": {
     "name": "Rhode Island",
     "fillKey": "OTHER",
