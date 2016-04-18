@@ -16,7 +16,7 @@ place = (location) ->
       hours: location.hours
       city: override[3]
       state: location.state
-      zip: override[4]
+      zip: override[5]
     }
   else
     location
