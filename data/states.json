@@ -424,8 +424,7 @@
       "phone": "(518) 474-6220"
     },
     "regLink": "http://www.elections.ny.gov/VotingRegister.html",
-    "chkLink": "https://voterlookup.elections.state.ny.us/VoterSearch.aspx",
-    "pollWgt": true
+    "chkLink": "https://voterlookup.elections.state.ny.us/VoterSearch.aspx"
   },
   "NC": {
     "name": "North Carolina",
