@@ -84,14 +84,14 @@
   "CT": {
     "name": "Connecticut",
     "fillKey": "CLOSED_PRIMARY",
-    "regDate": "2016 04 21",
+    "regDate": "2016 04 25",
     "date": "2016 04 26",
     "office": {
       "url": "https://voterregistration.ct.gov/OLVR/welcome.do",
       "phone": "(860) 509-6100"
     },
     "regLink": "https://voterregistration.ct.gov/OLVR/welcome.do",
-    "chkLink": "https://voterregistration.ct.gov/OLVR/welcome.do",
+    "chkLink": "http://www.dir.ct.gov/sots/LookUp.aspx",
     "pollWgt": true
   },
   "DC": {
