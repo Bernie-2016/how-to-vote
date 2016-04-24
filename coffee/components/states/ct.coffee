@@ -24,7 +24,7 @@ module.exports = React.createClass
           Connecticut has closed primaries {entity('mdash')} Connecticuters must register as a Democrat to vote for Bernie!
         </p>
         <p>
-          If you are a new voter registering to vote by mail, your registration form must be postmarked by April 21, 2016. If you want to change your party enrollment from unaffiliated to Democratic, your registration form must be received by your municipal registrar of vote by that date. (Unfortunately, if you are enrolled in a different political party, the deadline to change your registration to Democratric has already passed.) You can register to vote or change your party affiliation from unaffiliated to Democratic in person at your local town hall until noon on April 25, 2016.
+          If you are a new voter registering to vote by mail, your registration form must be postmarked by April 21, 2016. If you want to change your party enrollment from unaffiliated to Democratic, your registration form must be received by your municipal registrar of vote by that date. (Unfortunately, if you are enrolled in a different political party, the deadline to change your registration to Democratric has already passed.) You can register to vote or change your party affiliation from unaffiliated to Democratic in person at your local town hall until noon on April 25, 2016. Click <a href='http://www.sots.ct.gov/sots/lib/sots/electionservices/electforms/electforms/voter_reg_card_english_2015.pdf' target='_blank'>here</a> to print a voter registration form.
         </p>
         <h3 className='caps'>ID Requirement</h3>
         <p>
