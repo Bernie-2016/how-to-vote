@@ -1,794 +1,871 @@
 [
   {
-    "opening_event": "",
     "lat": "64.842485",
     "phone": "(907) 987-2032",
     "address": "542 4th Ave., Fairbanks, AK 99701 (Suite B101)",
     "lon": "-147.719475",
     "photo": "https://i.imgur.com/gzp8dyY.png",
-    "state": "AK",
+    "name": "Fairbanks",
     "type": "office",
-    "name": "Fairbanks"
+    "state": "AK",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "34.101461",
     "phone": "-",
     "address": "5500 Hollywood Blvd., Los Angeles, CA 90028",
     "lon": "-118.309571",
     "photo": "https://i.imgur.com/VZOeNIZ.png",
-    "state": "CA",
+    "name": "Los Angeles",
     "type": "office",
-    "name": "Los Angeles"
+    "state": "CA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.740504",
     "phone": "(303) 321-0089",
     "address": "7235 E Colfax Ave., Denver, CO 80220",
     "lon": "-104.90419",
     "photo": "https://i.imgur.com/j1GzpG8.png",
-    "state": "CO",
+    "name": "Denver",
     "type": "office",
-    "name": "Denver"
+    "state": "CO",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
+    "lat": "41.176067",
+    "phone": "(781) 507-3019",
+    "address": "29 Markle Ct., Bridgeport CT 06604",
+    "lon": "-73.189643",
+    "photo": "https://i.imgur.com/gIKNQ46.png",
+    "name": "Bridgeport",
+    "type": "office",
+    "state": "CT",
+    "opening_event": ""
+  },
+  {
     "lat": "41.760017",
     "phone": "(603) 770-2980",
     "address": "30 Arbor St., Hartford, CT 06106 (Suite 207)",
     "lon": "-72.702493",
     "photo": "https://i.imgur.com/WuwLKqv.png",
-    "state": "CT",
+    "name": "Hartford",
     "type": "office",
-    "name": "Hartford"
+    "state": "CT",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.326371",
     "phone": "(864) 414-7332",
     "address": "845 Whalley Ave., New Haven, CT 06515",
     "lon": "-72.958798",
     "photo": "https://i.imgur.com/I9Gtk60.png",
-    "state": "CT",
+    "name": "New Haven",
     "type": "office",
-    "name": "New Haven"
+    "state": "CT",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.052957",
     "phone": "(781) 507-3019",
     "address": "1 Bank St., Stamford, CT 06901",
     "lon": "-73.540721",
     "photo": "https://i.imgur.com/1AwvUU8.png",
-    "state": "CT",
+    "name": "Stamford",
     "type": "office",
-    "name": "Stamford"
+    "state": "CT",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "38.8943255",
     "phone": "(202) 791-0796",
     "address": "312 Massachusetts Ave. NE, Washington, DC 20002",
     "lon": "-77.0013426",
     "photo": "https://i.imgur.com/bhuWj2x.png",
-    "state": "DC",
+    "name": "Washington, D.C.",
     "type": "office",
-    "name": "Washington, D.C."
+    "state": "DC",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
+    "lat": "39.145604",
+    "phone": "-",
+    "address": "54 Konschak Ave., Dover, DE 19904",
+    "lon": "-75.533017",
+    "photo": "https://i.imgur.com/1KeQ201.png",
+    "name": "Dover",
+    "type": "office",
+    "state": "DE",
+    "opening_event": ""
+  },
+  {
     "lat": "38.701041",
     "phone": "(302) 685-1496",
     "address": "136 Cornwall Rd., Rehoboth Beach, DE 19971",
     "lon": "-75.100004",
     "photo": "https://i.imgur.com/nhzq1jZ.png",
-    "state": "DE",
+    "name": "Rehoboth Beach",
     "type": "office",
-    "name": "Rehoboth Beach"
+    "state": "DE",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.773458",
     "phone": "(302) 565-4250",
     "address": "900 Philadelphia Pike., Wilmington, DE 19809",
     "lon": "-75.494632",
     "photo": "https://i.imgur.com/pltr1GB.png",
-    "state": "DE",
+    "name": "Wilmington",
     "type": "office",
-    "name": "Wilmington"
+    "state": "DE",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
+    "lat": "37.573192",
+    "phone": "-",
+    "address": "920 W Jefferson St., Berea, KY 40403",
+    "lon": "-84.308124",
+    "photo": "https://i.imgur.com/J9lD6JI.png",
+    "name": "Berea",
+    "type": "office",
+    "state": "KY",
+    "opening_event": ""
+  },
+  {
     "lat": "38.19772",
     "phone": "-",
     "address": "112 E Main St., Frankfort, KY 40601",
     "lon": "-84.873601",
     "photo": "https://i.imgur.com/802CK0U.png",
-    "state": "KY",
+    "name": "Frankfort",
     "type": "office",
-    "name": "Frankfort"
+    "state": "KY",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "38.255928",
     "phone": "-",
     "address": "1832 Frankfort Ave., Louisville, KY 40206",
     "lon": "-85.715283",
     "photo": "https://i.imgur.com/zA8VhDk.png",
-    "state": "KY",
+    "name": "Louisville",
     "type": "office",
-    "name": "Louisville"
+    "state": "KY",
+    "opening_event": ""
   },
   {
-    "opening_event": "https://goo.gl/DJi2lh",
+    "lat": "37.487226",
+    "phone": "-",
+    "address": "509 N Bypass Rd., Pikeville, KY 41502",
+    "lon": "-82.524476",
+    "photo": "https://i.imgur.com/CxC3z4A.png",
+    "name": "Pikeville",
+    "type": "office",
+    "state": "KY",
+    "opening_event": ""
+  },
+  {
     "lat": "37.773032",
     "phone": "-",
     "address": "1012 E 4th St., Owensboro, KY 42303",
     "lon": "-87.100129",
     "photo": "https://i.imgur.com/QSk8oVH.png",
-    "state": "KY",
+    "name": "Owensboro",
     "type": "office",
-    "name": "Owensboro (Opens April 23rd - CLICK HERE TO RSVP)"
+    "state": "KY",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.2612218",
     "phone": "(712) 323-7232",
     "address": "500 West Broadway, Council Bluffs, IA 51503",
     "lon": "-95.8499378",
     "photo": "https://i.imgur.com/F9AExrf.png",
-    "state": "IA",
+    "name": "Council Bluffs",
     "type": "office",
-    "name": "Council Bluffs"
+    "state": "IA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.5247596",
     "phone": "(563) 323-0559",
     "address": "736 Federal St., Davenport, IA 52801",
     "lon": "-90.5633143",
     "photo": "https://i.imgur.com/zAxjGHT.png",
-    "state": "IA",
+    "name": "Davenport",
     "type": "office",
-    "name": "Davenport"
+    "state": "IA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.6308099",
     "phone": "(515) 251-6335",
     "address": "3839 Merle Hay, Des Moines, IA 50310",
     "lon": "-93.697183",
     "photo": "https://i.imgur.com/BVPuA37.png",
-    "state": "IA",
+    "name": "Des Moines",
     "type": "office",
-    "name": "Des Moines"
+    "state": "IA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.162216",
     "phone": "(308) 390-0492",
     "address": "500 S Morton St., Bloomington, IN 47403",
     "lon": "-86.536704",
     "photo": "https://i.imgur.com/l1XdFh0.png",
-    "state": "IN",
+    "name": "Bloomington",
     "type": "office",
-    "name": "Bloomington"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "37.976123",
     "phone": "(989) 245-3602",
     "address": "312 NW Martin Luther King Jr. Blvd., Evansville, IN 47708",
     "lon": "-87.570353",
     "photo": "https://i.imgur.com/lvcE88Q.png",
-    "state": "IN",
+    "name": "Evansville",
     "type": "office",
-    "name": "Evansville"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.084959",
     "phone": "(740) 475-8784",
     "address": "1137 N Wells St., Fort Wayne, IN 46808",
     "lon": "-85.145778",
     "photo": "https://i.imgur.com/sc0alyK.png",
-    "state": "IN",
+    "name": "Fort Wayne",
     "type": "office",
-    "name": "Fort Wayne"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.540015",
     "phone": "(785) 375.1225",
     "address": "904 W Old Ridge Rd., Gary, IN 46408",
     "lon": "-87.271027",
     "photo": "https://i.imgur.com/Fu7gjtA.png",
-    "state": "IN",
+    "name": "Gary",
     "type": "office",
-    "name": "Gary"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.872842",
     "phone": "(603) 577-0831",
     "address": "6367 Guilford Ave., Indianapolis, IN 46220",
     "lon": "-86.142661",
     "photo": "https://i.imgur.com/3dmFqD0.png",
-    "state": "IN",
+    "name": "Indianapolis",
     "type": "office",
-    "name": "Indianapolis"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.419033",
     "phone": "(206) 554-1982",
     "address": "835 Main St., Lafayette, IN 47901",
     "lon": "-86.887179",
     "photo": "https://i.imgur.com/BN3nJa4.png",
-    "state": "IN",
+    "name": "Lafayette",
     "type": "office",
-    "name": "Lafayette"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.195934",
     "phone": "(864) 764-2618",
     "address": "425 N High St., Muncie, IN 47305",
     "lon": "-85.388035",
     "photo": "https://i.imgur.com/9n4da4V.png",
-    "state": "IN",
+    "name": "Muncie",
     "type": "office",
-    "name": "Muncie"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.671104",
     "phone": "(201) 230-1381",
     "address": "113 W Monroe St., South Bend, IN 46601",
     "lon": "-86.250894",
     "photo": "https://i.imgur.com/asv7TMH.png",
-    "state": "IN",
+    "name": "South Bend",
     "type": "office",
-    "name": "South Bend"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.467509",
     "phone": "-",
     "address": "625 Cherry St., Terre Haute, IN 47807",
     "lon": "-87.409026",
     "photo": "https://i.imgur.com/LNcMap3.png",
-    "state": "IN",
+    "name": "Terre Haute",
     "type": "office",
-    "name": "Terre Haute"
+    "state": "IN",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "38.949323",
     "phone": "(240) 502-5323",
     "address": "116 Hillsmere Dr., Annapolis, MD 21403",
     "lon": "-76.493254",
     "photo": "https://i.imgur.com/KCKEDPh.png",
-    "state": "MD",
+    "name": "Anne Arundel County",
     "type": "office",
-    "name": "Anne Arundel County"
+    "state": "MD",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.306008",
     "phone": "(240) 429-5105",
     "address": "1505 Eutaw Pl., Baltimore, MD 21217",
     "lon": "-76.627993",
     "photo": "https://i.imgur.com/7WESPV3.png",
-    "state": "MD",
+    "name": "Baltimore City",
     "type": "office",
-    "name": "Baltimore City"
+    "state": "MD",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.401056",
     "phone": "(240) 863-4572",
     "address": "9121 Belair Rd., Perry Hall, MD 21236",
     "lon": "-76.476644",
     "photo": "https://i.imgur.com/TC8AUa3.png",
-    "state": "MD",
+    "name": "Baltimore County",
     "type": "office",
-    "name": "Baltimore County"
+    "state": "MD",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "38.620739",
     "phone": "(240) 682-4653",
     "address": "173 St. Patrick's Dr., Waldorf, MD 20603",
     "lon": "-76.931327",
     "photo": "https://i.imgur.com/BPyxC9O.png",
-    "state": "MD",
+    "name": "Charles County",
     "type": "office",
-    "name": "Charles County"
+    "state": "MD",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.269349",
     "phone": "(240) 429-5569",
     "address": "3677 Park Ave., Ellicott City, MD 21043",
     "lon": "-76.798769",
     "photo": "https://i.imgur.com/2VheLv6.png",
-    "state": "MD",
+    "name": "Howard County",
     "type": "office",
-    "name": "Howard County"
+    "state": "MD",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.084968",
     "phone": "(240) 429-4741",
     "address": "4 W Middle Ln., Rockville, MD 20850",
     "lon": "-77.153915",
     "photo": "https://i.imgur.com/uquHnat.png",
-    "state": "MD",
+    "name": "Montgomery County",
     "type": "office",
-    "name": "Montgomery County"
+    "state": "MD",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.002112",
     "phone": "(240) 808-1674",
     "address": "9066 Baltimore Ave., College Park, MD 20740",
     "lon": "-76.931749",
     "photo": "https://i.imgur.com/QHneq6n.png",
-    "state": "MD",
+    "name": "Prince George's County",
     "type": "office",
-    "name": "Prince George's County"
+    "state": "MD",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "44.096876",
     "phone": "(207) 650-9025",
     "address": "110 Lisbon St., Lewiston, ME 04240",
     "lon": "-70.21732",
     "photo": "https://i.imgur.com/Ldk9qxC.png",
-    "state": "ME",
+    "name": "Lewiston",
     "type": "office",
-    "name": "Lewiston"
+    "state": "ME",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "43.657448",
     "phone": "(207) 956-3979",
     "address": "465 Congress St., Portland, ME 04101",
     "lon": "-70.259479",
     "photo": "https://i.imgur.com/4QVKdfj.png",
-    "state": "ME",
+    "name": "Portland",
     "type": "office",
-    "name": "Portland"
+    "state": "ME",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "42.9873012",
     "phone": "(603) 935-9084 ",
     "address": "835 Hanover St., Manchester, NH 03104",
     "lon": "-71.4294765",
     "photo": "https://i.imgur.com/t8aTBLA.png",
+    "name": "Manchester",
+    "type": "office",
     "state": "NH",
-    "type": "office",
-    "name": "Manchester"
+    "opening_event": ""
   },
   {
-    "opening_event": "",
-    "lat": "39.9679",
+    "lat": "39.363721",
     "phone": "-",
-    "address": "131 S Pemberton Rd., Pemberton, NJ 08068",
-    "lon": "-74.7036",
-    "photo": "https://i.imgur.com/ttWTWFH.png",
-    "state": "NJ",
+    "address": "1014 Atlantic Ave., Atlantic City, NJ 08401-3612",
+    "lon": "-74.423382",
+    "photo": "https://i.imgur.com/qFmhvPS.png",
+    "name": "Atlantic City",
     "type": "office",
-    "name": "Burlington County"
+    "state": "NJ",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
+    "lat": "40.885826",
+    "phone": "(862) 244-9710",
+    "address": "47 N Sussex St., Dover, NJ 07801",
+    "lon": "-74.558971",
+    "photo": "https://i.imgur.com/i3B73Q6.png",
+    "name": "Northwest New Jersey",
+    "type": "office",
+    "state": "NJ",
+    "opening_event": ""
+  },
+  {
     "lat": "40.467011",
     "phone": "-",
     "address": "2909 Washington Rd., Sayreville, NJ 08859",
     "lon": "-74.312083",
     "photo": "https://i.imgur.com/vARS5wU.png",
-    "state": "NJ",
+    "name": "Sayreville",
     "type": "office",
-    "name": "Middlesex County"
+    "state": "NJ",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
-    "lat": "40.885826",
+    "lat": "39.9679",
     "phone": "-",
-    "address": "47 N Sussex St., Dover, NJ 07801",
-    "lon": "-74.558971",
-    "photo": "https://i.imgur.com/i3B73Q6.png",
-    "state": "NJ",
+    "address": "131 S Pemberton Rd., Pemberton, NJ 08068",
+    "lon": "-74.7036",
+    "photo": "https://i.imgur.com/ttWTWFH.png",
+    "name": "Southeast New Jersey",
     "type": "office",
-    "name": "Morris County"
+    "state": "NJ",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "36.10884",
     "phone": "-",
     "address": "4440 S. Maryland Parkway, Las Vegas, NV 89119",
     "lon": "-115.137068",
     "photo": "https://i.imgur.com/2sEjkZ4.png",
-    "state": "NV",
+    "name": "Las Vegas",
     "type": "office",
-    "name": "Las Vegas"
+    "state": "NV",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "44.148143",
     "phone": "-",
     "address": " 64670 Strickler Ave., Bend, OR 97701",
     "lon": "-121.333829",
     "photo": "https://i.imgur.com/XOrbsDA.png",
-    "state": "OR",
+    "name": "Bend",
     "type": "office",
-    "name": "Bend"
+    "state": "OR",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "44.027231",
     "phone": "-",
     "address": "2809 Friendly St., Eugene, OR 97405",
     "lon": "-123.105153",
     "photo": "https://i.imgur.com/UM2cmQI.png",
-    "state": "OR",
+    "name": "Eugene",
     "type": "office",
-    "name": "Eugene"
+    "state": "OR",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "45.535546",
     "phone": "-",
     "address": "1400 NE 48th Ave., Hillsboro, OR 97124",
     "lon": "-122.932768",
     "photo": "https://i.imgur.com/wGu0ZnN.png",
-    "state": "OR",
+    "name": "Hillsboro",
     "type": "office",
-    "name": "Hillsboro"
+    "state": "OR",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "42.32472",
     "phone": "-",
     "address": "201 West Main St., Medford, OR 97501",
     "lon": "-122.87504",
     "photo": "https://i.imgur.com/f9XIxCN.png",
-    "state": "OR",
+    "name": "Medford",
     "type": "office",
-    "name": "Medford"
+    "state": "OR",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "45.535425",
     "phone": "-",
     "address": "2717 NE Broadway, Portland, OR 97232",
     "lon": "-122.637715",
     "photo": "https://i.imgur.com/UM2cmQI.png",
-    "state": "OR",
+    "name": "Portland",
     "type": "office",
-    "name": "Portland"
+    "state": "OR",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
+    "lat": "44.938509",
+    "phone": "-",
+    "address": "680 State St., Salem, OR 97301",
+    "lon": "-123.034663",
+    "photo": "https://i.imgur.com/n5j1WcB.png",
+    "name": "Salem",
+    "type": "office",
+    "state": "OR",
+    "opening_event": ""
+  },
+  {
     "lat": "40.602948",
     "phone": "-",
     "address": "516 Hamilton St., Allentown, PA 18101",
     "lon": "-75.468488",
     "photo": "https://i.imgur.com/YsLHuKO.png",
-    "state": "PA",
+    "name": "Allentown",
     "type": "office",
-    "name": "Allentown"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.621852",
     "phone": "(610) 442-7858",
     "address": "50 E Broad St., Bethlehem, PA 18018",
     "lon": "-75.376947",
     "photo": "https://i.imgur.com/3EXpKI3.png",
-    "state": "PA",
+    "name": "Bethlehem",
     "type": "office",
-    "name": "Bethlehem"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.961168",
     "phone": "-",
     "address": "1991 Sproul Rd. Broomall, PA 19008",
     "lon": "-75.354467",
     "photo": "https://i.imgur.com/eQuH4Nr.png",
-    "state": "PA",
+    "name": "Broomall / Delaware County",
     "type": "office",
-    "name": "Broomall / Delaware County"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.311819",
     "phone": "-",
     "address": "80 N Main St., Doylestown, PA 18901 (Suite 1A)",
     "lon": "-75.130705",
     "photo": "https://i.imgur.com/mlD4jWt.png",
-    "state": "PA",
+    "name": "Doylestown / Bucks County",
     "type": "office",
-    "name": "Doylestown / Bucks County"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "42.127366",
     "phone": "(989) 859-6649",
     "address": "32 W 8th St., Erie, PA 16501",
     "lon": "-80.085165",
     "photo": "https://i.imgur.com/00UgDrM.png",
-    "state": "PA",
+    "name": "Erie",
     "type": "office",
-    "name": "Erie"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.099618",
     "phone": "-",
     "address": "140 S. Easton Rd., Glenside, PA 19038",
     "lon": "-75.154859",
     "photo": "https://i.imgur.com/GUSM34X.png",
-    "state": "PA",
+    "name": "Glenside / Montgomery County",
     "type": "office",
-    "name": "Glenside / Montgomery County"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.304581",
     "phone": "-",
     "address": "101 Ehalt St., Greensburg, PA 15601",
     "lon": "-79.546799",
     "photo": "https://i.imgur.com/YXfoOI2.png",
-    "state": "PA",
+    "name": "Greensburg",
     "type": "office",
-    "name": "Greensburg"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.271218",
     "phone": "(717) 858-3832",
     "address": "265 Reily St., Harrisburg, PA 17102",
     "lon": "-76.891201",
     "photo": "https://i.imgur.com/TqIQANA.png",
-    "state": "PA",
+    "name": "Harrisburg",
     "type": "office",
-    "name": "Harrisburg"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.039067",
     "phone": "-",
     "address": "114 W. Orange St., Lancaster, PA 17603",
     "lon": "-76.308569",
     "photo": "https://i.imgur.com/5VkOcLX.png",
-    "state": "PA",
+    "name": "Lancaster",
     "type": "office",
-    "name": "Lancaster"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.044654",
     "phone": "-",
     "address": "17 W Central Ave., Paoli, PA 19301",
     "lon": "-75.485729",
     "photo": "https://i.imgur.com/OwsXvht.png",
-    "state": "PA",
+    "name": "Paoli / Chester County",
     "type": "office",
-    "name": "Paoli / Chester County"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.034627",
     "phone": "-",
     "address": "5736 Greene St., Philadelphia, PA 19144",
     "lon": "-75.177981",
     "photo": "https://i.imgur.com/SOdWj2u.png",
-    "state": "PA",
+    "name": "Philadelphia - Germantown",
     "type": "office",
-    "name": "Philadelphia - Germantown"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.983466",
     "phone": "-",
     "address": "1000 Diamond Ave., Philadelphia, PA 19122",
     "lon": "-75.149954",
     "photo": "https://i.imgur.com/qnyZ0dm.png",
-    "state": "PA",
+    "name": "Philadelphia - North",
     "type": "office",
-    "name": "Philadelphia - North"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.038066",
     "phone": "-",
     "address": "7439 Frankford Ave., Philadelphia, PA 19136",
     "lon": "-75.036317",
     "photo": "https://i.imgur.com/zyVr8rk.png",
-    "state": "PA",
+    "name": "Philadelphia - Northeast",
     "type": "office",
-    "name": "Philadelphia - Northeast"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.926236",
     "phone": "-",
     "address": "1916 E Passyunk Ave., Philadelphia, PA 19148",
     "lon": "-75.167931",
     "photo": "https://i.imgur.com/YiFRnbi.png",
-    "state": "PA",
+    "name": "Philadelphia - South",
     "type": "office",
-    "name": "Philadelphia - South"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.956936",
     "phone": "-",
     "address": "274 S. 60th St., Philadelphia, PA 19139",
     "lon": "-75.242046",
     "photo": "https://i.imgur.com/hfj4mEk.png",
-    "state": "PA",
+    "name": "Philadelphia - West",
     "type": "office",
-    "name": "Philadelphia - West"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.459326",
     "phone": "(412) 953-0680",
     "address": "841 California Ave., Pittsburgh, PA 15212",
     "lon": "-80.018033",
     "photo": "https://i.imgur.com/w80Vyvt.png",
-    "state": "PA",
+    "name": "Pittsburgh - North",
     "type": "office",
-    "name": "Pittsburgh - North"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.461887",
     "phone": "-",
     "address": "117 N Highland Ave., Pittsburgh, PA 15206",
     "lon": "-79.924795",
     "photo": "https://i.imgur.com/GfF3YMI.png",
-    "state": "PA",
+    "name": "Pittsburgh - East Liberty",
     "type": "office",
-    "name": "Pittsburgh - East Liberty"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.429123",
     "phone": "(412) 525-3429",
     "address": "1317 E Carson St., Pittsburgh, PA 15203",
     "lon": "-79.98452",
     "photo": "https://i.imgur.com/0OkFFGG.png",
-    "state": "PA",
+    "name": "Pittsburgh - South",
     "type": "office",
-    "name": "Pittsburgh - South"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.336675",
     "phone": "(603) 851-5993",
     "address": "50 N 4th St., Reading, PA 19601 (Suites 107 & 108)",
     "lon": "-75.930332",
     "photo": "https://i.imgur.com/nHmlGy7.png",
-    "state": "PA",
+    "name": "Reading",
     "type": "office",
-    "name": "Reading"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.408244",
     "phone": "(570) 904-3606",
     "address": "207 N Washington Ave., Scranton, PA 18503",
     "lon": "-75.663589",
     "photo": "https://i.imgur.com/P7bCctf.png",
-    "state": "PA",
+    "name": "Scranton",
     "type": "office",
-    "name": "Scranton"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.791571",
     "phone": "(603) 493-7616 ",
     "address": "426 S Allen St., State College, PA 16801",
     "lon": "-77.857086",
     "photo": "https://i.imgur.com/lLVVWQ9.png",
-    "state": "PA",
+    "name": "State College",
     "type": "office",
-    "name": "State College"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "40.172579",
     "phone": "-",
     "address": "105 N Main St., Washington, PA 15301",
     "lon": "-80.245926",
     "photo": "https://i.imgur.com/l6EQeHj.png",
-    "state": "PA",
+    "name": "Washington",
     "type": "office",
-    "name": "Washington"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.244737",
     "phone": "(570) 904 3731",
     "address": "1 S Washington St., Wilkes-Barre, PA 18701",
     "lon": "-75.880668",
     "photo": "https://i.imgur.com/F9UW3uD.png",
-    "state": "PA",
+    "name": "Wilkes-Barre",
     "type": "office",
-    "name": "Wilkes-Barre"
+    "state": "PA",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.439978",
     "phone": "(417) 827-5015",
     "address": "271 Main St., South Kingstown, RI 02879",
     "lon": "-71.497927",
     "photo": "https://i.imgur.com/y5HZTDz.png",
-    "state": "RI",
+    "name": "Kingstown",
     "type": "office",
-    "name": "Kingstown"
+    "state": "RI",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "41.810406",
     "phone": "(417) 827-5015",
     "address": "500 Broad St., Providence, RI 02907",
     "lon": "-71.420992",
     "photo": "https://i.imgur.com/LrGLrfI.png",
-    "state": "RI",
+    "name": "Providence",
     "type": "office",
-    "name": "Providence"
+    "state": "RI",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "44.476761",
     "phone": "(855) 423-7643",
     "address": "131 Church St., Burlington, VT 05401",
     "lon": "-73.212811",
     "photo": "https://i.imgur.com/ZdZHJ6C.png",
-    "state": "VT",
+    "name": "Burlington",
     "type": "office",
-    "name": "Burlington"
+    "state": "VT",
+    "opening_event": ""
   },
   {
-    "opening_event": "https://goo.gl/Skf4Di",
+    "lat": "39.279288",
+    "phone": "-",
+    "address": "331 W Main St., Clarksburg, WV 26301",
+    "lon": "-80.340021",
+    "photo": "https://i.imgur.com/bFq4SkO.png",
+    "name": "Clarksburg",
+    "type": "office",
+    "state": "WV",
+    "opening_event": ""
+  },
+  {
     "lat": "38.340467",
     "phone": "-",
     "address": "1598 Washington St. E, Charleston, WV 25311",
     "lon": "-81.6165",
     "photo": "https://i.imgur.com/CFLJrLL.png",
-    "state": "WV",
+    "name": "Charleston",
     "type": "office",
-    "name": "Charleston (Opens April 22nd - CLICK HERE TO RSVP)"
+    "state": "WV",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.456816",
     "phone": "-",
     "address": "230 W King St., Martinsburg, WV 25401",
     "lon": "-77.966145",
     "photo": "https://i.imgur.com/814xwH3.png",
-    "state": "WV",
+    "name": "Martinsburg",
     "type": "office",
-    "name": "Martinsburg"
+    "state": "WV",
+    "opening_event": ""
   },
   {
-    "opening_event": "",
     "lat": "39.629635",
     "phone": "-",
     "address": "231 Walnut St., Morgantown, WV 26505",
     "lon": "-79.955296",
     "photo": "https://i.imgur.com/NGKi7nf.png",
-    "state": "WV",
+    "name": "Morgantown",
     "type": "office",
-    "name": "Morgantown"
+    "state": "WV",
+    "opening_event": ""
   }
 ]
