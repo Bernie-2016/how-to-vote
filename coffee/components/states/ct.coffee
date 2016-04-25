@@ -23,9 +23,7 @@ module.exports = React.createClass
         <p>
           Connecticut has closed primaries {entity('mdash')} Connecticuters must register as a Democrat to vote for Bernie!
         </p>
-        <p>
-          New voters (and voters who moved) CAN register to vote on election day starting at 6AM at an Election Day Registration center. Click <a href='http://www.ct.gov/sots/cwp/view.asp?a=3179&q=534366' target='_blank'>here</a> for eligibility requirements and to find your location. (Unfortunately, if you are enrolled in a different political party, the deadline to change your registration to Democratric has already passed.)
-        </p>
+        You must have been registered to vote by 12PM on Mon, Apr 25 in Connecticut.
         <h3 className='caps'>ID Requirement</h3>
         <p>
           If you vote in person and have never voted in a federal election in your municipality, you might be asked to present a photo ID, utility bill, bank statement, government document, or paycheck that shows your address.
