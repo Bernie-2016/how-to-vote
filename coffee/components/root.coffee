@@ -37,6 +37,7 @@ module.exports = React.createClass
       { name: 'twitter:title', content: 'Vote for Bernie' }
       { name: 'twitter:description', content: description }
       { name: 'twitter:image', content: image }
+      { httpEquiv: 'content-type', content: 'text/html; charset=utf-8' }
     ]
 
     scripts = [
