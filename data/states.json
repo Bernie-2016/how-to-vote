@@ -91,8 +91,7 @@
       "phone": "(860) 509-6100"
     },
     "regLink": "https://voterregistration.ct.gov/OLVR/welcome.do",
-    "chkLink": "http://www.dir.ct.gov/sots/LookUp.aspx",
-    "pollWgt": true
+    "chkLink": "http://www.dir.ct.gov/sots/LookUp.aspx"
   },
   "DC": {
     "name": "D.C.",
@@ -115,8 +114,7 @@
       "phone": "(302) 739-4277"
     },
     "regLink": "https://ivote.de.gov/voterregterms.aspx",
-    "chkLink": "https://ivote.de.gov/voterinfo.aspx",
-    "pollWgt": true
+    "chkLink": "https://ivote.de.gov/voterinfo.aspx"
   },
   "DA": {
     "name": "Dems Abroad",
@@ -280,8 +278,7 @@
       "phone": "(410) 269-2840"
     },
     "regLink": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1",
-    "chkLink": "https://voterservices.elections.maryland.gov/VoterSearch",
-    "pollWgt": true
+    "chkLink": "https://voterservices.elections.maryland.gov/VoterSearch"
   },
   "MA": {
     "name": "Massachusetts",
@@ -505,8 +502,7 @@
       "phone": "(717) 787-5280"
     },
     "regLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationApplication.aspx",
-    "chkLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationStatus.aspx",
-    "pollWgt": true
+    "chkLink": "https://www.pavoterservices.state.pa.us/Pages/VoterRegistrationStatus.aspx"
   },
   "PR": {
     "name": "Puerto Rico",
@@ -530,8 +526,7 @@
       "phone": "(401) 222-2345"
     },
     "regLink": "http://www.elections.state.ri.us/voting/registration.php",
-    "chkLink": "http://www.sec.state.ri.us/vic/",
-    "pollWgt": true
+    "chkLink": "http://www.sec.state.ri.us/vic/"
   },
   "SC": {
     "name": "South Carolina",
