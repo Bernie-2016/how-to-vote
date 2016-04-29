@@ -21,12 +21,13 @@ module.exports = React.createClass
           Guam has closed caucuses {entity('mdash')} Guamanians must register with the Democratic party to caucus for Bernie!
         </p>
         <p>
-          There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th.
+          There is no deadline to register to vote. Voters who wish to participate may register and declare affiliation with the Democratic Party at the caucus on May 7th. You should bring a valid Guam ID, Guam drivers license, or US passport to register.
         </p>
         <p>
           There is one Democratic caucus location for Guam:<br />
-          Guam Legislature<br />
-          155 Hesler Place, Hagat{entity('ntilde')}a, Guam<br />
+          Agana Shopping Center<br />
+          302 Route 4 STE 100, 96910 Hagatna<br />
+          2nd Floor<br />
           10AM-8PM
         </p>
         <MoreInfo {...@props} />
