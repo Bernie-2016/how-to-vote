@@ -24,13 +24,28 @@ module.exports = React.createClass
           Oregon has closed primaries {entity('mdash')} Oregonians must register as a Democrat to vote for Bernie!
         </p>
         <Deadline {...@props} />
-        <h3 className='caps'>How to Vote</h3>
-        <p>
-          Oregon is a vote-by-mail state; if you are a registered voter, your ballot will be automatically mailed to you. You can submit your ballot either by mailing it back or by dropping it at an official ballot drop-off location. You can find a drop-off location near you <a href='http://www.sos.state.or.us/dropbox/' target='_blank'>here</a>.
-        </p>
-        <p>
-          You can drop off your ballot anytime between Wed, Apr 27, and Tue, May 17. You can mail in your ballot anytime before Wed, May 11; after that date, you should drop off your ballot to ensure it is counted in time for the election.
-        </p>
+        <h3 className='caps'>How to Vote for Bernie in Oregon by May 17</h3>
+        <ol>
+          <li>
+            Check your mail daily for your ballot.
+          </li>
+          <li>
+            If you recently changed your registration to Democratic Party, check your ballot to make sure it says "Official Primary Nominating Ballot for the Democratic Primary." If it does not, call your county county elections office to request the Democratic Primary ballot.
+          </li>
+          <li>
+            If you don't receive your ballot, call your county elections offices <a href='http://sos.oregon.gov/elections/Pages/countyofficials.aspx' target='_blank'>listed here</a>. You have the ability to reactivate your voting status and update your address. Please do this sooner rather than later.
+          </li>
+          <li>
+            Once you receive your ballot, vote for Bernie. <a href='http://sos.oregon.gov/voting/Pages/ballot-help.aspx' target='_blank'>Click here if you need more information on filling out your ballot</a>. It's important that your signature matches the one on your voter registration form.
+          </li>
+          <li>
+            You can mail your ballot by May 11, or you can drop it off at a <a href='http://sos.oregon.gov/voting/Pages/drop-box-locator.aspx' target='_blank'>secure drop box</a> or <a href='http://sos.oregon.gov/elections/Pages/countyofficials.aspx' target='_blank'>your county elections office</a> by 8PM on May 17.
+          </li>
+          <li>
+            Track your ballot. <a href='https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?lang=eng&source=SOS' target='_blank'>You can click here to log on to track your ballot</a>. If you are unsure your ballot was received or counted, call your local county office. You can fix any issues immediately to prevent having to rush to fix a problem after the primary.
+          </li>
+        </ol>
+
         <h3 className='caps'>Absentee Voting</h3>
         <p>
           If you will be away from your home address during the election season, you can request an absentee ballot using the form <a href='http://sos.oregon.gov/elections/Documents/SEL111.pdf' target='_blank'>here</a>. The last day to request an absentee ballot is Thu, May 12; the last day to return an absentee ballot is Tue, May 17.
