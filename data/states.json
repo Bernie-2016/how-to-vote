@@ -204,7 +204,8 @@
       "phone": "(317) 232-6531"
     },
     "regLink": "https://indianavoters.in.gov/PublicSite/OVR/Introduction.aspx",
-    "chkLink": "https://indianavoters.in.gov/PublicSite/Public/FT1/PublicLookupMain.aspx?Link=Registration"
+    "chkLink": "https://indianavoters.in.gov/PublicSite/Public/FT1/PublicLookupMain.aspx?Link=Registration",
+    "pollWgt": true
   },
   "IA": {
     "name": "Iowa",
