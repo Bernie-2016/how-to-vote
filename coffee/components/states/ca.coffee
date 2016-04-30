@@ -25,11 +25,11 @@ module.exports = React.createClass
         </p>
         <Deadline {...@props} />
         <p>
-          If you're independent, make sure you're registered as 'no party preference'. There is also an Independent party in California which is NOT eligible to vote for Bernie -- only Democrats and 'no party preference' voters can vote for Bernie in the primary.
+          If you're independent, make sure you're registered as "no party preference". There is also an Independent party in California which is NOT eligible to vote for Bernie -- only Democrats and "no party preference" voters can vote for Bernie in the primary. If you are registered "no party preference", when you go to vote just ask for a "democratic ballot" and you're all set!
         </p>
         <h3 className='caps'>Early/Absentee Voting</h3>
         <p>
-          Many counties in California will hold early voting for the Democratic primary between May 9 and June 6, 2016. Contact your <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> to learn more about early voting in your county. You can request a mail-in absentee ballot by submitting <a href='http://elections.cdn.sos.ca.gov/vote-by-mail/pdf/fill-in-vote-by-mail-app-instruct.pdf' target='_blank'>this form</a> before May 31, 2016. You can also file an emergency absentee ballot in person at your local <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> anytime between June 1 and 7, 2016.
+          Many counties in California will hold early voting for the Democratic primary between May 9 and June 6, 2016. Contact your <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> to learn more about early voting in your county. You can request a mail-in absentee ballot by submitting the form found <a href='http://www.sos.ca.gov/elections/voting-resources/voting-california/where-and-how-vote/#get-a-ballot' target='_blank'>here</a> before May 31, 2016. You can also file an emergency absentee ballot in person at your local <a href='http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/' target='_blank'>county elections office</a> anytime between June 1 and 7, 2016.
         </p>
         <College {...@props} />
         <Military {...@props} />

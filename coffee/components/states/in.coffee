@@ -36,7 +36,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>Early Voting</h3>
         <p>
-          Early voting began on April 5th and continues until May 2nd. You can vote at your County Election Board or a satellite facility. Hours and locations vary across the state, so please check your <a href='http://www.in.gov/core/mylocal/' target='_blank'>County Election Board</a>.
+          Early voting began on April 5th and continues until May 2nd. You can vote at your County Election Board or a satellite facility. Hours and locations vary across the state, so please check your <a href='https://indianavoters.in.gov/PublicSite/Public/FT1/PublicLookupMain.aspx' target='_blank'>County Election Board</a>.
         </p>
         <Young {...@props} />
         <College {...@props} />
