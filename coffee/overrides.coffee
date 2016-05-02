@@ -8,7 +8,7 @@ geoOverrides = geoOverrides.split("\n")
 geoOverrides = _.map(geoOverrides, (o) -> o.split(','))
 
 place = (location) ->
-  override = _.find(overrides, (o) -> o[0] is location.precinctCode && o[4] is location.state)
+  override = _.find(overrides, (o) -> _.upperCase(o[0]) is _.upperCase(location.precinctCode) && o[4] is location.state)
   if override
     {
       locationName: override[1]
