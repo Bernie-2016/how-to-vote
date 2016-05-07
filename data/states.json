@@ -646,7 +646,8 @@
       "phone": "(866) 767-8683"
     },
     "regLink": "https://ovr.sos.wv.gov/Register",
-    "chkLink": "https://services.sos.wv.gov/Elections/Voter/AmIRegisteredToVote"
+    "chkLink": "https://services.sos.wv.gov/Elections/Voter/AmIRegisteredToVote",
+    "pollWgt": true
   },
   "WI": {
     "name": "Wisconsin",
