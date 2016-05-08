@@ -490,7 +490,8 @@
       "phone": "(503) 986-1518"
     },
     "regLink": "https://secure.sos.state.or.us/orestar/vr/register.do",
-    "chkLink": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?source=SOS"
+    "chkLink": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?source=SOS",
+    "pollWgt": true
   },
   "PA": {
     "name": "Pennsylvania",
