@@ -31,7 +31,7 @@ module.exports = React.createClass
         <h3 className='caps'>Only 17?</h3>
         <p>
           Starting on May 18, 2016, you may still vote in New Mexico if you will be 18 years old by November 8, 2016.
-        </p<
+        </p>
         <College {...@props} />
         <Military {...@props} />
         <MoreInfo {...@props} />
