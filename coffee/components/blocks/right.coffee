@@ -11,7 +11,7 @@ module.exports = React.createClass
   displayName: 'Right'
 
   render: ->
-    <Sticky top={25} bottom={25} bottomBoundary='section.flex'>
+    <Sticky top={25} bottomBoundary='section.flex'>
       <DateBox title={"#{primaryType(@props.state.fillKey, @props.state.label)} Date"} date={@props.state.date} />
       <AddToCal date={@props.state.date} state={@props.state} />
       <DateBox title='Registration Deadline' date={@props.state.regDate} />
