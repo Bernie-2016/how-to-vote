@@ -34,7 +34,7 @@ module.exports = React.createClass
         </p>
         <ol>
           <li>
-            <strong>Register to Vote:</strong> You can register to vote on the day of the caucus. To make the lines go more quickly on that day you can print out your form at home and bring it with you all filled out. If you or anyone going with you needs to register please print a form from <a href='https://olvr.hawaii.gov/(S(pru0giobre0ixtkf0vv5mt4u)))/Default.aspx' target='_blank'>this link</a>.
+            <strong>Register to Vote:</strong> You can register to vote on the day of the caucus. To make the lines go more quickly on that day you can print out your form at home and bring it with you all filled out. If you or anyone going with you needs to register please print a form from <a href='https://olvr.hawaii.gov/(S(pru0giobre0ixtkf0vv5mt4u))/Default.aspx' target='_blank'>this link</a>.
           </li>
           <li>
             <strong>Join the Democratic Party of Hawaii:</strong> You can also become a member of the Democratic Party of Hawaii on caucus day. You can help keep the line moving quickly by printing out a form found at <a href='https://hawaiidemocrats.org/join' target='_blank'>this link</a> and bringing it with you."

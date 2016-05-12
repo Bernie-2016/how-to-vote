@@ -36,7 +36,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>What to bring</h3>
         <p>
-          A​ valid government issued ID such as a Guam driver's license or passport. If your driver's license is NOT = require(Guam, bring your license and a piece of mail like a bill or )bank statement with your name on it and a Guam address or PO Box.
+          A​ valid government issued ID such as a Guam driver's license or passport. If your driver's license is NOT from Guam, bring your license and a piece of mail like a bill or )bank statement with your name on it and a Guam address or PO Box.
         </p>
         <h3 className='caps'>Getting to the polls</h3>
         <p>

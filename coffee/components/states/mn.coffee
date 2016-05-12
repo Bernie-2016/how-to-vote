@@ -36,7 +36,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>College Students</h3>
         <p>
-          If you are from out of state but go school in Minnesota, you can and should caucus! Just look up the caucus location for your Minnesota address.)
+          If you are from out of state but go school in Minnesota, you can and should caucus! Just look up the caucus location for your Minnesota address.
         </p>
         <h3 className='caps'>More Information</h3>
         <p>
