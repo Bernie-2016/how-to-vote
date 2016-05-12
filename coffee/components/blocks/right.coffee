@@ -12,10 +12,16 @@ module.exports = React.createClass
 
   render: ->
     <Sticky top={25} bottomBoundary='section.flex'>
-      <DateBox title={"#{primaryType(@props.state.fillKey, @props.state.label)} Date"} date={@props.state.date} />
-      <AddToCal date={@props.state.date} state={@props.state} />
-      <DateBox title='Registration Deadline' date={@props.state.regDate} />
-      <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
+      <div className='info-box'>
+        <DateBox title={"#{primaryType(@props.state.fillKey, @props.state.label)} Date"} date={@props.state.date} />
+        <AddToCal date={@props.state.date} state={@props.state} />
+      </div>
+
+      <div className='info-box'>
+        <DateBox title='Registration Deadline' date={@props.state.regDate} />
+        <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
+      </div>
+
       <Reminder {...@props} />
 
       {if @props.state.regLink || @props.state.chkLink
