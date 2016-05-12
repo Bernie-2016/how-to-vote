@@ -52,6 +52,7 @@
     "react-maskedinput": "^3.1.0",
     "react-onclickoutside": "^4.5.0",
     "react-router": "^2.0.0",
+    "react-scroll": "^1.0.15",
     "react-share": "^1.4.1",
     "react-stickynode": "^1.0.6",
     "resolve-url-loader": "^1.4.3",
