@@ -1,15 +1,15 @@
-import React     from 'react'
-import Sticky    from 'react-stickynode'
-import Button    from 'components/blocks/button'
-import College   from 'components/blocks/college'
-import Young     from 'components/blocks/young'
-import AddToCal  from 'components/widgets/addToCalWidget'
-import Offices   from 'components/widgets/officesWidget'
-import PollPlace from 'components/widgets/pollPlaceWidget'
-import Reminder  from 'components/widgets/reminderWidget'
-import Share     from 'components/widgets/shareWidget'
-import entity    from 'utils/entity'
-import moment    from 'moment'
+React     = require('react')
+Sticky    = require('react-stickynode')
+Button    = require('components/blocks/button')
+College   = require('components/blocks/college')
+Young     = require('components/blocks/young')
+AddToCal  = require('components/widgets/addToCalWidget')
+Offices   = require('components/widgets/officesWidget')
+PollPlace = require('components/widgets/pollPlaceWidget')
+Reminder  = require('components/widgets/reminderWidget')
+Share     = require('components/widgets/shareWidget')
+entity    = require('utils/entity')
+moment    = require('moment')
 
 module.exports = React.createClass
   displayName: 'NV State Info'
@@ -32,7 +32,7 @@ module.exports = React.createClass
         <College {...@props} />
         <h3 className='caps'>Military/Overseas Voters</h3>
         <p>
-          If you live, work, are in the military or study abroad, you are able to participate in Nevada's Tele-Caucus on February 20th at 11am, but must <a href='http://action.nvdems.com/page/s/telecaucus' target='_blank'>pre-register</a> from Monday, February 1st - Sunday, February 14 (Midnight PST).
+          If you live, work, are in the military or study abroad, you are able to participate in Nevada's Tele-Caucus on February 20th at 11am, but must <a href='http://action.nvdems.com/page/s/telecaucus' target='_blank'>pre-register</a> = require(Monday, February 1st - Sunday, February 14 (Midnight PST).)
         </p>
         <p>
           After registering, you will receive a confirmation email. One week prior, you will receive a dial-in number and a unique pin. You must be dialed in to the Tele-Caucus by 12:00 p.m. PST.

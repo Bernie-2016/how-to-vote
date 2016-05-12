@@ -1,6 +1,6 @@
-import React           from 'react'
-import moment          from 'moment'
-import { primaryType } from 'states'
+React         = require('react')
+moment        = require('moment')
+{primaryType} = require('states')
 
 module.exports = React.createClass
   displayName: 'Add to Cal Widget'

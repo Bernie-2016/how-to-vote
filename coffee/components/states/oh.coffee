@@ -1,13 +1,13 @@
-import React     from 'react'
-import College   from 'components/blocks/college'
-import Deadline  from 'components/blocks/deadline'
-import Military  from 'components/blocks/military'
-import MoreInfo  from 'components/blocks/moreInfo'
-import Right     from 'components/blocks/right'
-import Offices   from 'components/widgets/officesWidget'
-import PollPlace from 'components/widgets/pollPlaceWidget'
-import Share     from 'components/widgets/shareWidget'
-import entity    from 'utils/entity'
+React     = require('react')
+College   = require('components/blocks/college')
+Deadline  = require('components/blocks/deadline')
+Military  = require('components/blocks/military')
+MoreInfo  = require('components/blocks/moreInfo')
+Right     = require('components/blocks/right')
+Offices   = require('components/widgets/officesWidget')
+PollPlace = require('components/widgets/pollPlaceWidget')
+Share     = require('components/widgets/shareWidget')
+entity    = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'OH State Info'
@@ -33,7 +33,7 @@ module.exports = React.createClass
         </p>
         <h3 className='caps'>Only 17?</h3>
         <p>
-          If you will be 18 years old by November 8, 2016, you can vote for Bernie. Ohio Secretary of State Jon Husted tried to change the rules to prevent 17-year-olds who will be 18 by the general election from voting, but a state court has ruled that 17-year-olds are eligible to vote in the presidential primary. You can read more about it <a href='https://berniesanders.com/sanders-sues-in-ohio-to-protect-young-and-minority-voters/' target='_blank'>here</a>.
+          If you will be 18 years old by November 8, 2016, you can vote for Bernie. Ohio Secretary of State Jon Husted tried to change the rules to prevent 17-year-olds who will be 18 by the general election = require(voting, but a state court has ruled that 17-year-olds are eligible to vote in the presidential primary. You can read more about it <a href='https)://berniesanders.com/sanders-sues-in-ohio-to-protect-young-and-minority-voters/' target='_blank'>here</a>.
         </p>
         <College {...@props} />
         <Military {...@props} />

@@ -1,7 +1,7 @@
-import React                               from 'react'
-import { ShareButtons, generateShareIcon } from 'react-share'
-import { verb }                            from 'states'
-import _capitalize                         from 'lodash.capitalize'
+React                             = require('react')
+{ShareButtons, generateShareIcon} = require('react-share')
+{verb}                            = require('states')
+_capitalize                       = require('lodash.capitalize')
 
 module.exports = React.createClass
   display: 'Share'

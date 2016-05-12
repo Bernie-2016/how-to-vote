@@ -13,10 +13,169 @@ div#htv-app {
       line-height: 1;
     }
 
+    &.ca {
+      background: white;
+      box-shadow: 0px 1px 3px #a6aeb9;
+
+      div.info-nav {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        background: #fafafa;
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+
+          li {
+            border-bottom: 1px solid #eee;
+
+            a {
+              display: block;
+              padding: 1em;
+              font-size: 14px;
+              cursor: pointer;
+              border-left: 5px solid transparent;
+
+              &:hover, &.active {
+                background: $lightgray;
+                border-left: 10px solid $red;
+              }
+
+              h3 {
+                margin: 0;
+                color: $blue;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      div.left {
+        width: 55%;
+        padding: 0;
+        box-shadow: none;
+        border: 1px solid #eee;
+        border-width: 0 1px;
+
+        div.info {
+          display: inline-block;
+          padding: 1.7em;
+          box-sizing: border-box;
+
+          .section-header {
+            margin: 1em -1.7em;
+            border-width: 1px 0;
+            background: #fafafa;
+            padding: 0.75em 1.7em;
+            position: relative;
+            border-bottom: 2px solid white;
+
+            h3 {
+              margin: 0;
+            }
+          }
+
+           p, ol {
+             font-size: 18px;
+           }
+        }
+      }
+
+      div.right {
+        width: 25%;
+        padding: 1.7em;
+        background: #fafafa;
+
+        .btn, .btn.blue {
+          font-size: 14px;
+        }
+      }
+
+      @media (max-width: $tablet) {
+        flex-direction: row;
+
+        div.info-nav {
+          display: none;
+        }
+
+        div.left {
+          width: 65%;
+
+          div.info {
+            .section-header {
+              cursor: pointer;
+              margin: 0 -1.7em;
+
+              &:hover {
+                background: darken(#fafafa, 2);
+              }
+
+              &::after {
+               display: block;
+               position: absolute;
+               height: 0;
+               width: 0;
+               border-left: 0.25em solid transparent;
+               border-right: 0.25em solid transparent;
+               border-top: 0.25em solid $darkblue;
+               content: "";
+               top: 0;
+               bottom: 0;
+               right: 1em;
+               margin: auto;
+               transition: 0.25s;
+              }
+            }
+          }
+
+          .section-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.25s ease;
+          }
+
+          .section.expanded {
+            .section-body {
+              max-height: 800px;
+              margin: 1em 0;
+            }
+
+            .section-header::after {
+              transform: rotateZ(180deg);
+            }
+          }
+        }
+
+        div.right {
+          width: 35%;
+        }
+      }
+
+      @media (max-width: $phablet) {
+        flex-direction: row;
+
+        div.left, div.right {
+          width: 100%;
+        }
+
+        div.right {
+          .info-box {
+            display: inline-block;
+            max-width: 50%;
+            padding: 0 0.5em;
+            box-sizing: border-box;
+          }
+        }
+      }
+
+    }
+
     div.left {
       background-color: white;
       box-sizing: border-box;
-      box-shadow: 0px 1px 3px #a6aeb9; 
+      box-shadow: 0px 1px 3px #a6aeb9;
       padding: 1.7em 2em;
       width: 100%;
       flex-basis: auto;
@@ -42,7 +201,7 @@ div#htv-app {
 
         div.share {
           float: right;
-        
+
           div.share-btn {
             display: inline-block;
 
@@ -52,6 +211,7 @@ div#htv-app {
 
             &:hover {
               cursor: pointer;
+              opacity: 0.8;
             }
           }
         }
@@ -62,6 +222,7 @@ div#htv-app {
         color: #0f3059;
         font-weight: 700;
         margin-top: 1.6em;
+        margin-bottom: 0.5em;
       }
 
       & > * {
@@ -100,7 +261,7 @@ div#htv-app {
         width: 100%;
         height: 0;
         padding-bottom: 56.25%;
-        
+
         iframe {
           position: absolute;
           top: 0;
@@ -121,7 +282,10 @@ div#htv-app {
       hr {
         margin-top: 25px;
         margin-bottom: 25px;
-        background-color: #ced4e4;
+        color: #ddd;
+        border: 0;
+        background: #ddd;
+        height: 1px;
       }
 
       h3 {
@@ -154,13 +318,13 @@ div#htv-app {
       }
 
       .date {
-        font-size: 1.6em;
+        font-size: 1.2em;
         padding-bottom: 0.4em;
       }
 
       div.reminder-widget {
         font-size: 16px;
-        
+
         input {
           box-sizing: border-box;
           width: 100%;
@@ -211,7 +375,7 @@ div#htv-app {
       font-size: 2.8em;
     }
   }
-}  
+}
 
 @media (max-width: $phablet) {
   div#htv-app {

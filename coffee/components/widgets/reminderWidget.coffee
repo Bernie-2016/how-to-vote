@@ -1,9 +1,9 @@
-import React       from 'react'
-import MaskedInput from 'react-maskedinput'
-import Share       from 'components/widgets/shareWidget'
-import moment      from 'moment'
-import $           from 'jquery'
-import entity      from 'utils/entity'
+React       = require('react')
+MaskedInput = require('react-maskedinput')
+Share       = require('components/widgets/shareWidget')
+moment      = require('moment')
+$           = require('jquery')
+entity      = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'Reminder Widget'

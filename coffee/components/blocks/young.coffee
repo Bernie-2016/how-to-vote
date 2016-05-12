@@ -6,7 +6,10 @@ module.exports = React.createClass
 
   render: ->
     <div>
-      <h3 className='caps'>Only 17?</h3>
+      <div className='section-header'>
+        <h3 className='caps'>Only 17?</h3>
+      </div>
+      
       <p>
         You may still {verb(@props.state)} in {@props.state.name} if you will be 18 years old by November 8, 2016.
       </p>

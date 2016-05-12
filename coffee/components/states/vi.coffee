@@ -1,11 +1,11 @@
-import React     from 'react'
-import Deadline  from 'components/blocks/deadline'
-import MoreInfo  from 'components/blocks/moreInfo'
-import Right     from 'components/blocks/right'
-import Offices   from 'components/widgets/officesWidget'
-import PollPlace from 'components/widgets/pollPlaceWidget'
-import Share     from 'components/widgets/shareWidget'
-import entity    from 'utils/entity'
+React     = require('react')
+Deadline  = require('components/blocks/deadline')
+MoreInfo  = require('components/blocks/moreInfo')
+Right     = require('components/blocks/right')
+Offices   = require('components/widgets/officesWidget')
+PollPlace = require('components/widgets/pollPlaceWidget')
+Share     = require('components/widgets/shareWidget')
+entity    = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'VI State Info'
