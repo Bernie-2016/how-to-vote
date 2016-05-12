@@ -242,7 +242,8 @@
       "phone": "(502) 573-7100"
     },
     "regLink": "http://elect.ky.gov/registertovote/pages/default.aspx",
-    "chkLink": "https://vrsws.sos.ky.gov/VIC/"
+    "chkLink": "https://vrsws.sos.ky.gov/VIC/",
+    "pollWgt": true
   },
   "LA": {
     "name": "Louisiana",
@@ -647,8 +648,7 @@
       "phone": "(866) 767-8683"
     },
     "regLink": "https://ovr.sos.wv.gov/Register",
-    "chkLink": "https://services.sos.wv.gov/Elections/Voter/AmIRegisteredToVote",
-    "pollWgt": true
+    "chkLink": "https://services.sos.wv.gov/Elections/Voter/AmIRegisteredToVote"
   },
   "WI": {
     "name": "Wisconsin",
