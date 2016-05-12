@@ -1,9 +1,9 @@
-import ReactDOM                                                              from 'react-dom'
-import React                                                                 from 'react'
-import ReactDOMServer                                                        from 'react-dom/server'
-import { Router, RouterContext, match, browserHistory, createMemoryHistory } from 'react-router'
-import routes                                                                from 'routes'
-import Root from 'components/root'
+ReactDOM                                                            = require('react-dom')
+React                                                               = require('react')
+ReactDOMServer                                                      = require('react-dom/server')
+{Router, RouterContext, match, browserHistory, createMemoryHistory} = require('react-router')
+routes                                                              = require('routes')
+Root                                                                = require('components/root')
 
 createElement = (Component, props) ->
   <Component key={new Date().getTime()} {...props} />

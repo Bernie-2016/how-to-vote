@@ -1,11 +1,11 @@
-import React           from 'react'
-import Sticky          from 'react-stickynode'
-import Button          from 'components/blocks/button'
-import DateBox         from 'components/blocks/dateBox'
-import AddToCal        from 'components/widgets/addToCalWidget'
-import Reminder        from 'components/widgets/reminderWidget'
-import { primaryType } from 'states'
-import moment          from 'moment'
+React         = require('react')
+Sticky        = require('react-stickynode')
+Button        = require('components/blocks/button')
+DateBox       = require('components/blocks/dateBox')
+AddToCal      = require('components/widgets/addToCalWidget')
+Reminder      = require('components/widgets/reminderWidget')
+{primaryType} = require('states')
+moment        = require('moment')
 
 module.exports = React.createClass
   displayName: 'Right'

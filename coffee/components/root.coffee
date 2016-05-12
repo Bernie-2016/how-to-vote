@@ -1,6 +1,6 @@
-import React      from 'react'
-import Html       from 'react-html-document'
-import { states } from 'states'
+React    = require('react')
+Html     = require('react-html-document')
+{states} = require('states')
 
 require('scss/app')
 require('img/favicon.ico')

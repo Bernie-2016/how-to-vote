@@ -1,5 +1,5 @@
-import React           from 'react'
-import { primaryType } from 'states'
+React         = require('react')
+{primaryType} = require('states')
 
 module.exports = React.createClass
   displayName: 'More Info'

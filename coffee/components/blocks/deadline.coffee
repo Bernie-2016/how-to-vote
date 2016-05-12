@@ -1,5 +1,5 @@
-import React  from 'react'
-import moment from 'moment'
+React  = require('react')
+moment = require('moment')
 
 module.exports = React.createClass
   displayName: 'Deadline'

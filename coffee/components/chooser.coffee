@@ -1,7 +1,7 @@
-import React            from 'react'
-import OnClickOutside   from 'react-onclickoutside'
-import $                from 'jquery'
-import { states, keys } from 'states'
+React          = require('react')
+OnClickOutside = require('react-onclickoutside')
+$              = require('jquery')
+{states, keys} = require('states')
 
 module.exports = React.createClass
   displayName: 'Chooser'

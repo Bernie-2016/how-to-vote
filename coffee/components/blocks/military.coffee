@@ -1,4 +1,4 @@
-import React from 'react'
+React = require('react')
 
 module.exports = React.createClass
   displayName: 'College'

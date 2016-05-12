@@ -1,6 +1,6 @@
-import React  from 'react'
-import $      from 'jquery'
-import entity from 'utils/entity'
+React  = require('react')
+$      = require('jquery')
+entity = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'Menu'
