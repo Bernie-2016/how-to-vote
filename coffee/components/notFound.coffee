@@ -1,5 +1,5 @@
-import React  from 'react'
-import Header from 'components/header'
+React  = require('react')
+Header = require('components/header')
 
 module.exports = React.createClass
   displayName: 'Not Found'

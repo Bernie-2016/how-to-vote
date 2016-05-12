@@ -1,14 +1,14 @@
-import React     from 'react'
-import College   from 'components/blocks/college'
-import Deadline  from 'components/blocks/deadline'
-import Military  from 'components/blocks/military'
-import MoreInfo  from 'components/blocks/moreInfo'
-import Right     from 'components/blocks/right'
-import Young     from 'components/blocks/young'
-import Offices   from 'components/widgets/officesWidget'
-import PollPlace from 'components/widgets/pollPlaceWidget'
-import Share     from 'components/widgets/shareWidget'
-import entity    from 'utils/entity'
+React     = require('react')
+College   = require('components/blocks/college')
+Deadline  = require('components/blocks/deadline')
+Military  = require('components/blocks/military')
+MoreInfo  = require('components/blocks/moreInfo')
+Right     = require('components/blocks/right')
+Young     = require('components/blocks/young')
+Offices   = require('components/widgets/officesWidget')
+PollPlace = require('components/widgets/pollPlaceWidget')
+Share     = require('components/widgets/shareWidget')
+entity    = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'VA State Info'

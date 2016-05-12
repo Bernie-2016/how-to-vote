@@ -1,16 +1,16 @@
-import React           from 'react'
-import Sticky          from 'react-stickynode'
-import moment          from 'moment'
-import Button          from 'components/blocks/button'
-import DateBox         from 'components/blocks/dateBox'
-import Young           from 'components/blocks/young'
-import AddToCal        from 'components/widgets/addToCalWidget'
-import Offices         from 'components/widgets/officesWidget'
-import PollPlace       from 'components/widgets/pollPlaceWidget'
-import Reminder        from 'components/widgets/reminderWidget'
-import Share           from 'components/widgets/shareWidget'
-import { primaryType } from 'states'
-import entity          from 'utils/entity'
+React         = require('react')
+Sticky        = require('react-stickynode')
+moment        = require('moment')
+Button        = require('components/blocks/button')
+DateBox       = require('components/blocks/dateBox')
+Young         = require('components/blocks/young')
+AddToCal      = require('components/widgets/addToCalWidget')
+Offices       = require('components/widgets/officesWidget')
+PollPlace     = require('components/widgets/pollPlaceWidget')
+Reminder      = require('components/widgets/reminderWidget')
+Share         = require('components/widgets/shareWidget')
+{primaryType} = require('states')
+entity        = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'HI State Info'

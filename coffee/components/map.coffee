@@ -1,12 +1,12 @@
-import React                   from 'react'
-import $                       from 'jquery'
-import MobileDetect            from 'mobile-detect'
-import moment                  from 'moment'
-import isEdge                  from 'is-edge'
-import Datamap                 from 'datamaps/dist/datamaps.usa'
-import Header                  from 'components/header'
-import { keys, label, states } from 'states'
-import entity                  from 'utils/entity'
+React                 = require('react')
+$                     = require('jquery')
+MobileDetect          = require('mobile-detect')
+moment                = require('moment')
+isEdge                = require('is-edge')
+Datamap               = require('datamaps/dist/datamaps.usa')
+Header                = require('components/header')
+{keys, label, states} = require('states')
+entity                = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'Map'

@@ -1,8 +1,8 @@
-import React                   from 'react'
-import Header                  from 'components/header'
-import NotFound                from 'components/notFound'
-import entity                  from 'utils/entity'
-import { label, states, keys } from 'states'
+React                 = require('react')
+Header                = require('components/header')
+NotFound              = require('components/notFound')
+entity                = require('utils/entity')
+{label, states, keys} = require('states')
 
 module.exports = React.createClass
   displayName: 'State'

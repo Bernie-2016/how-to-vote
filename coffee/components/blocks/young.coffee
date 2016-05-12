@@ -1,5 +1,5 @@
-import React    from 'react'
-import { verb } from 'states'
+React  = require('react')
+{verb} = require('states')
 
 module.exports = React.createClass
   displayName: 'Young'

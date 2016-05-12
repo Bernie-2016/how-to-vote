@@ -1,8 +1,8 @@
-import React                                              from 'react'
-import { GoogleMapLoader, GoogleMap, Marker, InfoWindow } from 'react-google-maps'
-import GoogleMaps                                         from 'google-maps'
-import _                                                  from 'lodash/core'
-import offices                                            from 'data/offices'
+React                                            = require('react')
+{GoogleMapLoader, GoogleMap, Marker, InfoWindow} = require('react-google-maps')
+GoogleMaps                                       = require('google-maps')
+_                                                = require('lodash/core')
+offices                                          = require('data/offices')
 
 GoogleMaps.KEY = if __PROD__ then 'AIzaSyCFQ50iI4VcALSPhuOkxsB7YI3yElr92bE' else require('credentials.json').googleKey
 

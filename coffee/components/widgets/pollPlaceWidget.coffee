@@ -1,10 +1,10 @@
-import React                                              from 'react'
-import { GoogleMapLoader, GoogleMap, DirectionsRenderer } from 'react-google-maps'
-import GoogleMaps                                         from 'google-maps'
-import $                                                  from 'jquery'
-import queryString                                        from 'query-string'
-import { primaryType }                                    from 'states'
-import overrides                                          from 'overrides'
+React                                            = require('react')
+{GoogleMapLoader, GoogleMap, DirectionsRenderer} = require('react-google-maps')
+GoogleMaps                                       = require('google-maps')
+$                                                = require('jquery')
+queryString                                      = require('query-string')
+{primaryType}                                    = require('states')
+overrides                                        = require('overrides')
 
 GoogleMaps.KEY = if __PROD__ then 'AIzaSyCFQ50iI4VcALSPhuOkxsB7YI3yElr92bE' else require('credentials.json').googleKey
 

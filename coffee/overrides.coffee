@@ -1,6 +1,6 @@
-import _            from 'lodash'
-import overrides    from 'data/overrides'
-import geoOverrides from 'data/geoOverrides'
+_            = require('lodash')
+overrides    = require('data/overrides')
+geoOverrides = require('data/geoOverrides')
 
 overrides = overrides.split("\n")
 overrides = _.map(overrides, (o) -> o.split(','))

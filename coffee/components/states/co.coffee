@@ -1,12 +1,12 @@
-import React      from 'react'
-import Sticky     from 'react-stickynode'
-import moment     from 'moment'
-import AddToCal   from 'components/widgets/addToCalWidget'
-import Reminder   from 'components/widgets/reminderWidget'
-import PollPlace  from 'components/widgets/pollPlaceWidget'
-import Offices    from 'components/widgets/officesWidget'
-import Share      from 'components/widgets/shareWidget'
-import entity     from 'utils/entity'
+React     = require('react')
+Sticky    = require('react-stickynode')
+moment    = require('moment')
+AddToCal  = require('components/widgets/addToCalWidget')
+Reminder  = require('components/widgets/reminderWidget')
+PollPlace = require('components/widgets/pollPlaceWidget')
+Offices   = require('components/widgets/officesWidget')
+Share     = require('components/widgets/shareWidget')
+entity    = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'CO State Info'

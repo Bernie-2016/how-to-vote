@@ -1,4 +1,4 @@
-import states from 'data/states'
+states = require('data/states')
 
 keys =
   OPEN_PRIMARY:   'OPEN_PRIMARY'

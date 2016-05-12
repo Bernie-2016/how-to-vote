@@ -1,5 +1,5 @@
-import React  from 'react'
-import entity from 'utils/entity'
+React  = require('react')
+entity = require('utils/entity')
 
 module.exports = React.createClass
   displayName: 'Footer'

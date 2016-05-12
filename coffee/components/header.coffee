@@ -1,6 +1,6 @@
-import React           from 'react'
-import Chooser         from 'components/chooser'
-import { primaryType } from 'states'
+React         = require('react')
+Chooser       = require('components/chooser')
+{primaryType} = require('states')
 
 module.exports = React.createClass
   displayName: 'Header'
