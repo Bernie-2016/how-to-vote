@@ -19,7 +19,7 @@ module.exports = React.createClass
           Key Information
           <Share {...@props} />
         </h2>
-        <PollPlace state={@props.state} />
+        <PollPlace state={@props.state} title='Ballot Dropbox' />
         <p>
           Oregon has closed primaries {entity('mdash')} Oregonians must register as a Democrat to vote for Bernie!
         </p>
