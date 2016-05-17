@@ -47,10 +47,13 @@ module.exports = React.createClass
           address: response.homeAddress.line1
           city: response.homeAddress.city
           state: response.homeAddress.state
-          zip: response.homeAddress.zip 
+          zip: response.homeAddress.zip
         @setState(notFound: true, loading: false, addressObj: address)
       else
-        pollingLocation = overrides.place(response.pollingLocation) || response.pollingLocation
+        if response.earlyVoteSite
+          pollingLocation = overrides.place(response.earlyVoteSite) || response.earlyVoteSite
+        else
+          pollingLocation = overrides.place(response.pollingLocation) || response.pollingLocation
 
         pollAddress = "#{pollingLocation.line1}, #{pollingLocation.city}, #{pollingLocation.state} #{pollingLocation.zip}"
         @state.geocoder.geocode address: pollAddress, (results, status) =>
@@ -61,7 +64,7 @@ module.exports = React.createClass
             destination = results[0].geometry.location
 
           DirectionsService = new @state.google.maps.DirectionsService()
-          DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) => 
+          DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) =>
             @setState(loaded: true, loading: false, directions: result, pollPlace: pollingLocation)
 
   submitClick: (e) ->
@@ -92,7 +95,7 @@ module.exports = React.createClass
       unless @state.address is ''
         @lookup()
         $(window).scrollTop $(@getDOMNode()).offset().top
-    
+
   componentWillUnmount: ->
     GoogleMaps.release()
 

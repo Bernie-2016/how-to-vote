@@ -410,7 +410,8 @@
       "phone": "(505) 827-3600"
     },
     "regLink": "https://portal.sos.state.nm.us/OVR/(S(mzf1lpswqewv3tertpr5t44c))/WebPages/InstructionsStep1.aspx",
-    "chkLink": "https://voterview.state.nm.us/VoterView/RegistrantSearch.do"
+    "chkLink": "https://voterview.state.nm.us/VoterView/RegistrantSearch.do",
+    "pollWgt": true
   },
   "NY": {
     "name": "New York",

@@ -29,6 +29,6 @@ geocode = (placeId) ->
       lng: parseFloat(override[2])
     }
 
-module.exports = 
+module.exports =
   place: place
   geocode: geocode
