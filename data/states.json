@@ -347,7 +347,8 @@
       "phone": "(888) 884-8683"
     },
     "regLink": "http://sos.mt.gov/ELECTIONS/Vote/index.asp",
-    "chkLink": "https://app.mt.gov/cgi-bin/voterinfo/voterinfo.cgi"
+    "chkLink": "https://app.mt.gov/cgi-bin/voterinfo/voterinfo.cgi",
+    "pollWgt": true
   },
   "NE": {
     "name": "Nebraska",

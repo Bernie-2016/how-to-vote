@@ -18,7 +18,7 @@ module.exports = React.createClass
           Key Information
           <Share {...@props} />
         </h2>
-        <PollPlace state={@props.state} />
+        <PollPlace state={@props.state} title="Early Vote" />
         <p>
           Montana has open primaries {entity('mdash')} Montanans can vote for Bernie Sanders regardless of their registered party.
         </p>
