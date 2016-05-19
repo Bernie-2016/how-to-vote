@@ -242,9 +242,7 @@
       "phone": "(502) 573-7100"
     },
     "regLink": "http://elect.ky.gov/registertovote/pages/default.aspx",
-    "chkLink": "https://vrsws.sos.ky.gov/VIC/",
-    "pollWgt": true
-  },
+    "chkLink": "https://vrsws.sos.ky.gov/VIC/"  },
   "LA": {
     "name": "Louisiana",
     "fillKey": "CLOSED_PRIMARY",
@@ -492,9 +490,7 @@
       "phone": "(503) 986-1518"
     },
     "regLink": "https://secure.sos.state.or.us/orestar/vr/register.do",
-    "chkLink": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?source=SOS",
-    "pollWgt": true
-  },
+    "chkLink": "https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do?source=SOS"  },
   "PA": {
     "name": "Pennsylvania",
     "fillKey": "CLOSED_PRIMARY",
