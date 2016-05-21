@@ -69,7 +69,8 @@
       "phone": "(916) 657-2166"
     },
     "regLink": "http://registertovote.ca.gov/",
-    "chkLink": "http://www.sos.ca.gov/elections/registration-status/"
+    "chkLink": "http://www.sos.ca.gov/elections/registration-status/",
+    "pollWgt": true
   },
   "CO": {
     "name": "Colorado",

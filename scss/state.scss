@@ -65,6 +65,12 @@ div#htv-app {
           padding: 1.7em;
           box-sizing: border-box;
 
+          .poll-widget a.btn {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+          }
+
           .section-header {
             margin: 1em -1.7em;
             border-width: 1px 0;
