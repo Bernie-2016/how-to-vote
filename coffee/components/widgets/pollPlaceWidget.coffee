@@ -102,7 +102,7 @@ module.exports = React.createClass
   render: ->
     title = @props.title
     title ||= (if primaryType(@props.state.fillKey, @props.state.label) is 'Caucus' then 'Precinct Caucus' else 'Polling')
-    <div hidden={!@props.state.pollWgt}>
+    <div hidden={!@props.state.pollWgt} className="polling-location #{'expanded' if @state.loaded}">
       <h3 className='caps'>{title} Location</h3>
       {if @state.google
         <div className='poll-widget'>

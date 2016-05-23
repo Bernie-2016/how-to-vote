@@ -42,7 +42,7 @@ module.exports = React.createClass
     map.panToBounds(@state.bounds)
 
   render: ->
-    <div id='campaign-offices' hidden={_.isEmpty(@state.markers)}>
+    <div id='campaign-offices' className='section' hidden={_.isEmpty(@state.markers)}>
       <div className='section-header'>
         <h3 className='caps'>Campaign Offices</h3>
       </div>

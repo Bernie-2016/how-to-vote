@@ -17,8 +17,254 @@ div#htv-app {
       background: white;
       box-shadow: 0px 1px 3px #a6aeb9;
 
+      .btn-success {
+        background: #20c361;
+        color: white;
+
+        &:hover {
+          background: darken(#20c361, 5);
+        }
+      }
+
+      .btn-secondary {
+        background: $darkblue;
+        color: white;
+
+        &:hover {
+          background: darken($darkblue, 5);
+        }
+      }
+
+      .btn-danger {
+        background: $red;
+        color: white;
+
+        &:hover {
+          background: darken($red, 5);
+        }
+      }
+
+      div.state-info {
+        position: relative;
+        width: 100%;
+        background: $blue;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        padding-top: 100px;
+
+        .state {
+          display: inline-block;
+
+          h2 {
+            font-size: 50px;
+            font-family: jubilat;
+            color: white;
+            text-transform: none;
+            font-weight: 400;
+            margin-bottom: 0;
+          }
+
+          h3 {
+            font-size: 16px;
+          }
+
+          .primary-info, .can-vote {
+            display: inline-block;
+          }
+
+          .primary-info {
+            padding-right: 20px;
+
+            .mobile-share .share {
+              display: none;
+              margin-left: -8px;
+
+              .share-btn {
+                display: inline-block;
+                margin-bottom: 8px;
+                cursor: pointer;
+                transform: scale(0.75);
+
+                &:hover {
+                  opacity: 0.7;
+                }
+              }
+            }
+          }
+
+          .can-vote {
+            padding-left: 20px;
+            border-left: 1px solid rgba(255,255,255,0.4);
+
+            .icon {
+              cursor: pointer;
+              width: 35px;
+              height: 35px;
+              border-radius: 35px;
+              background: white;
+              display: inline-block;
+              margin: 10px 15px 0 0;
+              position: relative;
+
+              &.democrats {
+                background: url('../img/dem-logo.svg');
+              }
+
+              &.npp {
+                background: url('../img/npp-logo.svg');
+              }
+            }
+          }
+        }
+
+        .register {
+          float: right;
+          text-align: right;
+
+          h3 {
+            font-size: 16px;
+          }
+
+          .btn {
+            display: inline-block;
+            font-size: 16px;
+            margin-bottom: 0;
+
+            &:first-child {
+              margin-right: 20px;
+            }
+          }
+        }
+
+        .breadcrumbs {
+          display: none;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          height: 40px;
+          background: $lightblue;
+          line-height: 40px;
+          padding-left: 20px;
+        }
+      }
+
+      div.share-bar {
+        width: 100%;
+        background: $darkblue;
+        height: 50px;
+        vertical-align: middle;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+
+        .add-to-cal {
+          display: inline-block;
+        }
+
+        &:before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%;
+        }
+
+        .reminder-widget {
+          transition: 0.5s;
+          display: inline-block;
+          color: white;
+          // padding: 20px;
+          z-index: 9;
+          background: $darkblue;
+
+          &.expanded, &.done {
+            div.thanks, div.form {
+              background: #2F437B;
+              position: absolute;
+              top: 50px;
+              padding: 0 20px 20px;
+              width: 100%;
+              padding: 20px;
+              box-sizing: border-box;
+            }
+
+            div.thanks {
+              .btn {
+                margin-left: 0;
+              }
+
+              .share {
+                display: inline-block;
+              }
+            }
+          }
+
+          input {
+            padding: 0.75em 1em 0.85em;
+            box-sizing: border-box;
+            width: 100%;
+            display: block;
+            margin: 0.5em 0;
+            border: 0;
+            border-radius: 3px;
+            font-size: 0.9em;
+            padding: 0.75em 1em 0.85em;
+            display: block;
+          }
+
+          input[type='checkbox'] {
+            display: inline-block;
+            width: auto;
+            margin-right: 10px;
+          }
+
+          p.disclaimer {
+            font-size: 14px;
+          }
+
+          .reminder-btn.sign-up {
+            margin-left: 0;
+          }
+        }
+
+        .reminder-btn {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 1em;
+          font-size: 12px;
+        }
+
+        .share {
+          display: inline-block;
+          float: right;
+
+          .share-btn {
+            display: inline-block;
+            margin-right: 12px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            transform: scale(0.75);
+            margin-top: 7px;
+
+            svg.social-icon {
+              fill : #162D6E !important;
+
+              circle {
+                fill: white !important;
+              }
+            }
+
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+
       div.info-nav {
-        width: 20%;
+        width: 25%;
         display: inline-block;
         vertical-align: top;
         background: #fafafa;
@@ -54,22 +300,36 @@ div#htv-app {
       }
 
       div.left {
-        width: 55%;
+        width: 75%;
         padding: 0;
         box-shadow: none;
-        border: 1px solid #eee;
-        border-width: 0 1px;
+        border-left: 1px solid #eee;
 
-        div.info {
-          display: inline-block;
+        .polling-location {
           padding: 1.7em;
-          box-sizing: border-box;
+          margin-bottom: -1em;
+          background: url('../img/maps.png');
+          background-size: cover;
 
-          .poll-widget a.btn {
+          &.expanded {
+            background: none;
+          }
+
+          h3 {
+            margin-top: 0;
+          }
+
+          a.btn {
             width: 100%;
             box-sizing: border-box;
             margin-bottom: 20px;
           }
+        }
+
+        div.info {
+          display: inline-block;
+          padding:  0 1.7em 1.7em;
+          box-sizing: border-box;
 
           .section-header {
             margin: 1em -1.7em;
@@ -102,13 +362,28 @@ div#htv-app {
 
       @media (max-width: $tablet) {
         flex-direction: row;
+        flex-direction: row;
+        margin: 20px -0.8em;
+        overflow: hidden;
 
         div.info-nav {
           display: none;
         }
 
+        div.state-info {
+
+          .register {
+            float: none;
+            text-align: left;
+            padding: 20px;
+            margin: 20px -20px -20px;
+            background: rgba(255, 255, 255, 0.15);
+          }
+        }
+
         div.left {
-          width: 65%;
+          width: 100%;
+          border: 0;
 
           div.info {
             .section-header {
@@ -162,6 +437,72 @@ div#htv-app {
 
       @media (max-width: $phablet) {
         flex-direction: row;
+
+        div.state-info {
+          padding-top: 20px;
+
+          .state {
+
+            h2 {
+              font-size: 42px;
+            }
+
+            h3 {
+              font-size: 14px;
+            }
+
+            .can-vote {
+              display: none;
+            }
+
+            .primary-info .mobile-share .share {
+              display: block;
+            }
+          }
+
+          .register {
+            h3 {
+              font-size: 14px;
+            }
+
+            .btn {
+              display: block;
+              // font-size: 12px;
+
+              &:first-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+
+        div.share-bar {
+
+          .share {
+            display: none;
+          }
+
+          .reminder-widget, .add-to-cal {
+            width: 50%;
+            padding: 0 10px;
+            box-sizing: border-box;
+          }
+
+          .reminder-widget {
+            &.expanded, &.done {
+              div.thanks, div.form {
+                margin: 0 -10px;
+              }
+            }
+          }
+
+          .reminder-btn {
+            margin-left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 10px;
+          }
+        }
 
         div.left, div.right {
           width: 100%;
@@ -386,7 +727,11 @@ div#htv-app {
 
 @media (max-width: $phablet) {
   div#htv-app {
+    margin-top: 20px;
+
     section.flex {
+      margin-top: 20px;
+
       div.left {
         h2 {
           text-align: center;

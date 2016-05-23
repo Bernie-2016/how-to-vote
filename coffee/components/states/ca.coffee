@@ -1,16 +1,19 @@
-React     = require('react')
-College   = require('components/blocks/college')
-Deadline  = require('components/blocks/deadline')
-Military  = require('components/blocks/military')
-MoreInfo  = require('components/blocks/moreInfo')
-Right     = require('components/blocks/right')
-Offices   = require('components/widgets/officesWidget')
-PollPlace = require('components/widgets/pollPlaceWidget')
-Share     = require('components/widgets/shareWidget')
-entity    = require('utils/entity')
-Sticky    = require('react-stickynode')
-Scroll    = require('react-scroll')
-$         = require('jquery')
+React        = require('react')
+College      = require('components/blocks/college')
+Deadline     = require('components/blocks/deadline')
+Military     = require('components/blocks/military')
+MoreInfo     = require('components/blocks/moreInfo')
+Right        = require('components/blocks/right')
+Offices      = require('components/widgets/officesWidget')
+PollPlace    = require('components/widgets/pollPlaceWidget')
+Share        = require('components/widgets/shareWidget')
+entity       = require('utils/entity')
+Sticky       = require('react-stickynode')
+Scroll       = require('react-scroll')
+$            = require('jquery')
+Reminder     = require('components/widgets/reminderWidget')
+ReactTooltip = require("react-tooltip")
+AddToCal     = require('components/widgets/addToCalWidget')
 
 module.exports = React.createClass
   displayName: 'CA State Info'
@@ -21,6 +24,47 @@ module.exports = React.createClass
 
   render: ->
     <section className='flex ca'>
+      <div className='state-info'>
+        <div className='breadcrumbs'>
+          Bernie 2016 > Vote for Bernie > California
+        </div>
+
+        <div className='state'>
+          <div className='primary-info'>
+            <div className='mobile-share'>
+              <Share {...@props}/>
+            </div>
+
+            <h2>
+              California
+            </h2>
+            <h3 className='caps'><strong>Tues, Jun 7th</strong> | Semi-Closed Primary</h3>
+          </div>
+
+          <div className='can-vote'>
+            <h3 className='caps'>Can Vote:</h3>
+
+            <div className='party-icons'>
+              <div className='icon democrats' data-tip="Democrats"></div>
+              <ReactTooltip place="top" effect="solid"/>
+              <div className='icon npp' data-tip="No Party Preference"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className='register'>
+
+          <div className='reg-deadline'>
+            <h3 className='caps'>Register By: <strong>Mon, May 23rd</strong></h3>
+          </div>
+
+          <div className='reg-buttons'>
+            <a href={@props.state.regLink} className='btn btn-success'>Register</a>
+            <a href={@props.state.chkLink} className='btn btn-secondary'>Check Registration</a>
+          </div>
+        </div>
+      </div>
+
       <div className='info-nav'>
         <Sticky top={0} bottomBoundary='section.flex'>
           <ul>
@@ -64,21 +108,25 @@ module.exports = React.createClass
       </div>
 
       <div className='left'>
-        <div className='info'>
-          <div id='key-info'>
-            <h2>
-              Key Information
-              <Share {...@props} />
-            </h2>
+        <div className='share-bar'>
+          <Reminder {...@props} />
+          <AddToCal date={@props.state.date} state={@props.state} />
+          <Share {...@props} />
+        </div>
 
-            <PollPlace state={@props.state} />
-            <p>
-              California has semi-closed primaries {entity('mdash')} Californians must register as a Democrat or "no party preference" to vote for Bernie!
-            </p>
-            <Deadline {...@props} />
-            <p>
-              If you're independent, make sure you're registered as "no party preference". There is also an Independent party in California which is NOT eligible to vote for Bernie -- only Democrats and "no party preference" voters can vote for Bernie in the primary. If you are registered "no party preference", when you go to vote just ask for a "democratic ballot" and you're all set!
-            </p>
+        <PollPlace state={@props.state} />
+
+        <div className='info'>
+          <div id='key-info' className='key-info section expanded'>
+            <div className='section-header'>
+              <h3 className='caps'>Key Information</h3>
+            </div>
+
+            <div className='section-body'>
+              <p>The California Democratic Primary takes place on June 7, 2016, and voters must be registered as a Democrat or No Party Preference by May 23, 2016 in order to participate.</p><br/>
+
+              <p>If you are an independent, make sure you're registered as No Party Preference. There is an Independent party in California which is not eligible to vote for Bernie — only Democrats and No Party Preference voters can. If you are registered No Party Preference, ask for a Democratic ballot when you go to vote and you’re all set!</p>
+            </div>
           </div>
 
           <div id='early-voting'>
@@ -172,8 +220,5 @@ module.exports = React.createClass
           <MoreInfo {...@props} />
           <Offices {...@props} />
         </div>
-      </div>
-      <div className='right'>
-        <Right {...@props} />
       </div>
     </section>

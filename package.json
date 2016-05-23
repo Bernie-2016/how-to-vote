@@ -54,6 +54,7 @@
     "react-scroll": "^1.0.15",
     "react-share": "^1.4.1",
     "react-stickynode": "^1.0.6",
+    "react-tooltip": "^2.0.2",
     "resolve-url-loader": "^1.4.3",
     "s3": "^4.4.0",
     "sass-loader": "^3.1.2",

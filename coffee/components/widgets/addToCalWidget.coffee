@@ -11,9 +11,9 @@ module.exports = React.createClass
       window.addeventatc.refresh()
 
   render: ->
-    <div>
+    <div className='add-to-cal'>
       {unless moment() > moment(@props.date, 'YYYY MM DD')
-        <div title='Add to Calendar' className='addeventatc'>
+        <div title='Add to Calendar' className='addeventatc reminder-btn btn'>
           + Add to Calendar
           <span className='start'>{moment(@props.date, 'YYYY MM DD').format('MM/D/YYYY')}</span>
           <span className='end'>{moment(@props.date, 'YYYY MM DD').format('MM/D/YYYY')}</span>

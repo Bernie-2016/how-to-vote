@@ -38,13 +38,17 @@ module.exports = React.createClass
       else
         @setState(done: true)
 
+  close: (e) ->
+    e.preventDefault()
+    @setState(open: false, done: false)
+
   componentDidUpdate: (prevProps) ->
     @setState(@getInitialState()) unless @props.stateKey is prevProps.stateKey
 
   render: ->
-    <div className='reminder-widget' hidden={moment().isAfter(moment(@props.state.date, 'YYYY MM DD'), 'days')}>
+    <div className="reminder-widget #{'expanded' if @state.open}" hidden={moment().isAfter(moment(@props.state.date, 'YYYY MM DD'), 'days')}>
       {if @state.done
-        <div>
+        <div className='thanks'>
           <strong>Thanks!</strong>
           <p>
             Successfully signed up for reminders.
@@ -52,26 +56,32 @@ module.exports = React.createClass
           <p>
             Share this page on social media!
           </p>
+          <a href='#' className='btn reminder-btn btn-success' onClick={@close}>
+            Done
+          </a>
           <Share {...@props} />
         </div>
       else if @state.open
-        <div>
+        <div className='form'>
           <input type='email' name='email' placeholder='Email Address' onChange={ (e) => @setState(email: e.target.value) } />
           <MaskedInput mask='(111) 111-1111' type='text' name='phone' placeholder='Phone Number' onChange={ (e) => @setState(phone: e.target.value) } />
           <input type='checkbox' name='alerts' onChange={ (e) => @setState(alerts: e.target.checked) } />Sign up for mobile alerts from Bernie 2016
           <br />
           <p className='disclaimer'>
-            Mobile alerts from Bernie 2016. Periodic messages. Msg {entity('amp')} data rates may apply. <strong>Text STOP to 82623 to stop receiving messages. Text HELP to 82623 for more information.</strong> 
+            Mobile alerts from Bernie 2016. Periodic messages. Msg {entity('amp')} data rates may apply. <strong>Text STOP to 82623 to stop receiving messages. Text HELP to 82623 for more information.</strong>
             {entity('nbsp')}<a href='https://sync.revmsg.net/terms-and-conditions/4c4b9892-f8fc-4801-b7ea-710fa9225ad4' target='_blank'>
               Terms {entity('amp')} Conditions
             </a>
           </p>
-          <a href='#' className='btn red' onClick={@submit}>
+          <a href='#' className='btn red reminder-btn sign-up' onClick={@submit}>
             Sign Up
+          </a>
+          <a href='#' className='btn reminder-btn' onClick={@close}>
+            Cancel
           </a>
         </div>
       else
-        <a href='#' className='btn red' onClick={@open}>
+        <a href='#' className='btn red reminder-btn' onClick={@open}>
           Sign Up for Reminders
         </a>
       }
