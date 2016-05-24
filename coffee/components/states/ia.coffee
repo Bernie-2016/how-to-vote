@@ -36,4 +36,6 @@ module.exports = React.createClass
           <Offices {...@props} />
         </div>
       </div>
+      <div className='right'>
+      </div>
     </section>

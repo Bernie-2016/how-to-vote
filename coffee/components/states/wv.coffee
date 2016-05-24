@@ -44,19 +44,10 @@ module.exports = React.createClass
           <MoreInfo {...@props} />
           <Offices {...@props} />
         </div>
-        <div className='right'>
-          <Sticky top={25} bottomBoundary='section.flex'>
-            <DateBox title='Primary Date' date={@props.state.date} />
-            <AddToCal date={@props.state.date} state={@props.state} />
-            <DateBox title='Registration Deadline' date={@props.state.regDate} />
-            <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
-            <Reminder {...@props} />
-
-            <hr className='right-divider' />
-            <Button title='Register to Vote' link={@props.state.regLink} classes={'blue' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
-            <Button title='Check Registration Status' link={@props.state.chkLink} />
-            <Button title='Commit to Vote' classes='blue' link='https://go.berniesanders.com/page/s/commit-to-vote-WV?source=votesite' />
-          </Sticky>
-        </div>
+      </div>
+      <div className='right'>
+        <Sticky top={25} bottomBoundary='section.flex'>
+          <Button title='Commit to Vote' classes='btn-success' link='https://go.berniesanders.com/page/s/commit-to-vote-WV?source=votesite' />
+        </Sticky>
       </div>
     </section>

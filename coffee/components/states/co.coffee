@@ -59,42 +59,12 @@ module.exports = React.createClass
           </p>
           <Offices {...@props} />
         </div>
-        <div className='right'>
-          <Sticky top={25} bottomBoundary='section.flex'>
-            <h3 className='caps'>Caucus Date</h3>
-            <p className='date jubilat blue'>
-              {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}
-              {if moment().isSame(moment(@props.state.date, 'YYYY MM DD'), 'days')
-                <div>
-                  <h4>(today!)</h4>
-                  <br />
-                </div>
-              }
-            </p>
-            <AddToCal date={@props.state.date} state={@props.state} />
-            <div>
-              <h3 className='caps'>
-                Registration Deadline
-              </h3>
-              <p className='date jubilat blue'>
-                {moment(@props.state.regDate, 'YYYY MM DD').format('ddd, MMM Do')}
-              </p>
-              <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
-              <Reminder {...@props} />
-            </div>
-
-            <hr className='right-divider' />
-            <p>
-              <a href='https://www.sos.state.co.us/voter-classic/pages/pub/olvr/findVoterReg.xhtml' target='_blank' className='btn blue'>
-                Check Registration Status
-              </a>
-            </p>
-            <p>
-              <a href='https://go.berniesanders.com/page/s/co-commit-to-caucus-sms' target='_blank' className='btn'>
-                Commit to Caucus
-              </a>
-            </p>
-          </Sticky>
-        </div>
+      </div>
+      <div className='right'>
+        <Sticky top={25} bottomBoundary='section.flex'>
+          <a href='https://go.berniesanders.com/page/s/co-commit-to-caucus-sms' target='_blank' className='btn btn-success'>
+            Commit to Caucus
+          </a>
+        </Sticky>
       </div>
     </section>

@@ -52,15 +52,10 @@ module.exports = React.createClass
           </p>
           <Offices {...@props} />
         </div>
-        <div className='right'>
-          <Sticky top={25} bottomBoundary='section.flex'>
-            <DateBox title='Caucus Date' date={@props.state.date} />
-            <AddToCal date={@props.state.date} state={@props.state} />
-            <Reminder {...@props} />
-
-            <hr className='right-divider' />
-            <Button title='More Info' link='https://www.dfl.org/' classes='blue' />
-          </Sticky>
-        </div>
+      </div>
+      <div className='right'>
+        <Sticky top={25} bottomBoundary='section.flex'>
+          <Button title='More Info' link='https://www.dfl.org/' classes='blue' />
+        </Sticky>
       </div>
     </section>

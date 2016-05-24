@@ -47,25 +47,10 @@ module.exports = React.createClass
           </p>
           <Offices {...@props} />
         </div>
-        <div className='right'>
-          <Sticky top={25} bottomBoundary='section.flex'>
-            <h3 className='caps'>Caucus Date</h3>
-            <p className='date jubilat blue'>
-              {moment(@props.state.date, 'YYYY MM DD').format('ddd, MMM Do')}, 11AM
-            </p>
-            {if moment().isSame(moment(@props.state.date, 'YYYY MM DD'), 'days')
-              <div>
-                <h4>(today!)</h4>
-                <br />
-              </div>
-            }
-            <AddToCal date={@props.state.date} state={@props.state} />
-            <Reminder {...@props} />
-            <hr className='right-divider' />
-            <Button title='Register to Vote' link={@props.state.regLink} classes={'blue' if moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
-            <Button title='Check Registration Status' link={@props.state.chkLink} />
-            <Button title='Need a ride?' link='https://go.berniesanders.com/page/s/ride-caucus-day-nv' />
-          </Sticky>
-        </div>
+      </div>
+      <div className='right'>
+        <Sticky top={25} bottomBoundary='section.flex'>
+          <Button title='Need a ride?' link='https://go.berniesanders.com/page/s/ride-caucus-day-nv' />
+        </Sticky>
       </div>
     </section>

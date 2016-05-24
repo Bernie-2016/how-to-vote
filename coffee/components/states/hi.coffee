@@ -76,18 +76,7 @@ module.exports = React.createClass
           </p>
           <Offices {...@props} />
         </div>
-        <div className='right'>
-          <Sticky top={25} bottomBoundary='section.flex'>
-            <DateBox title={"#{primaryType(@props.state.fillKey, @props.state.label)} Date"} date={@props.state.date} />
-            <AddToCal date={@props.state.date} state={@props.state} />
-            <DateBox title='Registration Deadline' date={@props.state.regDate} />
-            <AddToCal date={@props.state.regDate} state={@props.state} addendum={' Registration Deadline'} />
-            <Reminder {...@props} />
-            <hr className='right-divider' />
-
-            <Button title='Register to Vote' link='http://elections.hawaii.gov/frequently-asked-questions/online-voter-registration/' classes={'blue' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
-            <Button title='Check Registration Status' link='https://olvr.hawaii.gov/' />
-          </Sticky>
-        </div>
+      </div>
+      <div className='right'>
       </div>
     </section>
