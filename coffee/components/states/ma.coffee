@@ -3,7 +3,7 @@ College   = require('components/blocks/college')
 Deadline  = require('components/blocks/deadline')
 Military  = require('components/blocks/military')
 MoreInfo  = require('components/blocks/moreInfo')
-Right     = require('components/blocks/right')
+StateInfo = require('components/blocks/stateInfo')
 Young     = require('components/blocks/young')
 Offices   = require('components/widgets/officesWidget')
 PollPlace = require('components/widgets/pollPlaceWidget')
@@ -15,22 +15,23 @@ module.exports = React.createClass
 
   render: ->
     <section className='flex'>
+  		<StateInfo {...@props} />
+
       <div className='left'>
-        <h2>
-          Key Information
-          <Share {...@props} />
-        </h2>
-        <PollPlace state={@props.state} />
-        <p>
-          Massachusetts has semi-closed primaries {entity('mdash')} Bay Staters must register as a Democrat or undeclared to vote for Bernie!
-        </p>
-        <Deadline {...@props} />
-        <College {...@props} />
-        <Military {...@props} />
-        <MoreInfo {...@props} />
-        <Offices {...@props} />
-      </div>
-      <div className='right'>
-        <Right {...@props} />
+        <div className='info'>
+          <h2>
+            Key Information
+            <Share {...@props} />
+          </h2>
+          <PollPlace state={@props.state} />
+          <p>
+            Massachusetts has semi-closed primaries {entity('mdash')} Bay Staters must register as a Democrat or undeclared to vote for Bernie!
+          </p>
+          <Deadline {...@props} />
+          <College {...@props} />
+          <Military {...@props} />
+          <MoreInfo {...@props} />
+          <Offices {...@props} />
+        </div>
       </div>
     </section>

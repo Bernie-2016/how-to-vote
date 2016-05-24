@@ -7,524 +7,526 @@ div#htv-app {
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 50px;
+    background: white;
+    box-shadow: 0px 1px 3px #a6aeb9;
 
     h1,h2,h3,h4,h5,p,li,ul,ol {
       margin: 0;
       line-height: 1;
     }
 
-    &.ca {
-      background: white;
-      box-shadow: 0px 1px 3px #a6aeb9;
+    .btn-success {
+      background: #20c361;
+      color: white;
 
-      .btn-success {
-        background: #20c361;
-        color: white;
+      &:hover {
+        background: darken(#20c361, 5);
+      }
+    }
 
-        &:hover {
-          background: darken(#20c361, 5);
+    .btn-secondary {
+      background: $darkblue;
+      color: white;
+
+      &:hover {
+        background: darken($darkblue, 5);
+      }
+    }
+
+    .btn-danger {
+      background: $red;
+      color: white;
+
+      &:hover {
+        background: darken($red, 5);
+      }
+    }
+
+    div.state-info {
+      position: relative;
+      width: 100%;
+      background: $blue;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+      padding-top: 100px;
+
+      .state {
+        display: inline-block;
+
+        h2 {
+          font-size: 50px;
+          font-family: jubilat;
+          color: white;
+          text-transform: none;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+
+        h3 {
+          font-size: 16px;
+        }
+
+        .primary-info, .can-vote {
+          display: inline-block;
+        }
+
+        .primary-info {
+          padding-right: 20px;
+
+          .mobile-share .share {
+            display: none;
+            margin-left: -8px;
+
+            .share-btn {
+              display: inline-block;
+              margin-bottom: 8px;
+              cursor: pointer;
+              transform: scale(0.75);
+
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+
+        .can-vote {
+          padding-left: 20px;
+          border-left: 1px solid rgba(255,255,255,0.4);
+
+          .icon {
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            border-radius: 35px;
+            background: white;
+            display: inline-block;
+            margin: 10px 15px 0 0;
+            position: relative;
+
+            &.democrats {
+              background: url('../img/dem-logo.svg');
+            }
+
+            &.npp {
+              background: url('../img/npp-logo.svg');
+            }
+          }
         }
       }
 
-      .btn-secondary {
+      .register {
+        float: right;
+        text-align: right;
+
+        h3 {
+          font-size: 16px;
+        }
+
+        .btn {
+          display: inline-block;
+          font-size: 16px;
+          margin-bottom: 0;
+
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+
+      .breadcrumbs {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 40px;
+        background: $lightblue;
+        line-height: 40px;
+        padding-left: 20px;
+      }
+    }
+
+    div.share-bar {
+      width: 100%;
+      background: $darkblue;
+      height: 50px;
+      vertical-align: middle;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 1;
+
+      .add-to-cal {
+        display: inline-block;
+      }
+
+      &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+      }
+
+      .reminder-widget {
+        transition: 0.5s;
+        display: inline-block;
+        color: white;
+        // padding: 20px;
+        z-index: 9;
         background: $darkblue;
-        color: white;
 
-        &:hover {
-          background: darken($darkblue, 5);
+        &.expanded, &.done {
+          div.thanks, div.form {
+            background: #2F437B;
+            position: absolute;
+            top: 50px;
+            padding: 0 20px 20px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+          }
+
+          div.thanks {
+            .btn {
+              margin-left: 0;
+            }
+
+            .share {
+              display: inline-block;
+            }
+          }
+        }
+
+        input {
+          padding: 0.75em 1em 0.85em;
+          box-sizing: border-box;
+          width: 100%;
+          display: block;
+          margin: 0.5em 0;
+          border: 0;
+          border-radius: 3px;
+          font-size: 0.9em;
+          padding: 0.75em 1em 0.85em;
+          display: block;
+        }
+
+        input[type='checkbox'] {
+          display: inline-block;
+          width: auto;
+          margin-right: 10px;
+        }
+
+        p.disclaimer {
+          font-size: 14px;
+        }
+
+        .reminder-btn.sign-up {
+          margin-left: 0;
         }
       }
 
-      .btn-danger {
-        background: $red;
-        color: white;
+      .reminder-btn {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 1em;
+        font-size: 12px;
+      }
 
-        &:hover {
-          background: darken($red, 5);
+      .share {
+        display: inline-block;
+        float: right;
+
+        .share-btn {
+          display: inline-block;
+          margin-right: 12px;
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          transform: scale(0.75);
+          margin-top: 7px;
+
+          svg.social-icon {
+            fill : #162D6E !important;
+
+            circle {
+              fill: white !important;
+            }
+          }
+
+          &:hover {
+            opacity: 0.7;
+          }
         }
+      }
+    }
+
+    div.info-nav {
+      width: 25%;
+      display: inline-block;
+      vertical-align: top;
+      background: #fafafa;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          border-bottom: 1px solid #eee;
+
+          a {
+            display: block;
+            padding: 1em;
+            font-size: 14px;
+            cursor: pointer;
+            border-left: 5px solid transparent;
+            transition: 0.15s;
+
+            &:hover, &.active {
+              background: $lightgray;
+              border-left: 10px solid $red;
+            }
+
+            h3 {
+              margin: 0;
+              color: $blue;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    div.left {
+      width: 75%;
+      padding: 0;
+      box-shadow: none;
+      border-left: 1px solid #eee;
+
+      .polling-location {
+        padding: 1.7em;
+        margin-bottom: -1em;
+        background: url('../img/maps.png');
+        background-size: cover;
+
+        &.expanded {
+          background: none;
+        }
+
+        h3 {
+          margin-top: 0;
+        }
+
+        a.btn {
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: 20px;
+
+          &:hover {
+            background: darken($blue, 5);
+          }
+        }
+      }
+
+      div.info {
+        display: inline-block;
+        padding:  0 1.7em 1.7em;
+        box-sizing: border-box;
+
+        h2 {
+          margin-top: 20px;
+        }
+
+        .section-header {
+          margin: 1em -1.7em;
+          border-width: 1px 0;
+          background: #fafafa;
+          padding: 0.75em 1.7em;
+          position: relative;
+          border-bottom: 2px solid white;
+
+          h3 {
+            margin: 0;
+          }
+        }
+
+         p, ol {
+           font-size: 18px;
+         }
+      }
+    }
+
+    div.right {
+      width: 25%;
+      padding: 1.7em;
+      background: #fafafa;
+
+      .btn, .btn.blue {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: row;
+      flex-direction: row;
+      margin: 20px -0.8em;
+      overflow: hidden;
+
+      div.info-nav {
+        display: none;
       }
 
       div.state-info {
-        position: relative;
-        width: 100%;
-        background: $blue;
-        color: white;
-        padding: 20px;
-        box-sizing: border-box;
-        padding-top: 100px;
-
-        .state {
-          display: inline-block;
-
-          h2 {
-            font-size: 50px;
-            font-family: jubilat;
-            color: white;
-            text-transform: none;
-            font-weight: 400;
-            margin-bottom: 0;
-          }
-
-          h3 {
-            font-size: 16px;
-          }
-
-          .primary-info, .can-vote {
-            display: inline-block;
-          }
-
-          .primary-info {
-            padding-right: 20px;
-
-            .mobile-share .share {
-              display: none;
-              margin-left: -8px;
-
-              .share-btn {
-                display: inline-block;
-                margin-bottom: 8px;
-                cursor: pointer;
-                transform: scale(0.75);
-
-                &:hover {
-                  opacity: 0.7;
-                }
-              }
-            }
-          }
-
-          .can-vote {
-            padding-left: 20px;
-            border-left: 1px solid rgba(255,255,255,0.4);
-
-            .icon {
-              cursor: pointer;
-              width: 35px;
-              height: 35px;
-              border-radius: 35px;
-              background: white;
-              display: inline-block;
-              margin: 10px 15px 0 0;
-              position: relative;
-
-              &.democrats {
-                background: url('../img/dem-logo.svg');
-              }
-
-              &.npp {
-                background: url('../img/npp-logo.svg');
-              }
-            }
-          }
-        }
 
         .register {
-          float: right;
-          text-align: right;
-
-          h3 {
-            font-size: 16px;
-          }
-
-          .btn {
-            display: inline-block;
-            font-size: 16px;
-            margin-bottom: 0;
-
-            &:first-child {
-              margin-right: 20px;
-            }
-          }
-        }
-
-        .breadcrumbs {
-          display: none;
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          height: 40px;
-          background: $lightblue;
-          line-height: 40px;
-          padding-left: 20px;
-        }
-      }
-
-      div.share-bar {
-        width: 100%;
-        background: $darkblue;
-        height: 50px;
-        vertical-align: middle;
-        margin-bottom: 0;
-        position: relative;
-        z-index: 1;
-
-        .add-to-cal {
-          display: inline-block;
-        }
-
-        &:before {
-          content: "";
-          display: inline-block;
-          vertical-align: middle;
-          height: 100%;
-        }
-
-        .reminder-widget {
-          transition: 0.5s;
-          display: inline-block;
-          color: white;
-          // padding: 20px;
-          z-index: 9;
-          background: $darkblue;
-
-          &.expanded, &.done {
-            div.thanks, div.form {
-              background: #2F437B;
-              position: absolute;
-              top: 50px;
-              padding: 0 20px 20px;
-              width: 100%;
-              padding: 20px;
-              box-sizing: border-box;
-            }
-
-            div.thanks {
-              .btn {
-                margin-left: 0;
-              }
-
-              .share {
-                display: inline-block;
-              }
-            }
-          }
-
-          input {
-            padding: 0.75em 1em 0.85em;
-            box-sizing: border-box;
-            width: 100%;
-            display: block;
-            margin: 0.5em 0;
-            border: 0;
-            border-radius: 3px;
-            font-size: 0.9em;
-            padding: 0.75em 1em 0.85em;
-            display: block;
-          }
-
-          input[type='checkbox'] {
-            display: inline-block;
-            width: auto;
-            margin-right: 10px;
-          }
-
-          p.disclaimer {
-            font-size: 14px;
-          }
-
-          .reminder-btn.sign-up {
-            margin-left: 0;
-          }
-        }
-
-        .reminder-btn {
-          display: inline-block;
-          vertical-align: middle;
-          margin-left: 1em;
-          font-size: 12px;
-        }
-
-        .share {
-          display: inline-block;
-          float: right;
-
-          .share-btn {
-            display: inline-block;
-            margin-right: 12px;
-            cursor: pointer;
-            width: 30px;
-            height: 30px;
-            transform: scale(0.75);
-            margin-top: 7px;
-
-            svg.social-icon {
-              fill : #162D6E !important;
-
-              circle {
-                fill: white !important;
-              }
-            }
-
-            &:hover {
-              opacity: 0.7;
-            }
-          }
-        }
-      }
-
-      div.info-nav {
-        width: 25%;
-        display: inline-block;
-        vertical-align: top;
-        background: #fafafa;
-
-        ul {
-          list-style-type: none;
-          padding: 0;
-
-          li {
-            border-bottom: 1px solid #eee;
-
-            a {
-              display: block;
-              padding: 1em;
-              font-size: 14px;
-              cursor: pointer;
-              border-left: 5px solid transparent;
-              transition: 0.15s;
-
-              &:hover, &.active {
-                background: $lightgray;
-                border-left: 10px solid $red;
-              }
-
-              h3 {
-                margin: 0;
-                color: $blue;
-                font-size: 14px;
-              }
-            }
-          }
+          float: none;
+          text-align: left;
+          padding: 20px;
+          margin: 20px -20px -20px;
+          background: rgba(255, 255, 255, 0.15);
         }
       }
 
       div.left {
-        width: 75%;
-        padding: 0;
-        box-shadow: none;
-        border-left: 1px solid #eee;
+        width: 100%;
+        border: 0;
 
-        .polling-location {
-          padding: 1.7em;
-          margin-bottom: -1em;
-          background: url('../img/maps.png');
-          background-size: cover;
+        div.info {
+          .section-header {
+            cursor: pointer;
+            margin: 0 -1.7em;
 
-          &.expanded {
-            background: none;
-          }
+            &:hover {
+              background: darken(#fafafa, 2);
+            }
 
-          h3 {
-            margin-top: 0;
-          }
-
-          a.btn {
-            width: 100%;
-            box-sizing: border-box;
-            margin-bottom: 20px;
+            &::after {
+             display: block;
+             position: absolute;
+             height: 0;
+             width: 0;
+             border-left: 0.25em solid transparent;
+             border-right: 0.25em solid transparent;
+             border-top: 0.25em solid $darkblue;
+             content: "";
+             top: 0;
+             bottom: 0;
+             right: 1em;
+             margin: auto;
+             transition: 0.25s;
+            }
           }
         }
 
-        div.info {
-          display: inline-block;
-          padding:  0 1.7em 1.7em;
-          box-sizing: border-box;
+        .section-body {
+          max-height: 0;
+          overflow: hidden;
+          transition: all 0.25s ease;
+        }
 
-          .section-header {
-            margin: 1em -1.7em;
-            border-width: 1px 0;
-            background: #fafafa;
-            padding: 0.75em 1.7em;
-            position: relative;
-            border-bottom: 2px solid white;
-
-            h3 {
-              margin: 0;
-            }
+        .section.expanded {
+          .section-body {
+            max-height: 800px;
+            margin: 1em 0;
           }
 
-           p, ol {
-             font-size: 18px;
-           }
+          .section-header::after {
+            transform: rotateZ(180deg);
+          }
         }
       }
 
       div.right {
-        width: 25%;
-        padding: 1.7em;
-        background: #fafafa;
-
-        .btn, .btn.blue {
-          font-size: 14px;
-        }
+        width: 35%;
       }
+    }
 
-      @media (max-width: $tablet) {
-        flex-direction: row;
-        flex-direction: row;
-        margin: 20px -0.8em;
-        overflow: hidden;
+    @media (max-width: $phablet) {
+      flex-direction: row;
 
-        div.info-nav {
-          display: none;
-        }
+      div.state-info {
+        padding-top: 20px;
 
-        div.state-info {
+        .state {
 
-          .register {
-            float: none;
-            text-align: left;
-            padding: 20px;
-            margin: 20px -20px -20px;
-            background: rgba(255, 255, 255, 0.15);
-          }
-        }
-
-        div.left {
-          width: 100%;
-          border: 0;
-
-          div.info {
-            .section-header {
-              cursor: pointer;
-              margin: 0 -1.7em;
-
-              &:hover {
-                background: darken(#fafafa, 2);
-              }
-
-              &::after {
-               display: block;
-               position: absolute;
-               height: 0;
-               width: 0;
-               border-left: 0.25em solid transparent;
-               border-right: 0.25em solid transparent;
-               border-top: 0.25em solid $darkblue;
-               content: "";
-               top: 0;
-               bottom: 0;
-               right: 1em;
-               margin: auto;
-               transition: 0.25s;
-              }
-            }
+          h2 {
+            font-size: 42px;
           }
 
-          .section-body {
-            max-height: 0;
-            overflow: hidden;
-            transition: all 0.25s ease;
+          h3 {
+            font-size: 14px;
           }
 
-          .section.expanded {
-            .section-body {
-              max-height: 800px;
-              margin: 1em 0;
-            }
-
-            .section-header::after {
-              transform: rotateZ(180deg);
-            }
-          }
-        }
-
-        div.right {
-          width: 35%;
-        }
-      }
-
-      @media (max-width: $phablet) {
-        flex-direction: row;
-
-        div.state-info {
-          padding-top: 20px;
-
-          .state {
-
-            h2 {
-              font-size: 42px;
-            }
-
-            h3 {
-              font-size: 14px;
-            }
-
-            .can-vote {
-              display: none;
-            }
-
-            .primary-info .mobile-share .share {
-              display: block;
-            }
-          }
-
-          .register {
-            h3 {
-              font-size: 14px;
-            }
-
-            .btn {
-              display: block;
-              // font-size: 12px;
-
-              &:first-child {
-                margin-right: 0;
-              }
-            }
-          }
-        }
-
-        div.share-bar {
-
-          .share {
+          .can-vote {
             display: none;
           }
 
-          .reminder-widget, .add-to-cal {
-            width: 50%;
-            padding: 0 10px;
-            box-sizing: border-box;
+          .primary-info .mobile-share .share {
+            display: block;
+          }
+        }
+
+        .register {
+          h3 {
+            font-size: 14px;
           }
 
-          .reminder-widget {
-            &.expanded, &.done {
-              div.thanks, div.form {
-                margin: 0 -10px;
-              }
+          .btn {
+            display: block;
+            // font-size: 12px;
+
+            &:first-child {
+              margin-right: 0;
             }
-          }
-
-          .reminder-btn {
-            margin-left: 0;
-            width: 100%;
-            box-sizing: border-box;
-            font-size: 10px;
-          }
-        }
-
-        div.left, div.right {
-          width: 100%;
-        }
-
-        div.right {
-          .info-box {
-            display: inline-block;
-            max-width: 50%;
-            padding: 0 0.5em;
-            box-sizing: border-box;
           }
         }
       }
 
+      div.share-bar {
+
+        .share {
+          display: none;
+        }
+
+        .reminder-widget, .add-to-cal {
+          width: 50%;
+          padding: 0 10px;
+          box-sizing: border-box;
+        }
+
+        .reminder-widget {
+          &.expanded, &.done {
+            div.thanks, div.form {
+              margin: 0 -10px;
+            }
+          }
+        }
+
+        .reminder-btn {
+          margin-left: 0;
+          width: 100%;
+          box-sizing: border-box;
+          font-size: 10px;
+        }
+      }
+
+      div.left, div.right {
+        width: 100%;
+      }
+
+      div.right {
+        .info-box {
+          display: inline-block;
+          max-width: 50%;
+          padding: 0 0.5em;
+          box-sizing: border-box;
+        }
+      }
     }
 
     div.left {
       background-color: white;
       box-sizing: border-box;
-      box-shadow: 0px 1px 3px #a6aeb9;
-      padding: 1.7em 2em;
       width: 100%;
       flex-basis: auto;
       order: 2;
@@ -571,10 +573,6 @@ div#htv-app {
         font-weight: 700;
         margin-top: 1.6em;
         margin-bottom: 0.5em;
-      }
-
-      & > * {
-        margin-bottom: 0.4em;
       }
 
       div.poll-widget {
@@ -709,7 +707,7 @@ div#htv-app {
 
       div.left {
         order: 1;
-        width: 65%;
+        width: 75%;
       }
 
       div.right {
