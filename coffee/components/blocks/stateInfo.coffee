@@ -46,13 +46,22 @@ module.exports = React.createClass
 
       <div className='register'>
 
-        <div className='reg-deadline'>
-          <h3 className='caps'>Register By: <strong>{moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')}</strong></h3>
-        </div>
+        {unless not @props.state.regDate
+          <div>
+            <div className='reg-deadline'>
+              <h3 className='caps'>Register By: <strong>{moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')}</strong></h3>
+            </div>
 
-        <div className='reg-buttons'>
-          <Button title='Register' link={@props.state.regLink} classes={'btn-success' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
-          <Button title='Check Registration' link={@props.state.chkLink} classes='btn-secondary' />
-        </div>
+            <div className='reg-buttons'>
+              {if @props.state.regLink
+                <Button title='Register' link={@props.state.regLink} classes={'btn-success' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
+              }
+
+              {if @props.state.chkLink
+                <Button title='Check Registration' link={@props.state.chkLink} classes='btn-secondary' />
+              }
+            </div>
+          </div>
+        }
       </div>
     </div>

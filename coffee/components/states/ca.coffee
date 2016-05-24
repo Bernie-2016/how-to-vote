@@ -9,18 +9,14 @@ Share        = require('components/widgets/shareWidget')
 entity       = require('utils/entity')
 Sticky       = require('react-stickynode')
 Scroll       = require('react-scroll')
-$            = require('jquery')
 Reminder     = require('components/widgets/reminderWidget')
 ReactTooltip = require("react-tooltip")
 AddToCal     = require('components/widgets/addToCalWidget')
 StateInfo    = require('components/blocks/stateInfo')
+ShareBar     = require('components/blocks/shareBar')
 
 module.exports = React.createClass
   displayName: 'CA State Info'
-
-  componentDidMount: ->
-    $('.section-header').on 'click', ->
-      $(this).parent().toggleClass 'expanded'
 
   render: ->
     <section className='flex ca'>
@@ -69,11 +65,7 @@ module.exports = React.createClass
       </div>
 
       <div className='left'>
-        <div className='share-bar'>
-          <Reminder {...@props} />
-          <AddToCal date={@props.state.date} state={@props.state} />
-          <Share {...@props} />
-        </div>
+        <ShareBar {...@props} />
 
         <PollPlace state={@props.state} />
 
