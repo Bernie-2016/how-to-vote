@@ -1,7 +1,7 @@
 {
   "AL": {
     "name": "Alabama",
-    "fillKey": "OPEN_PRIMARY",
+    "fillKey": "OPEN_PRIMARY",		"type": "Open Primary",
     "regDate": "2016 02 15",
     "date": "2016 03 01",
     "office": {
@@ -14,6 +14,7 @@
   "AK": {
     "name": "Alaska",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 03 26",
     "date": "2016 03 26",
     "office": {
@@ -26,6 +27,7 @@
   "AS": {
     "name": "American Samoa",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 03 01",
     "date": "2016 03 01",
     "office": {
@@ -37,6 +39,7 @@
   "AZ": {
     "name": "Arizona",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 02 22",
     "date": "2016 03 22",
     "office": {
@@ -49,6 +52,7 @@
   "AR": {
     "name": "Arkansas",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 01",
     "date": "2016 03 01",
     "office": {
@@ -61,7 +65,8 @@
   "CA": {
     "name": "California",
     "fillKey": "OTHER",
-    "label": "Semi-closed Primary",
+    "type": "Semi-closed Primary",
+		"label": "Semi-closed Primary",
     "regDate": "2016 05 23",
     "date": "2016 06 07",
     "office": {
@@ -75,6 +80,7 @@
   "CO": {
     "name": "Colorado",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 01 04",
     "date": "2016 03 01",
     "office": {
@@ -85,6 +91,7 @@
   "CT": {
     "name": "Connecticut",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 04 25",
     "date": "2016 04 26",
     "office": {
@@ -97,6 +104,7 @@
   "DC": {
     "name": "D.C.",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 05 16",
     "date": "2016 06 14",
     "office": {
@@ -108,6 +116,7 @@
   "DE": {
     "name": "Delaware",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 04 02",
     "date": "2016 04 26",
     "office": {
@@ -120,6 +129,7 @@
   "DA": {
     "name": "Dems Abroad",
     "fillKey": "OTHER",
+    "type":"Closed Primary",
     "label": "Closed Primary",
     "office": {
       "url": "http://go.berniesanders.com/page/s/democrats-abroad"
@@ -128,6 +138,7 @@
   "FL": {
     "name": "Florida",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 02 16",
     "date": "2016 03 15",
     "office": {
@@ -140,6 +151,7 @@
   "GA": {
     "name": "Georgia",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 01",
     "date": "2016 03 01",
     "office": {
@@ -152,6 +164,7 @@
   "GU": {
     "name": "Guam",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 05 07",
     "date": "2016 05 07",
     "office": {
@@ -163,6 +176,7 @@
   "HI": {
     "name": "Hawaii",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 03 26",
     "date": "2016 03 26",
     "office": {
@@ -173,6 +187,7 @@
   "ID": {
     "name": "Idaho",
     "fillKey": "OTHER",
+    "type":"Semi-open Caucus",
     "label": "Semi-open Caucus",
     "regDate": "2016 03 22",
     "date": "2016 03 22",
@@ -186,6 +201,7 @@
   "IL": {
     "name": "Illinois",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 16",
     "date": "2016 03 15",
     "office": {
@@ -198,6 +214,7 @@
   "IN": {
     "name": "Indiana",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 04 04",
     "date": "2016 05 03",
     "office": {
@@ -210,6 +227,7 @@
   "IA": {
     "name": "Iowa",
     "fillKey": "OTHER",
+    "type": "Semi-open Caucus",
     "label": "Semi-open Caucus",
     "regDate": "2016 02 01",
     "date": "2016 02 01",
@@ -223,6 +241,7 @@
   "KS": {
     "name": "Kansas",
     "fillKey": "OTHER",
+    "type": "Semi-closed Caucus",
     "label": "Semi-closed Caucus",
     "regDate": "2016 03 05",
     "date": "2016 03 05",
@@ -236,6 +255,7 @@
   "KY": {
     "name": "Kentucky",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 04 18",
     "date": "2016 05 17",
     "office": {
@@ -247,6 +267,7 @@
   "LA": {
     "name": "Louisiana",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 02 03",
     "date": "2016 03 05",
     "office": {
@@ -259,6 +280,7 @@
   "ME": {
     "name": "Maine",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 02 19",
     "date": "2016 03 06",
     "office": {
@@ -271,6 +293,7 @@
   "MD": {
     "name": "Maryland",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 04 05",
     "date": "2016 04 26",
     "office": {
@@ -283,7 +306,8 @@
   "MA": {
     "name": "Massachusetts",
     "fillKey": "OTHER",
-    "label": "Semi-closed Primary",
+    "type": "Semi-closed Primary",
+		"label": "Semi-closed Primary",
     "regDate": "2016 02 10",
     "date": "2016 03 01",
     "office": {
@@ -296,6 +320,7 @@
   "MI": {
     "name": "Michigan",
     "fillKey": "OTHER",
+    "type": "Semi-open Primary",
     "label": "Semi-open Primary",
     "regDate": "2016 02 08",
     "date": "2016 03 08",
@@ -309,6 +334,7 @@
   "MN": {
     "name": "Minnesota",
     "fillKey": "OPEN_CAUCUS",
+		"type": "Open Caucus",
     "date": "2016 03 01",
     "office": {
       "url": "https://www.dfl.org/",
@@ -318,6 +344,7 @@
   "MS": {
     "name": "Mississippi",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 06",
     "date": "2016 03 08",
     "office": {
@@ -329,6 +356,7 @@
   "MO": {
     "name": "Missouri",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 17",
     "date": "2016 03 15",
     "office": {
@@ -341,6 +369,7 @@
   "MT": {
     "name": "Montana",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 06 07",
     "date": "2016 06 07",
     "office": {
@@ -354,6 +383,7 @@
   "NE": {
     "name": "Nebraska",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 03 05",
     "date": "2016 03 05",
     "office": {
@@ -366,6 +396,7 @@
   "NV": {
     "name": "Nevada",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 02 20",
     "date": "2016 02 20",
     "office": {
@@ -378,6 +409,7 @@
   "NH": {
     "name": "New Hampshire",
     "fillKey": "OTHER",
+    "type": "Semi-open Primary",
     "label": "Semi-open Primary",
     "regDate": "2016 01 30",
     "date": "2016 02 09",
@@ -391,6 +423,7 @@
   "NJ": {
     "name": "New Jersey",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 05 17",
     "date": "2016 06 07",
     "office": {
@@ -403,6 +436,7 @@
   "NM": {
     "name": "New Mexico",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 05 10",
     "date": "2016 06 07",
     "office": {
@@ -416,6 +450,7 @@
   "NY": {
     "name": "New York",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 03 25",
     "date": "2016 04 19",
     "office": {
@@ -428,7 +463,8 @@
   "NC": {
     "name": "North Carolina",
     "fillKey": "OTHER",
-    "label": "Semi-closed Primary",
+    "type": "Semi-closed Primary",
+		"label": "Semi-closed Primary",
     "regDate": "2016 02 19",
     "date": "2016 03 15",
     "office": {
@@ -441,16 +477,18 @@
   "ND": {
     "name": "North Dakota",
     "fillKey": "OPEN_CAUCUS",
+		"type": "Open Caucus",
     "date": "2016 06 07",
     "office": {
       "url": "http://demnpl.com/",
       "phone": "(701) 255-0460"
     },
-    "pollWgt":true
+    "pollWgt": true
   },
   "NMI": {
     "name": "Northern Mariana Islands",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "date": "2016 03 12",
     "office": {
       "url": "https://www.facebook.com/CNMIDemocrats"
@@ -460,6 +498,7 @@
   "OH": {
     "name": "Ohio",
     "fillKey": "OTHER",
+    "type": "Semi-open Primary",
     "label": "Semi-open Primary",
     "regDate": "2016 02 16",
     "date": "2016 03 15",
@@ -473,7 +512,8 @@
   "OK": {
     "name": "Oklahoma",
     "fillKey": "OTHER",
-    "label": "Semi-closed Primary",
+    "type": "Semi-closed Primary",
+		"label": "Semi-closed Primary",
     "regDate": "2016 02 05",
     "date": "2016 03 01",
     "office": {
@@ -486,6 +526,7 @@
   "OR": {
     "name": "Oregon",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 04 26",
     "date": "2016 05 17",
     "office": {
@@ -497,6 +538,7 @@
   "PA": {
     "name": "Pennsylvania",
     "fillKey": "CLOSED_PRIMARY",
+		"type": "Closed Primary",
     "regDate": "2016 03 28",
     "date": "2016 04 26",
     "office": {
@@ -509,6 +551,7 @@
   "PR": {
     "name": "Puerto Rico",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 04 16",
     "date": "2016 06 05",
     "office": {
@@ -520,7 +563,8 @@
   "RI": {
     "name": "Rhode Island",
     "fillKey": "OTHER",
-    "label": "Semi-closed Primary",
+    "type": "Semi-closed Primary",
+		"label": "Semi-closed Primary",
     "regDate": "2016 03 27",
     "date": "2016 04 26",
     "office": {
@@ -533,6 +577,7 @@
   "SC": {
     "name": "South Carolina",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 01 27",
     "date": "2016 02 27",
     "office": {
@@ -545,7 +590,8 @@
   "SD": {
     "name": "South Dakota",
     "fillKey": "OTHER",
-    "label": "Semi-closed Primary",
+    "type": "Semi-closed Primary",
+		"label": "Semi-closed Primary",
     "regDate": "2016 05 23",
     "date": "2016 06 07",
     "office": {
@@ -558,6 +604,7 @@
   "TN": {
     "name": "Tennessee",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 01",
     "date": "2016 03 01",
     "office": {
@@ -570,6 +617,7 @@
   "TX": {
     "name": "Texas",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 01",
     "date": "2016 03 01",
     "office": {
@@ -582,6 +630,7 @@
   "UT": {
     "name": "Utah",
     "fillKey": "OPEN_CAUCUS",
+		"type": "Open Caucus",
     "regDate": "2016 03 22",
     "date": "2016 03 22",
     "office": {
@@ -594,6 +643,7 @@
   "VT": {
     "name": "Vermont",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 24",
     "date": "2016 03 01",
     "office": {
@@ -605,6 +655,7 @@
   "VI": {
     "name": "Virgin Islands",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 05 03",
     "date": "2016 06 04",
     "office": {
@@ -616,6 +667,7 @@
   "VA": {
     "name": "Virginia",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 02 08",
     "date": "2016 03 01",
     "office": {
@@ -628,6 +680,7 @@
   "WA": {
     "name": "Washington",
     "fillKey": "OPEN_CAUCUS",
+		"type": "Open Caucus",
     "regDate": "2016 03 26",
     "date": "2016 03 26",
     "office": {
@@ -640,7 +693,8 @@
   "WV": {
     "name": "West Virginia",
     "fillKey": "OTHER",
-    "label": "Semi-closed Primary",
+    "type": "Semi-closed Primary",
+		"label": "Semi-closed Primary",
     "regDate": "2016 04 19",
     "date": "2016 05 10",
     "office": {
@@ -653,6 +707,7 @@
   "WI": {
     "name": "Wisconsin",
     "fillKey": "OPEN_PRIMARY",
+		"type": "Open Primary",
     "regDate": "2016 04 05",
     "date": "2016 04 05",
     "office": {
@@ -665,6 +720,7 @@
   "WY": {
     "name": "Wyoming",
     "fillKey": "CLOSED_CAUCUS",
+		"type": "Closed Caucus",
     "regDate": "2016 03 25",
     "date": "2016 04 09",
     "office": {

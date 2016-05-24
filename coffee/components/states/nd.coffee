@@ -11,34 +11,43 @@ PollPlace = require('components/widgets/pollPlaceWidget')
 Reminder  = require('components/widgets/reminderWidget')
 Share     = require('components/widgets/shareWidget')
 entity    = require('utils/entity')
+StateInfo = require('components/blocks/stateInfo')
+ShareBar  = require('components/blocks/shareBar')
 
 module.exports = React.createClass
   displayName: 'ND State Info'
 
   render: ->
     <section className='flex'>
-      <div className='left'>
-        <h2>
-          Key Information
-          <Share {...@props} />
-        </h2>
-        <PollPlace state={@props.state} />
-        <p>
-          North Dakota has open caucuses {entity('mdash')} any North Dakotan that intends to support the Democratic Party in the 2016 election can vote for Bernie Sanders, regardless of registration status. Caucuses will take place at 7pm, and doors will open at 5:30pm. Doors will close at 7:00pm, so please arrive early.
-        </p>
+  		<StateInfo {...@props} />
+      <ShareBar {...@props} />
 
-        <College {...@props} />
-        <Military {...@props} />
-        <MoreInfo {...@props} />
-        <Offices {...@props} />
+      <div className='left'>
+        <PollPlace state={@props.state} />
+
+        <div className='info'>
+          <div id='key-info' className='key-info section expanded'>
+            <div className='section-header'>
+              <h3 className='caps'>
+                Key Information
+              </h3>
+            </div>
+
+            <div className='section-body'>
+              <p>
+                North Dakota has open caucuses {entity('mdash')} any North Dakotan that intends to support the Democratic Party in the 2016 election can vote for Bernie Sanders, regardless of registration status. Caucuses will take place at 7:00pm, and doors will open at 5:30pm. Doors will close at 7:00pm, so please arrive early.
+              </p>
+            </div>
+          </div>
+
+          <College {...@props} />
+          <Military {...@props} />
+          <MoreInfo {...@props} />
+          <Offices {...@props} />
+        </div>
       </div>
       <div className='right'>
         <Sticky top={25} bottomBoundary='section.flex'>
-          <DateBox title='Caucus Date' date={@props.state.date} />
-          <AddToCal date={@props.state.date} state={@props.state} />
-          <Reminder {...@props} />
-
-          <hr className='right-divider' />
           <Button title='More Information' link={'http://demnpl.com/'} classes='blue' />
         </Sticky>
       </div>

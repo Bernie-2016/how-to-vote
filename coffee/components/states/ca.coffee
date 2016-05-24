@@ -3,67 +3,24 @@ College      = require('components/blocks/college')
 Deadline     = require('components/blocks/deadline')
 Military     = require('components/blocks/military')
 MoreInfo     = require('components/blocks/moreInfo')
-Right        = require('components/blocks/right')
 Offices      = require('components/widgets/officesWidget')
 PollPlace    = require('components/widgets/pollPlaceWidget')
 Share        = require('components/widgets/shareWidget')
 entity       = require('utils/entity')
 Sticky       = require('react-stickynode')
 Scroll       = require('react-scroll')
-$            = require('jquery')
 Reminder     = require('components/widgets/reminderWidget')
 ReactTooltip = require("react-tooltip")
 AddToCal     = require('components/widgets/addToCalWidget')
+StateInfo    = require('components/blocks/stateInfo')
+ShareBar     = require('components/blocks/shareBar')
 
 module.exports = React.createClass
   displayName: 'CA State Info'
 
-  componentDidMount: ->
-    $('.section-header').on 'click', ->
-      $(this).parent().toggleClass 'expanded'
-
   render: ->
     <section className='flex ca'>
-      <div className='state-info'>
-        <div className='breadcrumbs'>
-          Bernie 2016 > Vote for Bernie > California
-        </div>
-
-        <div className='state'>
-          <div className='primary-info'>
-            <div className='mobile-share'>
-              <Share {...@props}/>
-            </div>
-
-            <h2>
-              California
-            </h2>
-            <h3 className='caps'><strong>Tues, Jun 7th</strong> | Semi-Closed Primary</h3>
-          </div>
-
-          <div className='can-vote'>
-            <h3 className='caps'>Can Vote:</h3>
-
-            <div className='party-icons'>
-              <div className='icon democrats' data-tip="Democrats"></div>
-              <ReactTooltip place="top" effect="solid"/>
-              <div className='icon npp' data-tip="No Party Preference"></div>
-            </div>
-          </div>
-        </div>
-
-        <div className='register'>
-
-          <div className='reg-deadline'>
-            <h3 className='caps'>Register By: <strong>Mon, May 23rd</strong></h3>
-          </div>
-
-          <div className='reg-buttons'>
-            <a href={@props.state.regLink} className='btn btn-success'>Register</a>
-            <a href={@props.state.chkLink} className='btn btn-secondary'>Check Registration</a>
-          </div>
-        </div>
-      </div>
+      <StateInfo {...@props} />
 
       <div className='info-nav'>
         <Sticky top={0} bottomBoundary='section.flex'>
@@ -108,11 +65,7 @@ module.exports = React.createClass
       </div>
 
       <div className='left'>
-        <div className='share-bar'>
-          <Reminder {...@props} />
-          <AddToCal date={@props.state.date} state={@props.state} />
-          <Share {...@props} />
-        </div>
+        <ShareBar {...@props} />
 
         <PollPlace state={@props.state} />
 
