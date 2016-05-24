@@ -24,7 +24,7 @@ module.exports = React.createClass
         </h2>
         <PollPlace state={@props.state} />
         <p>
-          North Dakota has open caucuses {entity('mdash')} any North Dakotan that intends to support the Democratic Party in the 2016 election can vote for Bernie Sanders, regardless of registration status. Caucuses will take place at 7pm, and doors will open at 5:30pm.
+          North Dakota has open caucuses {entity('mdash')} any North Dakotan that intends to support the Democratic Party in the 2016 election can vote for Bernie Sanders, regardless of registration status. Caucuses will take place at 7pm, and doors will open at 5:30pm. Doors will close at 7:00pm, so please arrive early.
         </p>
 
         <College {...@props} />

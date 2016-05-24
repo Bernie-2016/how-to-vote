@@ -445,7 +445,8 @@
     "office": {
       "url": "http://demnpl.com/",
       "phone": "(701) 255-0460"
-    }
+    },
+    "pollWgt":true
   },
   "NMI": {
     "name": "Northern Mariana Islands",
