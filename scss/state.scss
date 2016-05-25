@@ -306,7 +306,6 @@ div#htv-app {
 
       .polling-location {
         padding: 1.7em;
-        margin-bottom: -1em;
         background: url('../img/maps.png');
         background-size: cover;
 
@@ -353,6 +352,11 @@ div#htv-app {
 
          p, ol {
            font-size: 18px;
+           margin: 1em 0;
+         }
+
+         .key-info .section-header {
+           margin-top: 0;
          }
       }
     }
@@ -590,7 +594,6 @@ div#htv-app {
         }
 
         a.btn {
-          width: 250px;
           text-transform: uppercase;
           text-decoration: none;
           background-color: $blue;

@@ -76,7 +76,7 @@ module.exports = React.createClass
             </div>
 
             <div className='section-body'>
-              <p>The California Democratic Primary takes place on June 7, 2016, and voters must be registered as a Democrat or No Party Preference by May 23, 2016 in order to participate.</p><br/>
+              <p>The California Democratic Primary takes place on June 7, 2016, and voters must be registered as a Democrat or No Party Preference by May 23, 2016 in order to participate.</p>
 
               <p>If you are an independent, make sure you're registered as No Party Preference. There is an Independent party in California which is not eligible to vote for Bernie — only Democrats and No Party Preference voters can. If you are registered No Party Preference, ask for a Democratic ballot when you go to vote and you’re all set!</p>
             </div>
