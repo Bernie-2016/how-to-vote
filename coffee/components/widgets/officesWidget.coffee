@@ -30,7 +30,7 @@ module.exports = React.createClass
   componentDidMount: ->
     GoogleMaps.load (google) =>
       geocoder = new google.maps.Geocoder()
-      geocoder.geocode address: "State of #{@props.state.name}", (results, status) =>
+      geocoder.geocode address: "#{@props.state.name}", (results, status) =>
         @setState(google: google, bounds: results[0].geometry.viewport)
 
   componentWillUnmount: ->
