@@ -53,8 +53,8 @@ module.exports = React.createClass
             </div>
 
             <div className='reg-buttons'>
-              {if @props.state.regLink
-                <Button title='Register' link={@props.state.regLink} classes={'btn-success' unless moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')} />
+              {if @props.state.regLink and not moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')
+                <Button title='Register' link={@props.state.regLink} classes='btn-success' />
               }
 
               {if @props.state.chkLink
