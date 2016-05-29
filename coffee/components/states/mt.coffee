@@ -17,7 +17,6 @@ module.exports = React.createClass
   		<StateInfo {...@props} />
       <ShareBar {...@props} />
 
-
       <div className='left'>
         <PollPlace state={@props.state} title="Early Vote" />
 

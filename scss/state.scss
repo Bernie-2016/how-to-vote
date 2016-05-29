@@ -174,7 +174,6 @@ div#htv-app {
       }
 
       .reminder-widget {
-        transition: 0.5s;
         display: inline-block;
         color: white;
         // padding: 20px;
@@ -182,6 +181,10 @@ div#htv-app {
 
         &.expanded, &.done {
           background: $darkblue;
+
+          p a {
+            color: white;
+          }
 
           div.thanks, div.form {
             background: #2F437B;

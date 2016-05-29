@@ -32,8 +32,34 @@ module.exports = React.createClass
                 Virgin Islands has closed caucuses {entity('mdash')} Virgin Islanders must register with the Democratic party to caucus for Bernie!
               </p>
 
+              <p>
+                Early voting takes place on Thursday, June 2, 2016 from 4:00pm to 8:00pm.
+              </p>
+
+              <p>
+                Election Day voting takes place on Saturday, June 4, 2016, from 10:00am to 6:00pm.
+              </p>
+
               <Deadline {...@props} />
             </div>
+          </div>
+
+          <div className='section'>
+
+            <div className='section-header'>
+              <h3 className='caps'>Polling Location</h3>
+            </div>
+
+            <div className='section-body'>
+              Your polling location corresponds to the address under which you are registered to vote:
+
+              <ul>
+                <li><strong>St. Croix</strong> - Gertrude's Restaurant</li>
+                <li><strong>St. Thomas</strong> - Windward Passage Hotel</li>
+                <li><strong>St. John</strong> - To Be Determined</li>
+              </ul>
+            </div>
+
           </div>
 
           <MoreInfo {...@props} />
