@@ -21,42 +21,50 @@ module.exports = React.createClass
   render: ->
     <section className='flex ca'>
       <StateInfo {...@props} />
+      <ShareBar {...@props} />
 
       <div className='info-nav'>
         <Sticky top={0} bottomBoundary='section.flex'>
           <ul>
+            {if @props.state.pollWgt
+              <li>
+                <Scroll.Link activeClass='active' to='polling-location' spy=true smooth=true offset=0>
+                  <h3 className='caps'>Find Polling Location</h3>
+                </Scroll.Link>
+              </li>
+            }
             <li>
-              <Scroll.Link activeClass='active' to='key-info' spy=true smooth=true offset=-10>
+              <Scroll.Link activeClass='active' to='key-info' spy=true smooth=true offset=0>
                 <h3 className='caps'>Key Information</h3>
               </Scroll.Link>
             </li>
             <li>
-              <Scroll.Link activeClass='active' to='early-voting' spy=true smooth=true offset=-10>
-                <h3 className='caps'>Early/Absentee Voting</h3>
+              <Scroll.Link activeClass='active' to='early-voting' spy=true smooth=true offset=0>
+                <h3 className='caps'>Early & Absentee Voting</h3>
               </Scroll.Link>
             </li>
             <li>
-              <Scroll.Link activeClass='active' to='no-party' spy=true smooth=true offset=-10>
+              <Scroll.Link activeClass='active' to='no-party' spy=true smooth=true offset=0>
                 <h3 className='caps'>No Party Preference</h3>
               </Scroll.Link>
             </li>
             <li>
-              <Scroll.Link activeClass='active' to='college' spy=true smooth=true offset=-10>
+              <Scroll.Link activeClass='active' to='college' spy=true smooth=true offset=0>
                 <h3 className='caps'>College Students</h3>
               </Scroll.Link>
             </li>
             <li>
-              <Scroll.Link activeClass='active' to='military' spy=true smooth=true offset=-10>
+              <Scroll.Link activeClass='active' to='military' spy=true smooth=true offset=0>
                 <h3 className='caps'>Military/Overseas Voters</h3>
               </Scroll.Link>
             </li>
             <li>
-              <Scroll.Link activeClass='active' to='more-info' spy=true smooth=true offset=-10>
+              <Scroll.Link activeClass='active' to='more-info' spy=true smooth=true offset=0>
                 <h3 className='caps'>More Information</h3>
               </Scroll.Link>
             </li>
             <li>
-              <Scroll.Link activeClass='active' to='campaign-offices' spy=true smooth=true offset=-10>
+              <Scroll.Link activeClass='active' to='campaign-offices' spy=true smooth=true offset=0>
                 <h3 className='caps'>Campaign Offices</h3>
               </Scroll.Link>
             </li>
@@ -65,8 +73,6 @@ module.exports = React.createClass
       </div>
 
       <div className='left'>
-        <ShareBar {...@props} />
-
         <PollPlace state={@props.state} />
 
         <div className='info'>
@@ -85,7 +91,7 @@ module.exports = React.createClass
           <div id='early-voting'>
             <div className='section'>
               <div className='section-header'>
-                <h3 className='caps'>Early/Absentee Voting</h3>
+                <h3 className='caps'>Early & Absentee Voting</h3>
               </div>
 
               <div className='section-body'>

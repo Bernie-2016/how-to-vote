@@ -49,7 +49,13 @@ module.exports = React.createClass
         {unless not @props.state.regDate
           <div>
             <div className='reg-deadline'>
-              <h3 className='caps'>Register By: <strong>{moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')}</strong></h3>
+              <h3 className='caps'>
+                {if moment().isAfter(moment(@props.state.regDate, 'YYYY MM DD'), 'days')
+                  <span>Must Have Registered By: <br /> <strong>{moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')}</strong></span>
+                else
+                  <span>Register By: <strong>{moment(@props.state.regDate, 'YYYY MM DD').format('dddd, MMMM Do')}</strong></span>
+                }
+              </h3>
             </div>
 
             <div className='reg-buttons'>

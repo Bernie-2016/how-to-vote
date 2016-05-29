@@ -45,8 +45,12 @@ div#htv-app {
     div.state-info {
       position: relative;
       width: 100%;
-      background: $blue;
+      background: #147FD7;
       color: white;
+      align-items: flex-end;
+      flex-direction: row;
+      justify-content: space-between;
+      display: flex;
       padding: 20px;
       box-sizing: border-box;
       padding-top: 100px;
@@ -151,7 +155,7 @@ div#htv-app {
 
     div.share-bar {
       width: 100%;
-      background: $darkblue;
+      background: rgba(20, 127, 215, 0.75);
       height: 50px;
       vertical-align: middle;
       margin-bottom: 0;
@@ -175,9 +179,10 @@ div#htv-app {
         color: white;
         // padding: 20px;
         z-index: 9;
-        background: $darkblue;
 
         &.expanded, &.done {
+          background: $darkblue;
+
           div.thanks, div.form {
             background: #2F437B;
             position: absolute;
@@ -373,7 +378,6 @@ div#htv-app {
 
     @media (max-width: $tablet) {
       flex-direction: row;
-      flex-direction: row;
       margin: 20px -0.8em;
       overflow: hidden;
 
@@ -382,6 +386,7 @@ div#htv-app {
       }
 
       div.state-info {
+        display: block;
 
         .register {
           float: none;
@@ -540,6 +545,10 @@ div#htv-app {
         color: #0076d7;
         text-decoration: none;
         font-weight: 500;
+      }
+
+      li {
+        margin: 0.7em 0;
       }
 
       p, li {
