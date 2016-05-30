@@ -87,9 +87,4 @@ module.exports = React.createClass
           <Offices {...@props} />
         </div>
       </div>
-      <div className='right'>
-        <Sticky top={25} bottomBoundary='section.flex'>
-          <Button title='More Information' link={'http://demnpl.com/'} classes='blue' />
-        </Sticky>
-      </div>
     </section>
