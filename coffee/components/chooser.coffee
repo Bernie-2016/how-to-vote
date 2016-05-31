@@ -2,6 +2,7 @@ React          = require('react')
 OnClickOutside = require('react-onclickoutside')
 $              = require('jquery')
 {states, keys} = require('states')
+moment         = require('moment')
 
 module.exports = React.createClass
   displayName: 'Chooser'
@@ -35,7 +36,7 @@ module.exports = React.createClass
       <ul hidden={!@state.open}>
         <li className='heading'>Select Your State</li>
         {for key, state of states when state.fillKey isnt keys.UNAVAILABLE
-          <li key={key} data-url={"/#{key}"} onClick={@visit}>
+          <li key={key} data-url={"/#{key}"} onClick={@visit} className="#{'over' if moment().isAfter(moment(state.date, 'YYYY MM DD'), 'days') || state.name == 'Dems Abroad'} ">
             {state.name}
           </li>
         }

@@ -27,6 +27,10 @@ div#htv-app {
         font-size: 0.5em;
         padding: 0.3em 1em;
 
+        &.over {
+          color: rgba(20, 127, 215, 0.5);
+        }
+
         &.heading {
           text-transform: uppercase;
           font-weight: 500;
@@ -45,7 +49,7 @@ div#htv-app {
         &:not(.heading) {
           &:hover, &:focus {
             background-color: $lightgray;
-            
+
             a {
               color: $orange;
             }

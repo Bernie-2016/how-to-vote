@@ -7,6 +7,8 @@ PollPlace = require('components/widgets/pollPlaceWidget')
 Share     = require('components/widgets/shareWidget')
 entity    = require('utils/entity')
 ShareBar  = require('components/blocks/shareBar')
+Sticky     = require('react-stickynode')
+Scroll     = require('react-scroll')
 
 module.exports = React.createClass
   displayName: 'PR State Info'
@@ -15,6 +17,35 @@ module.exports = React.createClass
     <section className='flex'>
   		<StateInfo {...@props} />
       <ShareBar {...@props} />
+
+      <div className='info-nav'>
+        <Sticky top={0} bottomBoundary='section.flex'>
+          <ul>
+            {if @props.state.pollWgt
+              <li>
+                <Scroll.Link activeClass='active' to='polling-location' spy=true smooth=true offset=0>
+                  <h3 className='caps'>Find Polling Location</h3>
+                </Scroll.Link>
+              </li>
+            }
+            <li>
+              <Scroll.Link activeClass='active' to='key-info' spy=true smooth=true offset=0>
+                <h3 className='caps'>Key Information</h3>
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass='active' to='more-info' spy=true smooth=true offset=0>
+                <h3 className='caps'>More Information</h3>
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass='active' to='campaign-offices' spy=true smooth=true offset=0>
+                <h3 className='caps'>Campaign Offices</h3>
+              </Scroll.Link>
+            </li>
+          </ul>
+        </Sticky>
+      </div>
 
       <div className='left'>
         <PollPlace state={@props.state} />
@@ -38,7 +69,5 @@ module.exports = React.createClass
           <MoreInfo {...@props} />
           <Offices {...@props} />
         </div>
-      </div>
-      <div className='right'>
       </div>
     </section>
