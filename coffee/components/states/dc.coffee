@@ -7,10 +7,10 @@ PollPlace = require('components/widgets/pollPlaceWidget')
 Share     = require('components/widgets/shareWidget')
 entity    = require('utils/entity')
 ShareBar  = require('components/blocks/shareBar')
-Sticky     = require('react-stickynode')
-Scroll     = require('react-scroll')
-moment        = require('moment')
-Button        = require('components/blocks/button')
+Sticky    = require('react-stickynode')
+Scroll    = require('react-scroll')
+moment    = require('moment')
+Button    = require('components/blocks/button')
 
 module.exports = React.createClass
   displayName: 'DC State Info'

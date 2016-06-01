@@ -43,9 +43,15 @@ module.exports = React.createClass
 
   render: ->
     <div id='campaign-offices' className='section' hidden={_.isEmpty(@state.markers)}>
-      <div className='section-header'>
-        <h3 className='caps'>Campaign Offices</h3>
-      </div>
+      {if @props.state.name != 'Puerto Rico'
+        <div className='section-header'>
+          <h3 className='caps'>Campaign Offices</h3>
+        </div>
+      else
+        <div className='section-header'>
+          <h3 className='caps'>Oficinas de Campaña</h3>
+        </div>
+      }
 
       <div className='section-body'>
         {if @state.bounds
@@ -81,7 +87,13 @@ module.exports = React.createClass
         }
       </div>
 
-      <a className='btn blue' href='https://berniesanders.com/volunteer' target='_blank'>
-        Volunteer
-      </a>
+      {if @props.state.name != 'Puerto Rico'
+        <a className='btn blue' href='https://berniesanders.com/volunteer' target='_blank'>
+          Volunteer
+        </a>
+      else
+        <a className='btn blue' href='https://berniesanders.com/volunteer' target='_blank'>
+          Ser Voluntario
+        </a>
+      }
     </div>
