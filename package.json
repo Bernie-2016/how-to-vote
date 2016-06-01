@@ -48,6 +48,7 @@
     "react-g-analytics": "^0.2.3",
     "react-google-maps": "^4.7.2",
     "react-html-document": "^2.0.0",
+    "react-iframe": "0.0.4",
     "react-maskedinput": "^3.1.0",
     "react-onclickoutside": "^4.5.0",
     "react-router": "^2.0.0",

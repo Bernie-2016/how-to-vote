@@ -7,10 +7,11 @@ PollPlace = require('components/widgets/pollPlaceWidget')
 Share     = require('components/widgets/shareWidget')
 entity    = require('utils/entity')
 ShareBar  = require('components/blocks/shareBar')
-Sticky     = require('react-stickynode')
-Scroll     = require('react-scroll')
+Sticky    = require('react-stickynode')
+Scroll    = require('react-scroll')
 moment    = require('moment')
 Button    = require('components/blocks/button')
+Iframe    = require("react-iframe");
 
 module.exports = React.createClass
   displayName: 'PR State Info'
@@ -67,13 +68,11 @@ module.exports = React.createClass
       <div className='info-nav'>
         <Sticky top={0} bottomBoundary='section.flex'>
           <ul>
-            {if @props.state.pollWgt
-              <li>
-                <Scroll.Link activeClass='active' to='polling-location' spy=true smooth=true offset=0>
-                  <h3 className='caps'>Find Polling Location</h3>
-                </Scroll.Link>
-              </li>
-            }
+            <li>
+              <Scroll.Link activeClass='active' to='polling-location' spy=true smooth=true offset=0>
+                <h3 className='caps'>¿Cual es mi colegio electoral?</h3>
+              </Scroll.Link>
+            </li>
             <li>
               <Scroll.Link activeClass='active' to='key-info' spy=true smooth=true offset=0>
                 <h3 className='caps'>Información Importante</h3>
@@ -94,9 +93,17 @@ module.exports = React.createClass
       </div>
 
       <div className='left'>
-        <PollPlace state={@props.state} />
-
         <div className='info'>
+          <div className='section pr-polling expanded' id='polling-location'>
+            <div className='section-header'>
+              <h3 className='caps'>¿Cual es mi colegio electoral?</h3>
+            </div>
+
+            <div className='section-body'>
+              <Iframe url="https://berniepr-colegios-primarias.herokuapp.com/pr4bernie" />
+            </div>
+          </div>
+
           <div id='key-info' className='key-info section expanded'>
             <div className='section-header'>
               <h3 className='caps'>
