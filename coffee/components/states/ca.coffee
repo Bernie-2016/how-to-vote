@@ -100,7 +100,7 @@ module.exports = React.createClass
                 </p>
                 <ol>
                   <li>
-                    <strong>In person:</strong> Voters can walk into a polling location before the primary to cast their ballot. CA has one of these locations per county, usually the county registrar. We expect the CA Secretary of State to release a list of early vote locations in early May.
+                    <strong>In person:</strong> Voters can walk into a polling location before the primary to cast their ballot. CA has one of these locations per county, usually the county registrar. Early vote locations are available <a href="http://www.sos.ca.gov/elections/upcoming-elections/june-7-2016-presidential-primary-election/county-early-voting/" target="_blank">here</a>.
                   </li>
                   <li>
                     <strong>Vote-by-mail</strong>: On May 9th, ballots will be mailed out. Mail-in ballots must be postmarked by June 7th. You can request a mail-in absentee ballot by submitting the form found <a href="http://www.sos.ca.gov/elections/where-and-how#get-a-ballot">here</a> before May 31, 2016. You can also file an emergency absentee ballot in person at your local <a href="http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/">county elections office</a> anytime between June 1 and 7, 2016.
