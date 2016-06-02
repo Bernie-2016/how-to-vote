@@ -136,23 +136,11 @@ module.exports = React.createClass
 
               <div className='section-body'>
                 <p>
-                  "No Party Preference," or NPP is California’s term for an independent or unaffiliated voter, which means the voter declined to affiliate with a party. NPP voters account for 34% of the California electorate and are allowed to vote in the Democratic Presidential Primary.
+                  No Party Preference, or NPP, is California’s term for an independent or unaffiliated voter, which means the voter declined to affiliate with a party. NPP voters account for 34% of the California electorate and are allowed to vote in the Democratic Presidential Primary.
                 </p>
 
                 <p>
-                  <strong>NPP voters can vote-by-mail for Bernie, but it’s important to understand the steps and options:</strong>
-                </p>
-
-                <ol>
-                  <li>
-                    All NPP voters should have received a form by mail asking if they want to receive a Democratic Party Presidential Primary ballot. Check with your <a href="http://www.sos.ca.gov/elections/voting-resources/county-elections-offices/">county</a> for details.</li>
-                  <li>
-                    An NPP vote-by-mail voter can also decide to re-register as a democrat. The deadline to change affiliation is May 23rd.  Registrants will receive a Democratic ballot in the mail. NPP voters can re-register online <a href="http://registertovote.ca.gov/">here</a> or at the county office.
-                  </li>
-                </ol>
-
-                <p>
-                    An NPP voter can always take their mail-in ballot to a polling location and request a Democratic presidential primary ballot in person.
+                  If you are an NPP signed up to vote by mail, you should have received a ballot by now. If you requested a Democratic ballot, you should see Bernie’s name on it. If you didn’t, don’t worry. You can bring your blank NPP ballot with you to the polls and exchange it for a Democratic ballot when you arrive at your polling place on Tuesday, June 7. If you are registered NPP but are not a vote by mail voter, you can simply request a Democratic ballot at your polling place on Tuesday, June 7.
                 </p>
               </div>
             </div>
