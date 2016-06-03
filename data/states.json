@@ -423,8 +423,9 @@
   },
   "NJ": {
     "name": "New Jersey",
-    "fillKey": "CLOSED_PRIMARY",
-		"type": "Closed Primary",
+    "fillKey": "OTHER",
+    "type": "Semi-open Primary",
+    "label": "Semi-open Primary",
     "regDate": "2016 05 17",
     "date": "2016 06 07",
     "office": {

@@ -77,7 +77,7 @@ module.exports = React.createClass
 
             <div className='section-body'>
               <p>
-                New Jersey has semi-closed primaries {entity('mdash')} New Jerseyans who are registered as Democrats or are unaffiliated voters are the only ones who can vote for Bernie! Unaffiliated voters have to affiliate with the Democratic Party, however, when they go to vote, either early or on election day.
+                New Jersey has semi-open primaries {entity('mdash')} New Jerseyans who are registered as Democrats or are unaffiliated voters are able to vote for Bernie! Unaffiliated voters can affiliate with the Democratic Party when they go to vote, either early or on election day.
               </p>
 
               <Deadline {...@props} />

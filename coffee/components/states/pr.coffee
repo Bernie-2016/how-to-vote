@@ -119,6 +119,10 @@ module.exports = React.createClass
               <p>
                 Para participar en las primarias Demócratas en Puerto Rico deben haberse registrado para votar antes del sábado 16 de abril.
               </p>
+
+              <p>
+                La votación se llevara a cabo entre 8 a.m. - 3 p.m., pero a la gente en linea a las 3 se le permitirá votar.
+              </p>
             </div>
           </div>
 
