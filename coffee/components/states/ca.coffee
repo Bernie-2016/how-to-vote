@@ -179,7 +179,7 @@ module.exports = React.createClass
                 </p>
                 <ol>
                   <li>
-                    <strong>In person:</strong> Voters can walk into an early voting location before the primary to cast their ballot. CA has at least one early vote location per county, usually the county registrar’s office. Early vote locations are available <a href="http://www.sos.ca.gov/elections/upcoming-elections/june-7-2016-presidential-primary-election/county-early-voting/" target="_blank">here</a>.
+                    <strong>In person:</strong> Voters can walk into an early voting location before the primary to cast their ballot. CA has at least one early vote location per county, usually the county registrar’s office. Click the "Show Early Vote Locations" button above to find your early vote location.
                   </li>
                   <li>
                     <strong>Vote-by-mail</strong>: Vote-by-mail ballots that are returned by mail must be postmarked by June 7th and received by June 10th. If you drop off your VBM ballot, you must do so by 8pm on June 7th; you can drop it off at any polling location in your county. You can still request a vote by mail ballot in person at any early vote location in your county, or have someone bring in your VBM application if you can’t get to the polls yourself.

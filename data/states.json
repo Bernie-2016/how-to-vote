@@ -111,7 +111,8 @@
       "url": "http://www.dcdemocraticparty.org/"
     },
     "regLink": "https://www.vote4dc.com/ApplyInstructions/Register",
-    "chkLink": "https://www.dcboee.org/voter_info/reg_status/"
+    "chkLink": "https://www.dcboee.org/voter_info/reg_status/",
+    "pollWgt": true
   },
   "DE": {
     "name": "Delaware",
@@ -431,7 +432,8 @@
       "phone": "(609) 292-3760"
     },
     "regLink": "http://www.state.nj.us/state/elections/voting-information.html",
-    "chkLink": "https://voter.njsvrs.com/PublicAccess/servlet/com.saber.publicaccess.control.PublicAccessNavigationServlet?USERPROCESS=PublicSearch"
+    "chkLink": "https://voter.njsvrs.com/PublicAccess/servlet/com.saber.publicaccess.control.PublicAccessNavigationServlet?USERPROCESS=PublicSearch",
+    "pollWgt": true
   },
   "NM": {
     "name": "New Mexico",
@@ -599,7 +601,8 @@
       "phone": "(605) 773-3537"
     },
     "regLink": "https://sdsos.gov/elections-voting/voting/register-to-vote/",
-    "chkLink": "https://sos.sd.gov/Elections/VIPLogin.aspx"
+    "chkLink": "https://sos.sd.gov/Elections/VIPLogin.aspx",
+    "pollWgt": true
   },
   "TN": {
     "name": "Tennessee",
