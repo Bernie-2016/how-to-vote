@@ -79,7 +79,7 @@ module.exports = React.createClass
               <ul>
                 <li><strong>St. Croix</strong> - Gertrude's Restaurant</li>
                 <li><strong>St. Thomas</strong> - Windward Passage Hotel</li>
-                <li><strong>St. John</strong> - To Be Determined</li>
+                <li><strong>St. John</strong> - Fred's Restaurant</li>
               </ul>
             </div>
 
