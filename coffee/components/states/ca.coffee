@@ -1,24 +1,45 @@
-React        = require('react')
-College      = require('components/blocks/college')
-Deadline     = require('components/blocks/deadline')
-Military     = require('components/blocks/military')
-MoreInfo     = require('components/blocks/moreInfo')
-Offices      = require('components/widgets/officesWidget')
-PollPlace    = require('components/widgets/pollPlaceWidget')
-Share        = require('components/widgets/shareWidget')
-entity       = require('utils/entity')
-Sticky       = require('react-stickynode')
-Scroll       = require('react-scroll')
-Reminder     = require('components/widgets/reminderWidget')
-ReactTooltip = require("react-tooltip")
-AddToCal     = require('components/widgets/addToCalWidget')
-StateInfo    = require('components/blocks/stateInfo')
-ShareBar     = require('components/blocks/shareBar')
+React         = require('react')
+College       = require('components/blocks/college')
+Deadline      = require('components/blocks/deadline')
+Military      = require('components/blocks/military')
+MoreInfo      = require('components/blocks/moreInfo')
+Offices       = require('components/widgets/officesWidget')
+PollPlace     = require('components/widgets/pollPlaceWidget')
+Share         = require('components/widgets/shareWidget')
+entity        = require('utils/entity')
+Sticky        = require('react-stickynode')
+Scroll        = require('react-scroll')
+Reminder      = require('components/widgets/reminderWidget')
+ReactTooltip  = require("react-tooltip")
+AddToCal      = require('components/widgets/addToCalWidget')
+StateInfo     = require('components/blocks/stateInfo')
+ShareBar      = require('components/blocks/shareBar')
+Reactable     = require('reactable')
+VoteLocations = require('data/caLocations')
+$             = require('jquery')
 
 module.exports = React.createClass
   displayName: 'CA State Info'
 
+  componentDidMount: ->
+    $('.show-locations').on 'click': (e) ->
+      e.preventDefault()
+      $('.vote-locations').toggleClass 'expanded'
+      $(this).toggleClass 'expanded'
+
+      if $(this).hasClass 'expanded'
+        $(this).text 'Hide Early Vote Locations'
+      else
+        $(this).text 'Show Early Vote Locations'
+
+
   render: ->
+    Table = Reactable.Table
+    Thead = Reactable.Thead
+    Th = Reactable.Th
+    Tr = Reactable.Tr
+    Td = Reactable.Td
+
     <section className='flex ca'>
       <StateInfo {...@props} />
       <ShareBar {...@props} />
@@ -104,6 +125,55 @@ module.exports = React.createClass
               </div>
 
               <div className='section-body'>
+
+                <div className='btn btn-secondary show-locations'>Show Early Vote Locations</div>
+
+                <div className='vote-locations'>
+
+                  <Table className='table ca-locations' sortable={['county']} filterable={['county', 'address']} filterPlaceholder="Search by County..." noDataText="No matching counties found." itemsPerPage={10} pageButtonLimit={3}>
+                    <Thead>
+                      <Th column="county">
+                        County
+                      </Th>
+                      <Th column="address">
+                        Address
+                      </Th>
+                      <Th column="phone">
+                        Phone
+                      </Th>
+                      <Th column="hours">
+                        Hours
+                      </Th>
+                    </Thead>
+                    {for location in VoteLocations
+                      <Tr key={location.Address}>
+                        <Td column='county' className='county' data={location.County} />
+
+                        <Td column='address' className='address'>
+                          <a href="https://maps.google.com/?q=#{encodeURIComponent(location.Address)}">{location.Address}</a>
+                        </Td>
+
+                        {if location.Phone.match(/[a-z]/i)
+                          <Td column='phone' className='phone'>{location.Phone}</Td>
+                        else if location.Phone.match(/[\n]/)
+                          phoneArray = []
+                          for phone in location.Phone.split(/\n/)
+                            phoneArray.push phone
+
+                          <Td column='phone' className='phone'>
+                            {phoneArray.join("\n")}
+                          </Td>
+                        else
+                          <Td column='phone' className='phone'><a href="tel:#{'1' + location.Phone.replace(/[()-\s]/g, '')}">{location.Phone}</a></Td>
+                        }
+
+                        <Td column='hours' className='hours' data={location.Hours}>{location.Hours}</Td>
+                      </Tr>
+                    }
+                  </Table>
+
+                </div>
+
                 <p>
                   In California, early voting is underway. There are two types of early voting:
                 </p>

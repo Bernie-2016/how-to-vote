@@ -337,9 +337,129 @@ div#htv-app {
       }
 
       div.info {
-        display: inline-block;
         padding:  0 1.7em 1.7em;
         box-sizing: border-box;
+
+        .show-locations {
+          position: relative;
+          margin: 0.5em 0 1.3em;
+          cursor: pointer;
+
+          &::after {
+            display: block;
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-left: 0.25em solid transparent;
+            border-right: 0.25em solid transparent;
+            border-top: 0.25em solid white;
+            content: "";
+            top: 0;
+            bottom: 0;
+            right: 1em;
+            margin: auto;
+            transition: 0.25s;
+          }
+
+          &.expanded::after {
+            transform: rotateZ(180deg);
+          }
+        }
+
+        div.vote-locations {
+          background: #FAFAFA;
+          max-height: 0;
+          overflow: hidden;
+          transition: 0.25s max-height;
+        }
+
+        div.vote-locations.expanded {
+          border: 1px solid #eee;
+          border-width: 1px 0;
+          margin: 0 -1.7em;
+          padding: 1em 1.7em;
+          max-height: 2000px;
+        }
+
+        .table.ca-locations {
+          box-sizing: border-box;
+          text-align: center;
+          border-collapse: collapse;
+          width: 100%;
+
+          input {
+            float: left;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+            padding: 10px 15px;
+            background: #fafafa;
+          }
+
+          tbody.reactable-data td {
+            border: 1px solid #ddd;
+            background: white;
+          }
+
+          tr.reactable-column-header th {
+            padding: 1em 0.5em;
+            background: transparent;
+          }
+
+          th {
+            padding: 0.5em;
+            background: #eee;
+          }
+
+          td {
+            padding: 0.5em;
+
+
+          }
+
+          tbody.reactable-data td.county {
+            font-weight: bolder;
+            background: $blue;
+            color: white;
+          }
+
+          td.phone {
+            white-space: pre;
+          }
+
+          td.address, td.hours {
+            white-space: pre-line;
+          }
+
+          a.reactable-page-button, a.reactable-previous-page, a.reactable-next-page {
+            padding: 0 1em;
+            border: 1px solid #ddd;
+            border-width: 1px 0 1px 1px;
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            background: white;
+
+            &:first-child {
+              border-radius: 30px 0 0 30px;
+            }
+
+            &:last-child {
+              border-radius:0 30px 30px 0;
+            }
+
+            &:only-child {
+              border-radius: 30px;
+            }
+
+            &:hover {
+              background: #eee;
+            }
+          }
+
+          a.reactable-current-page {
+            font-weight: bolder;
+          }
+        }
 
         .pr-polling {
 
@@ -418,6 +538,13 @@ div#htv-app {
         border: 0;
 
         div.info {
+          div.vote-locations, div.vote-locations.expanded {
+            background: white;
+            border: 0;
+            margin: 0;
+            padding: 0;
+          }
+
           .pr-polling iframe {
             height: 360px !important;
           }
@@ -456,7 +583,7 @@ div#htv-app {
 
         .section.expanded {
           .section-body {
-            max-height: 800px;
+            max-height: 4000px;
             margin: 1em 0;
           }
 
@@ -733,7 +860,7 @@ div#htv-app {
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $tablet + 1) {
   div#htv-app {
     section.flex {
       flex-direction: row;
@@ -773,6 +900,43 @@ div#htv-app {
             margin-top: 5px;
           }
         }
+
+        div.info {
+
+          div.vote-locations, div.vote-locations.expanded {
+            background: white;
+            border: 0;
+            margin: 0;
+            padding: 0;
+          }
+
+          .table.ca-locations {
+
+              input {
+                float: none;
+                width: 100%;
+              }
+
+              a.reactable-page-button, a.reactable-previous-page, a.reactable-next-page {
+                padding: 0 0.7em;
+              }
+
+              .reactable-data {
+                padding-top: 1em;
+              }
+
+              tbody.reactable-data td {
+              display: block;
+              border-width: 0 1px 1px;
+              }
+
+              tr.reactable-column-header {
+                display: none;
+              }
+            }
+
+          }
+
       }
 
       div.right {

@@ -1,0 +1,524 @@
+[
+  {
+    "County": "Alameda",
+    "Address": "Registrar of Voters Office\n1225 Fallon Street\nOakland, CA 94612",
+    "Phone": "(510) 272-6933",
+    "Hours": "M-F 8:30-5pm\nS-S 9-3pm"
+  },
+  {
+    "County": "Alpine",
+    "Address": "Alpine County Clerk's Office\n99 Water Street\nMarkleeville, CA 96120",
+    "Phone": "(530) 694-2281",
+    "Hours": "M-F 8:30-12, 1-5"
+  },
+  {
+    "County": "Amador",
+    "Address": "Elections Office\n810 Court Street\nJackson, CA 95642",
+    "Phone": "(209) 223-6465",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Butte",
+    "Address": "Butte County Elections Office\nCounty Administration Building - Suite 110\n25 County Center Drive\nOroville, CA 95965",
+    "Phone": "(530) 538-7761",
+    "Hours": "M-F 9-5"
+  },
+  {
+    "County": "Calaveras",
+    "Address": "Elections Department\n891 Mountain Ranch Road\nSan Andreas, CA 95249",
+    "Phone": "(209) 754-6376",
+    "Hours": "M-F 8-4"
+  },
+  {
+    "County": "Colusa",
+    "Address": "Elections Office\n546 Jay Street, Suite 200\nColusa, CA 95932",
+    "Phone": "(530) 458-0500",
+    "Hours": "M-F 8:30-5"
+  },
+  {
+    "County": "Contra Costa",
+    "Address": "Contra Costa Elections Office\n555 Escobar Street\nMartinez, CA 94553",
+    "Phone": "(925) 335-7800",
+    "Hours": "May 31-June 3rd 11-6\nSat June 4th 9-3pm"
+  },
+  {
+    "County": "Contra Costa",
+    "Address": "Prewett Water Park Multi-Purpose Room\n4701 Lone Tree Way\nAntioch, CA 94531",
+    "Phone": "(925) 335-7800",
+    "Hours": "May 31-June 3rd 11-6\nSat June 4th 9-3pm"
+  },
+  {
+    "County": "Contra Costa",
+    "Address": "Bay Hills Community Church\n4100 Klose Way\nRichmond, CA",
+    "Phone": "(925) 335-7800",
+    "Hours": "May 31-June 3rd 11-6\nSat June 4th 9-3pm"
+  },
+  {
+    "County": "Contra Costa",
+    "Address": "Lafayette Learning Center\n3491 Mt. Diablo Blvd.\nLafayette, CA",
+    "Phone": "(925) 335-7800",
+    "Hours": "May 31-June 3rd 11-6\nSat June 4th 9-3pm"
+  },
+  {
+    "County": "Contra Costa",
+    "Address": "San Ramon Community Center at Central Park\n12501 Alcosta Blvd.\nSan Ramon, CA",
+    "Phone": "(925) 335-7800",
+    "Hours": "May 31-June 3rd 11-6\nSat June 4th 9-3pm"
+  },
+  {
+    "County": "Contra Costa",
+    "Address": "Pittsburg City Hall\n65 Civic Ave.\nPittsburg, CA",
+    "Phone": "(925) 335-7800",
+    "Hours": "May 31-June 3rd 11-6\nSat June 4th 9-3pm"
+  },
+  {
+    "County": "Contra Costa",
+    "Address": "The Salvation Army Church\n3950 Clayton Road\nConcord, CA",
+    "Phone": "(925) 335-7800",
+    "Hours": "May 31-June 3rd 11-6\nSat June 4th 9-3pm"
+  },
+  {
+    "County": "Del Norte",
+    "Address": "Elections Office\n981 H Street, Room 160\nCrescent City, CA 95531",
+    "Phone": "(707) 464-7216\n(707) 465-0383",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "El Dorado",
+    "Address": "El Dorado County Elections Deparment\n2850 Fairlane Court Placerville\nCA 95667",
+    "Phone": "(530) 621-7480",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "El Dorado",
+    "Address": "Recorder/Clerk\n3368 Lake Tahoe Boulevard #108\nSouth Lake Tahoe, CA 96150",
+    "Phone": "(530) 621-7480",
+    "Hours": "M-F 8-12, 1-5"
+  },
+  {
+    "County": "Fresno",
+    "Address": "Fresno County Clerk Office\n2221 Kern Street\nFresno, CA 93721",
+    "Phone": "(559) 600-8683",
+    "Hours": "M-F 8:30-5\nSat June 4 8:30-3"
+  },
+  {
+    "County": "Glenn",
+    "Address": "Glenn County Elections Department\n516 W. Sycamore Street, 2nd Floor\nWillows, CA 95988",
+    "Phone": "(530) 934-6414",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Humboldt",
+    "Address": "Hunboldt County Office of Elections\n3033 H Street, Room 20\nEureka, CA 95501",
+    "Phone": "(707) 445-7481",
+    "Hours": "M-F 8:30-12, 1-5"
+  },
+  {
+    "County": "Imperial",
+    "Address": "Elections Office\n940 Main Street, Ste 206\nEl Centro, CA 92243",
+    "Phone": "(760) 482-4226",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Inyo",
+    "Address": "Inyo County Elections Department\n168 North Edwards Street\nIndependence, CA 93526",
+    "Phone": "(760) 878-0224",
+    "Hours": "M-F 8-12pm/ 1-5pm"
+  },
+  {
+    "County": "Kern",
+    "Address": "Elections Office\n1115 Truxtun Avenue, 1st Floor\nBakersfield, CA 93301",
+    "Phone": "(661) 868-3590\n(800) 452-8683",
+    "Hours": "M-F 8-5\nSat 8-2"
+  },
+  {
+    "County": "Kings",
+    "Address": "Kings County Elections Office\n1400 West Lacey Boulevard\nHanford, CA 93230",
+    "Phone": "(559) 582-3211 Ext. 4401",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Lake",
+    "Address": "Lake County Elections Office\n255 North Forbes Street\nLakeport, CA 95453",
+    "Phone": "(707) 263-2372",
+    "Hours": "M-F 9-5"
+  },
+  {
+    "County": "Lassen",
+    "Address": "Lassen County Elections Office\nHistoric Courthouse\n220 South Lassen Street, Suite 5\nSusanville, CA 96130",
+    "Phone": "(530) 251-8217",
+    "Hours": "M-F 9-12pm/1-4pm"
+  },
+  {
+    "County": "Los Angeles",
+    "Address": "12400 E. Imperial Highway\nNorwalk, CA 90650\nThird Floor",
+    "Phone": "(562) 466-1310",
+    "Hours": "M-F 8-5, S-S 8-4"
+  },
+  {
+    "County": "Madera",
+    "Address": "Elections Division\n200 W. 4th Street\nMadera, CA 93637",
+    "Phone": "(559) 675-7720",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Marin",
+    "Address": "Registrar of Voters Office\n3501 Civic Center, Room 121\nSan Rafael, CA 94903",
+    "Phone": "(415) 473-6456",
+    "Hours": "M-F 8-4:30"
+  },
+  {
+    "County": "Mariposa",
+    "Address": "Mariposa County Clerk Office\n4982 10th Street\nMariposa, CA 95338",
+    "Phone": "(209) 966-2007",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Mendocino",
+    "Address": "Elections Department\n501 Low Gap Rd., Room 1020\nUkiah, CA 95482",
+    "Phone": "(707) 234-6819",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Merced",
+    "Address": "Merced County Elections Office\n2222 M Street, Room 14\nMerced, CA 95340",
+    "Phone": "(209) 385-7541",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Modoc",
+    "Address": "Modoc County Elections Office\n108 E. Modoc Street\nAlturas, CA 96101",
+    "Phone": "(530) 233-6205",
+    "Hours": "M-F 8:30-12, 1-5"
+  },
+  {
+    "County": "Mono",
+    "Address": "Mono County Elections Office\nLibrary Building\n74 N. School Street, Annex I\nBridgeport, CA 93517",
+    "Phone": "(760) 932-5537",
+    "Hours": "M-F 9-5"
+  },
+  {
+    "County": "Monterey",
+    "Address": "Elections Department\n1370 S. Main St # B\nSalinas, CA 93901",
+    "Phone": "(831) 796-1499",
+    "Hours": "M-F 8-5\nSat 9-5"
+  },
+  {
+    "County": "Napa",
+    "Address": "Napa County Elections Office\n900 Coombs St, Ste. 256\nNapa, CA 94559",
+    "Phone": "(707) 253-4321",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Napa",
+    "Address": "Calistoga Fire Department\n1113 Washington Street\nCalistoga, CA 94515",
+    "Phone": "(707) 253-4321",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Napa",
+    "Address": "Stonebridge Appartments\n990 College Avenue\nSt. Helena, CA 94574",
+    "Phone": "(707) 253-4321",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Napa",
+    "Address": "Library - Reading Room\n6516 Washington Street\nYountville, CA 94599",
+    "Phone": "(707) 253-4321",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Napa",
+    "Address": "Public Safety Building\n911 Donaldson Way American\nCanyon, CA 94503",
+    "Phone": "(707) 253-4321",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Napa",
+    "Address": "El Centro School\n1480 El Centro Avenue\nNapa, CA 94558",
+    "Phone": "(707) 253-4321",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Napa",
+    "Address": "Crosswalk Community Church\n2590 First Street\nNapa, CA 94558",
+    "Phone": "(707) 253-4321",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Nevada",
+    "Address": "Nevada County Elections Office\n950 Maidu Avenue, Suite 250\nNevada City, CA 95959",
+    "Phone": "(530) 265-1298",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Nevada",
+    "Address": "Truckee Town Hall (Electronic voting machines only)\n10183 Truckee Airport Road\nTruckee, CA 96160",
+    "Phone": "(530) 265-1298",
+    "Hours": "M-F 8-12 & 1-5"
+  },
+  {
+    "County": "Orange",
+    "Address": "Registar of Voters Office\n1300 South Grand Ave., Bldg. C\nSanta Ana, CA 92705",
+    "Phone": "(714) 567-7600",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Placer",
+    "Address": "Placer County Office of Elections\n2956 Richardson Drive\nAuburn, CA 95603",
+    "Phone": "(530) 886-5650",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Plumas",
+    "Address": "Plumas County Elections Office\n520 Main Street, Room 102\nQuincy, CA 95971",
+    "Phone": "(530) 283-6256",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Riverside",
+    "Address": "Registrar of Voters Office\n2724 Gateway Drive\nRiverside, CA 92507-0918",
+    "Phone": "(951) 486-7200",
+    "Hours": "M-F 8-5 \nSat. May 28 9-4\nSat. June 4 9-5"
+  },
+  {
+    "County": "Riverside",
+    "Address": "Galleria at Tyler Mall\n1299 Galleria at Tyler\nRiverside, CA 92503",
+    "Phone": "(951) 486-7200",
+    "Hours": "May 27-29\nF-S 10-4"
+  },
+  {
+    "County": "Riverside",
+    "Address": "Promenade in Temecula Mall\n40820 Winchester Road\nTemecula, CA 92591",
+    "Phone": "(951) 486-7200",
+    "Hours": "May 27-29\nF-S 10-4"
+  },
+  {
+    "County": "Riverside",
+    "Address": "Westfield Palm Desert Mall\n72-840 Highway 111\nPalm Desert, CA 92260",
+    "Phone": "(951) 486-7200",
+    "Hours": "May 27-29\nF-S 10-4"
+  },
+  {
+    "County": "Sacramento",
+    "Address": "Sacramento County Elections Office\n7000 65th Street, Suite A\nSacramento, CA 95823-2315",
+    "Phone": "(916) 875-6451",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "San Benito",
+    "Address": "Department of Elections\n440 Fifth Street, Room 206\nHollister, CA 95023-3843",
+    "Phone": "(831) 636-4016",
+    "Hours": "M-F 8-5\nS-S 9-3"
+  },
+  {
+    "County": "San Bernardino",
+    "Address": "San Bernardino Elections Office\n777 East Rialto Avenue\nSan Bernardino, CA 92415",
+    "Phone": "(909) 387-8300",
+    "Hours": "M-F 7:30-5:30 Sat June 4 7:30-5:30 p.m. Election day 7am-8pm"
+  },
+  {
+    "County": "San Bernardino",
+    "Address": "Ontario Conference Center\n1947 E. Convention Center Way\nOntario, CA 91764",
+    "Phone": "(909) 387-8300",
+    "Hours": "Tues-Sat 7:30-5:30 Mon June 6 7:30-5:30 Election Day 7am-8pm"
+  },
+  {
+    "County": "San Bernardino",
+    "Address": "Victorville City Council Chambers\n14343 Civic Drive\nVictorville, CA 92392",
+    "Phone": "(909) 387-8300",
+    "Hours": "Tues-Sat 7:30-5:30 \nMon June 6 7:30-5:30\nElection Day 7am-8pm"
+  },
+  {
+    "County": "San Diego",
+    "Address": "5600 Overland Ave\nKearny Mesa, CA",
+    "Phone": "(858) 565-5800",
+    "Hours": "M-F 8-5\nS-S 8-5"
+  },
+  {
+    "County": "San Francisco",
+    "Address": "City Hall\n1 Dr. Carlton B Goodlett Place, Room 48\nSan Francisco, CA 94102-4635",
+    "Phone": "(415) 554-4375",
+    "Hours": "M-F 8-5\nS-S 10-4"
+  },
+  {
+    "County": "San Joaquin",
+    "Address": "Registrar of Voters Office\n44 N. San Joaquin Street, Suite 350\nStockton, CA 95202",
+    "Phone": "(209) 468-2885",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "San Luis Obispo",
+    "Address": "1055 Monterey Street,\nRoom D-120\nSan Luis Obispo, CA 93408",
+    "Phone": "(805) 781-5228",
+    "Hours": "M-F 8:00 a.m. - 5:00 p.m.\nSat 9-2"
+  },
+  {
+    "County": "San Luis Obispo",
+    "Address": "Library 2nd floor \n6555 Capistrano Ave\nAtascadero, CA 93422",
+    "Phone": "(805) 781-5228",
+    "Hours": "M-F 7:30-4"
+  },
+  {
+    "County": "San Mateo",
+    "Address": "Registration & Elections Division\n40 Tower Road\nSan Mateo, CA 94402",
+    "Phone": "(650) 312-5222",
+    "Hours": "M-F 8-5\nSat May 28 & June 4 10-3"
+  },
+  {
+    "County": "San Mateo",
+    "Address": "Assessor - County Clerk - Recorder\n555 County Center\nRedwood City, CA 94063",
+    "Phone": "(650) 312-5222",
+    "Hours": "M-F 8-5\nSat May 28 & June 4 10-3"
+  },
+  {
+    "County": "Santa Barbara",
+    "Address": "Elections Main Office\n4440-A Calle Real\nSanta Barbara, CA 93110",
+    "Phone": "(805) 568-2200\n(800) 722-8683",
+    "Hours": "M-F 8-5pm\nSat June 4, 9-1pm"
+  },
+  {
+    "County": "Santa Barbara",
+    "Address": "Elections Branch - Lompoc Office\n401 E. Cypress Street\nLompoc, CA 93436",
+    "Phone": "(805) 568-2200\n(800) 722-8683",
+    "Hours": "M-F 9-4, closed noon – 1pm\nSat June 4, 9-1pm"
+  },
+  {
+    "County": "Santa Barbara",
+    "Address": "Elections Branch - Santa Maria Office\n511 E. Lakeside Parkway\nSanta Maria, CA 93455",
+    "Phone": "(805) 568-2200\n(800) 722-8683",
+    "Hours": "M-F 8-5, closed noon – 1pm\nSat June 4, 9-1pm"
+  },
+  {
+    "County": "Santa Clara",
+    "Address": "Registrar of Voters Office\n1555 Berger Drive, Building 2\nSan Jose, CA 95112",
+    "Phone": "(408) 299-8683",
+    "Hours": "M-F 8-5\nS-S 9-3"
+  },
+  {
+    "County": "Santa Clara",
+    "Address": "Gilroy Library\n350 West Sixth Street\nGilroy, CA 95020",
+    "Phone": "(408) 299-8683",
+    "Hours": "S-S 12-5"
+  },
+  {
+    "County": "Santa Clara",
+    "Address": "Los Altos Library\n13 South San Antonio Road\nLos Altos, CA 94022",
+    "Phone": "(408) 299-8683",
+    "Hours": "S-S 12-5"
+  },
+  {
+    "County": "Santa Clara",
+    "Address": "Joyce Ellington Branch Library\n491 E Empire St\nSan Jose, CA 95112",
+    "Phone": "(408) 299-8683",
+    "Hours": "S-S 12-5"
+  },
+  {
+    "County": "Santa Clara",
+    "Address": "Santa Clara City Library\n2635 Homestead Road\nSanta Clara, CA 95051",
+    "Phone": "(408) 299-8683",
+    "Hours": "S-S 12-5"
+  },
+  {
+    "County": "Santa Clara",
+    "Address": "San Jose Public Library - Educational Park Branch\n1772 Educational Park Drive\nSan Jose, CA 95133",
+    "Phone": "(408) 299-8683",
+    "Hours": "S-S 12-5"
+  },
+  {
+    "County": "Santa Cruz",
+    "Address": "Santa Cruz County Clerk\n701 Ocean Street, Room 210\nSanta Cruz, CA 95060-4076",
+    "Phone": "(831) 454-2060",
+    "Hours": "M-F 8-5\nSat-Sun, Jun 4 & 5, 9-5"
+  },
+  {
+    "County": "Santa Cruz",
+    "Address": "Watsonville City Clerk\n275 Main Street, 4th Floor\nWatsonville, CA 95076",
+    "Phone": "(831) 454-2060",
+    "Hours": "M-F 8-5\nSat-Sun, Jun 4 & 5, 9-5"
+  },
+  {
+    "County": "Shasta",
+    "Address": "Registrar of Voters Office\n1643 Market Street\nRedding, CA 96001",
+    "Phone": "(530) 225-5730",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Sierra",
+    "Address": "Sierra County Elections Office\n100 Courthouse Square, Room 11\nDownieville, CA 95936-0398",
+    "Phone": "(530) 289-3295",
+    "Hours": "M-F 9-12, 1-4"
+  },
+  {
+    "County": "Siskiyou",
+    "Address": "Siskiyou County Elections Office\n510 North Main Street\nYreka, CA 96097-9910",
+    "Phone": "(530) 842-8084",
+    "Hours": "M-F 9-12 & 1-4"
+  },
+  {
+    "County": "Solano",
+    "Address": "Solano County Registrar of Voters\n675 Texas Street, Suite 2600\nFairfield, CA 94533",
+    "Phone": "(707) 784-6675",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Sonoma",
+    "Address": "Sonoma County Registrar of Voters Office\n435 Fiscal Drive\nSanta Rosa, CA 95403",
+    "Phone": "(707) 565-6800",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Stanislaus",
+    "Address": "Registrar of Voters Office\n1021 I Street, Suite 101\nModesto, CA 95354-2331",
+    "Phone": "(209) 525-5200",
+    "Hours": "M-F 8-4"
+  },
+  {
+    "County": "Sutter",
+    "Address": "Sutter County Elections Office\n1435 Veterans Memorial Circle\nYuba City, CA 95993",
+    "Phone": "(530) 822-7122",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Tehama",
+    "Address": "Tehama County Elections Office\n444 Oak Street, Room C\nRed Bluff, CA 96080",
+    "Phone": "(530) 527-8190",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Trinity",
+    "Address": "Trinity County Courthouse\n11 Court Street\nWeaverville, CA 96093",
+    "Phone": "(530) 623-1220",
+    "Hours": "M-F 11-1"
+  },
+  {
+    "County": "Tulare",
+    "Address": "Registrar of Voters/Elections Office\n5951 South Mooney Boulevard\nVisalia, CA 93277",
+    "Phone": "(559) 624-7300",
+    "Hours": "M-Th 7:30 - 5:30\nF 8-12"
+  },
+  {
+    "County": "Tuolumne",
+    "Address": "Tuolumne County Elections Office\n2 South Green Street\nSonora, CA 95370-4696",
+    "Phone": "(209) 533-5570",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Ventura",
+    "Address": "Ventura County Government Center\n800 South Victoria Avenue, L-1200\nVentura, CA 93009-1200",
+    "Phone": "(805) 654-2781",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Yolo",
+    "Address": "Yolo County Elections Department\n625 Court Street, Room B05\nWoodland, CA 95695",
+    "Phone": "(530) 666-8133",
+    "Hours": "M-F 8-5"
+  },
+  {
+    "County": "Yuba",
+    "Address": "Yuba County Elections Office\n915 8th Street, Suite 107\nMarysville, CA 95901-5273",
+    "Phone": "(530) 749-7855",
+    "Hours": "M-F 8-5"
+  }
+]
