@@ -13,18 +13,20 @@ module.exports = React.createClass
 
   getInitialState: ->
     {
-      loading:     false
-      loaded:      false
-      notFound:    false
-      submitted:   false
-      origin:      null
-      address:     if typeof location isnt 'undefined' then queryString.parse(location.search)['newaddr'] || '' else ''
-      directions:  null
-      google:      null
-      geocoder:    null
-      pollPlace:   {}
-      addressObj:  {}
-      email:       null
+      loading:       false
+      loaded:        false
+      notFound:      false
+      submitted:     false
+      origin:        null
+      address:       if typeof location isnt 'undefined' then queryString.parse(location.search)['newaddr'] || '' else ''
+      directions:    null
+      google:        null
+      geocoder:      null
+      pollPlace:     {}
+      earlyVoteSite: {}
+      addressObj:    {}
+      email:         null
+      show:          null
     }
 
   onKeyUp: (e) ->
@@ -51,21 +53,36 @@ module.exports = React.createClass
         @setState(notFound: true, loading: false, addressObj: address)
       else
         if response.earlyVoteSite
-          pollingLocation = overrides.place(response.earlyVoteSite) || response.earlyVoteSite
-        else
+          earlyVoteSite = overrides.place(response.earlyVoteSite) || response.earlyVoteSite
+          @setState(earlyVoteSite: earlyVoteSite)
+        if response.pollingLocation
           pollingLocation = overrides.place(response.pollingLocation) || response.pollingLocation
+          @setState(pollPlace: pollingLocation)
 
-        pollAddress = "#{pollingLocation.line1}, #{pollingLocation.city}, #{pollingLocation.state} #{pollingLocation.zip}"
-        @state.geocoder.geocode address: pollAddress, (results, status) =>
-          override = overrides.geocode(results[0].place_id)
-          if override
-            destination = new google.maps.LatLng(override)
-          else
-            destination = results[0].geometry.location
+        if not $.isEmptyObject(earlyVoteSite)
+          @setState(show: 'earlyVoteSite')
+          @getDirections(earlyVoteSite)
+        else
+          @setState(show: 'pollPlace')
+          @getDirections(pollingLocation)
 
-          DirectionsService = new @state.google.maps.DirectionsService()
-          DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) =>
-            @setState(loaded: true, loading: false, directions: result, pollPlace: pollingLocation)
+  getDirections: (pollingLocation) ->
+    if JSON.stringify(pollingLocation) == JSON.stringify(@state.earlyVoteSite)
+      @setState(show: 'earlyVoteSite')
+    else
+      @setState(show: 'pollPlace')
+
+    pollAddress = "#{pollingLocation.line1}, #{pollingLocation.city}, #{pollingLocation.state} #{pollingLocation.zip}"
+    @state.geocoder.geocode address: pollAddress, (results, status) =>
+      override = overrides.geocode(results[0].place_id)
+      if override
+        destination = new google.maps.LatLng(override)
+      else
+        destination = results[0].geometry.location
+
+      DirectionsService = new @state.google.maps.DirectionsService()
+      DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) =>
+        @setState(loaded: true, loading: false, directions: result)
 
   submitClick: (e) ->
     e.preventDefault()
@@ -86,7 +103,7 @@ module.exports = React.createClass
 
   reset: (e) ->
     e.preventDefault()
-    @setState(address: null, loaded: false, loading: false, submitted: false, origin: null, directions: null, pollPlace: {}, addressObj: {}, email: null)
+    @setState(address: null, loaded: false, loading: false, submitted: false, origin: null, directions: null, pollPlace: {}, addressObj: {}, email: null, show: null, earlyVoteSite: {})
 
   componentDidMount: ->
     return unless @props.state.pollWgt
@@ -114,18 +131,35 @@ module.exports = React.createClass
           }
           {if @state.loaded
             <div>
+              {if @state.show == 'earlyVoteSite'
+                pollPlace = @state.earlyVoteSite
+                <div>
+                  <h2>Early Vote Polling Place</h2>
+                  {if not $.isEmptyObject(@state.pollPlace)
+                    <div className='btn btn-secondary' onClick={(e) => @getDirections(@state.pollPlace)}>Show Election Day Polling Place</div>
+                  }
+                </div>
+              else
+                pollPlace = @state.pollPlace
+                <div>
+                  <h2>Election Day Polling Place</h2>
+                  {if not $.isEmptyObject(@state.earlyVoteSite)
+                    <div className='btn btn-secondary' onClick={(e) => @getDirections(@state.earlyVoteSite)}>Show Early Vote Polling Place</div>
+                  }
+                </div>
+              }
               <br />
               <p>
-                {@state.pollPlace.locationName}
+                {pollPlace.locationName}
               </p>
               <p>
-                {@state.pollPlace.hours}
+                {pollPlace.hours}
               </p>
               <p>
-                {@state.pollPlace.line1}
+                {pollPlace.line1}
               </p>
               <p>
-                {@state.pollPlace.city}, {@state.pollPlace.state} {@state.pollPlace.zip}
+                {pollPlace.city}, {pollPlace.state} {pollPlace.zip}
               </p>
               <br />
               <GoogleMapLoader
