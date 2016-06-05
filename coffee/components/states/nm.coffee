@@ -70,7 +70,7 @@ module.exports = React.createClass
       </div>
 
       <div className='left'>
-        <PollPlace state={@props.state} title="Early Vote"/>
+        <PollPlace state={@props.state} />
 
         <div className='info'>
           <div id='key-info' className='key-info section expanded'>
