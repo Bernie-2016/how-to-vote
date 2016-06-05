@@ -94,6 +94,16 @@ module.exports = React.createClass
 
       <div className='left'>
         <div className='info'>
+          <div className='section pr-polling expanded' id='polling-location'>
+            <div className='section-header'>
+              <h3 className='caps'>¿Cual es mi colegio electoral?</h3>
+            </div>
+
+            <div className='section-body'>
+              <Iframe url="https://berniepr-colegios-primarias.herokuapp.com/pr4bernie" />
+            </div>
+          </div>
+
           <div id='key-info' className='key-info section expanded'>
             <div className='section-header'>
               <h3 className='caps'>
