@@ -103,11 +103,27 @@ div#htv-app {
     margin-top: 2em;
 
     h1#main-heading {
-      font-size: 1.5em;
+      font-size: 1.25em;
       margin-bottom: 0px;
 
       div#select {
-        padding-right: 25px;
+        display: block;
+        width: 100%;
+        margin: 0.5em -1em 0;
+        padding: 0.25em 1em;
+
+        ul {
+          width: 100%;
+          margin: 1.5em -1em;
+
+          li.heading {
+            font-size: 0.8em;
+          }
+
+          li {
+            font-size: 1em;
+          }
+        }
       }
     }
   }
