@@ -120,6 +120,22 @@ div#htv-app {
             &.npp {
               background: url('../img/npp-logo.svg');
             }
+
+            &.gop {
+              background: url('../img/gop-logo.svg');
+            }
+
+            &.all {
+              background: url('../img/all-logo.svg');
+            }
+
+            &.unaffiliated {
+              background: url('../img/unaffiliated-logo.svg');
+            }
+
+            &.independent {
+              background: url('../img/ind-logo.svg');
+            }
           }
         }
       }

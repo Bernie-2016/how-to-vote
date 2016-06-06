@@ -11,6 +11,7 @@ Sticky    = require('react-stickynode')
 Scroll    = require('react-scroll')
 moment    = require('moment')
 Button    = require('components/blocks/button')
+ReactTooltip  = require("react-tooltip")
 
 module.exports = React.createClass
   displayName: 'DC State Info'
@@ -40,7 +41,7 @@ module.exports = React.createClass
 
               <div className='party-icons'>
                 {for party in @props.state.parties
-                  <div className="icon #{party}" data-tip="Democrats"></div>
+                  <div key={party} className="icon #{party}" data-tip="Democrats"></div>
                 }
                 <ReactTooltip place="top" effect="solid"/>
               </div>

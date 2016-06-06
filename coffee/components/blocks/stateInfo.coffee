@@ -7,7 +7,8 @@ Reminder      = require('components/widgets/reminderWidget')
 moment        = require('moment')
 Share         = require('components/widgets/shareWidget')
 $             = require('jquery')
-ReactTooltip  = require("react-tooltip")
+ReactTooltip  = require('react-tooltip')
+_             = require('lodash')
 
 module.exports = React.createClass
   displayName: 'State Info'
@@ -36,7 +37,7 @@ module.exports = React.createClass
 
             <div className='party-icons'>
               {for party in @props.state.parties
-                <div className="icon #{party}" data-tip="Democrats"></div>
+                <div key={party} className="icon #{party}" data-tip={if party == 'all' then 'All Voters' else if party == 'npp' then 'No Party Preference' else _.capitalize(party)}></div>
               }
               <ReactTooltip place="top" effect="solid"/>
             </div>

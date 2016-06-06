@@ -75,7 +75,8 @@
     },
     "regLink": "http://registertovote.ca.gov/",
     "chkLink": "http://www.sos.ca.gov/elections/registration-status/",
-    "pollWgt": true
+    "pollWgt": true,
+    "parties": ["democrats","npp"]
   },
   "CO": {
     "name": "Colorado",
@@ -112,7 +113,8 @@
     },
     "regLink": "https://www.vote4dc.com/ApplyInstructions/Register",
     "chkLink": "https://www.dcboee.org/voter_info/reg_status/",
-    "pollWgt": true
+    "pollWgt": true,
+    "parties": ["democrats"]
   },
   "DE": {
     "name": "Delaware",
@@ -379,7 +381,8 @@
     },
     "regLink": "http://sos.mt.gov/ELECTIONS/Vote/index.asp",
     "chkLink": "https://app.mt.gov/cgi-bin/voterinfo/voterinfo.cgi",
-    "pollWgt": true
+    "pollWgt": true,
+    "parties" : ["all"]
   },
   "NE": {
     "name": "Nebraska",
@@ -434,7 +437,8 @@
     },
     "regLink": "http://www.state.nj.us/state/elections/voting-information.html",
     "chkLink": "https://voter.njsvrs.com/PublicAccess/servlet/com.saber.publicaccess.control.PublicAccessNavigationServlet?USERPROCESS=PublicSearch",
-    "pollWgt": true
+    "pollWgt": true,
+    "parties": ["democrats","unaffiliated"]
   },
   "NM": {
     "name": "New Mexico",
@@ -448,7 +452,8 @@
     },
     "regLink": "https://portal.sos.state.nm.us/OVR/(S(mzf1lpswqewv3tertpr5t44c))/WebPages/InstructionsStep1.aspx",
     "chkLink": "https://voterview.state.nm.us/VoterView/RegistrantSearch.do",
-    "pollWgt": true
+    "pollWgt": true,
+    "parties": ["democrats"]
   },
   "NY": {
     "name": "New York",
@@ -486,7 +491,8 @@
       "url": "http://demnpl.com/",
       "phone": "(701) 255-0460"
     },
-    "pollWgt": true
+    "pollWgt": true,
+    "parties": ["all"]
   },
   "NMI": {
     "name": "Northern Mariana Islands",
@@ -603,7 +609,8 @@
     },
     "regLink": "https://sdsos.gov/elections-voting/voting/register-to-vote/",
     "chkLink": "https://sos.sd.gov/Elections/VIPLogin.aspx",
-    "pollWgt": true
+    "pollWgt": true,
+    "parties": ["democrats", "independent"]
   },
   "TN": {
     "name": "Tennessee",
