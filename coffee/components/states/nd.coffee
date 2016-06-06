@@ -40,6 +40,11 @@ module.exports = React.createClass
               </Scroll.Link>
             </li>
             <li>
+              <Scroll.Link activeClass='active' to='caucus' spy=true smooth=true offset=0>
+                <h3 className='caps'>Caucus for Bernie</h3>
+              </Scroll.Link>
+            </li>
+            <li>
               <Scroll.Link activeClass='active' to='college' spy=true smooth=true offset=0>
                 <h3 className='caps'>College Students</h3>
               </Scroll.Link>
