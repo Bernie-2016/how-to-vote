@@ -103,7 +103,7 @@ module.exports = React.createClass
                 If you can't make it to the polls on primary day, you can submit an absentee ballot by mail, or you can request and submit an absentee ballot in person at your <a href='http://www.sos.state.nm.us/Voter_Information/County_Clerk_Information.aspx' target='_blank'>county clerk's office</a> beginning on May 10, 2016.
               </p>
             </div>
-          </div>
+          </div> 
 
           <div className='section' id='identification'>
             <div className='section-header'>

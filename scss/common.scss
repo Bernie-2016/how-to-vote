@@ -15,6 +15,10 @@ div#htv-app {
   font-size: 1.2em;
   font-family: freight-sans-pro;
 
+  a {
+    cursor: pointer;
+  }
+
   ::selection {
     background: $blue;
     color: white;

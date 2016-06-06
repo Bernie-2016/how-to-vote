@@ -60,6 +60,11 @@ module.exports = React.createClass
               </Scroll.Link>
             </li>
             <li>
+              <Scroll.Link activeClass='active' to='election-day' spy=true smooth=true offset=0>
+                <h3 className='caps'>Election Day Voting</h3>
+              </Scroll.Link>
+            </li>
+            <li>
               <Scroll.Link activeClass='active' to='early-voting' spy=true smooth=true offset=0>
                 <h3 className='caps'>Early & Absentee Voting</h3>
               </Scroll.Link>
@@ -114,6 +119,28 @@ module.exports = React.createClass
 
               <p>
                 If you are an independent, make sure you're registered as No Party Preference. There is an “American Independent” party in California which is not eligible to vote for Bernie — only Democrats and No Party Preference voters can. If you are registered No Party Preference, ask for a Democratic ballot when you go to vote and you’re all set!
+              </p>
+            </div>
+          </div>
+
+          <div id='election-day' className='section'>
+            <div className='section-header'>
+              <h3 className='caps'>Election Day Voting</h3>
+            </div>
+
+            <div className='section-body'>
+              <p>
+                After finding <Scroll.Link activeClass='active' to='polling-location' spy=true smooth=true offset=0> your polling location </Scroll.Link> above, you can vote for Bernie on election day, June 7th, 2016, any time from 7:00 a.m. to 8:00 p.m.
+              </p>
+
+              <ul>
+                <li>If you are a Democrat and have received a vote by mail ballot, you can bring your ballot to any polling location in your county to drop it off.</li>
+                <li>If you are a No Party Preference voter and have received a nonpartisan vote by mail ballot, bring your blank ballot to your polling location and exchange it for a Democratic crossover ballot.</li>
+                <li>If you have lost your ballot or have not received one, you can go to any polling location and vote by provisional ballot.</li>
+              </ul>
+
+              <p>
+                If you have any questions about voting in California, call the Bernie Voter Hotline at <a href="tel:14157958065">(415) 795-8065</a>, or email us at <a href="mailto:cavoterprotection@berniesanders.com">cavoterprotection@berniesanders.com</a>.
               </p>
             </div>
           </div>
@@ -269,7 +296,7 @@ module.exports = React.createClass
 
             <div className='section-body'>
               <p>
-                If you have any questions about voting in California, call the Bernie Voter Hotline at .(415) 795-8065, or email us at cavoterprotection@berniesanders.com
+                If you have any questions about voting in California, call the Bernie Voter Hotline at <a href="tel:14157958065">(415) 795-8065</a>, or email us at <a href="mailto:cavoterprotection@berniesanders.com">cavoterprotection@berniesanders.com</a>.
               </p>
             </div>
           </div>
