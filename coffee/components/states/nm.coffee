@@ -36,8 +36,13 @@ module.exports = React.createClass
               </Scroll.Link>
             </li>
             <li>
-              <Scroll.Link activeClass='active' to='early-voting' spy=true smooth=true offset=0>
-                <h3 className='caps'>Early/Absentee Voting</h3>
+              <Scroll.Link activeClass='active' to='absentee-voting' spy=true smooth=true offset=0>
+                <h3 className='caps'>Absentee Voting</h3>
+              </Scroll.Link>
+            </li>
+            <li>
+              <Scroll.Link activeClass='active' to='identification' spy=true smooth=true offset=0>
+                <h3 className='caps'>Identification Requirement</h3>
               </Scroll.Link>
             </li>
             <li>
@@ -88,15 +93,33 @@ module.exports = React.createClass
             </div>
           </div>
 
-          <div className='section' id='early-voting'>
+          <div className='section' id='absentee-voting'>
             <div className='section-header'>
-              <h3 className='caps'>Early/Absentee Voting</h3>
+              <h3 className='caps'>Absentee Voting</h3>
             </div>
 
             <div className='section-body'>
               <p>
-                If you can't make it to the polls on primary day, you can submit an absentee ballot by mail, or you can request and submit an absentee ballot in person at your county clerk's office beginning on May 10, 2016. Your county clerk will also designate locations for early voting between May 21 and June 4, 2016, and expanded early voting is available in many counties beginning on May 10, 2016. Contact your local county clerk's <a href='http://www.sos.state.nm.us/Voter_Information/County_Clerk_Information.aspx' target='_blank'>office</a> to learn more about early voting hours and locations near you.
+                If you can't make it to the polls on primary day, you can submit an absentee ballot by mail, or you can request and submit an absentee ballot in person at your <a href='http://www.sos.state.nm.us/Voter_Information/County_Clerk_Information.aspx' target='_blank'>county clerk's office</a> beginning on May 10, 2016.
               </p>
+            </div>
+          </div>
+
+          <div className='section' id='identification'>
+            <div className='section-header'>
+              <h3 className='caps'>What identification do I need to provide when I vote?</h3>
+            </div>
+
+            <div className='section-body'>
+              <p>
+                A physical form of identification is only required for first-time New Mexico voters who registered by mail and did not include identification with their voter registration application form.
+              </p>
+
+              <p>
+                Otherwise, you will be asked to provide a verbal or written statement of identification including your name, year of birth, and registered address.
+              </p>
+
+              <p>Acceptable forms of ID include (1) a current and valid photo identification; or (2) a current utility bill, bank statement, government check, paycheck, student identification card or other government document, including identification issued by an Indian nation, tribe or pueblo that shows your name and current address.</p>
             </div>
           </div>
 
