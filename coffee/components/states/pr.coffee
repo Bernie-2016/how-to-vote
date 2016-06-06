@@ -69,11 +69,6 @@ module.exports = React.createClass
         <Sticky top={0} bottomBoundary='section.flex'>
           <ul>
             <li>
-              <Scroll.Link activeClass='active' to='polling-location' spy=true smooth=true offset=0>
-                <h3 className='caps'>¿Cual es mi colegio electoral?</h3>
-              </Scroll.Link>
-            </li>
-            <li>
               <Scroll.Link activeClass='active' to='key-info' spy=true smooth=true offset=0>
                 <h3 className='caps'>Información Importante</h3>
               </Scroll.Link>
