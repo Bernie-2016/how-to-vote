@@ -61,7 +61,7 @@ module.exports = React.createClass
           pollingLocation = overrides.place(response.pollingLocation) || response.pollingLocation
           @setState(pollPlace: pollingLocation)
 
-        if not $.isEmptyObject(earlyVoteSite)
+        if not $.isEmptyObject(earlyVoteSite) and @props.state.earlyVoteLive
           @setState(show: 'earlyVoteSite')
           @getDirections(earlyVoteSite)
         else
@@ -88,7 +88,6 @@ module.exports = React.createClass
         destination = new google.maps.LatLng(override)
       else
         destination = results[0].geometry.location
-
 
       DirectionsService = new @state.google.maps.DirectionsService()
       DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) =>
@@ -156,7 +155,7 @@ module.exports = React.createClass
                 pollPlace = @state.pollPlace
                 <div>
                   <h2>Election Day Polling Place</h2>
-                  {if not $.isEmptyObject(@state.earlyVoteSite)
+                  {if not $.isEmptyObject(@state.earlyVoteSite) and @props.state.earlyVoteLive
                     <div className='btn btn-secondary' onClick={(e) => @getDirections(@state.earlyVoteSite)}>Show Early Vote Polling Place</div>
                   }
                 </div>

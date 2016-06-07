@@ -79,7 +79,7 @@ module.exports = React.createClass
                 Montana has open primaries {entity('mdash')} Montanans can vote for Bernie Sanders regardless of their registered party.
               </p>
               <p>
-                Montana has same-day registration, which allows you to register to vote any time before or on Tuesday, June 7, 2016. To register, you need to visit your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf' target='_blank'>county elections office</a> from Monday through Friday between the hours of 8 a.m. and 5 p.m.
+                Montana has same-day registration, which allows you to register to vote any time before or on Tuesday, June 7, 2016. To register, you need to visit your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf' target='_blank'>county elections office</a> between the hours of 8 a.m. and 8 p.m. on election day.
               </p>
               <p>
                 Montanans can <a href='http://sos.mt.gov/ELECTIONS/Officials/Forms/documents/Voter-Registration-Application.pdf' target='_blank'>register</a> to vote by mail until May 9, 2016. After that date, you can register to vote in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf' target='_blank'>county elections office</a>.
