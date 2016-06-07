@@ -107,6 +107,7 @@ module.exports = React.createClass
       zip: @state.addressObj.zip
     $.post 'https://go.berniesanders.com/page/sapi/missing-polling-location', data, (r) =>
       if r.status isnt 'success'
+        console.log 'Submission error; please double-check and try again.'
         alert 'Submission error; please double-check and try again.'
       else
         @setState(submitted: true)
