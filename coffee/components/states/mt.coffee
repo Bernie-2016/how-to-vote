@@ -76,25 +76,29 @@ module.exports = React.createClass
 
             <div className='section-body'>
               <p>
-                Montana has open primaries {entity('mdash')} Montanans can vote for Bernie Sanders regardless of their registered party.
+                Montana has open primaries {entity('mdash')} Montanans can vote for Bernie Sanders regardless of their registered party. Voting takes place on June 7th, 2016, from 7 a.m. to 8 p.m.
               </p>
+
               <p>
-                Montana has same-day registration, which allows you to register to vote any time before or on Tuesday, June 7, 2016. To register, you need to visit your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf' target='_blank'>county elections office</a> between the hours of 8 a.m. and 8 p.m. on election day.
+                Montana has same-day registration, which allows you to register to vote any time before or on Tuesday, June 7, 2016. To register, you need to visit your <a href='http://sos.mt.gov/Elections/Counties/Election_Administrators.asp' target='_blank'>county elections office</a> between the hours of 7 a.m. and 8 p.m. on election day. Call ahead to <a href='http://sos.mt.gov/Elections/Counties/Election_Administrators.asp' target='_blank'>your office</a> to verify that your location is correct before going.
               </p>
+
               <p>
-                Montanans can <a href='http://sos.mt.gov/ELECTIONS/Officials/Forms/documents/Voter-Registration-Application.pdf' target='_blank'>register</a> to vote by mail until May 9, 2016. After that date, you can register to vote in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf' target='_blank'>county elections office</a>.
+                <strong>Note:</strong> When you go to vote, make sure you sign the outside envelope before dropping your ballot into the box. If there is no signature, your vote will not be counted.
               </p>
+
+              <p><strong>If you have any problems voting in Montana, call the Bernie Voter Protection Hotline at <a href="tel:14062065480">(406) 206-5480 </a>.</strong></p>
             </div>
           </div>
 
           <div className='section' id='early-voting'>
             <div className='section-header'>
-              <h3 className='caps'>Early/Absentee Voting</h3>
+              <h3 className='caps'>Already Voted Absentee?</h3>
             </div>
 
             <div className='section-body'>
               <p>
-                Early voting for the Montana Democratic Primary takes place between May 9 and June 6, 2016. To participate in early voting, you can request and submit an absentee ballot by <a href='http://sos.mt.gov/elections/Officials/Forms/documents/Application-for-Absentee-Ballot.pdf' target='_blank'>mail</a> or in person at your <a href='http://sos.mt.gov/elections/Forms/elections/electionadministrators.pdf' target='_blank'>county elections office</a>.
+                If you've already voted absentee, you can check the status of your paperwork and absentee ballot <a href="https://app.mt.gov/voterinfo/" target="_blank">here</a>.
               </p>
             </div>
           </div>

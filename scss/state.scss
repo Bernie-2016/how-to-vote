@@ -715,6 +715,10 @@ div#htv-app {
         font-weight: 500;
       }
 
+      strong a:not(.btn) {
+        font-weight: bold;
+      }
+
       li {
         margin: 0.7em 0;
       }
