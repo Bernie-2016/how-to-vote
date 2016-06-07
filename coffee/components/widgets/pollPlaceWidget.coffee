@@ -30,7 +30,6 @@ module.exports = React.createClass
     }
 
   onKeyUp: (e) ->
-    console.log '324'
     @lookup() if e.keyCode is 13
 
   lookupClick: (e) ->
