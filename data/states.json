@@ -438,7 +438,8 @@
     "regLink": "http://www.state.nj.us/state/elections/voting-information.html",
     "chkLink": "https://voter.njsvrs.com/PublicAccess/servlet/com.saber.publicaccess.control.PublicAccessNavigationServlet?USERPROCESS=PublicSearch",
     "pollWgt": true,
-    "parties": ["democrats","unaffiliated"]
+    "parties": ["democrats","unaffiliated"],
+    "protectionHotline": "(862) 235-1599"
   },
   "NM": {
     "name": "New Mexico",

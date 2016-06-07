@@ -21,6 +21,11 @@ module.exports = React.createClass
               Phone: <a href={"tel:+1#{@props.state.office.phone.replace(/\D/g,'')}"}>{@props.state.office.phone}</a>
             </span>
           }
+          {if @props.state.protectionHotline
+            <span>
+              If you have any problems voting in {@props.state.name}, call our {@props.state.name} Voter Protection Hotline at <a href="tel:#{'1' + @props.state.protectionHotline.replace(/[()-\s]/g, '')}">{@props.state.protectionHotline}</a>.
+            </span>
+          }
         </p>
       </div>
     </div>

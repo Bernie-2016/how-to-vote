@@ -83,6 +83,8 @@ module.exports = React.createClass
               <Deadline {...@props} />
 
               <p>New Jerseyans registered with a different political party must have <a href='http://www.state.nj.us/state/elections/voting-information-party-declaration-forms.html' target='_blank'>changed their affiliation</a> by April 13, 2016 in order to participate in the Democratic Party Primary.</p>
+
+              <p><strong>If you have any problems voting in New Jersey, call the Bernie Voter Protection Hotline at <a href="tel:18622351599">(862) 235-1599 </a>.</strong></p>
             </div>
           </div>
 

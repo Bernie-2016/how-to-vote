@@ -44,13 +44,15 @@ module.exports = React.createClass
       @setState(origin: results[0].geometry.location)
 
     $.getJSON 'https://ppapi.democrats.org/api', api_key: 'MjBhNGFhNzY5YTk5ZjkyY2JiN2I1ZjE1', address: @state.address, (response) =>
-      if response.status isnt 'success'
+      if response.homeAddress
         address =
           address: response.homeAddress.line1
           city: response.homeAddress.city
           state: response.homeAddress.state
           zip: response.homeAddress.zip
-        @setState(notFound: true, loading: false, addressObj: address)
+        @setState(addressObj: address)
+      if response.status isnt 'success'
+        @setState(notFound: true, loading: false)
       else
         if response.earlyVoteSite
           earlyVoteSite = overrides.place(response.earlyVoteSite) || response.earlyVoteSite
@@ -72,13 +74,21 @@ module.exports = React.createClass
     else
       @setState(show: 'pollPlace')
 
+    if pollingLocation.zip is null
+      pollingLocation.zip = @state.addressObj.zip
+
+    if pollingLocation.city is null
+      pollingLocation.city = @state.addressObj.city
+
     pollAddress = "#{pollingLocation.line1}, #{pollingLocation.city}, #{pollingLocation.state} #{pollingLocation.zip}"
+
     @state.geocoder.geocode address: pollAddress, (results, status) =>
       override = overrides.geocode(results[0].place_id)
       if override
         destination = new google.maps.LatLng(override)
       else
         destination = results[0].geometry.location
+
 
       DirectionsService = new @state.google.maps.DirectionsService()
       DirectionsService.route origin: @state.origin, destination: destination, travelMode: @state.google.maps.TravelMode.DRIVING, (result) =>

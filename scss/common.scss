@@ -19,6 +19,10 @@ div#htv-app {
     cursor: pointer;
   }
 
+  strong a {
+  font-weight: bold;
+  }
+
   ::selection {
     background: $blue;
     color: white;
