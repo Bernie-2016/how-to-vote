@@ -30,6 +30,7 @@ module.exports = React.createClass
     }
 
   onKeyUp: (e) ->
+    console.log '324'
     @lookup() if e.keyCode is 13
 
   lookupClick: (e) ->
@@ -96,6 +97,7 @@ module.exports = React.createClass
 
   submitClick: (e) ->
     e.preventDefault()
+    @lookup()
     if @state.email is ''
       alert 'Please enter your email address.'
       return
@@ -105,12 +107,13 @@ module.exports = React.createClass
       city: @state.addressObj.city
       state_cd: @state.addressObj.state
       zip: @state.addressObj.zip
-    $.post 'https://go.berniesanders.com/page/sapi/missing-polling-location', data, (r) =>
-      if r.status isnt 'success'
-        console.log 'Submission error; please double-check and try again.'
-        alert 'Submission error; please double-check and try again.'
-      else
+    $.post('https://go.berniesanders.com/page/sapi/missing-polling-location',
+      data)
+      .done (response) =>
         @setState(submitted: true)
+      .fail (response) =>
+        alert 'Submission error; please make sure you typed a valid address (Address, City, State, Zip) and email and try again.'
+
 
   reset: (e) ->
     e.preventDefault()
@@ -190,7 +193,8 @@ module.exports = React.createClass
           }
           {if @state.notFound && !@state.submitted
             <p>
-              We were unable to locate the polling place for that address; please enter your email address to be notified about your location.
+              We were unable to locate the polling place for that address; please enter your address and email to be notified about your location.
+              <input placeholder={@props.placeholder || "Address where you're registered to vote"} value={@state.address} onChange={ (e) => @setState(address: e.target.value) } onKeyUp={@onKeyUp}/>
               <input placeholder='Email address' value={@state.email} onChange={ (e) => @setState(email: e.target.value) } />
               <a href='#' onClick={@submitClick} className='btn'>Submit</a>
             </p>
