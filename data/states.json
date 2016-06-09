@@ -75,7 +75,6 @@
     },
     "regLink": "http://registertovote.ca.gov/",
     "chkLink": "http://www.sos.ca.gov/elections/registration-status/",
-    "pollWgt": true,
     "parties": ["democrats","npp"]
   },
   "CO": {
@@ -109,7 +108,7 @@
     "regDate": "2016 05 16",
     "date": "2016 06 14",
     "office": {
-      "url": "http://www.dcdemocraticparty.org/"
+      "url": "https://www.dcboee.org/home.asp?skip=Y"
     },
     "regLink": "https://www.vote4dc.com/ApplyInstructions/Register",
     "chkLink": "https://www.dcboee.org/voter_info/reg_status/",
@@ -381,7 +380,6 @@
     },
     "regLink": "http://sos.mt.gov/ELECTIONS/Vote/index.asp",
     "chkLink": "https://app.mt.gov/cgi-bin/voterinfo/voterinfo.cgi",
-    "pollWgt": true,
     "parties" : ["all"]
   },
   "NE": {
@@ -437,7 +435,6 @@
     },
     "regLink": "http://www.state.nj.us/state/elections/voting-information.html",
     "chkLink": "https://voter.njsvrs.com/PublicAccess/servlet/com.saber.publicaccess.control.PublicAccessNavigationServlet?USERPROCESS=PublicSearch",
-    "pollWgt": true,
     "parties": ["democrats","unaffiliated"],
     "protectionHotline": "(862) 235-1599"
   },
@@ -453,7 +450,6 @@
     },
     "regLink": "https://portal.sos.state.nm.us/OVR/(S(mzf1lpswqewv3tertpr5t44c))/WebPages/InstructionsStep1.aspx",
     "chkLink": "https://voterview.state.nm.us/VoterView/RegistrantSearch.do",
-    "pollWgt": true,
     "parties": ["democrats"]
   },
   "NY": {
@@ -492,7 +488,6 @@
       "url": "http://demnpl.com/",
       "phone": "(701) 255-0460"
     },
-    "pollWgt": true,
     "parties": ["all"]
   },
   "NMI": {
@@ -610,7 +605,6 @@
     },
     "regLink": "https://sdsos.gov/elections-voting/voting/register-to-vote/",
     "chkLink": "https://sos.sd.gov/Elections/VIPLogin.aspx",
-    "pollWgt": true,
     "parties": ["democrats", "independent"]
   },
   "TN": {

@@ -90,6 +90,11 @@ module.exports = React.createClass
               </Scroll.Link>
             </li>
             <li>
+              <Scroll.Link activeClass='active' to='election-day' spy=true smooth=true offset=0>
+                <h3 className='caps'>Election Day Voting</h3>
+              </Scroll.Link>
+            </li>
+            <li>
               <Scroll.Link activeClass='active' to='early-voting' spy=true smooth=true offset=0>
                 <h3 className='caps'>Early Voting</h3>
               </Scroll.Link>
@@ -136,6 +141,18 @@ module.exports = React.createClass
               </p>
               <p>
                 Mail-in voter registration for the Washington D.C. Democratic Primary closed on May 16, 2016. However, you can register to vote and cast a ballot in person at any ward if you are an unregistered voter.
+              </p>
+            </div>
+          </div>
+
+          <div className='section' id='election-day'>
+            <div className='section-header'>
+              <h3 className='caps'>Election Day Voting</h3>
+            </div>
+
+            <div className='section-body'>
+              <p>
+                Election Day voting takes place on Tuesday, June 14th, 2016, from 7 a.m. to 8 p.m.
               </p>
             </div>
           </div>
